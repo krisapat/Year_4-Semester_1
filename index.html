@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Portal - Year 4 Semester 1</title>
+<style>
+:root {
+  --bg-page: #0c0d10;
+  --bg-gradient: radial-gradient(circle at 50% -20%, rgba(35, 40, 52, 0.45) 0%, rgba(12, 13, 16, 1) 80%);
+  --glass-surface: rgba(22, 24, 29, 0.65);
+  --glass-elevated: rgba(30, 32, 40, 0.85);
+  --glass-card: rgba(255, 255, 255, 0.025);
+  --glass-border: rgba(255, 255, 255, 0.065);
+  --glass-border-focus: rgba(255, 255, 255, 0.16);
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --accent: #3b82f6;
+  --accent-soft: rgba(59, 130, 246, 0.12);
+  --success: #10b981;
+  --success-soft: rgba(16, 185, 129, 0.12);
+  --danger: #ef4444;
+  --danger-soft: rgba(239, 68, 68, 0.12);
+  --warning: #f59e0b;
+  --warning-soft: rgba(245, 158, 11, 0.12);
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--bg-page);
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(12, 13, 16, 0.78);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--glass-border);
+  padding: 0.85rem 2rem;
+}
+
+.header-container {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand-label {
+  font-size: 0.925rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 0.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 0.25rem;
+  border-radius: 9999px;
+  border: 1px solid var(--glass-border);
+}
+
+.nav-tab {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  padding: 0.35rem 0.95rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.nav-tab:hover { color: var(--text-primary); }
+.nav-tab.active {
+  background: var(--glass-elevated);
+  color: #fff;
+  border: 1px solid var(--glass-border-focus);
+}
+
+.main-wrapper {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.action-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.mode-group {
+  display: flex;
+  gap: 0.35rem;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+}
+
+.mode-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-secondary);
+  padding: 0.35rem 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.mode-btn:hover { color: #fff; }
+.mode-btn.active {
+  background: var(--glass-elevated);
+  border-color: var(--glass-border-focus);
+  color: #fff;
+}
+.mode-btn.highlight-gold.active {
+  border-color: rgba(245, 158, 11, 0.3);
+  color: #fde047;
+}
+
+.search-input {
+  width: 260px;
+  background: var(--glass-surface);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  padding: 0.4rem 0.85rem;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  outline: none;
+  backdrop-filter: blur(12px);
+  transition: border-color 0.15s ease;
+}
+.search-input:focus { border-color: var(--accent); }
+
+.chapter-nav-bar {
+  display: flex;
+  gap: 0.4rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+  scrollbar-width: none;
+}
+.chapter-nav-bar::-webkit-scrollbar { display: none; }
+
+.chapter-btn {
+  white-space: nowrap;
+  background: var(--glass-card);
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  padding: 0.35rem 0.85rem;
+  font-size: 0.775rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.chapter-btn:hover { color: #fff; border-color: var(--glass-border-focus); }
+.chapter-btn.active {
+  background: var(--glass-elevated);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* Reader Canvas */
+.reader-canvas {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.chapter-hero {
+  padding: 0.5rem 0 1rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+.hero-meta span { color: var(--text-muted); font-weight: 400; }
+.hero-title { font-size: 1.45rem; font-weight: 600; color: #fff; letter-spacing: -0.02em; margin-bottom: 0.35rem; }
+.hero-subtitle { font-size: 0.875rem; color: var(--text-secondary); }
+
+.section-card {
+  background: var(--glass-surface);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  padding: 2rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  transition: border-color 0.2s ease;
+}
+.section-card:hover { border-color: var(--glass-border-focus); }
+
+.section-header-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.section-header-title::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 16px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+.section-slide-container {
+  background: #000;
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.section-slide-wrap {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-slide-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.2s ease;
+}
+.section-slide-container:hover img { opacity: 0.95; }
+
+.slide-caption-bar {
+  padding: 0.65rem 1rem;
+  background: rgba(18, 19, 23, 0.95);
+  border-top: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.775rem;
+}
+.slide-caption-text { color: #e2e8f0; font-weight: 500; }
+.slide-expand-hint { color: var(--text-muted); font-size: 0.725rem; }
+
+.section-body {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  line-height: 1.75;
+}
+.section-body p { margin-bottom: 0.9rem; }
+.section-body ul, .section-body ol { padding-left: 1.25rem; margin-bottom: 1rem; }
+.section-body li { margin-bottom: 0.35rem; }
+.section-body strong { color: #f8fafc; font-weight: 600; }
+.section-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+  font-size: 0.8rem;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.section-body th, .section-body td { padding: 0.65rem 0.85rem; border: 1px solid var(--glass-border); text-align: left; }
+.section-body th { background: rgba(255, 255, 255, 0.04); color: #f8fafc; font-weight: 600; }
+.section-body tr:hover { background: rgba(255, 255, 255, 0.015); }
+.section-body code {
+  font-family: var(--font-mono);
+  font-size: 0.825em;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  color: #fed7aa;
+}
+
+/* Cheat Sheet Cards */
+.cheatsheet-panel { display: none; flex-direction: column; gap: 1.25rem; }
+.cheatsheet-hero {
+  background: var(--glass-surface);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+}
+.cheatsheet-title { font-size: 1.05rem; font-weight: 600; color: #fde047; margin-bottom: 0.25rem; }
+.cheatsheet-desc { font-size: 0.825rem; color: var(--text-secondary); }
+
+.cheat-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+.cheat-card {
+  background: var(--glass-surface);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  padding: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.cheat-badge-category { font-size: 0.675rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.03em; }
+.cheat-pair { font-size: 0.9rem; font-weight: 600; color: #fff; }
+.cheat-trap-core {
+  font-size: 0.775rem;
+  font-weight: 500;
+  color: #fcd34d;
+  background: rgba(245, 158, 11, 0.08);
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  border-left: 2px solid var(--warning);
+}
+.cheat-how-to { font-size: 0.8rem; color: #cbd5e1; line-height: 1.55; }
+
+/* Quiz Simulator */
+.quiz-panel { display: none; flex-direction: column; gap: 1.25rem; }
+.quiz-header-card {
+  background: var(--glass-surface);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.quiz-stats { display: flex; gap: 1.5rem; }
+.stat-item { display: flex; flex-direction: column; }
+.stat-label { font-size: 0.7rem; color: var(--text-muted); }
+.stat-value { font-size: 1.05rem; font-weight: 600; color: #fff; }
+
+.quiz-filters-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background: var(--glass-surface);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+}
+.filter-btn-group { display: flex; gap: 0.35rem; }
+.filter-btn {
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: var(--text-muted);
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.filter-btn:hover { color: #fff; }
+.filter-btn.active { background: var(--glass-card); border-color: var(--accent); color: #93c5fd; }
+.filter-btn.btn-wrong.active { border-color: var(--danger); color: #fca5a5; background: var(--danger-soft); }
+.filter-btn.btn-flagged.active { border-color: var(--warning); color: #fde047; background: var(--warning-soft); }
+
+.quiz-nav-actions { display: flex; gap: 0.4rem; }
+.action-btn {
+  background: var(--glass-card);
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  padding: 0.35rem 0.75rem;
+  font-size: 0.775rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.action-btn:hover { border-color: var(--glass-border-focus); color: #fff; }
+.action-btn.flagged { background: var(--warning-soft); border-color: var(--warning); color: #fde047; }
+
+.quiz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(36px, 1fr));
+  gap: 0.4rem;
+  background: var(--glass-surface);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  padding: 1rem;
+}
+.grid-num {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--glass-card);
+  border: 1px solid var(--glass-border);
+  border-radius: 6px;
+  font-size: 0.775rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.15s ease;
+}
+.grid-num:hover { border-color: var(--glass-border-focus); color: #fff; }
+.grid-num.current { border-color: var(--accent); background: var(--accent-soft); color: #93c5fd; }
+.grid-num.correct { background: var(--success-soft); border-color: var(--success); color: #6ee7b7; }
+.grid-num.wrong { background: var(--danger-soft); border-color: var(--danger); color: #fca5a5; }
+.grid-num.is-flagged::after {
+  content: "";
+  position: absolute;
+  top: 3px; right: 3px;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--warning);
+}
+
+.question-card {
+  background: var(--glass-surface);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.question-meta { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; font-size: 0.775rem; }
+.meta-badge { background: var(--glass-card); border: 1px solid var(--glass-border); padding: 0.2rem 0.55rem; border-radius: 4px; color: var(--text-muted); }
+.meta-trap { background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); color: #fcd34d; padding: 0.2rem 0.55rem; border-radius: 4px; font-weight: 500; }
+.question-text { font-size: 1rem; font-weight: 500; color: #fff; line-height: 1.55; }
+.options-list { display: flex; flex-direction: column; gap: 0.65rem; }
+.option-item {
+  background: var(--glass-card);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  padding: 0.75rem 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: #e2e8f0;
+  transition: all 0.15s ease;
+}
+.option-item:hover:not(.locked) { background: rgba(255, 255, 255, 0.04); border-color: var(--glass-border-focus); }
+.option-key {
+  font-weight: 600;
+  min-width: 22px; height: 22px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 0.775rem;
+}
+.option-item.selected-correct { background: var(--success-soft) !important; border-color: var(--success) !important; color: #fff !important; }
+.option-item.selected-correct .option-key { background: var(--success); color: #fff; }
+.option-item.selected-wrong { background: var(--danger-soft) !important; border-color: var(--danger) !important; color: #fff !important; }
+.option-item.selected-wrong .option-key { background: var(--danger); color: #fff; }
+
+.explanation-box {
+  display: none;
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 2px solid var(--warning);
+  border-radius: 0 8px 8px 0;
+  padding: 1.15rem;
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+}
+.explanation-title { font-weight: 600; color: #fcd34d; margin-bottom: 0.4rem; font-size: 0.875rem; }
+.explanation-body { color: #cbd5e1; line-height: 1.6; }
+.explanation-body p { margin-bottom: 0.45rem; }
+.explanation-body ul { padding-left: 1.15rem; }
+.explanation-body strong { color: #fff; }
+
+/* Lightbox Modal */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(9, 10, 12, 0.92);
+  backdrop-filter: blur(16px);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+.lightbox-content {
+  max-width: 90%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid var(--glass-border-focus);
+}
+.lightbox-caption { margin-top: 1rem; color: #fff; font-size: 0.9rem; font-weight: 500; text-align: center; }
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem; right: 2rem;
+  color: var(--text-muted);
+  font-size: 2rem;
+  cursor: pointer;
+  border: none; background: transparent;
+}
+.lightbox-close:hover { color: #fff; }
+
+/* Placeholder View */
+.placeholder-view {
+  display: none;
+  background: var(--glass-surface);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 4rem 2rem;
+  text-align: center;
+  flex: 1;
+}
+.placeholder-title { font-size: 1.15rem; font-weight: 600; color: #fff; margin-bottom: 0.5rem; }
+.placeholder-text { font-size: 0.85rem; color: var(--text-muted); max-width: 480px; margin: 0 auto; line-height: 1.6; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <div class="brand-label">Study Portal</div>
+    <div class="nav-tabs">
+      <button class="nav-tab active" data-subject="uxui">UX/UI Design</button>
+      <button class="nav-tab" data-subject="selected-topic">Selected Topic</button>
+      <button class="nav-tab" style="opacity:0.4; cursor:not-allowed;" title="รออัปโหลดไฟล์">DevOps</button>
+    </div>
+  </div>
+</header>
+
+<div class="main-wrapper">
+  <div class="action-bar">
+    <div class="mode-group">
+      <button class="mode-btn active" id="btnModeStudy">Study Notes</button>
+      <button class="mode-btn" id="btnModeQuiz">Exam Simulator (60 Q)</button>
+      <button class="mode-btn highlight-gold" id="btnModeCheat">จุดตายข้อสอบ (Cheat Sheet)</button>
+    </div>
+    <div class="search-container">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search keywords...">
+    </div>
+  </div>
+
+  <div class="chapter-nav-bar" id="chapterNavBar"></div>
+
+  <!-- Editorial Reader Canvas (Study Mode) -->
+  <div class="reader-canvas" id="readerCanvas">
+    <div class="chapter-hero" id="chapterHero">
+      <div class="hero-meta"><span id="heroMetaNum">CHAPTER 02</span> &bull; <span id="heroMetaTime">8 MIN READ</span></div>
+      <div class="hero-title" id="heroTitle">Psychology in UX/UI</div>
+      <div class="hero-subtitle" id="heroSubtitle">จิตวิทยาการรับรู้ 12 Dark Patterns และ 6 กฎเหล็กการตัดสินใจ</div>
+    </div>
+    <div id="sectionsList" style="display:flex; flex-direction:column; gap:1.75rem;"></div>
+  </div>
+
+  <!-- Cheat Sheet Panel -->
+  <div class="cheatsheet-panel" id="cheatSheetPanel">
+    <div class="cheatsheet-hero">
+      <div class="cheatsheet-title">จุดตายข้อสอบ UX/UI หมัดต่อหมัด (High-Yield Trap Analysis)</div>
+      <div class="cheatsheet-desc">
+        สรุปจุดตัดทางตรรกะของแนวคิดที่ข้อสอบมักนำมาตั้งโจทย์ลวง สำหรับกวาดสายตาทบทวน 10 นาทีก่อนเข้าห้องสอบ
+      </div>
+    </div>
+    <div class="cheat-cards-grid" id="cheatCardsGrid"></div>
+  </div>
+
+  <!-- Quiz Simulator Panel -->
+  <div class="quiz-panel" id="quizPanel">
+    <div class="quiz-header-card">
+      <div class="quiz-stats">
+        <div class="stat-item">
+          <span class="stat-label">Progress</span>
+          <span class="stat-value" id="statProgress">1 / 60</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Score</span>
+          <span class="stat-value" id="statScore">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Accuracy</span>
+          <span class="stat-value" id="statAccuracy">0%</span>
+        </div>
+      </div>
+      <div class="quiz-nav-actions">
+        <button class="action-btn" id="btnFlagQ">Flag Question</button>
+        <button class="action-btn" id="btnPrevQ">&larr; Prev</button>
+        <button class="action-btn" id="btnNextQ">Next &rarr;</button>
+        <button class="action-btn" id="btnResetQuiz">Reset All</button>
+      </div>
+    </div>
+
+    <!-- Active Recall Filter Row -->
+    <div class="quiz-filters-row">
+      <div class="filter-btn-group">
+        <button class="filter-btn active" id="filterAll">All (60)</button>
+        <button class="filter-btn btn-wrong" id="filterWrong">Mistakes Only (<span id="cntWrong">0</span>)</button>
+        <button class="filter-btn btn-flagged" id="filterFlagged">Flagged (<span id="cntFlagged">0</span>)</button>
+      </div>
+      <div style="font-size: 0.75rem; color: var(--text-muted);">
+        คลิกตัวเลขเพื่อกระโดดข้ามข้อ
+      </div>
+    </div>
+
+    <div class="quiz-grid" id="quizGrid"></div>
+
+    <div class="question-card" id="questionCard">
+      <div class="question-meta">
+        <span class="meta-badge" id="qMetaChapter">Chapter Name</span>
+        <span class="meta-trap" id="qMetaTrap">Exam Trap Focus</span>
+      </div>
+      <div class="question-text" id="qText">Question Stem</div>
+      <div class="options-list" id="qOptions"></div>
+      <div class="explanation-box" id="qExplanation">
+        <div class="explanation-title">Exam Trap & Concept Analysis</div>
+        <div class="explanation-body" id="qExplanationBody">Explanation</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Placeholder Panel -->
+  <div class="placeholder-view" id="placeholderView">
+    <div class="placeholder-title" id="placeholderTitle">Selected Topic in IoT</div>
+    <div class="placeholder-text" id="placeholderText">
+      แปลงไฟล์เอกสารทั้ง 8 ชุด (385 หน้า) ครบ 100% แล้ว รอระบบข้อเขียน L8-9 Span Design
+    </div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <img class="lightbox-content" id="lightboxImg" src="" alt="">
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
+<script>
+const chapters = [{"id": "Summary_2_Psychology_in_UX_UI.md", "num": "02", "title": "Psychology in UX/UI", "subtitle": "จิตวิทยาการรับรู้ 12 Dark Patterns และ 6 กฎเหล็กการตัดสินใจ", "reading_time": "8 min read", "sections": [{"title": "กระบวนการรับรู้ของมนุษย์ (Perception Process)", "body_html": "<p>การรับรู้ไม่ใช่แค่การมองเห็น แต่คือกระบวนการที่สมองคัดกรอง จัดระเบียบ และตีความสิ่งเร้า:\n1. <strong>Selection (การเลือกรับรู้):</strong> ในแต่ละวันมนุษย์เจอสิ่งเร้านับล้าน สมองจึงต้องเลือกโฟกัสเฉพาะสิ่งที่จำเป็น\n   - <strong>Selective Exposure:</strong> เลือกเปิดรับเฉพาะสิ่งที่ตรงกับความสนใจหรือความเชื่อเดิม (เช่น Feed ของ Netflix/Spotify ที่ปรับตามพฤติกรรมผู้ใช้)\n   - <strong>Selective Attention:</strong> เลือกโฟกัสเฉพาะจุดที่สมองประเมินว่าสำคัญ (เช่น การใช้สีคู่ตรงข้ามหรือขนาดปุ่ม CTA เพื่อดึงสายตา)\n   - <strong>Selective Comprehension / Distortion:</strong> ตีความข้อมูลให้เข้ากับความเชื่อเดิม หากระบบแจ้งเตือนว่า \"Error 404\" ผู้ใช้ทั่วไปจะแปลความหมายไม่ออกและรู้สึกว่าตนเองทำพัง\n   - <strong>Selective Retention:</strong> เลือกจดจำเฉพาะข้อมูลที่ตรงกับอารมณ์และความสนใจ เช่น ผู้ใช้จำขั้นตอน Tutorial 5-6 หน้าไม่ได้ทั้งหมด แต่จะจำเฉพาะปุ่มที่ตนเองต้องกดบ่อยๆ\n2. <strong>Organization (การจัดระเบียบข้อมูล):</strong> การรวมกลุ่มสิ่งเร้าให้มีความหมายตามหลัก <strong>Gestalt Theory</strong> (จิตวิทยาส่วนรวม)\n3. <strong>Interpretation (การตีความ):</strong> การแปลงข้อมูลที่ผ่านการจัดระเบียบให้กลายเป็นความหมายเชิงประสบการณ์</p>\n<hr />", "image": null, "image_title": ""}, {"title": "12 รูปแบบกลลวง Dark Patterns (จุดตายข้อสอบ)", "body_html": "<p>Dark Patterns คือการจงใจออกแบบ UI/UX เพื่อชี้นำ หลอกล่อ หรือบีบบังคับให้ผู้ใช้ตัดสินใจในสิ่งที่ส่งผลเสียต่อตนเองแต่เป็นประโยชน์ต่อธุรกิจ:\n1. <strong>False Urgency (ความเร่งด่วนปลอม):</strong> การสร้างภาพลวงตาว่าเวลาหรือสินค้าใกล้หมด เช่น \"เหลือเพียง 1 ชิ้นสุดท้าย!\" หรือนาฬิกานับถอยหลังปลอมเพื่อเร่งให้รีบจ่ายเงิน\n2. <strong>Basket Sneaking (แอบยัดของลงตะกร้า):</strong> การแอบเพิ่มสินค้าหรือบริการเสริมลงในคำสั่งซื้อโดยอัตโนมัติ เช่น แอบติ๊กเลือกซื้อประกันการเดินทางตอนจองตั๋วเครื่องบิน\n3. <strong>Confirm Shaming (การใช้ถ้อยคำประจาน/สร้างความรู้สึกผิด):</strong> การใช้คำปฏิเสธที่ทำให้ผู้ใช้รู้สึกแย่ โง่เขลา หรือรู้สึกผิด เช่น ปุ่มปฏิเสธคูปองเขียนว่า <em>\"ไม่ล่ะ ฉันไม่ชอบประหยัดเงิน\"</em> หรือ <em>\"ไม่ ฉันไม่อยากมีอนาคตที่ดี\"</em>\n4. <strong>Forced Action (การบีบบังคับให้กระทำ):</strong> การบังคับให้ผู้ใช้ต้องทำกิจกรรมบางอย่างที่ไม่เกี่ยวข้องก่อนจึงจะใช้งานต่อได้ เช่น บังคับแชร์แอปให้เพื่อน 5 คนก่อนดูเนื้อหา\n5. <strong>Subscription Trap / Roach Motel (กับดักการสมัครสมาชิก):</strong> การออกแบบให้สมัครง่ายด้วยการคลิกเพียง 1 ครั้ง แต่เวลายกเลิกกลับต้องโทรศัพท์ติดต่อศูนย์บริการ หรือซ่อนปุ่มยกเลิกไว้ลึกหลายสิบชั้น\n6. <strong>Interface Interference (การบิดเบือนการมองเห็น):</strong> การจงใจพรางปุ่มที่ผู้ใช้ต้องการให้มองเห็นยาก เช่น ปุ่มยกเลิกใช้ฟอนต์สีเทากลืนไปกับพื้นหลังสีขาว ในขณะที่ปุ่มสมัครใช้สีสดขนาดใหญ่\n7. <strong>Bait &amp; Switch (ล่อลวงแล้วสลับขั้ว):</strong> หลอกให้ผู้ใช้เข้าใจว่าจะเกิดผลลัพธ์หนึ่งแต่ระบบกลับทำอีกสิ่งหนึ่ง เช่น การกดปุ่มกากบาท [X] ที่มุมขวาบน แต่กลับกลายเป็นการดาวน์โหลดโปรแกรมแทนที่จะเป็นการปิดหน้าต่าง\n8. <strong>Drip Pricing (การทยอยบวกราคาหยดน้ำ):</strong> การแสดงราคาเริ่มต้นที่ถูกมากเพื่อดึงดูด แต่เมื่อกดเข้าสู่ขั้นตอนชำระเงิน กลับค่อยๆ ทยอยบวกค่าธรรมเนียมแอบแฝงทีละขั้นจนราคาสุดท้ายแพงกว่าความเป็นจริง\n9. <strong>Disguised Advertisement (โฆษณาแปลงร่าง):</strong> โฆษณาที่ออกแบบหน้าตาเนียนไปกับเนื้อหาจริง เช่น ปุ่ม \"Download\" ปลอมบนเว็บดาวน์โหลดไฟล์\n10. <strong>Nagging (การก่อกวนซ้ำซาก):</strong> การเด้งป๊อปอัปขัดจังหวะผู้ใช้ซ้ำๆ เพื่อขอให้ทำสิ่งเดิม เช่น ป๊อปอัปขอให้เปิดการแจ้งเตือนทุกครั้งที่เปิดหน้าใหม่\n11. <strong>Trick Question (คำถามสับขาหลอก):</strong> การใช้ภาษาที่กำกวม ปฏิเสธซ้อนปฏิเสธ เช่น <em>\"คลิกที่นี่หากคุณไม่ต้องการที่จะไม่รับข่าวสาร\"</em>\n12. <strong>SaaS Billing / Hidden Costs:</strong> การตัดเงินค่าบริการต่อเนื่องโดยไม่แจ้งเตือนล่วงหน้าหลังหมดช่วงทดลองใช้งานฟรี (Free Trial)</p>\n<hr />", "image": "UxUi/extracted_assets/slide_2_p11.png", "image_title": "12 รูปแบบ Dark Patterns ใน UX/UI"}, {"title": "ทฤษฎีภาระทางปัญญา (Cognitive Load Theory)", "body_html": "<p>ความจุของ Working Memory ในสมองมีจำกัด ภาระทางปัญญาแบ่งออกเป็น 3 ชนิด:\n- <strong>Intrinsic Cognitive Load (ภาระโดยธรรมชาติ):</strong> ความยากเชิงเนื้อหาของตัวงานเอง ไม่สามารถตัดทิ้งได้ แต่สามารถแบ่งขั้นตอน (Chunking) ได้\n- <strong>Extraneous Cognitive Load (ภาระส่วนเกิน):</strong> ภาระที่เกิดจากการออกแบบ UI ที่ห่วย แตกกระจาย รก และกำกวม <strong>(หน้าที่หลักของ UX Designer คือกำจัดภาระส่วนนี้ให้เป็นศูนย์)</strong>\n- <strong>Germane Cognitive Load (ภาระเพื่อการเรียนรู้):</strong> ภาระที่สมองใช้ประมวลผลเพื่อสร้าง Schema และจดจำรูปแบบการใช้งานใหม่</p>\n<hr />", "image": "UxUi/extracted_assets/slide_2_p40.png", "image_title": "Cognitive Load Theory (3 ภาระใน Working Memory)"}, {"title": "6 กฎเหล็กด้านจิตวิทยาการออกแบบ (Core UX Design Laws)", "body_html": "<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">กฎ (Law)</th>\n<th style=\"text-align: left;\">จุดเน้นหลัก</th>\n<th style=\"text-align: left;\">นิยามและแก่นสำคัญ</th>\n<th style=\"text-align: left;\">การประยุกต์ใช้ใน UI/UX</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"><strong>Hick’s Law</strong></td>\n<td style=\"text-align: left;\"><strong>ความคิด / การตัดสินใจ</strong></td>\n<td style=\"text-align: left;\">เวลาในการตัดสินใจจะเพิ่มขึ้นตามจำนวนและความซับซ้อนของตัวเลือก ($RT = a + b \\log_2 n$)</td>\n<td style=\"text-align: left;\">ลดตัวเลือกในเมนู, ทำระบบ Filter, แบ่งขั้นตอนการ Checkout ทีละสเต็ป</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>Fitts’s Law</strong></td>\n<td style=\"text-align: left;\"><strong>การเคลื่อนไหว / มอเตอร์</strong></td>\n<td style=\"text-align: left;\">เวลาที่ใช้ในการเคลื่อนที่ไปยังเป้าหมาย ขึ้นอยู่กับ <strong>ระยะทาง (Distance)</strong> และ <strong>ขนาดของเป้าหมาย (Size)</strong></td>\n<td style=\"text-align: left;\">ขยายขนาดปุ่ม CTA ให้ใหญ่ขึ้น, วางปุ่มสำคัญไว้ใกล้นิ้วโป้งบนจอมือถือ (Thumb Zone)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>Miller’s Law</strong></td>\n<td style=\"text-align: left;\"><strong>ข้อจำกัดความจำ</strong></td>\n<td style=\"text-align: left;\">สมองมนุษย์เก็บข้อมูลในความจำระยะสั้นได้เฉลี่ย <strong>$7 \\pm 2$ ชิ้น (Chunks)</strong></td>\n<td style=\"text-align: left;\">การแบ่งกลุ่มตัวเลข (Chunking) บัตรเครดิต $4 \\times 4$, จำกัดเมนูบาร์บนเว็บไม่เกิน 5-7 ตัว</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>Jakob’s Law</strong></td>\n<td style=\"text-align: left;\"><strong>ความคุ้นเคย (Mental Model)</strong></td>\n<td style=\"text-align: left;\">ผู้ใช้ใช้เวลาส่วนใหญ่บนเว็บไซต์อื่น ดังนั้นพวกเขาจึงคาดหวังให้เว็บของคุณทำงานเหมือนเว็บที่พวกเขาคุ้นเคย</td>\n<td style=\"text-align: left;\">วางตะกร้าสินค้าไว้มุมขวาบน, แถบ Search ไว้ด้านบน ไม่ควรประดิษฐ์แพทเทิร์นแปลกประหลาดโดยไม่จำเป็น</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>Parkinson’s Law</strong></td>\n<td style=\"text-align: left;\"><strong>เวลาและกระบวนการ</strong></td>\n<td style=\"text-align: left;\">งานจะขยายตัวออกไปเพื่อให้เต็มเวลาที่มีให้สำหรับทำงานนั้น</td>\n<td style=\"text-align: left;\">หากให้เวลากรอกฟอร์มนานเกินไปผู้ใช้จะเริ่มลังเล การใส่ Progress Bar และการกำหนดเวลาจำกัดจะช่วยเพิ่มอัตราการทำสำเร็จ</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>Tesler’s Law</strong></td>\n<td style=\"text-align: left;\"><strong>การอนุรักษ์ความซับซ้อน</strong></td>\n<td style=\"text-align: left;\">ทุกระบบมีความซับซ้อนขั้นต่ำที่ไม่สามารถกำจัดได้ ทำได้เพียงย้ายว่าจะให้ไปอยู่ที่ <strong>ฝั่งผู้ใช้</strong> หรือ <strong>ฝั่งระบบ</strong></td>\n<td style=\"text-align: left;\">แอป Grab/Uber ซ่อนระบบอัลกอริทึมคำนวณราคาและเส้นทางไว้หลังบ้าน ผู้ใช้เหลือหน้าที่แค่กดจอง</td>\n</tr>\n</tbody>\n</table>\n<hr />", "image": "UxUi/extracted_assets/slide_2_p46.png", "image_title": "Hick’s Law vs Fitts’s Law & Decision Models"}, {"title": "ปรากฏการณ์ตำแหน่งตามลำดับและผลกระทบการแยกตัว", "body_html": "<ul>\n<li><strong>Serial Position Effect:</strong> มนุษย์จะจดจำสิ่งแรก (<strong>Primacy Effect</strong>) และสิ่งสุดท้าย (<strong>Recency Effect</strong>) ได้ดีที่สุด แต่จะลืมสิ่งที่อยู่ตรงกลาง (<strong>Middle Dip</strong>)</li>\n<li><em>การนำไปใช้:</em> นำข้อมูลหรือปุ่มสำคัญที่สุดวางไว้ที่จุดเริ่มต้นและจุดสิ้นสุดของเมนูหรือหน้ารายการ</li>\n<li><strong>Von Restorff Effect (Isolation Effect):</strong> ในกลุ่มของสิ่งที่หน้าตาเหมือนกัน สิ่งที่ \"แปลกแยกหรือแตกต่าง\" ออกมาจะถูกจดจำได้ดีที่สุด</li>\n<li><em>เทคนิค 5 ด้าน:</em> Perceptual (สี/ขนาดต่าง), Conceptual/Semantic (ความหมายต่าง), Spatial (ระยะห่างต่าง), Temporal (จังหวะเวลาต่าง), Contextual (บริบทต่าง)</li>\n<li><em>การนำไปใช้:</em> การไฮไลต์การ์ดราคาแพ็กเกจ \"แนะนำ / Most Popular\" ให้มีสีสันสดใสและขนาดใหญ่กว่าแพ็กเกจอื่น</li>\n</ul>\n<hr />", "image": "UxUi/extracted_assets/slide_2_p76.png", "image_title": "Serial Position Effect (Primacy, Recency & Middle Dip)"}, {"title": "กฎแห่งการออกแรงน้อยที่สุด (The Principle of Least Effort)", "body_html": "<ul>\n<li>มนุษย์และสัตว์จะเลือกเส้นทางการกระทำที่ใช้พลังงานและแรงงานน้อยที่สุดเสมอ</li>\n<li>ใน UX เรียกว่า <strong>Minimize Interaction Cost</strong> คือการลดจำนวนการคลิก การเลื่อนหน้าจอ และการกรอกข้อความ เช่น การใช้ Autofill, การเข้าสู่ระบบด้วย Google 1-Click, การสแกนบัตรแทนการพิมพ์ตัวเลข</li>\n</ul>\n<hr />", "image": null, "image_title": ""}, {"title": "การเปรียบเทียบ: Psychologist vs UX Designer", "body_html": "<ul>\n<li><strong>จุดเหมือน:</strong> ทั้งสองสายงานต้องพึ่งพา <strong>Empathy (ความเข้าอกเข้าใจมนุษย์)</strong> ในระดับสูงสุด</li>\n<li><strong>นักจิตวิทยา (Psychologist):</strong> โฟกัสการศึกษาจิตใจ กลไกความคิด และพฤติกรรม เพื่อการบำบัด รักษา และพัฒนาสุขภาพจิต (ข้อจำกัด: เผชิญความเครียดสะสมจากการรับฟังปัญหาผู้ป่วย)</li>\n<li><strong>นักออกแบบ UX (UX Designer):</strong> หยิบหลักการจิตวิทยามาประยุกต์ใช้เพื่อแก้ปัญหาปฏิสัมพันธ์ระหว่างมนุษย์กับผลิตภัณฑ์ดิจิทัล (ข้อจำกัด: ต้องวิ่งตามเทคโนโลยี เครื่องมือ และพฤติกรรมผู้ใช้ที่เปลี่ยนไปตลอดเวลา)</li>\n</ul>\n<hr />", "image": null, "image_title": ""}], "question_count": 10}, {"id": "Summary_3_User_Journey_Persona_Problem_statement.md", "num": "03", "title": "Problem, Persona & Journey", "subtitle": "การตั้งโจทย์ด้วย 5W1H, สูตร POV, และโครงสร้าง User Journey 5 มิติ", "reading_time": "6 min read", "sections": [{"title": "การกำหนดกรอบปัญหา (Problem Statement Framing)", "body_html": "<p>Problem Statement คือเข็มทิศของการออกแบบ UX หากตั้งปัญหาผิด การแก้ปัญหาทั้งหมดจะไร้ประโยชน์:\n- <strong>หลักการ 5W1H:</strong>\n  - <strong>Who (ใคร):</strong> ใครคือผู้ประสบปัญหาอย่างแท้จริง (ระบุให้ชัดเจน ไม่ระบุกว้างเกินไป เช่น ไม่ใช่ \"คนไทยทุกคน\" แต่เป็น \"พนักงานออฟฟิศมือใหม่ที่เริ่มทำงาน\")\n  - <strong>What (เกิดอะไรขึ้น):</strong> ปัญหาหรืออุปสรรคที่เกิดขึ้นคืออะไร\n  - <strong>Where (ที่ไหน):</strong> สภาพแวดล้อมหรือบริบทที่ปัญหาเกิดขึ้น (เช่น ในรถไฟฟ้าที่สัญญาณเน็ตขาดๆ หายๆ)\n  - <strong>When (เมื่อไหร่):</strong> เกิดขึ้นตอนไหน ในขั้นตอนใดของกระบวนการ\n  - <strong>Why (ทำไม):</strong> ทำไมสิ่งนี้จึงเป็นปัญหา และส่งผลกระทบอย่างไรต่อชีวิตหรืออารมณ์ของผู้ใช้\n  - <strong>How (อย่างไร):</strong> ปัจจุบันผู้ใช้พยายามแก้ไขปัญหาหรือหลบเลี่ยงปัญหานั้นอย่างไร (Workaround)\n- <strong>สูตรการเขียน Point of View (POV):</strong>\n  $$\\text{[User/Persona]} + \\text{needs} + \\text{[User's Need]} + \\text{because} + \\text{[Surprising Insight]}$$\n  - <em>ข้อควรระวังขั้นวิกฤต:</em> ในส่วนของ <strong>Need ต้องเป็น \"ความต้องการเชิงเป้าหมาย (Goal)\" ห้ามใส่ \"วิธีการแก้ปัญหาทางเทคนิค (Solution)\" ลงไปเด็ดขาด</strong> (เช่น ห้ามเขียนว่า \"ผู้ใช้ต้องการแอปพลิเคชัน...\" เพราะแอปพลิเคชันคือโซลูชัน ไม่ใช่ Need)\n- <strong>การแปลงเป็นคำถาม How Might We (HMW):</strong>\n  - นำ POV มาเปลี่ยนเป็นประโยคคำถามเปิด เช่น \"เราจะช่วยให้ [User] สามารถ [Goal] ได้อย่างไร ในระหว่างที่ [Constraint]?\"</p>\n<hr />", "image": "UxUi/extracted_assets/slide_3_p2.png", "image_title": "การตั้งโจทย์ Problem Statement ด้วย 5W1H สู่ POV"}, {"title": "ตัวแทนผู้ใช้จำลอง (User Persona)", "body_html": "<ul>\n<li><strong>นิยามที่ถูกต้อง:</strong> บุคคลสมมุติ (Fictional Character) ที่สร้างขึ้นจาก <strong>ข้อมูลการวิจัยจริง (Data-driven from Real Research)</strong> ไม่ใช่การนั่งเทียนหรือจินตนาการขึ้นมาเองตามความชอบของดีไซเนอร์</li>\n<li><strong>กระบวนการสร้าง 3 ขั้นตอน:</strong></li>\n<li><strong>Data Gathering:</strong> การเก็บข้อมูลจริงผ่านการสัมภาษณ์เชิงลึก (In-depth Interviews), แบบสอบถาม, และการสังเกต</li>\n<li><strong>Analysis &amp; Synthesis:</strong> การจัดกลุ่มพฤติกรรม (Pattern Finding) ด้วย Affinity Diagram</li>\n<li><strong>Persona Creation:</strong> สังเคราะห์ออกมาเป็นตัวแทนของกลุ่มเป้าหมาย</li>\n<li><strong>องค์ประกอบหลักของ Persona คุณภาพสูง:</strong></li>\n<li><strong>Demographics:</strong> ชื่อ รูปภาพ อายุ อาชีพ รายได้ การศึกษา ที่อยู่อาศัย (เพื่อสร้าง Empathy ให้ทีมเห็นภาพตรงกัน)</li>\n<li><strong>Bio &amp; Context:</strong> บริบทการใช้ชีวิต ไลฟ์สไตล์ และเงื่อนไขข้อจำกัด</li>\n<li><strong>Goals &amp; Motivations:</strong> สิ่งที่ต้องการบรรลุ ทั้งเป้าหมายในชีวิตและเป้าหมายในการใช้ผลิตภัณฑ์</li>\n<li><strong>Pain Points &amp; Frustrations:</strong> อุปสรรคและความคับข้องใจที่พบในปัจจุบัน</li>\n<li><strong>Behaviors &amp; Tech Habits:</strong> ความคุ้นเคยกับเทคโนโลยี อุปกรณ์ที่ใช้ และพฤติกรรมประจำวัน</li>\n<li><strong>ข้อผิดพลาดคลาสสิกในการสร้าง Persona:</strong></li>\n<li><strong>Proto-Persona ที่ไม่ได้รับการตรวจสอบ:</strong> การสร้าง Persona จากสมมติฐานของคนในทีมแล้วนำไปใช้งานจริงโดยไม่ไปสัมภาษณ์ผู้ใช้จริง</li>\n<li><strong>Irrelevant Details:</strong> การใส่ข้อมูลที่ไม่เกี่ยวข้องกับบริบทของผลิตภัณฑ์ (เช่น ระบุว่าชอบกินชานมไข่มุกใน Persona ของโปรแกรมคำนวณโครงสร้างวิศวกรรม)</li>\n</ul>\n<hr />", "image": "UxUi/extracted_assets/slide_3_p19.png", "image_title": "โครงสร้าง User Persona จากข้อมูลวิจัยจริง"}, {"title": "แผนที่ความเข้าอกเข้าใจ (Empathy Map)", "body_html": "<p>เครื่องมือจัดระเบียบความคิดและพฤติกรรมของผู้ใช้ แบ่งเป็น 4 ช่องหลัก:\n- <strong>Says (สิ่งที่ผู้ใช้พูด):</strong> คำพูด ประโยค หรือคำบ่นที่ผู้ใช้พูดออกมาตรงๆ ระหว่างการสัมภาษณ์ (มักใส่เป็นเครื่องหมายคำพูด \"... \")\n- <strong>Thinks (สิ่งที่ผู้ใช้คิด):</strong> ความคิด ความเชื่อ ความกังวล หรือทัศนคติที่อยู่ในใจ (บางครั้งไม่กล้าพูดออกมาตรงๆ)\n- <strong>Does (สิ่งที่ผู้ใช้ทำ):</strong> พฤติกรรมที่สังเกตเห็นได้จริง การกระทำ และการโต้ตอบกับระบบ\n- <strong>Feels (สิ่งที่ผู้ใช้รู้สึก):</strong> อารมณ์ ความรู้สึก (เช่น กังวล หงุดหงิด มั่นใจ ภูมิใจ)\n- <strong>จุดตายที่ต้องจับสังเกต:</strong> ความขัดแย้งระหว่าง <strong>Says vs Does</strong> (สิ่งที่พูดไม่ตรงกับสิ่งที่ทำ เช่น ผู้ใช้บอกว่า \"ชอบฟังก์ชันค้นหาขั้นสูงมาก\" แต่เมื่อทดสอบจริงกลับไม่เคยกดใช้งานเลยแม้แต่ครั้งเดียว)</p>\n<hr />", "image": "UxUi/extracted_assets/slide_3_p13.png", "image_title": "Empathy Map (Says, Thinks, Does, Feels)"}, {"title": "แผนผังการเดินทางของผู้ใช้ (User Journey Map)", "body_html": "<p>แผนผังจำลองประสบการณ์ของผู้ใช้ตั้งแต่จุดเริ่มต้นจนบรรลุเป้าหมาย ประกอบด้วย 5 มิติหลัก:\n1. <strong>Persona:</strong> ระบุว่าการเดินทางนี้เป็นของใคร (User คนละ Persona จะมี Journey ที่ต่างกันโดยสิ้นเชิง)\n2. <strong>Process / Stages:</strong> ลำดับขั้นตอนหลักในแต่ละช่วง (เช่น Trigger -&gt; Search -&gt; Compare -&gt; Checkout -&gt; After-sales)\n   - <em>Trigger:</em> เหตุการณ์หรือสิ่งเร้าที่จุดประกายให้ผู้ใช้ต้องเริ่มทำกิจกรรม\n3. <strong>Actions / User Behavior:</strong> สิ่งที่ผู้ใช้กระทำจริงในแต่ละขั้นตอน\n4. <strong>Emotions &amp; Pain Points:</strong>\n   - <em>Emotion Curve:</em> กราฟคลื่นอารมณ์บวก/ลบ\n   - <strong>4 ประเภทของ Pain Points ในระบบ:</strong>\n     * <strong>Productivity Pain Point:</strong> อุปสรรคที่ทำให้เสียเวลา ทำงานได้ช้า เกิดความล่าช้าโดยไม่จำเป็น\n     * <strong>Support Pain Point:</strong> ไม่ได้รับความช่วยเหลือในเวลาที่ต้องการ ข้อมูลไม่ชัดเจน ไม่มีคู่มือ ไม่มีช่องทางติดต่อแอดมิน\n     * <strong>Process Pain Point:</strong> ขั้นตอนซับซ้อน ยุ่งยาก กรอกข้อมูลซ้ำซ้อน มีหลายขั้นตอนเกินความจำเป็น\n     * <strong>Design Pain Point:</strong> ความบกพร่องของ UI ตัวหนังสือเล็กเกินไป สีคอนทราสต์ต่ำ หาปุ่มไม่เจอ เมนูนำทางสับสน\n5. <strong>Ideas &amp; Impact:</strong>\n   - <em>Idea:</em> แนวทางแก้ไขปัญหาหรือฟังก์ชันการใช้งานที่เสนอขึ้นมาเพื่อลบ Pain Point\n   - <em>Impact:</em> การประเมินผลกระทบเชิงบวกต่อผู้ใช้และคุณค่าทางธุรกิจ</p>\n<hr />", "image": "UxUi/extracted_assets/slide_3_p9.png", "image_title": "User Journey Map 5 มิติของประสบการณ์"}], "question_count": 10}, {"id": "Summary_4_Ethics.md", "num": "04", "title": "Research Ethics & PDPA", "subtitle": "3 เสาหลัก Belmont Report, กลุ่มเปราะบาง, Privacy vs Confidentiality", "reading_time": "7 min read", "sections": [{"title": "ระดับการพิจารณาจริยธรรมการวิจัยในมนุษย์ (Types of Protocol Review)", "body_html": "<p>คณะกรรมการจริยธรรมการวิจัยในมนุษย์ (IRB / Ethics Committee) แบ่งการพิจารณาออกเป็น 4 รูปแบบตามระดับความเสี่ยง:\n1. <strong>Not Subject to Ethical Review (ไม่เข้าข่ายการวิจัยในมนุษย์):</strong>\n   - กิจกรรมที่ไม่เข้าข่ายการวิจัย เช่น การประเมินผลการเรียนการสอนปกติในชั้นเรียน, การประกันคุณภาพภายในองค์กร (Quality Improvement), หรือการใช้ข้อมูลทุติยภูมิ (Secondary Data) ที่เป็นสาธารณะและถูกตัดข้อมูลระบุตัวตนทิ้งโดยสิ้นเชิง\n2. <strong>Exemption Protocol (ได้รับการยกเว้นการพิจารณาเต็มคณะ):</strong>\n   - งานวิจัยที่มีความเสี่ยงต่ำมาก (Minimal Risk หรือต่ำกว่าความเสี่ยงในชีวิตประจำวัน)\n   - ไม่อยู่ในกลุ่มเปราะบาง, ไม่เก็บข้อมูลอ่อนไหว (Sensitive Data), ไม่มีการระบุตัวตนของผู้ตอบ (Anonymous Survey)\n   - <em>ข้อห้ามเด็ดขาด:</em> <strong>งานวิจัยที่มีกลุ่มเปราะบาง (Vulnerable Subjects) เข้าร่วม ห้ามขอรับการพิจารณาแบบ Exemption โดยเด็ดขาด</strong>\n3. <strong>Expedited Protocol (การพิจารณาแบบเร่งด่วน):</strong>\n   - งานวิจัยที่มีความเสี่ยงไม่เกินความเสี่ยงขั้นต่ำ (Minimal Risk)\n   - การเก็บข้อมูลแบบไม่รุกล้ำร่างกาย เช่น การอัดเสียงสัมภาษณ์, การบันทึกวิดีโอหน้าจอการทดสอบ UX ทั่วไป, หรือการวิจัยกับอาสาสมัครที่ไม่ใช่กลุ่มเสี่ยงสูง\n4. <strong>Full Board Protocol (การพิจารณาโดยคณะกรรมการชุดใหญ่เต็มคณะ):</strong>\n   - งานวิจัยที่มีความเสี่ยงมากกว่าปกติ (Greater than Minimal Risk)\n   - งานวิจัยทางการแพทย์, การทดลองยา, การทดลองที่มีความเครียดทางจิตใจสูง, การหลอกลวงหรือปกปิดข้อมูลบางส่วนระหว่างทดลอง (Deception), หรือ <strong>งานวิจัยใดๆ ที่ทำในกลุ่มเปราะบาง</strong></p>\n<hr />", "image": "UxUi/extracted_assets/slide_4_p14.png", "image_title": "เกณฑ์การพิจารณาจริยธรรม 4 ระดับ (Exemption ถึง Full Board)"}, {"title": "กลุ่มเปราะบาง (Vulnerable Subjects) ตามเกณฑ์ ICH GCP & NBAC", "body_html": "<p>กลุ่มเปราะบาง คือบุคคลที่มีข้อจำกัดในการตัดสินใจอย่างเป็นอิสระ หรือมีความเสี่ยงสูงที่จะถูกชักจูง/บีบบังคับ (Coercion or Undue Influence) แบ่งออกเป็น 5 ประเภท:\n1. <strong>Cognitive / Communicative Vulnerability (ความบกพร่องด้านการรับรู้/สื่อสาร):</strong> ผู้ป่วยสมองเสื่อม, ผู้บกพร่องทางสติปัญญา, ผู้ไม่รู้หนังสือ, เด็กเล็ก\n2. <strong>Institutional Vulnerability (ความเปราะบางจากการสังกัดสถาบัน):</strong> ผู้ที่อยู่ภายใต้การควบคุมและขาดอิสรภาพ เช่น <strong>นักโทษ, ผู้ต้องขัง, บุคคลในสถานพินิจ</strong> (กลัวว่าถ้าไม่เข้าร่วมจะเสียสิทธิประโยชน์หรือถูกลงโทษ)\n3. <strong>Deferential Vulnerability (ความเปราะบางจากลำดับชั้นบังคับบัญชา):</strong> ผู้ที่อยู่ในอำนาจปกครอง เช่น <strong>นักศึกษาหรือนักเรียน (ที่อาจารย์เป็นผู้วิจัย - กลัวได้เกรดตก), ผู้ใต้บังคับบัญชาในที่ทำงาน, ทหารเกณฑ์</strong>\n4. <strong>Medical Vulnerability (ความเปราะบางจากภาวะเจ็บป่วย):</strong> ผู้ป่วยระยะสุดท้าย, ผู้ป่วยโรคเรื้อรังที่หมดทางรักษา (อาจยอมเข้าร่วมเพราะสิ้นหวังหรือหวังว่าจะมีปาฏิหาริย์)\n5. <strong>Economic Vulnerability (ความเปราะบางทางเศรษฐกิจ):</strong> คนยากจน, ผู้ว่างงาน (อาจยอมรับความเสี่ยงอันตรายเพราะต้องการเงินค่าตอบแทนในการทดลอง)</p>\n<hr />", "image": "UxUi/extracted_assets/slide_4_p19.png", "image_title": "เกณฑ์กลุ่มเปราะบาง (Vulnerable Subjects) ตาม ICH GCP"}, {"title": "3 เสาหลักจริยธรรมพื้นฐาน: The Belmont Report (1979)", "body_html": "<p>ออกข้อสอบทุกปีและเป็นแม่แบบของจริยธรรมสากล:\n1. <strong>Respect for Persons (การเคารพในบุคคล):</strong>\n   - มนุษย์ทุกคนมีศักดิ์ศรีและมีสิทธิในการตัดสินใจด้วยตนเองอย่างเป็นอิสระ (Autonomy)\n   - การปกป้องบุคคลที่สูญเสียหรือด้อยความสามารถในการตัดสินใจ (กลุ่มเปราะบาง)\n   - <em>เครื่องมือภาคปฏิบัติ:</em> <strong>กระบวนการขอความยินยอม (Informed Consent)</strong> โดยต้องให้อิสระอย่างแท้จริงในการปฏิเสธหรือถอนตัวเมื่อใดก็ได้โดยไม่มีผลเสีย\n2. <strong>Beneficence (การก่อให้เกิดประโยชน์และไม่ก่ออันตราย):</strong>\n   - หลักการสองประการ: (1) ห้ามก่ออันตราย (Do no harm) (2) สร้างผลประโยชน์สูงสุดและลดความเสี่ยงให้น้อยที่สุด\n   - ต้องมีการประเมิน <strong>อัตราส่วนผลประโยชน์ต่อความเสี่ยง (Risk-Benefit Ratio)</strong>\n3. <strong>Justice (ความยุติธรรม):</strong>\n   - ความยุติธรรมในการจัดสรร (Distributive Justice): ใครควรเป็นผู้รับภาระความเสี่ยง และใครเป็นผู้ได้รับผลประโยชน์\n   - การคัดเลือกอาสาสมัครต้องเป็นธรรมและเท่าเทียม ห้ามเอาเปรียบกลุ่มคนยากจนหรือกลุ่มเปราะบางมารับความเสี่ยงแทนคนกลุ่มอื่น</p>\n<hr />", "image": "UxUi/extracted_assets/slide_4_p47.png", "image_title": "3 เสาหลักจริยธรรมสากล The Belmont Report (1979)"}, {"title": "ความเป็นส่วนตัวเทียบกับการรักษาความลับ (Privacy vs Confidentiality)", "body_html": "<ul>\n<li><strong>Privacy (ความเป็นส่วนตัว):</strong> สิทธิในระดับ \"ตัวบุคคล (Person)\" ในการควบคุมการเข้าถึงร่างกาย ข้อมูลส่วนตัว หรือพฤติกรรมของตนเองจากผู้อื่น</li>\n<li><strong>Confidentiality (การรักษาความลับ):</strong> พันธะสัญญาและการจัดการในระดับ \"ข้อมูล (Data)\" ของผู้วิจัย ในการปกป้องข้อมูลที่ได้รับมอบมาจากอาสาสมัครไม่ให้รั่วไหลไปสู่บุคคลที่สาม</li>\n<li><strong>วิธีการปกป้องข้อมูล:</strong></li>\n<li><strong>De-identification:</strong> การตัดชื่อ นามสกุล และเลขประจำตัวที่ระบุตัวบุคคลออก</li>\n<li><strong>Anonymization (การทำข้อมูลนิรนาม):</strong> การลบตัวเชื่อมโยงทั้งหมดออกอย่างถาวรจนไม่สามารถสืบกลับไปยังเจ้าของข้อมูลได้</li>\n<li><strong>Pseudonymization (การใช้นามแฝง/รหัส):</strong> การแทนที่ชื่อจริงด้วยรหัส (เช่น User_001) โดยเก็บตารางถอดรหัส (Key) แยกต่างหากในที่ปลอดภัยและเข้ารหัสไว้</li>\n</ul>\n<hr />", "image": null, "image_title": ""}, {"title": "กฎหมาย PDPA (พ.ร.บ. คุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562)", "body_html": "<ul>\n<li><strong>3 บทบาทสำคัญ:</strong></li>\n<li><strong>Data Subject (เจ้าของข้อมูลส่วนบุคคล):</strong> บุคคลธรรมดาซึ่งเป็นเจ้าของข้อมูล (ไม่รวมนิติบุคคล)</li>\n<li><strong>Data Controller (ผู้ควบคุมข้อมูลส่วนบุคคล):</strong> ผู้มีอำนาจตัดสินใจว่า \"จะเก็บข้อมูลอะไร และเพื่อวัตถุประสงค์ใด\" (เช่น บริษัท, เจ้าของโปรเจกต์)</li>\n<li><strong>Data Processor (ผู้ประมวลผลข้อมูลส่วนบุคคล):</strong> ผู้ดำเนินการรวบรวม ใช้ หรือเปิดเผยข้อมูล \"ตามคำสั่ง\" ของ Data Controller (เช่น ผู้ให้บริการ Cloud, แพลตฟอร์มภายนอก)</li>\n<li><strong>ข้อมูลส่วนบุคคลอ่อนไหว (Sensitive Personal Data - มาตรา 26):</strong></li>\n<li>กฎหมายห้ามเก็บรวบรวมโดยไม่ได้รับความยินยอมโดยชัดแจ้ง (Explicit Consent): ได้แก่ เชื้อชาติ, เผ่าพันธุ์, ความคิดเห็นทางการเมือง, ศาสนา/ปรัชญา, พฤติกรรมทางเพศ, ประวัติอาชญากรรม, ข้อมูลสุขภาพ, ความพิการ, ข้อมูลพันธุกรรม และ <strong>ข้อมูลชีวภาพ (Biometric Data เช่น ลายนิ้วมือ, การสแกนใบหน้า, ม่านตา)</strong></li>\n<li><strong>สิทธิของเจ้าของข้อมูล (Data Subject Rights):</strong></li>\n<li>สิทธิขอเข้าถึงและขอสำเนา, สิทธิขอให้โอนย้ายข้อมูล, สิทธิคัดค้าน, สิทธิขอให้ลบหรือทำลาย (Right to be Forgotten), สิทธิขอให้ระงับการใช้, สิทธิเพิกถอนความยินยอม (Withdraw Consent)</li>\n</ul>\n<hr />", "image": "UxUi/extracted_assets/slide_4_p83.png", "image_title": "โครงสร้างบทบาทและสิทธิตามกฎหมาย PDPA พ.ศ. 2562"}, {"title": "กระบวนการขอความยินยอม (Informed Consent)", "body_html": "<ul>\n<li>Consent คือ <strong>\"กระบวนการสื่อสาร (Process)\"</strong> ที่ต่อเนื่อง ไม่ใช่แค่การยื่นกระดาษ 1 แผ่นให้เซ็น</li>\n<li><strong>Consent by Action:</strong> การยินยอมโดยพฤติกรรม เช่น การกดปุ่ม \"ตกลงยอมรับเงื่อนไขและเข้าใช้งาน\"</li>\n<li><strong>เกณฑ์อายุในการให้ความยินยอม:</strong></li>\n<li><strong>อายุน้อยกว่า 7 ปี:</strong> ผู้แทนโดยชอบธรรม (บิดามารดา/ผู้ปกครอง) เป็นผู้ลงนามยินยอมแทนทั้งหมด</li>\n<li><strong>อายุ 7 ถึง 12 ปี:</strong> ผู้ปกครองลงนามในใบยินยอม (Consent Form) + ตัวเด็กต้องรับทราบและยินยอมในเอกสารภาษาเด็ก (Assent Form)</li>\n<li><strong>อายุ 12 ถึง 20 ปี:</strong> ต้องได้รับความยินยอมจากทั้งผู้ปกครองและผู้เยาว์ลงนามร่วมกัน (ยกเว้นผู้เยาว์ที่บรรลุนิติภาวะด้วยการสมรส)</li>\n</ul>\n<hr />", "image": null, "image_title": ""}], "question_count": 10}, {"id": "Summary_5_Usability_Test_Design_ST.md", "num": "05", "title": "Usability Test Design", "subtitle": "10 Usability Heuristics, กฎ 5 ผู้ใช้ (NN/g), และ Happy vs Unhappy Path", "reading_time": "7 min read", "sections": [{"title": "10 หลักการประเมินความง่ายในการใช้งาน (Jakob Nielsen's 10 Usability Heuristics)", "body_html": "<p>หัวใจของข้อสอบ UX สากลที่มักนำสถานการณ์จริงมาถามว่าตรงกับ Heuristics ข้อใด:\n1. <strong>Visibility of System Status (การแสดงสถานะของระบบ):</strong> ระบบต้องแจ้งให้ผู้ใช้รู้ตลอดเวลาว่าเกิดอะไรขึ้น ผ่านการตอบสนองที่เหมาะสมและทันท่วงที (เช่น หลอดโหลด Progress Bar, สัญลักษณ์ Spinner เมื่อกำลังประมวลผล, การแจ้งเตือน \"กำลังอัปโหลดไฟล์ 45%\")\n2. <strong>Match Between System and the Real World (การสอดคล้องกับโลกจริง):</strong> ระบบต้องใช้ภาษา คำศัพท์ และสัญลักษณ์ที่ผู้ใช้คุ้นเคยในชีวิตประจำวัน ไม่ใช้ศัพท์เทคนิคคอมพิวเตอร์ (เช่น ไอคอนถังขยะสำหรับลบไฟล์, ไอคอนรูปโฟลเดอร์สำหรับเก็บเอกสาร, คำว่า \"ตะกร้าสินค้า\" แทนคำว่า \"Data Buffer\")\n3. <strong>User Control and Freedom (อิสระและการควบคุมของผู้ใช้):</strong> ผู้ใช้มักกดปุ่มผิดพลาดบ่อยครั้ง ระบบต้องเตรียม \"ทางออกฉุกเฉิน (Emergency Exit)\" ให้สามารถยกเลิกหรือย้อนกลับได้ง่ายโดยไม่ต้องผ่านขั้นตอนยุ่งยาก (เช่น ปุ่ม <strong>Undo / Redo</strong>, ปุ่ม Cancel, ปุ่มย้อนกลับ)\n4. <strong>Consistency and Standards (ความสม่ำเสมอและมาตรฐาน):</strong> ผู้ใช้ไม่ควรต้องสงสัยว่าคำหรือการกระทำที่ต่างกันหมายถึงสิ่งเดียวกันหรือไม่ ทั้งความสม่ำเสมอภายในระบบ (Internal: รูปแบบปุ่ม ฟอนต์ สีเดียวกันทั้งเว็บ) และภายนอกระบบ (External: ทำตามมาตรฐานอุตสาหกรรม เช่น โลโก้คลิกแล้วกลับหน้าแรก)\n5. <strong>Error Prevention (การป้องกันความผิดพลาดล่วงหน้า):</strong> การออกแบบที่ดีต้องดักจับและป้องกันไม่ให้เกิดข้อผิดพลาดตั้งแต่แรก ดีกว่าการมาแจ้งเตือนเมื่อผิดพลาดไปแล้ว (เช่น ระบบตรวจรูปแบบอีเมลทันทีที่พิมพ์, การขึ้นกล่องเตือนยืนยัน \"คุณแน่ใจหรือไม่ว่าต้องการลบ?\", การล็อกไม่ให้เลือกวันที่ย้อนหลังในช่องจองตั๋ว)\n6. <strong>Recognition Rather Than Recall (การจำได้ดีกว่าการนึกให้ออก):</strong> ลดภาระหน่วยความจำของผู้ใช้ โดยทำให้ตัวเลือก วัตถุ และคำสั่งมองเห็นได้ชัดเจน ไม่บังคับให้ผู้ใช้ต้องจำข้อมูลจากหน้าหนึ่งไปใช้อีกหน้าหนึ่ง (เช่น ประวัติการค้นหาล่าสุด, เมนู Dropdown ให้เลือกแทนการพิมพ์เองทั้งหมด)\n7. <strong>Flexibility and Efficiency of Use (ความยืดหยุ่นและประสิทธิภาพในการใช้งาน):</strong> ระบบต้องรองรับทั้งผู้ใช้มือใหม่ (Novice) และผู้ใช้เชี่ยวชาญ (Power Users) โดยเตรียมช่องทางลัด (Accelerators) ไว้ให้ (เช่น คีย์ลัด Ctrl+C / Ctrl+V, Gestures ปัดหน้าจอ, ฟังก์ชัน Advanced Search)\n8. <strong>Aesthetic and Minimalist Design (ความสวยงามและเรียบง่าย):</strong> หน้าจอไม่ควรใส่ข้อมูลที่ไม่จำเป็นหรือไม่เกี่ยวข้อง เพราะข้อมูลส่วนเกินจะไปแย่งความสนใจและลดทอนการมองเห็นข้อมูลสำคัญ (ตัดความรก, ให้ความสำคัญกับ Whitespace)\n9. <strong>Help Users Recognize, Diagnose, and Recover from Errors (การช่วยเหลือเมื่อเกิดข้อผิดพลาด):</strong> ข้อความแจ้งเตือนความผิดพลาด (Error Message) ต้องเขียนด้วย <strong>ภาษาคนธรรมดาที่เข้าใจง่าย (Plain Language)</strong> ไม่แสดงรหัส Error Code ทางเทคนิค ต้องระบุปัญหาอย่างตรงจุด และ <strong>บอกวิธีแก้ไขอย่างชัดเจน</strong>\n10. <strong>Help and Documentation (ความช่วยเหลือและคู่มือ):</strong> แม้ระบบจะออกแบบมาให้ใช้งานง่ายจนไม่ต้องอ่านคู่มือ แต่ระบบที่ดีควรเตรียมคู่มือ คำถามที่พบบ่อย (FAQ) หรือระบบค้นหาวิธีแก้ไขปัญหาที่กระชับและค้นหาได้ง่าย</p>\n<hr />", "image": "UxUi/extracted_assets/slide_5_p2.png", "image_title": "10 Usability Heuristics สากล (Jakob Nielsen)"}, {"title": "กระบวนการออกแบบการทดสอบ (Usability Test Design Process)", "body_html": "<ol>\n<li><strong>Define Problem &amp; Objectives:</strong> ระบุปัญหาและตั้งวัตถุประสงค์เชิงปริมาณและเชิงคุณภาพ</li>\n<li><strong>Target Audience &amp; Screener:</strong> กำหนดโปรไฟล์กลุ่มเป้าหมาย และสร้างแบบคัดกรอง (Screener Questionnaire) เพื่อตัดคนที่ไม่ตรงกับ Persona ออก</li>\n<li><strong>Participant Sampling (การเลือกกลุ่มตัวอย่าง):</strong></li>\n<li><strong>กฎ 5 ผู้ใช้ของ Nielsen Norman Group (NN/g):</strong> การทดสอบกับผู้ใช้ที่เป็นตัวแทนจริงเพียง <strong>5 คน สามารถค้นพบปัญหา Usability ได้มากถึงประมาณ 85%</strong> ของระบบทั้งหมด การเพิ่มจำนวนคนมากกว่านี้จะได้ผลตอบแทนลดลง (Diminishing Returns)</li>\n<li><strong>Task &amp; Scenario Design:</strong></li>\n<li><strong>Scenario (สถานการณ์สมมติ):</strong> ต้องมีบริบทและแรงจูงใจที่สมจริง</li>\n<li><strong>Task (ภารกิจ):</strong> <strong>ต้องไม่มีคำชี้นำ (Avoid Leading Questions)</strong> ห้ามบอกชื่อปุ่มหรือตำแหน่ง เช่น ห้ามสั่งว่า <em>\"ให้คลิกปุ่มสีแดงที่มุมขวาบนเพื่อซื้อของ\"</em> แต่ต้องสั่งว่า <em>\"สมมติว่าคุณต้องการซื้อของขวัญวันเกิดให้เพื่อน 1 ชิ้น จงเลือกและสั่งซื้อสินค้าที่คุณต้องการ\"</em></li>\n<li><strong>Data Collection (การเก็บข้อมูล):</strong></li>\n<li><strong>Qualitative Data:</strong> สิ่งที่ผู้ใช้พูด บ่น สีหน้า และข้อคิดเห็น โดยใช้เทคนิค <strong>Think-Aloud Protocol</strong> (ให้ผู้ใช้พูดสิ่งที่คิดอยู่ในหัวออกมาดังๆ ขณะใช้งาน)</li>\n<li><strong>Quantitative Data:</strong> ตัวเลขที่วัดผลได้ ได้แก่<ul>\n<li><strong>Task Completion Rate (Success Rate):</strong> อัตราความสำเร็จของภารกิจ (%)</li>\n<li><strong>Time on Task:</strong> เวลาเฉลี่ยที่ใช้ในการทำภารกิจสำเร็จ</li>\n<li><strong>Error Rate:</strong> จำนวนครั้งที่คลิกผิดหรือหลงทาง</li>\n<li><strong>Single Ease Question (SEQ):</strong> คำถามวัดความง่ายหลังจบแต่ละ Task (สเกล 1-7)</li>\n</ul>\n</li>\n</ol>\n<hr />", "image": "UxUi/extracted_assets/slide_5_p28.png", "image_title": "กฎ 5 ผู้ใช้ตรวจพบปัญหา 85% (Nielsen Norman Group)"}, {"title": "การทดสอบแบบ A/B Testing", "body_html": "<ul>\n<li><strong>Control Group (Version A):</strong> หน้าจอรูปแบบดั้งเดิมที่ใช้อยู่ในปัจจุบัน</li>\n<li><strong>Treatment/Variant Group (Version B):</strong> หน้าจอที่ปรับเปลี่ยน <strong>\"ตัวแปรทดลองเพียง 1 ตัวแปร\"</strong> (เช่น เปลี่ยนสีปุ่ม CTA จากเขียวเป็นส้ม)</li>\n<li><strong>หลักการสำคัญ:</strong> ต้องปล่อยทดสอบให้ผู้ใช้สุ่มเข้าใช้งานทั้งสองเวอร์ชันพร้อมกัน เพื่อควบคุมตัวแปรภายนอก (เช่น ฤดูกาล, โปรโมชัน) และวัดผลทางสถิติว่าตัวแปรที่เปลี่ยนสร้าง Conversion ต่างกันอย่างมีนัยสำคัญหรือไม่</li>\n</ul>\n<hr />", "image": "UxUi/extracted_assets/slide_5_p41.png", "image_title": "หลักการทดสอบ A/B Testing โดยควบคุมตัวแปรเดี่ยว"}, {"title": "การทำผังการไหล: Happy Path vs Unhappy Path", "body_html": "<ul>\n<li><strong>Happy Path (เส้นทางสุขสมบูรณ์):</strong> เส้นทางการใช้งานในอุดมคติที่ทุกอย่างเป็นไปตามแผน ผู้ใช้กรอกข้อมูลถูกต้อง ระบบทำงานรวดเร็ว และบรรลุเป้าหมายสำเร็จโดยไม่มีข้อผิดพลาดใดๆ</li>\n<li><strong>Unhappy Path (เส้นทางวิบาก / ข้อผิดพลาด):</strong> เส้นทางที่เกิดปัญหา เช่น กรอกรหัสผ่านผิด, อินเทอร์เน็ตหลุดกลางคัน, ตัดบัตรเครดิตไม่ผ่าน, สินค้าหมดสต็อกระหว่างจ่ายเงิน</li>\n<li><strong>กฎเหล็กของ UX:</strong> ซอฟต์แวร์ระดับมืออาชีพวัดกันที่การออกแบบ <strong>Unhappy Path</strong> เพื่อรองรับการกู้คืนข้อผิดพลาด (Graceful Degradation / Error Recovery) ช่วยให้ผู้ใช้สามารถกลับมาสู่ Happy Path ได้โดยไม่ต้องเริ่มใหม่ทั้งหมด</li>\n</ul>\n<hr />", "image": "UxUi/extracted_assets/slide_5_p60.png", "image_title": "การเปรียบเทียบ Happy Path vs Unhappy Path (Error Recovery)"}], "question_count": 10}, {"id": "Summary_8_Wireframe_st.md", "num": "08", "title": "Wireframe & Visual Hierarchy", "subtitle": "Wireframe vs Mockup vs Prototype, 12 ชนิดต้นแบบ, 9 กฎการมองเห็น", "reading_time": "6 min read", "sections": [{"title": "การเปรียบเทียบสามเสาหลัก: Wireframe vs Mockup vs Prototype (จุดตายข้อสอบ)", "body_html": "<table>\n<thead>\n<tr>\n<th style=\"text-align: left;\">คุณสมบัติ</th>\n<th style=\"text-align: left;\">Wireframe (พิมพ์เขียวโครงร่าง)</th>\n<th style=\"text-align: left;\">Mockup (ภาพจำลองเสมือนจริง)</th>\n<th style=\"text-align: left;\">Prototype (ตัวต้นแบบจำลองปฏิสัมพันธ์)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: left;\"><strong>จุดเน้นหลัก</strong></td>\n<td style=\"text-align: left;\"><strong>โครงสร้างและตำแหน่ง (Structure &amp; Layout)</strong></td>\n<td style=\"text-align: left;\"><strong>ความสวยงามและรูปลักษณ์ (Visual &amp; Aesthetics)</strong></td>\n<td style=\"text-align: left;\"><strong>การทำงานและปฏิสัมพันธ์ (Interaction &amp; Flow)</strong></td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>ความละเอียด (Fidelity)</strong></td>\n<td style=\"text-align: left;\">ต่ำถึงปานกลาง (Low to Mid-Fidelity)</td>\n<td style=\"text-align: left;\">ปานกลางถึงสูง (Mid to High-Fidelity)</td>\n<td style=\"text-align: left;\">หลากหลาย (ตั้งแต่ Paper จนถึง High-Fi Clickable)</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>การใช้สี</strong></td>\n<td style=\"text-align: left;\">Grayscale (ขาว, ดำ, เทา)</td>\n<td style=\"text-align: left;\">Full Color (สีสันจริงตาม Brand Identity)</td>\n<td style=\"text-align: left;\">มีสีสันและดีไซน์สมบูรณ์</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>เนื้อหา (Content)</strong></td>\n<td style=\"text-align: left;\">ข้อความจำลอง (<code>Lorem Ipsum</code>), กล่องกากบาท $[X]$</td>\n<td style=\"text-align: left;\">ข้อความจริง, ฟอนต์จริง, รูปภาพคมชัดจริง</td>\n<td style=\"text-align: left;\">ข้อมูลที่พิมพ์ตอบโต้ได้จริง, ฟอร์มที่กรอกได้</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>การมีปฏิสัมพันธ์</strong></td>\n<td style=\"text-align: left;\"><strong>เป็นภาพนิ่ง (Static)</strong> ไม่มีการกดโต้ตอบ</td>\n<td style=\"text-align: left;\"><strong>เป็นภาพนิ่ง (Static)</strong> ไม่มีการกดโต้ตอบ</td>\n<td style=\"text-align: left;\"><strong>โต้ตอบได้ (Interactive / Dynamic)</strong> คลิกเปลี่ยนหน้าได้</td>\n</tr>\n<tr>\n<td style=\"text-align: left;\"><strong>เป้าหมายการใช้งาน</strong></td>\n<td style=\"text-align: left;\">คุยเรื่องโครงสร้างกับทีมและ Stakeholders</td>\n<td style=\"text-align: left;\">ส่งตรวจ Approved Mood &amp; Tone กับลูกค้า</td>\n<td style=\"text-align: left;\">ทดสอบ Usability Testing กับผู้ใช้จริง</td>\n</tr>\n</tbody>\n</table>\n<hr />", "image": "UxUi/extracted_assets/slide_8_p28.png", "image_title": "ตารางเปรียบเทียบสำคัญ: Wireframe vs Prototype"}, {"title": "ระดับความละเอียดของ Wireframe (3 Levels of Fidelity)", "body_html": "<ol>\n<li><strong>Low-Fidelity Wireframe:</strong></li>\n<li>ร่างด้วยมือบนกระดาษหรือไวท์บอร์ดอย่างรวดเร็ว (Sketches)</li>\n<li>ไม่สนใจสเกลหรือความตรงของเส้น เน้นระดมความคิดและทดลองจัดวางหลายๆ รูปแบบ (Exploration) ภายในเวลาสั้น</li>\n<li><strong>Mid-Fidelity Wireframe:</strong></li>\n<li>วาดด้วยโปรแกรมดิจิทัล (เช่น Figma, Balsamiq) ในโทนสี Grayscale</li>\n<li>มีการกำหนดระยะห่าง (Spacing &amp; Grid) ที่แน่นอนขึ้น แสดงตำแหน่งของรูปภาพด้วยกล่อง $[X]$ และใช้ข้อความจำลอง</li>\n<li><strong>High-Fidelity Wireframe:</strong></li>\n<li>โครงสร้างดิจิทัลที่มีรายละเอียดของ Typography และขนาดไอคอนตรงตามมาตราส่วนจริงอย่างแม่นยำ เพื่อเตรียมส่งต่อไปยังขั้นตอนทำ Visual Design</li>\n</ol>\n<hr />", "image": "UxUi/extracted_assets/slide_8_p12.png", "image_title": "ความละเอียด Wireframe 3 ระดับ (Low, Mid, High)"}, {"title": "กระบวนการทำ Wireframe 6 ขั้นตอน (Wireframe in 6 Steps)", "body_html": "<ol>\n<li><strong>Research &amp; Requirements:</strong> รวบรวมข้อมูลผู้ใช้ ปัญหา เป้าหมายทางธุรกิจ และข้อจำกัดทางเทคนิค</li>\n<li><strong>Information Architecture (IA) &amp; Content Inventory:</strong> จัดหมวดหมู่โครงสร้างสารสนเทศและทำบัญชีเนื้อหาทั้งหมดที่จะปรากฏบนระบบ</li>\n<li><strong>User Flow Mapping:</strong> เขียนแผนผังลำดับขั้นตอนการเดินหน้าจอของผู้ใช้ (Step-by-step navigation path)</li>\n<li><strong>Initial Sketching &amp; Layout Exploration:</strong> สเก็ตช์ไอเดียคร่าวๆ บนกระดาษเพื่อทดลองจัดวางหลายๆ ทางเลือก (ห้ามล็อกไอเดียแรกที่คิดได้)</li>\n<li><strong>Create Digital Wireframes:</strong> นำแบบร่างที่คัดเลือกแล้วมาสร้างเป็นไวร์เฟรมดิจิทัลที่มีสัดส่วนและ Grid ที่ถูกต้อง</li>\n<li><strong>Documentation &amp; Developer Handoff:</strong> เขียนคำอธิบายพฤติกรรม (Behavioral Specifications), ข้อกำหนดของระบบ และส่งมอบให้ทีมวิศวกรพัฒนาต่อ</li>\n</ol>\n<hr />", "image": "UxUi/extracted_assets/slide_8_p19.png", "image_title": "ขั้นตอนการทำ Wireframe 6 ขั้นตอน (Wireframe in 6 Steps)"}, {"title": "ประเภทของตัวต้นแบบ (Types of Prototypes)", "body_html": "<ul>\n<li><strong>Horizontal Prototype (ตัวต้นแบบแนวกว้าง):</strong></li>\n<li><strong>\"กว้างแต่ตื้น\"</strong> แสดงหน้าจอ เมนู และฟังก์ชันครอบคลุมทั้งระบบ แต่ละฟังก์ชันทำอะไรลึกๆ ไม่ได้ ไม่มีฐานข้อมูลหรือตรรกะหลังบ้าน เหมาะสำหรับการนำเสนอภาพรวมของระบบและโครงสร้างเมนู</li>\n<li><strong>Vertical Prototype (ตัวต้นแบบแนวลึก):</strong></li>\n<li><strong>\"แคบแต่ลึก\"</strong> เลือกทำเฉพาะฟังก์ชันสำคัญเพียง 1 หรือ 2 ฟังก์ชัน (เช่น ระบบชำระเงิน หรือระบบค้นหาขั้นสูง) โดยสร้างลึกตั้งแต่หน้าบ้าน เชื่อมโยง Business Logic จนถึงฐานข้อมูลจริง เหมาะสำหรับการทดสอบประสิทธิภาพทางเทคนิคและความถูกต้องของขั้นตอนที่ซับซ้อน</li>\n<li><strong>12 ชนิด Prototype ของ Christian Bourgeois (StudioRed):</strong></li>\n<li><em>Low-fi:</em> (1) Sketches &amp; Diagrams (2) Paper Prototypes</li>\n<li><em>Low/Mid-fi:</em> (3) Mockups (4) Feasibility Prototypes (Proof of Concept)</li>\n<li><em>Mid-fi:</em> (5) Video Prototypes (6) Horizontal Prototypes (7) Wireframes (8) Clickthrough Prototypes</li>\n<li><em>High-fi:</em> (9) Vertical Prototypes (10) Working Model (11) Functional Prototypes (12) MVP (Minimum Viable Product)</li>\n</ul>\n<hr />", "image": "UxUi/extracted_assets/slide_8_p27.png", "image_title": "12 ชนิด Prototype ตามแนวคิด Christian Bourgeois"}, {"title": "การจัดลำดับความสำคัญทางสายตา (Visual Hierarchy)", "body_html": "<p>การจัดวางองค์ประกอบบนหน้าจอเพื่อนำสายตาผู้ใช้ (Guide the eye) ให้เห็นสิ่งที่สำคัญที่สุดตามลำดับ ประกอบด้วย 9 องค์ประกอบ:\n1. <strong>Size (ขนาด):</strong> องค์ประกอบที่ใหญ่กว่าจะดึงดูดสายตาก่อน (เชื่อมโยงกับ Fitts's Law)\n2. <strong>Color (สี):</strong> การใช้สีที่โดดเด่นตัดกับสภาพแวดล้อมเพื่อสร้างจุดโฟกัส (Focal Point)\n3. <strong>Contrast (ความเปรียบต่าง):</strong> ความแตกต่างระหว่างพื้นหลังกับตัวอักษรหรือปุ่ม ช่วยขับเน้นความสำคัญ\n4. <strong>Alignment (การจัดแนว):</strong> การวางแนวที่เป็นระเบียบ (เช่น ซ้าย ตรงกลาง) ช่วยนำวิถีการกวาดสายตา (Eye-tracking Pattern เช่น F-Pattern หรือ Z-Pattern)\n5. <strong>Repetition (การทำซ้ำ):</strong> การใช้สไตล์ ฟอนต์ และรูปทรงซ้ำๆ เพื่อสร้างความคุ้นเคยและความเป็นเอกภาพ\n6. <strong>Proximity (ความใกล้ชิด):</strong> กฎเกสตัลท์ (Gestalt) สิ่งที่อยู่ใกล้กันจะถูกมองว่าเป็นกลุ่มข้อมูลเดียวกัน\n7. <strong>Whitespace / Negative Space (พื้นที่ว่าง):</strong> พื้นที่ว่างรอบวัตถุช่วยให้สายตาได้พัก และขับเน้นให้สิ่งที่อยู่ตรงกลางเด่นขึ้น ลด Cognitive Load\n8. <strong>Texture &amp; Style (พื้นผิวและมิติ):</strong> การใส่เงา (Drop Shadow) แสงสะท้อน หรือการยกระดับ (Elevation) เพื่อบอกสถานะว่าสิ่งนี้สามารถกดได้ (Affordance)\n9. <strong>Headings (ระดับหัวข้อ):</strong> การใช้ลำดับชั้นตัวอักษร H1, H2, H3 เพื่อจัดสัดส่วนและช่วยให้ผู้ใช้สแกนเนื้อหาได้รวดเร็ว\n- <strong>Status Quo Bias (อคติยึดติดสภาพเดิม):</strong> มนุษย์มีแนวโน้มจะต่อต้านการเปลี่ยนแปลงและชอบสิ่งที่ตนคุ้นเคย หากดีไซเนอร์เปลี่ยน UI แบบพลิกฝ่ามือ ผู้ใช้จะปฏิเสธ (เชื่อมโยงกับ Jakob's Law)</p>\n<hr />", "image": "UxUi/extracted_assets/slide_8_p39.png", "image_title": "9 องค์ประกอบของ Visual Hierarchy"}], "question_count": 10}, {"id": "Summary_9_UX_UI_measurement.md", "num": "09", "title": "UX Measurement & Statistics", "subtitle": "สูตรคำนวณ CSAT, NPS, CES, FCR, Google HEART และผังการเลือกใช้สถิติ", "reading_time": "8 min read", "sections": [{"title": "Google HEART Framework", "body_html": "<p>เฟรมเวิร์กการวัดผลผลิตภัณฑ์ดิจิทัลขนาดใหญ่ของ Google แบ่งเป็น 5 มิติ (HEART):\n- <strong>H - Happiness (ความสุข/ความพึงพอใจ):</strong> วัดทัศนคติและความรู้สึก เช่น CSAT, NPS, ความง่ายในการใช้งาน\n- <strong>E - Engagement (ความผูกพันในการใช้งาน):</strong> วัดระดับความถี่และความลึกในการมีปฏิสัมพันธ์ เช่น จำนวนครั้งที่เปิดแอปต่อสัปดาห์, จำนวนรูปที่อัปโหลด, เวลาเฉลี่ยต่อวัน\n- <strong>A - Adoption (การเปิดรับใช้งานครั้งแรก):</strong> วัดอัตราผู้ใช้ใหม่ที่เริ่มเข้ามาใช้งานหรือสมัครบัญชีใหม่ (New users) ในช่วงเวลาที่กำหนด\n- <strong>R - Retention (การกลับมาใช้งานซ้ำ):</strong> วัดอัตราผู้ใช้เดิมที่ยังคงกลับมาใช้งานต่อเนื่อง (Active users) เช่น 30-day retention, Churn Rate\n- <strong>T - Task Success (ความสำเร็จในการทำภารกิจ):</strong> วัดประสิทธิภาพการใช้งาน เช่น อัตราความสำเร็จ (Completion Rate), เวลาที่ใช้ (Time on Task), อัตราข้อผิดพลาด (Error Rate)\n- <em>กระบวนการนำไปใช้:</em> <strong>Goals (เป้าหมาย) -&gt; Signals (สัญญาณบ่งชี้) -&gt; Metrics (ตัวชี้วัดที่เป็นตัวเลข)</strong></p>\n<hr />", "image": "UxUi/extracted_assets/slide_9_p2.png", "image_title": "Google HEART Framework (Goals -> Signals -> Metrics)"}, {"title": "4 ดัชนีวัดผลความพึงพอใจและสูตรคำนวณ (จุดตายข้อสอบคำนวณ)", "body_html": "<h1></h1>", "image": "UxUi/extracted_assets/slide_9_p10.png", "image_title": "สูตรคำนวณและเกณฑ์ตัดเกรดของ NPS และ CSAT"}, {"title": "1) CSAT (Customer Satisfaction Score)", "body_html": "<ul>\n<li><strong>สเกลวัด:</strong> 1 ถึง 5 คะแนน (1 = ไม่พอใจมาก, 5 = พอใจมาก)</li>\n<li><strong>เกณฑ์สำคัญ:</strong> <strong>นับเฉพาะผู้ที่ให้คะแนน 4 และ 5 เท่านั้นเป็น \"Satisfied Responses\"</strong> (คะแนน 1, 2, 3 ไม่ถูกนับเป็นพึงพอใจ)</li>\n<li><strong>สูตรคำนวณ:</strong>\n  $$\\text{CSAT (\\%)} = \\frac{\\text{จำนวนคำตอบที่ได้คะแนน 4 และ 5}}{\\text{จำนวนผู้ตอบแบบสอบถามทั้งหมด}} \\times 100$$</li>\n</ul>\n<h1></h1>", "image": null, "image_title": ""}, {"title": "2) NPS (Net Promoter Score)", "body_html": "<ul>\n<li><strong>สเกลวัด:</strong> 0 ถึง 10 คะแนน (\"มีแนวโน้มจะแนะนำผลิตภัณฑ์นี้ให้เพื่อนมากน้อยเพียงใด\")</li>\n<li><strong>การจำแนก 3 กลุ่มผู้ตอบ:</strong></li>\n<li><strong>Promoters (ผู้สนับสนุน):</strong> คะแนน <strong>9 ถึง 10</strong></li>\n<li><strong>Passives (ผู้รู้สึกเฉยๆ):</strong> คะแนน <strong>7 ถึง 8</strong> (มีบทบาทเป็นตัวหารในจำนวนทั้งหมด แต่ <strong>ไม่ถูกนำมาคิดในสมการลบ</strong>)</li>\n<li><strong>Detractors (ผู้ติติง/ไม่ชอบ):</strong> คะแนน <strong>0 ถึง 6</strong></li>\n<li><strong>สูตรคำนวณ:</strong>\n  $$\\text{NPS} = \\% \\text{Promoters} - \\% \\text{Detractors}$$\n  <em>(ช่วงคะแนนที่เป็นไปได้คือ </em><em>$-100$ ถึง $+100$</em><em> ค่าที่เกิน 0 ถือว่าดี เกิน 50 ถือว่ายอดเยี่ยม)</em></li>\n</ul>\n<h1></h1>", "image": null, "image_title": ""}, {"title": "3) CES (Customer Effort Score)", "body_html": "<ul>\n<li><strong>นิยาม:</strong> วัด \"ความง่ายในการใช้งาน\" หรือความพยายามที่ผู้ใช้ต้องออกแรงในการทำภารกิจ (\"How easy it is\")</li>\n<li><strong>สูตรคำนวณ:</strong> คำนวณเป็นค่าเฉลี่ยเลขคณิตธรรมดา (Mean):\n  $$\\text{CES} = \\frac{\\text{ผลรวมของคะแนนทั้งหมด}}{\\text{จำนวนผู้ตอบทั้งหมด}}$$</li>\n</ul>\n<h1></h1>", "image": null, "image_title": ""}, {"title": "4) FCR (First Call Resolution)", "body_html": "<ul>\n<li><strong>นิยาม:</strong> อัตราการแก้ปัญหาจบได้ตั้งแต่การติดต่อครั้งแรกโดยไม่ต้องติดต่อซ้ำ</li>\n<li><strong>สูตรคำนวณจริง (Real FCR Formula):</strong>\n  $$\\text{FCR (\\%)} = \\frac{\\text{จำนวนเคสที่แก้จบในครั้งแรก} - \\text{จำนวนเคสที่ถูกเปิดขึ้นมาใหม่ (Reopened)}}{\\text{จำนวนเคสปัญหาทั้งหมด}} \\times 100$$</li>\n</ul>\n<hr />", "image": null, "image_title": ""}, {"title": "ผังการเลือกใช้สถิติในงานวิจัย UX/UI (Inferential Statistics Decision Tree)", "body_html": "<h1></h1>", "image": "UxUi/extracted_assets/slide_9_p20.png", "image_title": "ผังการเลือกใช้สถิติเปรียบเทียบค่าเฉลี่ย (T-test vs ANOVA)"}, {"title": "1) การแปลผลนัยสำคัญทางสถิติ ($p$-value)", "body_html": "<ul>\n<li>หาก $p\\text{-value} &lt; 0.05$ : มีความแตกต่างอย่างมีนัยสำคัญทางสถิติ (Statistically Significant) $\\rightarrow$ ยอมรับสมมติฐานว่าดีไซน์ทั้งสองแบบส่งผลต่างกันจริง</li>\n<li>หาก $p\\text{-value} \\ge 0.05$ : ไม่มีความแตกต่างอย่างมีนัยสำคัญ $\\rightarrow$ ดีไซน์ใหม่ไม่ได้ให้ผลลัพธ์ต่างจากดีไซน์เดิม</li>\n</ul>\n<h1></h1>", "image": null, "image_title": ""}, {"title": "2) การเปรียบเทียบค่าเฉลี่ย (T-test Family - สำหรับข้อมูล 1 ถึง 2 ชุด)", "body_html": "<ul>\n<li><strong>One-Sample T-test:</strong> ใช้เปรียบเทียบค่าเฉลี่ยของกลุ่มตัวอย่าง 1 กลุ่ม เข้ากับ <strong>\"เกณฑ์มาตรฐานหรือเป้าหมายที่กำหนด (Benchmark/Target)\"</strong> เช่น ทดสอบว่าเวลาเฉลี่ยของผู้ใช้ 30 คน เร็วกว่าเกณฑ์มาตรฐาน 60 วินาทีหรือไม่</li>\n<li><strong>Independent Samples T-test:</strong> ใช้เปรียบเทียบค่าเฉลี่ยของ <strong>กลุ่มตัวอย่าง 2 กลุ่มที่แยกขาดจากกัน (Between-Subjects)</strong> เช่น ใน A/B Testing ให้ผู้ใช้กลุ่ม A (30 คน) ใช้หน้าเว็บเดิม และผู้ใช้กลุ่ม B (30 คนใหม่) ใช้หน้าเว็บใหม่</li>\n<li><strong>Paired / Dependent Samples T-test:</strong> ใช้เปรียบเทียบค่าเฉลี่ยของ <strong>กลุ่มตัวอย่างกลุ่มเดิมกลุ่มเดียวที่วัดซ้ำ 2 ครั้ง (Within-Subjects / Pre-test vs Post-test)</strong> เช่น ผู้ใช้ 30 คนเดิม ทดสอบใช้ระบบเก่าก่อน แล้วมาทดสอบใช้ระบบใหม่ในภายหลัง</li>\n</ul>\n<h1></h1>", "image": null, "image_title": ""}, {"title": "3) การเปรียบเทียบค่าเฉลี่ยตั้งแต่ 3 เงื่อนไขขึ้นไป (ANOVA Family - F-test)", "body_html": "<ul>\n<li><strong>One-Way ANOVA:</strong> ทดสอบเปรียบเทียบค่าเฉลี่ยเมื่อมี <strong>ตัวแปรต้นเพียง 1 ตัว แต่มีตัวเลือกตั้งแต่ 3 กลุ่มขึ้นไป</strong> เช่น เปรียบเทียบเวลาในการคลิกปุ่มสี แดง, เขียว, น้ำเงิน</li>\n<li><strong>Two-Way ANOVA:</strong> ทดสอบเมื่อมี <strong>ตัวแปรต้น 2 ตัวแปรพร้อมกัน</strong> เช่น ทดสอบตัวแปรที่ 1 (สีพื้นหลัง: ขาว vs ดำ) ร่วมกับตัวแปรที่ 2 (ชนิดไอคอน: Abstract vs Concrete) เพื่อดูผลกระทบหลัก (Main Effect) และผลกระทบร่วม (Interaction Effect)</li>\n<li><strong>Post-Hoc Test (เช่น Tukey's HSD):</strong> ใช้ทดสอบเจาะจงรายคู่หลังจากที่ ANOVA พบว่า $p &lt; 0.05$ เพื่อชี้ชัดว่า \"คู่ไหนกันแน่ที่ต่างกันอย่างมีนัยสำคัญ\"</li>\n<li><strong>Repeated Measures ANOVA:</strong> ใช้เมื่อนำ <strong>กลุ่มตัวอย่างกลุ่มเดิม มาทดสอบซ้ำในทุกๆ เงื่อนไขตั้งแต่ 3 ระดับขึ้นไป</strong> เช่น ผู้ใช้ 30 คนเดิม ทดลองคลิกไอคอนครบทั้ง 4 ขนาด (16x16, 32x32, 48x48, 64x64)</li>\n</ul>\n<h1></h1>", "image": null, "image_title": ""}, {"title": "4) สถิติทดสอบความสัมพันธ์และการทำนาย (Relationship & Prediction)", "body_html": "<ul>\n<li><strong>Chi-Square Test ($\\chi^2$):</strong> ตรวจสอบความสัมพันธ์ระหว่าง <strong>ตัวแปรเชิงคุณภาพ/จัดหมวดหมู่ (Categorical Data)</strong> เช่น สีปุ่ม (เขียว vs ส้ม) สัมพันธ์กับพฤติกรรม (คลิกซื้อ vs ไม่คลิก) หรือไม่</li>\n<li><strong>Pearson vs Spearman Correlation:</strong></li>\n<li><strong>Pearson ($r$):</strong> วัดความสัมพันธ์เชิงเส้น (Linear) ของข้อมูลเชิงปริมาณต่อเนื่อง (Interval/Ratio Data) ค่าอยู่ระหว่าง $-1.0$ ถึง $+1.0$</li>\n<li><strong>Spearman ($\\rho$):</strong> วัดความสัมพันธ์ของข้อมูลแบบจัดลำดับ (Ordinal/Rank Data) หรือข้อมูลที่ไม่เป็นเส้นตรง</li>\n<li><strong>Linear Regression vs Logistic Regression:</strong></li>\n<li><strong>Linear Regression:</strong> ใช้ทำนาย <strong>ตัวแปรตามที่เป็นตัวเลขต่อเนื่อง (Continuous Variable)</strong> เช่น ทายเวลาในการทำงาน (วินาที) จากขนาดหน้าจอและจำนวนช่องกรอก</li>\n<li><strong>Logistic Regression:</strong> ใช้ทำนาย <strong>ตัวแปรตามที่เป็นกลุ่มทวิภาค (Binary/Categorical Outcome: 0 หรือ 1)</strong> เช่น ทายความน่าจะเป็นที่ผู้ใช้จะ \"ซื้อสำเร็จ (1)\" หรือ \"ยกเลิกตะกร้า (0)\" จากคะแนนความพึงพอใจและเวลาในเว็บ</li>\n</ul>\n<hr />", "image": null, "image_title": ""}], "question_count": 10}];
+const allQuestions = [{"id": "q_1", "chapter_id": "Summary_2_Psychology_in_UX_UI.md", "chapter_name": "02. Psychology in UX/UI", "trap_title": "กับดัก: Hick's Law vs Fitts's Law", "stem": "ในการทดสอบแอปพลิเคชันสั่งอาหาร พบว่าผู้ใช้ใช้เวลาเฉลี่ยนานถึง 45 วินาทีในการเลือกเมนูจากหน้ารวมร้านค้าที่มีตัวเลือกอาหารเรียงกันยาวกว่า 50 รายการ ดีไซเนอร์จึงปรับปรุงโดยจัดกลุ่มอาหารออกเป็นหมวดหมู่ย่อย (เช่น ต้ม, ผัด, แกง, ทอด) ส่งผลให้ระยะเวลาในการเลือกเมนูลดลงเหลือ 12 วินาที การปรับปรุงนี้สอดคล้องกับกฎข้อใดโดยตรงที่สุด?", "options": [{"key": "ก", "text": "Fitts’s Law"}, {"key": "ข", "text": "Miller’s Law"}, {"key": "ค", "text": "Hick’s Law"}, {"key": "ง", "text": "Tesler’s Law"}], "answer": "ค", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> นักศึกษามักสับสนระหว่าง Hick's Law กับ Miller's Law เพราะเห็นคำว่า \"จัดกลุ่มหมวดหมู่\"</li>\n<li><strong>ทำไมถึงเป็น Hick's Law:</strong> กุญแจสำคัญของโจทย์คือการวัด <strong>\"เวลาในการตัดสินใจ (Decision Time)\"</strong> ที่ลดลงตามการลดความซับซ้อนของตัวเลือก ซึ่งเป็นนิยามตรงตัวของ Hick's Law ($RT = a + b \\log_2 n$)</li>\n<li><strong>ทำไมข้ออื่นถึงผิด:</strong> Miller's Law เน้นเรื่องความจุของหน่วยความจำระยะสั้น ($7 \\pm 2$), Fitts's Law เน้นเรื่องระยะทางและขนาดปุ่มในการเคลื่อนนิ้วไปกด, ส่วน Tesler's Law เน้นเรื่องการย้ายความซับซ้อนของระบบ</li>\n</ul>"}, {"id": "q_2", "chapter_id": "Summary_2_Psychology_in_UX_UI.md", "chapter_name": "02. Psychology in UX/UI", "trap_title": "กับดัก: Dark Patterns - Interface Interference vs Trick Question", "stem": "เว็บไซต์จองโรงแรมแห่งหนึ่ง มีหน้าต่างป๊อปอัปเด้งขึ้นมาถามผู้ใช้ว่าต้องการรับคูปองส่วนลดหรือไม่ โดยปุ่มกดยืนยันรับส่วนลดเป็นปุ่มสีเขียวขนาดใหญ่เขียนว่า \"ฉันต้องการประหยัดเงิน\" ส่วนปุ่มปฏิเสธเป็นเพียงข้อความตัวหนังสือสีเทาอ่อนขนาดเล็ก ไม่มีกรอบปุ่ม และเขียนข้อความว่า \"ไม่ ฉันยินดีจ่ายราคาเต็มที่แพงกว่า\" พฤติกรรมการออกแบบนี้จัดเป็น Dark Patterns ชนิดใดอย่างเจาะจงที่สุด?", "options": [{"key": "ก", "text": "Confirm Shaming"}, {"key": "ข", "text": "Trick Question"}, {"key": "ค", "text": "Interface Interference"}, {"key": "ง", "text": "Fake Urgency"}], "answer": "ก", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> หลายคนเห็นข้อความปุ่มสีเทากลืนกับพื้นหลังเลยจะตอบ Interface Interference ทันที</li>\n<li><strong>ทำไมถึงเป็น Confirm Shaming:</strong> จุดตายของโจทย์อยู่ที่ข้อความ <em>\"ไม่ ฉันยินดีจ่ายราคาเต็มที่แพงกว่า\"</em> ซึ่งเป็นการใช้จิตวิทยาเล่นกับอารมณ์ความรู้สึกผิด (Guilt/Shame) ของผู้ใช้เพื่อบีบให้กดยอมรับ นี่คือนิยามที่เจาะจงที่สุดของ Confirm Shaming</li>\n<li><strong>ทำไมข้ออื่นถึงผิด:</strong> Interface Interference คือการซ่อนปุ่มโดยโครงสร้าง visual แต่ไม่มีการใช้ภาษาประจานหรือสร้างความรู้สึกผิด, Trick Question คือการใช้ไวยากรณ์ปฏิเสธซ้อนปฏิเสธสับขาหลอก</li>\n</ul>"}, {"id": "q_3", "chapter_id": "Summary_2_Psychology_in_UX_UI.md", "chapter_name": "02. Psychology in UX/UI", "trap_title": "กับดัก: Cognitive Load Theory", "stem": "ในระบบบันทึกประวัติการผ่าตัดของแพทย์ ข้อมูลทางการแพทย์มีคำศัพท์เฉพาะทางและขั้นตอนการผ่าตัดที่ซับซ้อนตามธรรมชาติอยู่แล้ว แต่ตัวซอฟต์แวร์กลับออกแบบให้มีปุ่มเมนูไอคอนขนาดเล็กที่ไม่มีป้ายกำกับข้อความ สีสันฉูดฉาดสะเปะสะปะ และต้องกดเปิดเมนูซ้อนเมนูถึง 4 ชั้นเพื่อบันทึกชื่อยา จากสถานการณ์นี้ ข้อใดระบุประเภทของภาระทางปัญญา (Cognitive Load) ได้ถูกต้องตามความเป็นจริง?", "options": [{"key": "ก", "text": "ความซับซ้อนของคำศัพท์แพทย์คือ Extraneous Load และ UI ที่รกคือ Intrinsic Load"}, {"key": "ข", "text": "ความซับซ้อนของคำศัพท์แพทย์คือ Intrinsic Load และ UI ที่รกคือ Extraneous Load"}, {"key": "ค", "text": "ความซับซ้อนของคำศัพท์แพทย์คือ Germane Load และ UI ที่รกคือ Extraneous Load"}, {"key": "ง", "text": "ทั้งความซับซ้อนของคำศัพท์แพทย์และ UI ที่รก จัดเป็น Extraneous Load ทั้งคู่"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> มักหลอกสลับความหมายระหว่าง Intrinsic (เนื้อหางานโดยธรรมชาติ) กับ Extraneous (ส่วนเกินจากการออกแบบแย่)</li>\n<li><strong>คำอธิบาย:</strong> เนื้อหาการแพทย์ที่มีความยากโดยตัวมันเอง ตัดทอนไม่ได้ เรียกว่า Intrinsic Load ส่วนเมนูที่รก ซ่อนปุ่ม ไม่มีป้ายบอก เกิดจากความผิดพลาดในการออกแบบของ UX ซึ่งเป็นภาระส่วนเกินที่ต้องกำจัด เรียกว่า Extraneous Load</li>\n</ul>"}, {"id": "q_4", "chapter_id": "Summary_2_Psychology_in_UX_UI.md", "chapter_name": "02. Psychology in UX/UI", "trap_title": "กับดัก: Tesler's Law vs Miller's Law", "stem": "แอปพลิเคชันวางแผนภาษีส่วนบุคคล ได้พัฒนาฟังก์ชันใหม่โดยให้ผู้ใช้เพียงแค่อัปโหลดรูปถ่ายเอกสาร 50 ทวิ ระบบจะใช้ระบบ OCR และ AI ดึงตัวเลขรายได้ ภาษีหัก ณ ที่จ่าย และคำนวณเงินคืนภาษีให้อัตโนมัติ โดยที่ผู้ใช้ไม่ต้องกรอกตัวเลขแม้แต่ช่องเดียว ข้อใดอธิบายการเปลี่ยนแปลงนี้ตาม Tesler’s Law ได้ถูกต้องที่สุด?", "options": [{"key": "ก", "text": "ระบบสามารถกำจัดความซับซ้อนในการคำนวณภาษีให้หมดไปจากระบบได้อย่างสมบูรณ์"}, {"key": "ข", "text": "ความซับซ้อนในการคำนวณภาษีถูกถ่ายโอนจากฝั่งผู้ใช้ (User) ไปอยู่ที่ฝั่งระบบและอัลกอริทึม (System)"}, {"key": "ค", "text": "เป็นการลดความซับซ้อนของหน่วยความจำระยะสั้นตามกฎของมิลเลอร์"}, {"key": "ง", "text": "เป็นการขยายเวลาในการคำนวณตามกฎของพาร์กินสัน"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก. หลอกว่า \"กำจัดความซับซ้อนให้หมดไปได้\" ซึ่งขัดกับหลักการพื้นฐานของ Tesler's Law โดยสิ้นเชิง เพราะ Tesler ระบุชัดเจนว่า <strong>ความซับซ้อนไม่สามารถกำจัดได้ (Conservation of Complexity)</strong> ทำได้เพียงย้ายตำแหน่งว่าจะให้ผู้ใช้รับภาระหรือให้โค้ดหลังบ้านรับภาระ</li>\n</ul>"}, {"id": "q_5", "chapter_id": "Summary_2_Psychology_in_UX_UI.md", "chapter_name": "02. Psychology in UX/UI", "trap_title": "กับดัก: Serial Position Effect vs Von Restorff Effect", "stem": "ในตารางเปรียบเทียบแพ็กเกจอินเทอร์เน็ตบ้าน 5 ระดับราคา ทีมงานออกแบบวางแพ็กเกจราคาต่ำสุดไว้ซ้ายสุด วางแพ็กเกจราคาสูงสุดไว้ขวาสุด และวางแพ็กเกจราคาปานกลางไว้ตรงกลาง โดยทำกรอบสีทองขนาดใหญ่กว่าช่องอื่น พร้อมติดป้ายว่า \"คุ้มค่าที่สุด (Best Value)\" หากผลการทดสอบพบว่าผู้ใช้จดจำและเลือกแพ็กเกจตรงกลางได้มากที่สุด ปรากฏการณ์นี้อธิบายได้ด้วยหลักการใด?", "options": [{"key": "ก", "text": "Primacy Effect"}, {"key": "ข", "text": "Recency Effect"}, {"key": "ค", "text": "Middle Dip Effect"}, {"key": "ง", "text": "Von Restorff Effect (Isolation Effect)"}], "answer": "ง", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ถ้าดูตาม Serial Position Effect ปกติตำแหน่งตรงกลางจะมีอัตราการจดจำต่ำที่สุด (Middle Dip) นักศึกษาที่ไม่รอบคอบจะสับสนว่าทำไมตรงกลางถึงเด่น</li>\n<li><strong>ทำไมถึงเป็น Von Restorff Effect:</strong> เพราะแพ็กเกจตรงกลางถูกทำให้ \"แปลกแยกและโดดเด่น (Isolated)\" ออกมาจากกลุ่มด้วยขนาดและสีทอง กฎของ Von Restorff จึงเข้ามาแทนที่และทำให้สิ่งที่แตกต่างถูกจดจำได้ดีที่สุด</li>\n</ul>"}, {"id": "q_6", "chapter_id": "Summary_2_Psychology_in_UX_UI.md", "chapter_name": "02. Psychology in UX/UI", "trap_title": "กับดัก: 4 Stages of Selective Perception", "stem": "ผู้ใช้เปิดแอปพลิเคชันธนาคารเพื่อต้องการโอนเงินด่วน ในขณะที่กำลังพิมพ์จำนวนเงิน หน้าจอได้แสดงแบนเนอร์แจ้งเตือนโปรโมชันสินเชื่อส่วนบุคคลดอกเบี้ยต่ำที่ด้านบนสุดของหน้าจอ แต่เมื่อสอบถามผู้ใช้หลังการทดสอบ ผู้ใช้กลับตอบว่า \"ไม่เห็นแบนเนอร์สินเชื่อดังกล่าวเลยแม้แต่น้อย\" พฤติกรรมนี้สะท้อนขั้นตอนใดของ Selective Perception ชัดเจนที่สุด?", "options": [{"key": "ก", "text": "Selective Exposure"}, {"key": "ข", "text": "Selective Attention"}, {"key": "ค", "text": "Selective Comprehension"}, {"key": "ง", "text": "Selective Retention"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> คนมักจำสับสนระหว่าง Selective Exposure (การเลือกเปิดรับแต่แรก เช่น ไม่กดเข้าไปดู) กับ Selective Attention (ตาจ้องหน้าจออยู่ แต่สมองคัดกรองสิ่งเร้าที่ไม่เกี่ยวข้องกับงานออกไป)</li>\n<li><strong>คำอธิบาย:</strong> ผู้ใช้อยู่ในหน้าจอแล้ว (Exposure เกิดขึ้นแล้ว) แต่สมองโฟกัสเฉพาะช่องกรอกตัวเลขโอนเงิน และตัดการรับรู้แบนเนอร์โปรโมชันทิ้งไป จึงเป็นภาวะ Selective Attention (หรือเรียกว่า Inattentional Blindness / Banner Blindness)</li>\n</ul>"}, {"id": "q_7", "chapter_id": "Summary_2_Psychology_in_UX_UI.md", "chapter_name": "02. Psychology in UX/UI", "trap_title": "กับดัก: Fitts's Law", "stem": "ตามกฎของฟิตส์ (Fitts's Law) หากต้องการออกแบบปุ่ม \"ยืนยันการชำระเงิน\" บนสมาร์ทโฟนให้ผู้ใช้สามารถกดได้สะดวกรวดเร็วและแม่นยำที่สุด ดีไซเนอร์ควรพิจารณาตามข้อใด?", "options": [{"key": "ก", "text": "วางปุ่มไว้ที่มุมซ้ายบนสุดของหน้าจอ และใช้ฟอนต์ขนาดเล็กเพื่อประหยัดพื้นที่"}, {"key": "ข", "text": "วางปุ่มไว้บริเวณขอบล่างของหน้าจอ และขยายขนาดพื้นที่สัมผัส (Hit Target) ให้กว้างเต็มหน้าจอ"}, {"key": "ค", "text": "เพิ่มจำนวนตัวเลือกวิธีการชำระเงินเป็น 10 รูปแบบ เพื่อให้ผู้ใช้ตัดสินใจได้อิสระ"}, {"key": "ง", "text": "ซ่อนปุ่มไว้ในเมนู Hamburger เพื่อลดความรกของหน้าจอ"}], "answer": "ข", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> Fitts's Law ระบุว่าเวลาเข้าถึงเป้าหมายขึ้นอยู่กับ $Distance$ (ระยะทาง) และ $Size$ (ขนาด) การวางปุ่มที่ขอบล่างจะอยู่ใกล้นิ้วโป้ง (ลด Distance) และการขยายปุ่มให้ใหญ่เต็มจอ (เพิ่ม Size) จะทำให้ค่าเวลา $MT$ ต่ำที่สุดและกดได้ง่ายที่สุด</li>\n</ul>"}, {"id": "q_8", "chapter_id": "Summary_2_Psychology_in_UX_UI.md", "chapter_name": "02. Psychology in UX/UI", "trap_title": "กับดัก: Dark Patterns - Bait & Switch vs Drip Pricing", "stem": "สายการบินราคาประหยัดโฆษณาตั๋วเครื่องบินราคา 499 บาท บนหน้าแรก แต่เมื่อผู้ใช้คลิกเข้าไป จองที่นั่ง ระบบเริ่มบวกค่าธรรมเนียมสัมภาระ 300 บาท ในหน้าถัดไปบวกค่าธรรมเนียมเลือกที่นั่ง 150 บาท และในขั้นตอนสุดท้ายก่อนจ่ายเงินบวกค่าธรรมเนียมตัดบัตรเครดิตอีก 120 บาท รวมเป็นเงิน 1,069 บาท กลลวงนี้เรียกว่าอะไร?", "options": [{"key": "ก", "text": "Bait & Switch"}, {"key": "ข", "text": "Drip Pricing"}, {"key": "ค", "text": "Basket Sneaking"}, {"key": "ง", "text": "Disguised Advertisement"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> มักเข้าใจผิดว่าเป็น Bait &amp; Switch เพราะคิดว่าตอนแรกบอก 499 บาทแต่สุดท้ายจ่ายพันกว่าบาท</li>\n<li><strong>ความต่างที่ชัดเจน:</strong></li>\n<li><strong>Drip Pricing:</strong> สินค้ายังคงเป็นชิ้นเดิม (ตั๋วเครื่องบินเดิม) แต่จงใจซ่อนค่าธรรมเนียมที่หลีกเลี่ยงไม่ได้ไว้ แล้วค่อยๆ หยดราคาเพิ่มทีละสเต็ป</li>\n<li><strong>Bait &amp; Switch:</strong> คือการล่อด้วยสิ่งหนึ่ง แต่เมื่อคลิกเข้าไปกลับเปลี่ยนเป็นสินค้าอื่น หรือไม่มีสินค้านั้นอยู่จริงแล้วยัดเยียดสินค้าแพงกว่าให้แทน</li>\n</ul>"}, {"id": "q_9", "chapter_id": "Summary_2_Psychology_in_UX_UI.md", "chapter_name": "02. Psychology in UX/UI", "trap_title": "กับดัก: Miller's Law", "stem": "ข้อใดเป็นการนำกฎของมิลเลอร์ (Miller’s Law) ไปประยุกต์ใช้ในการออกแบบ UX ได้อย่างถูกต้องตามหลักวิชาการ?", "options": [{"key": "ก", "text": "เว็บไซต์อีคอมเมิร์ซต้องจำกัดให้ขายสินค้าได้ไม่เกิน 7 ชิ้นในแต่ละหน้า"}, {"key": "ข", "text": "การออกแบบฟอร์มกรอกหมายเลขประจำตัวประชาชน 13 หลัก โดยแบ่งช่องแสดงผลเป็น 1-1234-56789-01-2"}, {"key": "ค", "text": "การจำกัดเวลาในการทำแบบทดสอบไม่ให้เกิน 7 นาที"}, {"key": "ง", "text": "การทำให้ปุ่มกดยกเลิกมีขนาดใหญ่กว่าปุ่มยืนยัน 7 เท่า"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก. เป็นความเข้าใจผิดระดับคลาสสิกของคนเรียน UX ที่คิดว่า Miller's Law คือการห้ามมีของเกิน 7 ชิ้นบนหน้าจอ</li>\n<li><strong>ความจริง:</strong> Miller's Law ไม่ได้ห้ามมีของเกิน 7 อย่าง แต่บอกว่ามนุษย์จำก้อนข้อมูลได้ $7 \\pm 2$ ก้อน ดังนั้นหัวใจของการประยุกต์ใช้คือ <strong>Chunking (การจัดกลุ่มข้อมูลย่อย)</strong> เพื่อช่วยให้หน่วยความจำระยะสั้นประมวลผลได้ง่ายขึ้น</li>\n</ul>"}, {"id": "q_10", "chapter_id": "Summary_2_Psychology_in_UX_UI.md", "chapter_name": "02. Psychology in UX/UI", "trap_title": "กับดัก: Parkinson's Law", "stem": "เว็บไซต์เปิดขายบัตรคอนเสิร์ตพบปัญหาว่า เมื่อผู้ใช้กดเลือกที่นั่งได้แล้ว มักจะค้างอยู่ในหน้ากรอกข้อมูลการจัดส่งและชำระเงินนานเกินไป ส่งผลให้ระบบล็อกที่นั่งค้างและผู้ใช้รายอื่นไม่สามารถซื้อบัตรได้ ทีมงานจึงแก้ไขโดย \"การแสดงนาฬิกานับถอยหลัง 10 นาทีเพื่อล็อกที่นั่ง หากกรอกไม่เสร็จในเวลาจะปล่อยที่นั่งให้คนอื่น\" การแก้ปัญหานี้ใช้ประโยชน์จากกฎข้อใด?", "options": [{"key": "ก", "text": "Hick's Law"}, {"key": "ข", "text": "Jakob's Law"}, {"key": "ค", "text": "Parkinson's Law"}, {"key": "ง", "text": "Tesler's Law"}], "answer": "ค", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> Parkinson's Law ระบุว่า \"งานจะขยายตัวออกไปตามเวลาที่มีให้\" หากระบบปล่อยเวลาแบบไม่จำกัด ผู้ใช้จะทำอย่างเชื่องช้า ลังเล และเสียสมาธิ การจำกัดเวลาให้กระชับ (Timeboxing) จะบีบให้ผู้ใช้โฟกัสและเร่งทำภารกิจให้เสร็จสิ้นอย่างรวดเร็วที่สุด</li>\n</ul>"}, {"id": "q_11", "chapter_id": "Summary_3_User_Journey_Persona_Problem_statement.md", "chapter_name": "03. Problem, Persona & Journey", "trap_title": "กับดัก: การเขียน Problem Statement / POV", "stem": "ข้อใดต่อไปนี้คือประโยคระบุปัญหา (Problem Statement / POV) ที่เขียนได้ถูกต้องตามหลักการของ User-Centered Design มากที่สุด?", "options": [{"key": "ก", "text": "ทีมพัฒนาของเราจำเป็นต้องสร้างแอปพลิเคชันบนมือถือที่มีระบบ AI แนะนำร้านอาหาร เพื่อเพิ่มยอดขายให้กับบริษัท"}, {"key": "ข", "text": "ผู้สูงอายุที่อยู่บ้านคนเดียวต้องการสั่งอาหารเพื่อสุขภาพผ่านสมาร์ทโฟน แต่ระบบแอปปัจจุบันมีปุ่มชำระเงินที่ซ่อนอยู่ลึก"}, {"key": "ค", "text": "มนุษย์เงินเดือนมือใหม่ต้องการวิธีบริหารจัดการเงินออมที่มีประสิทธิภาพ เพราะพวกเขาไม่มีเวลาศึกษาเรื่องกองทุนและกลัวความเสี่ยงจากการขาดทุน"}, {"key": "ง", "text": "นักศึกษาต้องการระบบเว็บไซต์ลงทะเบียนเรียนใหม่ที่ใช้เซิร์ฟเวอร์ Cloud เพื่อไม่ให้ระบบล่มในวันเปิดเทอม"}], "answer": "ค", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> นักศึกษามักเลือกข้อ ก. หรือ ง. เพราะดูมีเทคโนโลยีทันสมัย (AI, Cloud)</li>\n<li><strong>ทำไมข้อ ค. จึงถูกต้อง:</strong> เป็นข้อเดียวที่เขียนตรงตามโครงสร้าง POV: <code>[User] + needs + [Need] + because + [Insight]</code> โดยที่ Need (วิธีบริหารเงินออม) เป็น \"เป้าหมาย\" ไม่ได้ผูกขาดกับเทคโนโลยี และมี Insight ที่แสดงเหตุผลเชิงจิตวิทยาอย่างแท้จริง</li>\n<li><strong>ทำไมข้ออื่นถึงผิด:</strong> ข้อ ก. เขียนจากมุมมองของทีมธุรกิจไม่ใช่ User, ข้อ ข. ขาดองค์ประกอบ Insight, ข้อ ง. กระโดดไปล็อก Solution (ระบบเว็บที่ใช้เซิร์ฟเวอร์ Cloud) ซึ่งผิดหลักการระบุปัญหา</li>\n</ul>"}, {"id": "q_12", "chapter_id": "Summary_3_User_Journey_Persona_Problem_statement.md", "chapter_name": "03. Problem, Persona & Journey", "trap_title": "กับดัก: Empathy Map - Says vs Thinks vs Does", "stem": "ในการทดสอบและสัมภาษณ์ผู้ใช้เพื่อพัฒนาแอปพลิเคชันวางแผนการออกกำลังกาย ผู้เข้าร่วมทดสอบให้ข้อมูลว่า \"ฉันเป็นคนที่จริงจังกับการคุมอาหารและออกกำลังกายเป็นประจำทุกเช้า\" แต่เมื่อผู้ทดสอบขอเปิดดูประวัติการสั่งอาหารย้อนหลังในรอบ 1 สัปดาห์ กลับพบว่ามีการสั่งฟาสต์ฟู้ดและของหวานรอบดึกถึง 5 วัน พฤติกรรมการสั่งของหวานรอบดึกดังกล่าวควรถูกจัดลงในช่องใดของ Empathy Map?", "options": [{"key": "ก", "text": "Says"}, {"key": "ข", "text": "Thinks"}, {"key": "ค", "text": "Does"}, {"key": "ง", "text": "Feels"}], "answer": "ค", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> บางคนอาจตอบ Thinks หรือ Feels เพราะคิดว่าเป็นความต้องการตามใจปาก</li>\n<li><strong>คำอธิบาย:</strong> \"สิ่งที่ผู้ใช้พูด\" (ฉันจริงจังกับการคุมอาหาร) จัดอยู่ในช่อง <strong>Says</strong> แต่ \"การกระทำและพฤติกรรมที่เกิดขึ้นจริงและตรวจสอบได้\" (การสั่งของหวานรอบดึก) ต้องจัดอยู่ในช่อง <strong>Does</strong> ซึ่งนี่คือตัวอย่างคลาสสิกของช่องว่างระหว่าง Says vs Does ที่ดีไซเนอร์ต้องจับตามอง</li>\n</ul>"}, {"id": "q_13", "chapter_id": "Summary_3_User_Journey_Persona_Problem_statement.md", "chapter_name": "03. Problem, Persona & Journey", "trap_title": "กับดัก: 4 Types of Pain Points - Process vs Productivity", "stem": "ในเว็บไซต์ขอใบอนุญาตของหน่วยงานราชการ ผู้ใช้ต้องพิมพ์กรอกชื่อ นามสกุล เลขบัตรประชาชน และที่อยู่เดิมซ้ำกันถึง 4 หน้าในแบบฟอร์ม ส่งผลให้ผู้ใช้ต้องเสียเวลาเพิ่มขึ้นเฉลี่ย 20 นาทีในการทำรายการแต่ละครั้ง ปัญหาการต้องกรอกข้อมูลเดิมซ้ำๆ หลายหน้านี้ จัดเป็น Pain Point ประเภทใดอย่างเจาะจงที่สุด?", "options": [{"key": "ก", "text": "Process Pain Point"}, {"key": "ข", "text": "Productivity Pain Point"}, {"key": "ค", "text": "Support Pain Point"}, {"key": "ง", "text": "Design Pain Point"}], "answer": "ก", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> โจทย์ระบุว่า \"เสียเวลาเพิ่มขึ้น 20 นาที\" ทำให้นักศึกษาจำนวนมากรีบตอบ Productivity Pain Point ทันที</li>\n<li><strong>ทำไมถึงเป็น Process Pain Point:</strong> ต้นตอของปัญหา (Root Cause) เกิดจาก <strong>ขั้นตอนการทำงาน (Workflow/Process) ที่ซ้ำซ้อนและไร้ประสิทธิภาพ</strong> (การบังคับกรอกซ้ำ 4 หน้า) แม้ผลลัพธ์จะทำให้เสียเวลาก็ตาม ข้อสอบที่หลอกลึกจะวัดที่ \"แก่นของปัญหา\" ไม่ใช่วัดที่ผลกระทบปลายทาง</li>\n<li><strong>ความต่าง:</strong> Productivity Pain Point เกิดจากความเชื่องช้าของระบบหรือเครื่องมือ (เช่น เว็บโหลดอืด ประมวลผลช้า) แต่ถ้าเกิดจากขั้นตอน/ระเบียบวิธีที่วุ่นวายซ้ำซ้อน จะต้องจัดเป็น Process Pain Point</li>\n</ul>"}, {"id": "q_14", "chapter_id": "Summary_3_User_Journey_Persona_Problem_statement.md", "chapter_name": "03. Problem, Persona & Journey", "trap_title": "กับดัก: User Persona - Proto-Persona vs Research Persona", "stem": "ข้อใดต่อไปนี้กล่าวถึง User Persona ได้อย่างถูกต้องตามหลักการทางวิชาชีพ UX?", "options": [{"key": "ก", "text": "Persona ควรสร้างขึ้นจากจินตนาการและความคิดสร้างสรรค์ของทีมออกแบบ เพื่อให้ได้ตัวละครที่มีเอกลักษณ์เฉพาะตัว"}, {"key": "ข", "text": "ในหนึ่งผลิตภัณฑ์ควรสร้าง Persona เพียงคนเดียวเท่านั้น เพื่อให้ทีมงานโฟกัสการออกแบบได้ง่ายที่สุด"}, {"key": "ค", "text": "Persona เป็นตัวแทนสมมุติของกลุ่มผู้ใช้ แต่ต้องสังเคราะห์ขึ้นมาจากข้อมูลเชิงประจักษ์ของการวิจัยผู้ใช้จริง"}, {"key": "ง", "text": "การใส่รายละเอียดของอาหารที่ชอบ ดนตรีที่ฟัง และสัตว์เลี้ยงที่รัก เป็นสิ่งจำเป็นอย่างยิ่งในทุก Persona เสมอ"}], "answer": "ค", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก. มักลวงคนที่เข้าใจคำว่า \"บุคคลสมมุติ (Fictional Character)\" ผิดไปว่าหมายถึงคิดเอาเองตามใจชอบ, ส่วนข้อ ง. ลวงด้วยเทมเพลตสวยๆ ตามอินเทอร์เน็ต</li>\n<li><strong>คำอธิบาย:</strong> Persona ต้องมีรากฐานมาจาก <strong>User Research Data</strong> (เช่น สัมภาษณ์ สังเกตการณ์) การใส่รายละเอียดส่วนตัว (ข้อ ง.) ต้องใส่เฉพาะสิ่งที่ \"เกี่ยวข้องกับบริบทของผลิตภัณฑ์ (Contextual Relevance)\" เท่านั้น หากไม่เกี่ยวถือเป็นข้อมูลขยะที่ทำให้ทีมหลงทิศทาง</li>\n</ul>"}, {"id": "q_15", "chapter_id": "Summary_3_User_Journey_Persona_Problem_statement.md", "chapter_name": "03. Problem, Persona & Journey", "trap_title": "กับดัก: 4 Types of Pain Points - Design vs Support", "stem": "ผู้ใช้สูงอายุพยายามสั่งซื้อสินค้าในแอปพลิเคชัน แต่ไม่สามารถดำเนินการต่อไปได้ เนื่องจากปุ่ม \"ชำระเงิน\" ใช้ฟอนต์สีเทาอ่อนบนพื้นหลังสีขาว และไอคอนรูปตะกร้าสินค้าไม่มีคำบรรยายใต้ภาพ ทำให้ผู้ใช้มองไม่เห็นและไม่เข้าใจว่าต้องกดตรงไหน ปัญหานี้จัดเป็น Pain Point ชนิดใด?", "options": [{"key": "ก", "text": "Productivity Pain Point"}, {"key": "ข", "text": "Support Pain Point"}, {"key": "ค", "text": "Process Pain Point"}, {"key": "ง", "text": "Design Pain Point"}], "answer": "ง", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> Design Pain Point เกิดขึ้นโดยตรงจากความบกพร่องทางสุนทรียภาพ โครงสร้างหน้าจอ หรือ Visual Elements เช่น คอนทราสต์ของสีไม่ผ่านมาตรฐาน (Low Contrast), ขนาดตัวอักษรเล็กเกินไป, หรือการจัดวาง Layout ที่ชวนสับสน</li>\n</ul>"}, {"id": "q_16", "chapter_id": "Summary_3_User_Journey_Persona_Problem_statement.md", "chapter_name": "03. Problem, Persona & Journey", "trap_title": "กับดัก: User Journey Map - Trigger", "stem": "ใน User Journey Map ของแอปพลิเคชันเรียกรถพยาบาลฉุกเฉิน \"เสียงกระจกหน้าต่างแตกพร้อมกับเสียงคุณแม่ร้องขอความช่วยเหลือจากในห้องน้ำ\" จัดเป็นองค์ประกอบใดในแผนผัง?", "options": [{"key": "ก", "text": "Persona"}, {"key": "ข", "text": "Trigger"}, {"key": "ค", "text": "Action"}, {"key": "ง", "text": "Pain Point"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> บางคนอาจตอบ Pain Point เพราะเห็นว่าเป็นอุบัติเหตุ</li>\n<li><strong>คำอธิบาย:</strong> <strong>Trigger (สิ่งเร้า/ตัวกระตุ้น)</strong> คือเหตุการณ์หรือจุดเริ่มต้นภายนอกที่ผลักดันให้ผู้ใช้ต้องเข้าสู่กระบวนการใช้งานระบบ ในกรณีนี้เหตุการณ์ในห้องน้ำคือสิ่งที่ทำให้เกิดความต้องการใช้งานแอปทันที จึงเป็น Trigger ของ Journey</li>\n</ul>"}, {"id": "q_17", "chapter_id": "Summary_3_User_Journey_Persona_Problem_statement.md", "chapter_name": "03. Problem, Persona & Journey", "trap_title": "กับดัก: 4 Types of Pain Points - Support Pain Point", "stem": "ลูกค้าซื้อตั๋วเครื่องบินผ่านแอปพลิเคชันออนไลน์ แล้วถูกตัดเงินจากบัตรเครดิตไปแล้ว 2 ครั้ง แต่ไม่ได้รับอีเมลยืนยันตั๋วโดยสาร เมื่อพยายามค้นหาเบอร์โทรติดต่อศูนย์ช่วยเหลือในแอป กลับพบเพียงบอทตอบคำถามอัตโนมัติที่ตอบไม่ตรงคำถาม และไม่มีปุ่มให้ติดต่อเจ้าหน้าที่ตัวจริง ปัญหาของลูกค้ารายนี้จัดเป็น Pain Point ชนิดใด?", "options": [{"key": "ก", "text": "Process Pain Point"}, {"key": "ข", "text": "Support Pain Point"}, {"key": "ค", "text": "Productivity Pain Point"}, {"key": "ง", "text": "Design Pain Point"}], "answer": "ข", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> Support Pain Point คือภาวะที่ผู้ใช้ติดขัดปัญหาในระบบแล้ว <strong>ไม่ได้รับความช่วยเหลือ คำชี้แจง หรือการสนับสนุนที่เหมาะสม (Lack of Assistance/Guidance)</strong> การไม่มีเจ้าหน้าที่ช่วยเหลือหรือข้อมูลติดต่อแก้ปัญหา จัดเป็น Support Pain Point โดยตรง</li>\n</ul>"}, {"id": "q_18", "chapter_id": "Summary_3_User_Journey_Persona_Problem_statement.md", "chapter_name": "03. Problem, Persona & Journey", "trap_title": "กับดัก: การแปลงปัญหาเป็น How Might We", "stem": "หากกำหนด POV คือ: *\"นักศึกษาจบใหม่ต้องการวิธีเก็บเงินสำหรับฉุกเฉิน เพราะพวกเขาควบคุมค่าใช้จ่ายในการกินเลี้ยงสังสรรค์ไม่ได้\"* ข้อใดคือการตั้งคำถาม How Might We (HMW) ที่เหมาะสมที่สุดโดยไม่ตีกรอบความคิดแคบเกินไปและไม่กว้างจนจับต้องไม่ได้?", "options": [{"key": "ก", "text": "เราจะสร้างแอปพลิเคชันล็อกบัญชีธนาคารหลังเวลา 20.00 น. ได้อย่างไร?"}, {"key": "ข", "text": "เราจะช่วยให้นักศึกษาจบใหม่สนุกกับการสังสรรค์กับเพื่อนได้โดยไม่กระทบต่อเป้าหมายเงินออมฉุกเฉินได้อย่างไร?"}, {"key": "ค", "text": "เราจะทำให้เยาวชนทุกคนในประเทศไทยมีฐานะทางการเงินที่ร่ำรวยได้อย่างไร?"}, {"key": "ง", "text": "เราจะส่งการแจ้งเตือน SMS เตือนสติตอนเที่ยงคืนได้อย่างไร?"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก. และ ง. เป็น HMW ที่ <strong>แคบเกินไป (Too Narrow)</strong> เพราะระบุ Solution ลงไปแล้ว (ล็อกบัญชี, ส่ง SMS) ทำให้หมดโอกาสคิดไอเดียอื่น ส่วนข้อ ค. เป็น HMW ที่ <strong>กว้างเกินไป (Too Broad)</strong> จนไม่สามารถแปลงเป็นฟีเจอร์ที่จับต้องได้</li>\n</ul>"}, {"id": "q_19", "chapter_id": "Summary_3_User_Journey_Persona_Problem_statement.md", "chapter_name": "03. Problem, Persona & Journey", "trap_title": "กับดัก: ความสัมพันธ์ระหว่าง Persona กับ User Journey Map", "stem": "หากบริษัทมีกลุ่มลูกค้าเป้าหมาย 2 กลุ่ม คือ \"นายสมคิด (ช่างเทคนิคสูงอายุ ไม่คุ้นเคยกับเทคโนโลยี)\" และ \"น้องฟ้า (นักเรียนมัธยม ติดสมาร์ทโฟนตลอดเวลา)\" ในการทำ User Journey Map สำหรับบริการเดียวกัน ข้อใดคือแนวปฏิบัติที่ถูกต้องที่สุด?", "options": [{"key": "ก", "text": "รวมทั้งสองคนเข้ามาอยู่ใน Journey Map แผ่นเดียวกัน โดยใช้ค่าเฉลี่ยของอารมณ์และขั้นตอน"}, {"key": "ข", "text": "แยกทำ User Journey Map เป็น 2 ชุดแยกจากกันตามแต่ละ Persona"}, {"key": "ค", "text": "ทำ User Journey Map เฉพาะของน้องฟ้า เพราะเป็นกลุ่มคนรุ่นใหม่ที่มีโอกาสใช้แอปมากกว่า"}, {"key": "ง", "text": "ปรับลดขั้นตอนของระบบให้สอดคล้องกับนายสมคิดคนเดียวเท่านั้น"}], "answer": "ข", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> User แต่ละกลุ่มมีเป้าหมาย ความรู้พื้นฐาน (Mental Model), จุดติดขัด (Pain Points) และอารมณ์ที่แตกต่างกันอย่างสิ้นเชิง การนำมารวมกันในแผนผังเดียว (ข้อ ก.) จะทำให้ข้อมูลเจือจางและไม่สะท้อนความเป็นจริง จึงต้อง <strong>แยกทำ 1 Journey Map ต่อ 1 Persona เสมอ</strong></li>\n</ul>"}, {"id": "q_20", "chapter_id": "Summary_3_User_Journey_Persona_Problem_statement.md", "chapter_name": "03. Problem, Persona & Journey", "trap_title": "กับดัก: Empathy Map - Thinks vs Feels", "stem": "ในระหว่างการใช้งานแอปพลิเคชันเพื่อกู้เงินด่วน ผู้ใช้แสดงสีหน้าวิตกกังวลและมีเหงื่อซึมที่ฝ่ามือ พร้อมกับในใจเกิดความคิดว่า *\"ถ้าเพื่อนร่วมงานรู้ว่าฉันกู้เงินพวกนี้ พวกเขาต้องมองฉันไม่ดีแน่ๆ\"* ประโยคความคิดที่เกิดขึ้นในใจนี้ ควรบันทึกไว้ในช่องใดของ Empathy Map?", "options": [{"key": "ก", "text": "Feels"}, {"key": "ข", "text": "Thinks"}, {"key": "ค", "text": "Says"}, {"key": "ง", "text": "Does"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อสอบหลอกด้วยคำว่า \"วิตกกังวล\" (ซึ่งเป็น Feeling) แต่ถามเจาะจงที่ <strong>\"ประโยคความคิดในใจ\"</strong></li>\n<li><strong>คำอธิบาย:</strong> ความวิตกกังวล/เหงื่อซึม จัดอยู่ในช่อง <strong>Feels</strong> (อารมณ์และสภาวะจิตใจ) แต่ประโยคตรรกะหรือความคิดในสมองที่ว่า <em>\"ถ้าเพื่อนร่วมงานรู้...ต้องมองไม่ดี\"</em> จัดอยู่ในช่อง <strong>Thinks</strong> (กระบวนการคิด ทัศนคติ และความเชื่อภายใน)</li>\n</ul>"}, {"id": "q_21", "chapter_id": "Summary_4_Ethics.md", "chapter_name": "04. Research Ethics & PDPA", "trap_title": "กับดัก: ระดับการพิจารณาจริยธรรม - Exemption vs Expedited vs Full Board", "stem": "อาจารย์ประจำวิชาต้องการให้นักศึกษาทำแบบทดสอบประเมินหน้าจอ (UI Usability Test) ของแอปพลิเคชันสอนการเรียนรู้สำหรับเด็กออทิสติกอายุ 8-10 ปี โดยจะมีการอัดวิดีโอบันทึกพฤติกรรมการกดหน้าจอและสีหน้าของเด็กในห้องเรียน โครงการวิจัยนี้ต้องยื่นขอรับการพิจารณาจริยธรรมการวิจัยในมนุษย์รูปแบบใด?", "options": [{"key": "ก", "text": "Not Subject to Ethical Review เพราะเป็นการประเมินสื่อการเรียนการสอนในห้องเรียนปกติ"}, {"key": "ข", "text": "Exemption Protocol เพราะเป็นการทดสอบความง่ายในการใช้งานหน้าจอซึ่งมีความเสี่ยงต่ำ (Minimal Risk)"}, {"key": "ค", "text": "Expedited Protocol เพราะการอัดวิดีโอหน้าจอไม่มีการเจาะเลือดหรือรุกล้ำทางกายภาพ"}, {"key": "ง", "text": "Full Board Protocol เพราะกลุ่มเป้าหมายคือเด็กและผู้มีความบกพร่องทางพัฒนาการซึ่งเป็นกลุ่มเปราะบาง"}], "answer": "ง", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> นักศึกษามักหลงกลไปตอบข้อ ข. หรือ ค. เพราะคิดว่าแค่ทดสอบ UX ซอฟต์แวร์ ไม่ได้เจาะเลือด ย่อมเป็น Minimal Risk</li>\n<li><strong>กฎเหล็กของจริยธรรม:</strong> งานวิจัยใดๆ ก็ตามที่มี <strong>กลุ่มเปราะบาง (Vulnerable Subjects: เด็ก และผู้บกพร่องทางสติปัญญา/ออทิสติก)</strong> เข้าร่วม จะถูกตัดสิทธิ์จากการขอ Exemption และ Expedited ทันที และ <strong>ต้องเข้าสู่การพิจารณาโดยคณะกรรมการชุดใหญ่ (Full Board Protocol) เท่านั้น</strong></li>\n</ul>"}, {"id": "q_22", "chapter_id": "Summary_4_Ethics.md", "chapter_name": "04. Research Ethics & PDPA", "trap_title": "กับดัก: 3 เสาหลัก Belmont Report - Beneficence vs Justice", "stem": "ทีมนักวิจัย UX ได้รับทุนสนับสนุนจากบริษัทยายักษ์ใหญ่เพื่อพัฒนาแอปพลิเคชันแจ้งเตือนผลข้างเคียงของยาชนิดใหม่ ทีมงานจึงไปเกณฑ์ผู้ป่วยยากจนในสลัมที่ไม่รู้หนังสือมาทำการทดลองระบบเพื่อรับเงินค่าตอบแทนวันละ 500 บาท แต่เมื่อแอปพลิเคชันและยาดังกล่าวพัฒนาสำเร็จ กลับตั้งราคาจำหน่ายแพงลิบลิ่วจนคนจนกลุ่มที่เข้าร่วมทดลองไม่สามารถเข้าถึงได้ พฤติกรรมของทีมวิจัยนี้ละเมิดหลักการใดของ The Belmont Report ชัดเจนที่สุด?", "options": [{"key": "ก", "text": "Respect for Persons"}, {"key": "ข", "text": "Beneficence"}, {"key": "ค", "text": "Justice"}, {"key": "ง", "text": "Confidentiality"}], "answer": "ค", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> มักสับสนกับ Beneficence (เรื่องผลประโยชน์)</li>\n<li><strong>ทำไมถึงเป็น Justice:</strong> หัวใจของหลักความยุติธรรม (Justice) คือ <strong>ความยุติธรรมเชิงจัดสรร (Distributive Justice)</strong> ซึ่งระบุว่า \"ผู้ที่ต้องแบกรับภาระความเสี่ยงจากการวิจัย ต้องเป็นผู้ที่มีสิทธิได้รับผลประโยชน์จากการวิจัยนั้นด้วย\" การนำคนจนมารับความเสี่ยงในการทดลอง แต่ผลประโยชน์กลับตกแก่คนรวยกลุ่มเดียว ถือเป็นการละเมิดหลัก Justice อย่างร้ายแรงที่สุด</li>\n</ul>"}, {"id": "q_23", "chapter_id": "Summary_4_Ethics.md", "chapter_name": "04. Research Ethics & PDPA", "trap_title": "กับดัก: กลุ่มเปราะบาง Deferential Vulnerability", "stem": "อาจารย์ท่านหนึ่งประกาศในชั้นเรียนว่า \"ขอให้นักศึกษาทุกคนในห้องนี้เข้าไปร่วมทดสอบแอปพลิเคชันที่อาจารย์กำลังวิจัยอยู่ โดยนักศึกษาที่เข้าร่วมจะได้รับคะแนนพิเศษ 5 คะแนน หากใครไม่สะดวกเข้าร่วมจะไม่มีการหักคะแนนใดๆ\" สถานการณ์นี้เข้าข่ายภาวะเปราะบางประเภทใดของอาสาสมัคร?", "options": [{"key": "ก", "text": "Cognitive Vulnerability"}, {"key": "ข", "text": "Institutional Vulnerability"}, {"key": "ค", "text": "Deferential Vulnerability"}, {"key": "ง", "text": "Medical Vulnerability"}], "answer": "ค", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> คนมักจำสับสนกับ Institutional Vulnerability (ซึ่งใช้กับนักโทษ/สถานพินิจ)</li>\n<li><strong>คำอธิบาย:</strong> <strong>Deferential Vulnerability</strong> เกิดจากภาวะที่บุคคลอยู่ภายใต้อำนาจตามลำดับขั้นบังคับบัญชา (Hierarchy) เช่น นักเรียน-อาจารย์ หรือ พนักงาน-หัวหน้างาน แม้อาจารย์จะบอกว่าไม่หักคะแนน แต่นักศึกษาจะเกิดความกลัวโดยปริยายว่าหากไม่เข้าร่วมอาจารย์จะเพ่งเล็งหรือให้เกรดแย่ลง ทำให้ขาดเสรีภาพในการตัดสินใจอย่างแท้จริง</li>\n</ul>"}, {"id": "q_24", "chapter_id": "Summary_4_Ethics.md", "chapter_name": "04. Research Ethics & PDPA", "trap_title": "กับดัก: Privacy vs Confidentiality", "stem": "ในการเก็บข้อมูล Usability Testing ผู้วิจัยได้นำข้อมูลบทสนทนาสัมภาษณ์และประวัติสุขภาพจิตของผู้เข้าร่วมวิจัยไปโพสต์ลงในเฟซบุ๊กส่วนตัวเพื่อเล่าเป็นอุทาหรณ์ โดยที่ผู้วิจัยไม่ได้ระบุชื่อจริงหรือนามสกุล แต่ปรากฏว่ามีเพื่อนสนิทของผู้เข้าร่วมวิจัยจำเรื่องราวดังกล่าวได้และรู้ทันทีว่าเป็นใคร การกระทำนี้ของผู้วิจัยถือเป็นการละเมิดสิ่งใดโดยตรงที่สุด?", "options": [{"key": "ก", "text": "Breach of Privacy"}, {"key": "ข", "text": "Breach of Confidentiality"}, {"key": "ค", "text": "Breach of Beneficence"}, {"key": "ง", "text": "Violation of Autonomy"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อสอบชอบหลอกระหว่าง Privacy (ความเป็นส่วนตัว) กับ Confidentiality (การรักษาความลับ)</li>\n<li><strong>ความต่างที่ชัดเจน:</strong> ผู้เข้าร่วมวิจัยได้ยินยอมเปิดเผยข้อมูลส่วนตัวให้ผู้วิจัยทราบแล้วในห้องทดสอบ (จึงไม่ได้ถูกรุกล้ำ Privacy) แต่ <strong>ผู้วิจัยมีหน้าที่ตามพันธะสัญญาที่จะต้องเก็บรักษาข้อมูลนั้นเป็นความลับ (Confidentiality)</strong> การนำข้อมูลไปเผยแพร่จนมีบุคคลที่สามสืบย้อนกลับมารู้ตัวตนได้ เรียกว่า <strong>การละเมิดความลับ (Breach of Confidentiality)</strong></li>\n</ul>"}, {"id": "q_25", "chapter_id": "Summary_4_Ethics.md", "chapter_name": "04. Research Ethics & PDPA", "trap_title": "กับดัก: บทบาทตามกฎหมาย PDPA - Controller vs Processor", "stem": "บริษัทสตาร์ทอัพแห่งหนึ่งว่าจ้างบริษัทรับจ้างทำวิจัยภายนอก (Research Agency) เพื่อทำการเก็บข้อมูลและสัมภาษณ์ผู้ใช้จำนวน 100 คน โดยบริษัทสตาร์ทอัพเป็นผู้กำหนดคำถาม วัตถุประสงค์ และเกณฑ์การคัดเลือกทั้งหมด จากสถานการณ์นี้ ตามกฎหมาย PDPA ข้อใดระบุสถานะของแต่ละองค์กรได้ถูกต้อง?", "options": [{"key": "ก", "text": "บริษัทสตาร์ทอัพเป็น Data Subject และ Research Agency เป็น Data Controller"}, {"key": "ข", "text": "บริษัทสตาร์ทอัพเป็น Data Controller และ Research Agency เป็น Data Processor"}, {"key": "ค", "text": "บริษัทสตาร์ทอัพเป็น Data Processor และ Research Agency เป็น Data Controller"}, {"key": "ง", "text": "ทั้งสองบริษัทมีสถานะเป็น Data Controller ร่วมกัน"}], "answer": "ข", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> ตาม PDPA องค์กรที่มีอำนาจตัดสินใจว่า \"จะเก็บข้อมูลอะไร และทำเพื่ออะไร\" คือ <strong>Data Controller (ผู้ควบคุมข้อมูล)</strong> ส่วนองค์กรภายนอกที่ทำหน้าที่เก็บรวบรวมหรือประมวลผลข้อมูลตามคำสั่งและขอบเขตที่ผู้ควบคุมกำหนด คือ <strong>Data Processor (ผู้ประมวลผลข้อมูล)</strong></li>\n</ul>"}, {"id": "q_26", "chapter_id": "Summary_4_Ethics.md", "chapter_name": "04. Research Ethics & PDPA", "trap_title": "กับดัก: ข้อมูลส่วนบุคคลอ่อนไหว Sensitive Data ตาม PDPA", "stem": "ในการออกแบบระบบล็อกอินของแอปพลิเคชันฟิตเนส ข้อใดต่อไปนี้จัดเป็น \"ข้อมูลส่วนบุคคลที่มีความอ่อนไหวเป็นพิเศษ (Sensitive Personal Data)\" ตามมาตรา 26 ของ PDPA ซึ่งต้องขอความยินยอมโดยชัดแจ้ง (Explicit Consent) เท่านั้น?", "options": [{"key": "ก", "text": "หมายเลขโทรศัพท์มือถือและอีเมลที่ใช้สมัคร"}, {"key": "ข", "text": "น้ำหนักและส่วนสูงที่ผู้ใช้กรอกลงในโปรไฟล์"}, {"key": "ค", "text": "ข้อมูลภาพสแกนใบหน้า (Face Recognition) เพื่อยืนยันตัวตนก่อนเข้ายิม"}, {"key": "ง", "text": "ประวัติการกดไลก์บทความการออกกำลังกายในแอป"}], "answer": "ค", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> หลายคนคิดว่าน้ำหนักส่วนสูงคือข้อมูลสุขภาพที่อ่อนไหว แต่น้ำหนักส่วนสูงทั่วไปในแอปฟิตเนสถือเป็น Personal Data ปกติ</li>\n<li><strong>คำอธิบาย:</strong> ข้อมูลภาพสแกนใบหน้าเพื่อการยืนยันตัวตน จัดเป็น <strong>ข้อมูลชีวภาพ (Biometric Data)</strong> ซึ่งถูกระบุไว้ในมาตรา 26 ชัดเจนว่าเป็น <strong>Sensitive Data</strong> ที่มีบทลงโทษรุนแรงหากนำไปใช้โดยไม่มี Explicit Consent</li>\n</ul>"}, {"id": "q_27", "chapter_id": "Summary_4_Ethics.md", "chapter_name": "04. Research Ethics & PDPA", "trap_title": "กับดัก: การให้ความยินยอมของผู้เยาว์ Consent by Age", "stem": "ทีมนักศึกษาต้องการทดสอบความพึงพอใจต่อเกมการศึกษาบนแท็บเล็ต โดยกลุ่มตัวอย่างคือนักเรียนชั้นประถมศึกษาปีที่ 4 อายุ 10 ขวบ ในการขอความยินยอมเข้าร่วมวิจัย ข้อใดคือแนวปฏิบัติที่ถูกต้องตามหลักจริยธรรม?", "options": [{"key": "ก", "text": "ให้เด็กอายุ 10 ขวบลงนามในใบยินยอม (Informed Consent Form) ด้วยตนเองคนเดียวก็เพียงพอ เพราะเด็กสามารถอ่านออกเขียนได้แล้ว"}, {"key": "ข", "text": "ให้เฉพาะผู้ปกครองลงนามในใบยินยอมเพียงฝ่ายเดียว โดยไม่ต้องบอกรายละเอียดใดๆ แก่เด็กเพื่อป้องกันความสับสน"}, {"key": "ค", "text": "ผู้ปกครองต้องลงนามในใบยินยอม (Consent Form) และต้องจัดทำเอกสารความเห็นชอบภาษาเด็ก (Assent Form) ให้เด็กเข้าใจและยินยอมด้วย"}, {"key": "ง", "text": "ไม่ต้องขอความยินยอมจากใครเลย เพราะเกมการศึกษาไม่มีความเสี่ยงทางกายภาพ"}], "answer": "ค", "explanation": "<ul>\n<li><strong>กฎเกณฑ์ทางจริยธรรม:</strong> เด็กช่วงอายุ <strong>7 ถึง 12 ปี</strong> ถือว่ามีความสามารถในการรับรู้และเข้าใจระดับหนึ่ง ผู้ปกครองต้องลงนามยินยอม (Consent) และผู้วิจัยต้องทำเอกสารภาษาที่เด็กเข้าใจง่าย เรียกว่า <strong>Assent Form</strong> เพื่อให้เด็กแสดงความยินยอมเข้าร่วมด้วยตนเอง หากเด็กปฏิเสธ แม้ผู้ปกครองจะเซ็นยอมรับ ผู้วิจัยก็ไม่สามารถบังคับเด็กได้</li>\n</ul>"}, {"id": "q_28", "chapter_id": "Summary_4_Ethics.md", "chapter_name": "04. Research Ethics & PDPA", "trap_title": "กับดัก: Informed Consent - การถอนตัวจากการวิจัย", "stem": "ในระหว่างการทดสอบ Usability Test ที่ดำเนินการไปแล้ว 45 นาที จากเวลาทั้งหมด 60 นาที ผู้เข้าร่วมการทดสอบรู้สึกเหนื่อยล้าและแจ้งผู้วิจัยว่า \"ขอยุติการทดสอบและขอกลับบ้านตอนนี้เลย\" แต่ผู้วิจัยกล่าวว่า \"คุณเซ็นสัญญาตกลงไปแล้ว และเหลืออีกเพียง 15 นาทีเท่านั้น หากออกตอนนี้จะไม่ได้รับเงินค่าเสียเวลา 500 บาท\" การกระทำของผู้วิจัยละเมิดหลักการใด?", "options": [{"key": "ก", "text": "Beneficence"}, {"key": "ข", "text": "Justice"}, {"key": "ค", "text": "Respect for Persons (Voluntary Participation & Right to Withdraw)"}, {"key": "ง", "text": "Confidentiality"}], "answer": "ค", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> หลักการเคารพในบุคคล (Respect for Persons) กำหนดไว้ชัดเจนว่า การเข้าร่วมวิจัยต้องเป็นไปด้วย <strong>ความสมัครใจ (Voluntary)</strong> และอาสาสมัครมี <strong>สิทธิในการถอนตัวหรือยุติการทดลองได้ทุกเมื่อ (Right to Withdraw at Any Time) โดยไม่ถูกลงโทษ ไม่ถูกข่มขู่ และไม่สูญเสียสิทธิประโยชน์ที่พึงได้รับตามสัดส่วน</strong> การใช้เงินค่าตอบแทนมาขู่บังคับถือเป็นการละเมิดสิทธิเสรีภาพในการตัดสินใจ</li>\n</ul>"}, {"id": "q_29", "chapter_id": "Summary_4_Ethics.md", "chapter_name": "04. Research Ethics & PDPA", "trap_title": "กับดัก: พฤติกรรมที่ผิดกฎหมาย PDPA", "stem": "กรณีศึกษาใดต่อไปนี้ถือเป็นการกระทำที่ **\"ผิดกฎหมาย PDPA\"** ชัดเจนที่สุด?", "options": [{"key": "ก", "text": "ธนาคารส่งอีเมลแจ้งสรุปยอดเงินในบัญชีประจำเดือนไปยังอีเมลที่ลูกค้าเคยให้ไว้"}, {"key": "ข", "text": "ร้านค้าแอปพลิเคชันออนไลน์บังคับให้ผู้ใช้ต้องติ๊ก [x] ยินยอมรับข่าวสารโปรโมชันจากบริษัทในเครือ มิฉะนั้นจะไม่สามารถกดยืนยันการสั่งซื้อสินค้าได้"}, {"key": "ค", "text": "ผู้ใช้งานดาวน์โหลดรูปภาพจากเว็บไซต์สาธารณะมาบันทึกไว้ในคอมพิวเตอร์ส่วนตัวเพื่อดูคนเดียว"}, {"key": "ง", "text": "โรงพยาบาลขอข้อมูลกรุ๊ปเลือดและโรคประจำตัวของผู้ป่วยในห้องฉุกเฉินเพื่อทำการผ่าตัดช่วยชีวิตเร่งด่วน"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> มักคิดว่าร้านค้ามีสิทธิตั้งเงื่อนไขตามใจชอบ</li>\n<li><strong>กฎหมาย PDPA:</strong> บัญญัติไว้ชัดเจนว่า <strong>ห้ามผูกมัดการขอความยินยอม (Tying of Consent)</strong> การซื้อสินค้า (ฟังก์ชันหลัก) ต้องแยกส่วนออกจากการรับข้อมูลการตลาด (Marketing) อย่างเด็ดขาด การบังคับให้ยินยอมรับการตลาดเพื่อแลกกับการซื้อของ ถือว่าความยินยอมนั้นไม่เป็นอิสระ (Freely Given) และตกเป็นโมฆะตามกฎหมาย</li>\n</ul>"}, {"id": "q_30", "chapter_id": "Summary_4_Ethics.md", "chapter_name": "04. Research Ethics & PDPA", "trap_title": "กับดัก: การยกเว้นขอความยินยอม Waive Consent", "stem": "ในสถานการณ์ใดต่อไปนี้ คณะกรรมการจริยธรรมสามารถอนุมัติให้ผู้วิจัย **\"ยกเว้นการขอความยินยอมเป็นลายลักษณ์อักษร (Waive Consent)\"** ได้อย่างถูกต้องตามหลักวิชาการ?", "options": [{"key": "ก", "text": "การทดลองแอปพลิเคชันระบบเตือนภัยแผ่นดินไหว ซึ่งผู้วิจัยต้องการความรวดเร็วและไม่อยากเสียเวลาพิมพ์กระดาษ"}, {"key": "ข", "text": "การศึกษาพฤติกรรมโดยการสังเกตการข้ามถนนของคนเดินเท้า ณ สี่แยกสาธารณะ ซึ่งไม่มีการบันทึกภาพใบหน้าหรือข้อมูลที่ระบุตัวตนได้"}, {"key": "ค", "text": "การสัมภาษณ์ผู้ป่วยโรคซึมเศร้าในโรงพยาบาลเกี่ยวกับประวัติการพยายามฆ่าตัวตาย"}, {"key": "ง", "text": "การทดสอบการกรอกข้อมูลบัตรเครดิตบนเว็บไซต์ปลอมที่ผู้วิจัยสร้างขึ้นเพื่อดูว่าคนจะถูกหลอกหรือไม่"}], "answer": "ข", "explanation": "<ul>\n<li><strong>หลักเกณฑ์การขอยกเว้น (Waive Consent):</strong> จะอนุมัติได้ก็ต่อเมื่อ (1) เป็นการวิจัยที่มีความเสี่ยงต่ำมาก (Minimal Risk) (2) เป็นการสังเกตพฤติกรรมในที่สาธารณะ (Public Observation) ที่ไม่มีการแทรกแซงหรือบันทึกข้อมูลระบุตัวตน และ (3) การขอความยินยอมเป็นรายบุคคลทำไม่ได้จริงในทางปฏิบัติ (Impracticable)</li>\n</ul>"}, {"id": "q_31", "chapter_id": "Summary_5_Usability_Test_Design_ST.md", "chapter_name": "05. Usability Test Design", "trap_title": "กับดัก: 10 Heuristics - Error Prevention vs Help Recover from Errors", "stem": "ในฟอร์มสมัครสมาชิก เมื่อผู้ใช้กำลังตั้งรหัสผ่าน ระบบได้แสดงรายการข้อกำหนด 4 ข้อใต้ช่องกรอก (เช่น ตัวพิมพ์ใหญ่อย่างน้อย 1 ตัว, ความยาว 8 ตัวอักษร) พร้อมเปลี่ยนไอคอนจากกากบาทสีเทาเป็นเครื่องหมายถูกสีเขียวทันทีที่พิมพ์ตรงเงื่อนไขแบบเรียลไทม์ การออกแบบนี้สอดคล้องกับหลัก Usability Heuristics ข้อใดตรงที่สุด?", "options": [{"key": "ก", "text": "Help users recognize, diagnose, and recover from errors"}, {"key": "ข", "text": "Error prevention"}, {"key": "ค", "text": "Visibility of system status"}, {"key": "ง", "text": "Consistency and standards"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> มักสับสนกับข้อ ก. (Help users recognize... errors) เพราะเห็นว่าเกี่ยวกับเงื่อนไขของ Error</li>\n<li><strong>ความต่างที่ชัดเจน:</strong></li>\n<li><strong>Error Prevention (ข้อ 5):</strong> ทำงาน <strong>\"ก่อน\"</strong> ที่ผู้ใช้จะกดส่ง เพื่อช่วยป้องกันไม่ให้เกิดความผิดพลาดตั้งแต่แรก (Proactive)</li>\n<li><strong>Help Recover from Errors (ข้อ 9):</strong> ทำงาน <strong>\"หลัง\"</strong> จากที่เกิดความผิดพลาดขึ้นแล้ว (Reactive) เช่น กด Submit ไปแล้วขึ้นข้อความสีแดงเตือนว่ารหัสผ่านไม่ผ่านเกณฑ์พร้อมบอกวิธีแก้</li>\n</ul>"}, {"id": "q_32", "chapter_id": "Summary_5_Usability_Test_Design_ST.md", "chapter_name": "05. Usability Test Design", "trap_title": "กับดัก: 10 Heuristics - Recognition vs Recall", "stem": "ฟังก์ชัน \"ประวัติการค้นหาล่าสุด (Recent Searches)\" และแถบ \"คำค้นหายอดนิยม\" ในช่องค้นหาของแอปพลิเคชันอีคอมเมิร์ซ ถูกสร้างขึ้นเพื่อสนับสนุนหลักการ Usability Heuristics ข้อใดโดยตรง?", "options": [{"key": "ก", "text": "Flexibility and efficiency of use"}, {"key": "ข", "text": "Match between system and the real world"}, {"key": "ค", "text": "Recognition rather than recall"}, {"key": "ง", "text": "Aesthetic and minimalist design"}], "answer": "ค", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> บางคนอาจตอบข้อ ก. เพราะคิดว่าเป็นทางลัดที่ช่วยให้ค้นหาเร็วขึ้น</li>\n<li><strong>คำอธิบาย:</strong> การแสดงประวัติการค้นหาล่าสุด เป็นการเปลี่ยนภาระจากการที่ผู้ใช้ต้องเค้นความจำในสมองว่าคราวที่แล้วพิมพ์หาคำว่าอะไร (<strong>Recall</strong>) ให้กลายเป็นการมองเห็นตัวเลือกที่ปรากฏตรงหน้าแล้วจำได้ทันที (<strong>Recognition</strong>) ซึ่งเป็นแก่นแท้ของ Heuristic ข้อที่ 6</li>\n</ul>"}, {"id": "q_33", "chapter_id": "Summary_5_Usability_Test_Design_ST.md", "chapter_name": "05. Usability Test Design", "trap_title": "กับดัก: กฎ 5 ผู้ใช้ของ Nielsen Norman Group", "stem": "หัวหน้าทีมพัฒนาตั้งคำถามกับ UX Designer ว่า \"ทำไมในการทดสอบ Usability Test รอบแรก ถึงเลือกเก็บกลุ่มตัวอย่างเพียง 5 คน จำนวนแค่นี้จะไปน่าเชื่อถือได้อย่างไร ทำไมไม่ทดสอบสัก 100 คน?\" ข้อใดคือคำตอบทางวิชาการที่ถูกต้องที่สุดตามแนวคิดของ Nielsen Norman Group (NN/g)?", "options": [{"key": "ก", "text": "ผู้ใช้ 5 คนประหยัดงบประมาณที่สุด แม้จะได้ผลลัพธ์ไม่แม่นยำเท่า 100 คนก็ตาม"}, {"key": "ข", "text": "การทดสอบกับผู้ใช้ตัวแทนจริง 5 คน สามารถตรวจพบปัญหา Usability ได้ถึงประมาณ 85% ของระบบทั้งหมด การเพิ่มคนมากกว่านี้จะเจอปัญหาเดิมซ้ำๆ และได้ผลตอบแทนลดลง"}, {"key": "ค", "text": "ผู้ใช้ 5 คนเป็นข้อกำหนดขั้นต่ำตามกฎหมาย PDPA ของไทย"}, {"key": "ง", "text": "เครื่องมือบันทึกหน้าจอจำกัดการประมวลผลวิดีโอได้ไม่เกิน 5 คนต่อรอบ"}], "answer": "ข", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> Jakob Nielsen และ Robert Virzi ได้พิสูจน์ด้วยสูตรทางสถิติว่า ปัญหาความง่ายในการใช้งานจะถูกค้นพบซ้ำๆ โดยผู้ใช้คนถัดไป เมื่อทดสอบครบ 5 คน ปัญหาหลักประมาณ 85% จะถูกเปิดเผยทั้งหมด การนำงบประมาณไปทดสอบซ้ำหลายๆ รอบ (Iterative Testing) รอบละ 5 คน จะคุ้มค่ากว่าการทดสอบรอบเดียว 100 คนอย่างมหาศาล</li>\n</ul>"}, {"id": "q_34", "chapter_id": "Summary_5_Usability_Test_Design_ST.md", "chapter_name": "05. Usability Test Design", "trap_title": "กับดัก: การเขียน Task ใน Usability Testing", "stem": "ในการทดสอบแอปพลิเคชันเรียกรถแท็กซี่ ข้อใดคือการกำหนดโจทย์ภารกิจ (Task) ที่ถูกต้องตามหลักการทดสอบ Usability โดยไม่ชี้นำผู้ใช้ (Non-leading Task)?", "options": [{"key": "ก", "text": "ให้คุณกดที่ช่องค้นหาสีขาวด้านบน พิมพ์คำว่า 'สนามบินดอนเมือง' แล้วกดเลือกแท็กซี่คันสีเหลือง"}, {"key": "ข", "text": "ให้คุณมองหาไอคอนรูปรถแท็กซี่ที่มุมล่างซ้าย แล้วกดปุ่มจองรถเพื่อดูราคา"}, {"key": "ค", "text": "คุณเพิ่งเลิกงานและต้องการเดินทางกลับบ้านดอนเมือง จงใช้แอปพลิเคชันนี้เพื่อเรียกรถไปยังจุดหมายของคุณ"}, {"key": "ง", "text": "คุณคิดว่าปุ่มเรียกรถด่วนสีเขียวตรงกลางหน้าจอกดง่ายและมองเห็นชัดเจนหรือไม่?"}], "answer": "ค", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก. และ ข. เป็นข้อสอบชี้นำ (Leading) ที่บอกชื่อปุ่ม ตำแหน่ง หรือขั้นตอน ทำให้ไม่ได้วัดว่าผู้ใช้หาปุ่มเจอเองหรือไม่ ส่วนข้อ ง. เป็นคำถามสัมภาษณ์ปลายปิด ไม่ใช่การสั่งทำภารกิจ</li>\n<li><strong>กฎเกณฑ์:</strong> Task ที่ดีต้องให้ <strong>บริบท/เป้าหมาย (Goal &amp; Scenario)</strong> แต่ปล่อยให้ผู้ใช้เป็นผู้สำรวจและตัดสินใจลงมือกระทำด้วยตนเอง</li>\n</ul>"}, {"id": "q_35", "chapter_id": "Summary_5_Usability_Test_Design_ST.md", "chapter_name": "05. Usability Test Design", "trap_title": "กับดัก: 10 Heuristics - Visibility of System Status vs Help Users with Errors", "stem": "เมื่อผู้ใช้กดชำระเงินในแอปธนาคาร หน้าจอค้างนิ่งเป็นสีขาวสนิทนาน 15 วินาทีโดยไม่มีไอคอนหมุนโหลดหรือข้อความใดๆ ปรากฏ ทำให้ผู้ใช้เข้าใจว่าแอปค้างจึงกดปุ่มย้อนกลับและกดยืนยันชำระเงินซ้ำอีกรอบ ส่งผลให้ถูกตัดเงินสองครั้ง ปัญหานี้เกิดจากการละเมิด Usability Heuristics ข้อใดร้ายแรงที่สุด?", "options": [{"key": "ก", "text": "Visibility of system status"}, {"key": "ข", "text": "Flexibility and efficiency of use"}, {"key": "ค", "text": "Match between system and the real world"}, {"key": "ง", "text": "Aesthetic and minimalist design"}], "answer": "ก", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> ระบบที่ปล่อยให้หน้าจอขาวค้างโดยไม่ส่งสัญญาณบอกผู้ใช้ว่า \"กำลังประมวลผลการชำระเงิน กรุณารอสักครู่\" ถือเป็นการละเมิด <strong>Visibility of System Status</strong> อย่างรุนแรง ทำให้ผู้ใช้ไม่รู้สถานะปัจจุบันของระบบจนเกิดการกดซ้ำซ้อน</li>\n</ul>"}, {"id": "q_36", "chapter_id": "Summary_5_Usability_Test_Design_ST.md", "chapter_name": "05. Usability Test Design", "trap_title": "กับดัก: A/B Testing - การควบคุมตัวแปร", "stem": "ทีมออกแบบต้องการทำ A/B Testing เพื่อปรับปรุงหน้าชำระเงิน โดย Version A ใช้ปุ่มสีเขียว และจัดวางแบบเดิม ส่วน Version B ทีมงานได้เปลี่ยนสีปุ่มเป็นสีส้ม เปลี่ยนรูปภาพประกอบ เปลี่ยนตำแหน่งช่องกรอกบัตรเครดิต และปรับฟอนต์ทั้งหมดให้เล็กลง เมื่อผลลัพธ์พบว่า Version B มี Conversion Rate สูงกว่า 15% ข้อใดคือบทวิเคราะห์ทางวิชาการที่ถูกต้องที่สุด?", "options": [{"key": "ก", "text": "การทดลองนี้ประสบความสำเร็จอย่างสมบูรณ์ และยืนยันได้ว่าปุ่มสีส้มดีกว่าปุ่มสีเขียว"}, {"key": "ข", "text": "การทดลองนี้มีข้อบกพร่องทางระเบียบวิธีวิจัย เพราะมีการเปลี่ยนแปลงตัวแปรหลายตัวแปรพร้อมกัน ทำให้ไม่สามารถระบุได้ว่าปัจจัยใดเป็นสาเหตุที่ทำให้ Conversion เพิ่มขึ้น"}, {"key": "ค", "text": "Version B ชนะเพราะขนาดฟอนต์ที่เล็กลงทำให้ผู้ใช้อ่านข้อมูลได้รวดเร็วขึ้น"}, {"key": "ง", "text": "ควรนำทั้ง Version A และ B มารวมกันเป็น Version C เพื่อให้ได้ผลลัพธ์ที่ดีที่สุด"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> หลายคนเห็นตัวเลข 15% แล้วสรุปว่าดีเยี่ยม</li>\n<li><strong>หลักการวิทยาศาสตร์ของ A/B Testing:</strong> กฎเหล็กคือต้อง <strong>เปลี่ยนตัวแปรทดลองเพียงครั้งละ 1 ตัวแปร (Isolate Variable)</strong> เพื่อวัดผลกระทบของตัวแปรนั้นอย่างแม่นยำ หากเปลี่ยนทั้งสี รูปภาพ ตำแหน่ง และฟอนต์พร้อมกัน จะเกิดปัญหา Confounding Variables และไม่สามารถตอบได้ว่าอะไรคือสาเหตุที่แท้จริง</li>\n</ul>"}, {"id": "q_37", "chapter_id": "Summary_5_Usability_Test_Design_ST.md", "chapter_name": "05. Usability Test Design", "trap_title": "กับดัก: Think-Aloud Protocol", "stem": "ในระหว่างการทดสอบ Usability Test ผู้ทดสอบขอให้ผู้เข้าร่วมทดสอบ \"พูดสิ่งที่กำลังคิด กำลังมองหา กำลังสงสัย หรือกำลังรู้สึกออกมาดังๆ ตลอดเวลาที่กำลังกดใช้งานหน้าจอ\" เทคนิคนี้มีชื่อเรียกว่าอะไร และมีประโยชน์หลักอย่างไร?", "options": [{"key": "ก", "text": "Retrospective Interview ใช้เพื่อสรุปคะแนนความพึงพอใจท้ายคาบ"}, {"key": "ข", "text": "Concurrent Think-Aloud Protocol ใช้เพื่อทำความเข้าใจกระบวนการคิดและจุดติดขัดของผู้ใช้แบบเรียลไทม์"}, {"key": "ค", "text": "Cognitive Walkthrough ใช้เพื่อให้นักพัฒนารันโค้ดตามคำสั่งเสียง"}, {"key": "ง", "text": "Heuristic Evaluation ใช้เพื่อตรวจสอบข้อผิดพลาดของไวยากรณ์ในโปรแกรม"}], "answer": "ข", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> <strong>Think-Aloud Protocol</strong> คือมาตรฐานทองคำของการเก็บข้อมูลเชิงคุณภาพใน UX การให้ผู้ใช้พูดสิ่งที่คิดออกมาขณะทำภารกิจ ช่วยให้ดีไซเนอร์เข้าใจทันทีว่าทำไมผู้ใช้ถึงไม่กดปุ่ม หรือทำไมถึงเข้าใจความหมายของไอคอนผิดไป</li>\n</ul>"}, {"id": "q_38", "chapter_id": "Summary_5_Usability_Test_Design_ST.md", "chapter_name": "05. Usability Test Design", "trap_title": "กับดัก: 10 Heuristics - Error Message ที่มีคุณภาพ", "stem": "เมื่อผู้ใช้อัปโหลดไฟล์รูปภาพโปรไฟล์ที่มีขนาด 15 MB แล้วระบบไม่สามารถบันทึกได้ ข้อความแจ้งเตือน (Error Message) ในข้อใดเขียนได้ถูกต้องตามหลัก Usability Heuristics (ข้อ 9) มากที่สุด?", "options": [{"key": "ก", "text": "\"Error: File size overflow exception at line 402.\""}, {"key": "ข", "text": "\"เกิดข้อผิดพลาดในการประมวลผลข้อมูล กรุณาลองใหม่อีกครั้งในภายหลัง\""}, {"key": "ค", "text": "\"ไม่สามารถอัปโหลดได้ เนื่องจากไฟล์มีขนาดเกิน 10 MB กรุณาเลือกรูปภาพใหม่ที่มีขนาดไม่เกิน 10 MB หรือคลิกที่นี่เพื่อบีบอัดรูปภาพ\""}, {"key": "ง", "text": "\"รูปภาพไม่ถูกต้อง รหัสข้อผิดพลาด #ERR-IMAGE-FAIL\""}], "answer": "ค", "explanation": "<ul>\n<li><strong>เกณฑ์ 3 ประการของ Error Message ที่ดี:</strong> (1) ใช้ภาษาคนธรรมดา ไม่ใช้ศัพท์เทคนิค/รหัสโปรแกรมเมอร์ (2) ชี้ชัดว่าปัญหาคืออะไร (ขนาดไฟล์เกิน 10 MB) และ (3) <strong>แนะนำวิธีแก้ไขปัญหาอย่างเป็นรูปธรรม</strong> (ให้เลือกรูปใหม่ หรือมีลิงก์ช่วยบีบอัดไฟล์)</li>\n</ul>"}, {"id": "q_39", "chapter_id": "Summary_5_Usability_Test_Design_ST.md", "chapter_name": "05. Usability Test Design", "trap_title": "กับดัก: Happy Path vs Unhappy Path", "stem": "ในการออกแบบระบบเครื่องถอนเงินสดอัตโนมัติ (ATM) กรณีที่ \"ผู้ใช้สอดบัตร กดรหัสถูกต้อง เลือกจำนวนเงิน 1,000 บาท แต่เงินสดในตู้หมดพอดี\" จัดเป็นสถานการณ์ใด และระบบควรตอบสนองอย่างไรตามหลัก UX?", "options": [{"key": "ก", "text": "จัดเป็น Happy Path และระบบควรยึดบัตรของผู้ใช้ไว้เพื่อความปลอดภัย"}, {"key": "ข", "text": "จัดเป็น Unhappy Path และระบบควรคืนบัตร แจ้งเตือนข้อความว่าเงินในตู้ไม่พอ พร้อมแนะนำตู้ ATM ที่ใกล้ที่สุด"}, {"key": "ค", "text": "จัดเป็น Unhappy Path และระบบควรปิดหน้าจอเป็นสีดำเพื่อรีบูตระบบใหม่"}, {"key": "ง", "text": "จัดเป็น Exception Path ที่ไม่ต้องออกแบบรองรับเพราะเกิดขึ้นได้ยากมาก"}], "answer": "ข", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> เมื่อระบบทำงานไม่เป็นไปตามขั้นตอนปกติเนื่องจากปัจจัยขัดข้อง จัดเป็น <strong>Unhappy Path</strong> การออกแบบ UX ที่ยอดเยี่ยมต้องมีขั้นตอน <strong>Error Recovery</strong> โดยไม่สร้างความเสียหายแก่ผู้ใช้ (ต้องคืนบัตรทันที) ชี้แจงเหตุผลชัดเจน และช่วยหาทางออกให้ผู้ใช้</li>\n</ul>"}, {"id": "q_40", "chapter_id": "Summary_5_Usability_Test_Design_ST.md", "chapter_name": "05. Usability Test Design", "trap_title": "กับดัก: 10 Heuristics - User Control and Freedom", "stem": "ในโปรแกรมแต่งภาพ เมื่อผู้ใช้เผลอกดลบเลเยอร์ภาพวาดที่ทำมานานกว่า 2 ชั่วโมงไปโดยไม่ได้ตั้งใจ โปรแกรมที่ดีควรมีฟังก์ชันใดเพื่อตอบสนองต่อหลัก \"User Control and Freedom\"?", "options": [{"key": "ก", "text": "มีกล่องข้อความอธิบายประวัติความเป็นมาของเลเยอร์"}, {"key": "ข", "text": "มีปุ่ม Undo (ย้อนกลับการกระทำ) และฟังก์ชันเรียกคืนประวัติย้อนหลัง (History States)"}, {"key": "ค", "text": "มีแถบสถานะบอกว่าคอมพิวเตอร์เหลือหน่วยความจำกี่เปอร์เซ็นต์"}, {"key": "ง", "text": "ล็อกโปรแกรมไม่ให้ผู้ใช้กดลบสิ่งใดได้อีกเลย"}], "answer": "ข", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> แก่นแท้ของ <strong>User Control and Freedom (Heuristic ข้อ 3)</strong> คือการให้อำนาจและอิสระแก่ผู้ใช้ในการแก้ไขข้อผิดพลาดของตนเอง โดยมี \"ปุ่มย้อนกลับ (Undo)\" หรือ \"ทางออกฉุกเฉิน\" ช่วยให้ผู้ใช้กล้าทดลองและไม่รู้สึกเครียดกับการใช้งาน</li>\n</ul>"}, {"id": "q_41", "chapter_id": "Summary_8_Wireframe_st.md", "chapter_name": "08. Wireframe & Visual Hierarchy", "trap_title": "กับดัก: Wireframe vs Mockup vs Prototype", "stem": "ทีมออกแบบได้จัดทำไฟล์งานดิจิทัลที่มีการกำหนดคู่สีตาม CI ของแบรนด์ มีการเลือกใช้ฟอนต์ลิขสิทธิ์จริง ใส่รูปถ่ายสินค้าที่มีความคมชัดสูงระดับ 4K และจัดวางองค์ประกอบอย่างสวยงามสมบูรณ์แบบ แต่ไฟล์งานนี้ถูกบันทึกเป็นภาพนิ่งรูปแบบ JPEG ที่ผู้ใช้ไม่สามารถคลิกหรือโต้ตอบใดๆ ได้ ผลงานชิ้นนี้จัดเป็นสิ่งใดอย่างถูกต้องตามหลักวิชาชีพ?", "options": [{"key": "ก", "text": "Low-Fidelity Wireframe"}, {"key": "ข", "text": "High-Fidelity Prototype"}, {"key": "ค", "text": "Mockup"}, {"key": "ง", "text": "Interactive Wireframe"}], "answer": "ค", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> นักศึกษามักเห็นว่า \"ภาพสวย ใส่สีจริง ฟอนต์จริง ความคมชัดสูง\" เลยรีบตอบ High-Fidelity Prototype ทันที</li>\n<li><strong>ทำไมถึงเป็น Mockup:</strong> จุดตายของโจทย์คือ <strong>\"เป็นภาพนิ่ง (Static) ที่ไม่สามารถคลิกหรือมีปฏิสัมพันธ์ได้\"</strong> นิยามของ Prototype ต้องมีปฏิสัมพันธ์ (Interactivity) เสมอ ส่วนภาพนิ่งที่มีการตกแต่งสีสันและกราฟิกสมบูรณ์แบบจะเรียกว่า <strong>Mockup</strong></li>\n</ul>"}, {"id": "q_42", "chapter_id": "Summary_8_Wireframe_st.md", "chapter_name": "08. Wireframe & Visual Hierarchy", "trap_title": "กับดัก: Horizontal vs Vertical Prototype", "stem": "ในโครงการพัฒนาระบบคลังสินค้าขายส่ง ทีมงานต้องการทดสอบว่าระบบการตัดสต็อกสินค้าแบบ FIFO และการคำนวณภาษีมูลค่าเพิ่มข้ามสาขาจะทำงานได้ถูกต้องแม่นยำหรือไม่ ทีมงานจึงสร้างตัวต้นแบบที่เน้นเฉพาะ \"ระบบตระกร้าสินค้าและการตัดสต็อก\" โดยเขียนโค้ดเชื่อมต่อกับฐานข้อมูลจริงอย่างสมบูรณ์แบบ แต่หน้าจอเมนูอื่นๆ เช่น หน้ารายงาน หน้าประวัติพนักงาน หรือหน้าแก้ไขโปรไฟล์ ยังไม่ถูกพัฒนาขึ้นเลย ตัวต้นแบบลักษณะนี้เรียกว่าอะไร?", "options": [{"key": "ก", "text": "Horizontal Prototype"}, {"key": "ข", "text": "Vertical Prototype"}, {"key": "ค", "text": "Paper Prototype"}, {"key": "ง", "text": "Feasibility Wireframe"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อสอบชอบสลับระหว่าง Horizontal กับ Vertical</li>\n<li><strong>คำอธิบาย:</strong> การเลือกตัดเฉพาะฟังก์ชันที่สำคัญและซับซ้อนเพียงส่วนเดียว แต่ทำลึกจนถึงฐานข้อมูลจริง (แคบแต่ลึก) เรียกว่า <strong>Vertical Prototype</strong> (เน้นทดสอบ Architecture และความถูกต้องเชิงลึก) ในขณะที่ <strong>Horizontal Prototype</strong> จะทำหน้าจอครบทุกเมนูแต่ไม่มีฐานข้อมูลจริง (กว้างแต่ตื้น)</li>\n</ul>"}, {"id": "q_43", "chapter_id": "Summary_8_Wireframe_st.md", "chapter_name": "08. Wireframe & Visual Hierarchy", "trap_title": "กับดัก: องค์ประกอบของ Wireframe - สิ่งที่ไม่ควรมี", "stem": "ในการจัดทำ Mid-Fidelity Wireframe เพื่อนำเสนอโครงสร้างและสถาปัตยกรรมข้อมูล (Information Architecture) แก่ผู้บริหาร ข้อใดต่อไปนี้คือสิ่งที่ไม่ควรปรากฏอยู่ใน Wireframe มากที่สุด?", "options": [{"key": "ก", "text": "กล่องสี่เหลี่ยมที่มีเส้นกากบาท $[X]$ เพื่อระบุตำแหน่งของรูปภาพ"}, {"key": "ข", "text": "การใช้ข้อความจำลอง `Lorem Ipsum` ในส่วนของบทความขนาดยาว"}, {"key": "ค", "text": "การใช้ภาพกราฟิกสีสันสดใส และรูปถ่ายพรีเซนเตอร์ตัวจริงของแบรนด์"}, {"key": "ง", "text": "การใช้เฉดสี Grayscale (ขาว เทา ดำ) เพื่อแยกความแตกต่างของปุ่ม"}], "answer": "ค", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> หลายคนคิดว่าใส่รูปสวยๆ พรีเซนเตอร์ให้ผู้บริหารดูจะช่วยให้ผ่านงานง่ายขึ้น</li>\n<li><strong>หลักการของ Wireframe:</strong> วัตถุประสงค์ของ Wireframe คือการโฟกัสที่ <strong>โครงสร้าง (Structure), สัดส่วนพื้นที่ (Layout), และลำดับเนื้อหา</strong> การใส่ภาพสีสันสดใสหรือรูปดาราจะดึงดูดสายตาและทำให้ผู้บริหารหรือทีมงานเบี่ยงเบนความสนใจไปวิจารณ์เรื่องสีและรูปถ่าย แทนที่จะพิจารณาเรื่องโครงสร้างและการใช้งาน</li>\n</ul>"}, {"id": "q_44", "chapter_id": "Summary_8_Wireframe_st.md", "chapter_name": "08. Wireframe & Visual Hierarchy", "trap_title": "กับดัก: ขั้นตอนการทำ Wireframe ใน 6 ขั้นตอน", "stem": "ข้อใดเรียงลำดับขั้นตอนในกระบวนการ \"Wireframe in 6 Steps\" ได้อย่างถูกต้องตามลำดับก่อน-หลัง?", "options": [{"key": "ก", "text": "Initial Sketching -> User Flow Mapping -> Research -> Digital Wireframes -> IA -> Developer Handoff"}, {"key": "ข", "text": "Research -> Information Architecture -> User Flow Mapping -> Initial Sketching -> Digital Wireframes -> Documentation & Handoff"}, {"key": "ค", "text": "Digital Wireframes -> Initial Sketching -> User Flow Mapping -> Research -> Documentation -> Handoff"}, {"key": "ง", "text": "User Flow Mapping -> Research -> Initial Sketching -> Information Architecture -> Digital Wireframes -> Handoff"}], "answer": "ข", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> ลำดับขั้นตอนมาตรฐาน: (1) รวบรวม Requirement (2) จัดหมวดหมู่สารสนเทศและเนื้อหา (IA) (3) เขียนแผนผังเส้นทางผู้ใช้ (User Flow) (4) ร่างไอเดียด้วยมือบนกระดาษ (Sketching) (5) สร้างไวร์เฟรมดิจิทัล (Digital Wireframes) และ (6) ทำเอกสารและส่งมอบให้นักพัฒนา (Documentation &amp; Handoff)</li>\n</ul>"}, {"id": "q_45", "chapter_id": "Summary_8_Wireframe_st.md", "chapter_name": "08. Wireframe & Visual Hierarchy", "trap_title": "กับดัก: Visual Hierarchy - Whitespace / Negative Space", "stem": "ลูกค้าบ่นกับดีไซเนอร์ว่า \"หน้าเว็บนี้มีพื้นที่ว่างสีขาวโล่งๆ เยอะเกินไป รู้สึกเสียดายพื้นที่ ช่วยเอาแบนเนอร์โฆษณา รูปภาพโปรโมชัน และตัวหนังสือข่าวสารมาแปะใส่ให้เต็มทุกช่องว่างได้ไหม\" ในฐานะ UX Designer ข้อใดคือเหตุผลทางวิชาการในการปกป้องพื้นที่ว่าง (Whitespace) ที่ถูกต้องที่สุด?", "options": [{"key": "ก", "text": "พื้นที่ว่างมีไว้เพื่อให้โปรแกรมเบราว์เซอร์ดาวน์โหลดหน้าเว็บได้เร็วขึ้นเท่านั้น"}, {"key": "ข", "text": "พื้นที่ว่าง (Whitespace) ช่วยจัดกลุ่มข้อมูล ลดภาระทางปัญญา (Cognitive Load) และช่วยขับเน้นให้องค์ประกอบสำคัญโดดเด่นและอ่านง่ายขึ้น"}, {"key": "ค", "text": "พื้นที่ว่างเป็นข้อบังคับตามมาตรฐานกฎหมายลิขสิทธิ์ซอฟต์แวร์สากล"}, {"key": "ง", "text": "ยอมตามใจลูกค้าและใส่เนื้อหาให้เต็มทุกช่องว่างทันทีเพื่อหลีกเลี่ยงความขัดแย้ง"}], "answer": "ข", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> Whitespace (หรือ Negative Space) ไม่ใช่พื้นที่สูญเปล่า แต่เป็นเครื่องมือทาง Visual Hierarchy ที่สำคัญอย่างยิ่งในการช่วยนำสายตา แยกกลุ่มข้อมูลตามหลักเกสตัลท์ ลดความเครียดของสมอง (Cognitive Overload) และทำให้ Call-to-Action โดดเด่นขึ้นมา</li>\n</ul>"}, {"id": "q_46", "chapter_id": "Summary_8_Wireframe_st.md", "chapter_name": "08. Wireframe & Visual Hierarchy", "trap_title": "กับดัก: 12 ชนิด Prototype ของ Christian Bourgeois - MVP vs Functional", "stem": "บริษัทสตาร์ทอัพได้สร้างแอปพลิเคชันเวอร์ชันหนึ่งที่มีเฉพาะระบบล็อกอิน ระบบสั่งซื้อสินค้า และระบบตัดเงิน โดยตัดฟังก์ชันสะสมแต้มและระบบแชททิ้งไป แล้วนำแอปพลิเคชันนี้ปล่อยขึ้น App Store ให้ผู้ใช้ทั่วไปในตลาดดาวน์โหลดและจ่ายเงินใช้งานจริง เพื่อประเมินว่าไอเดียธุรกิจนี้สามารถสร้างรายได้จริงหรือไม่ ตัวต้นแบบลักษณะนี้ตรงกับข้อใดใน 12 ชนิด Prototype ของ Christian Bourgeois?", "options": [{"key": "ก", "text": "Functional Prototype"}, {"key": "ข", "text": "Working Model"}, {"key": "ค", "text": "Minimum Viable Product (MVP)"}, {"key": "ง", "text": "Feasibility Prototype"}], "answer": "ค", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> มักสับสนกับ Functional Prototype หรือ Working Model</li>\n<li><strong>จุดตัดสำคัญ:</strong> ตัวต้นแบบที่ <strong>\"ถูกปล่อยเข้าสู่ตลาดจริง (Released to actual market/users)\"</strong> เพื่อตรวจสอบความถูกต้องของสมมติฐานทางธุรกิจ (Business Value) จะถูกจัดเป็น <strong>Minimum Viable Product (MVP)</strong> เสมอ ส่วน Functional Prototype มักใช้ทดสอบภายในห้องแล็บหรือการทดลอง ไม่ได้ปล่อยขายจริงในเชิงพาณิชย์</li>\n</ul>"}, {"id": "q_47", "chapter_id": "Summary_8_Wireframe_st.md", "chapter_name": "08. Wireframe & Visual Hierarchy", "trap_title": "กับดัก: Visual Hierarchy - Proximity vs Similarity", "stem": "ในแบบฟอร์มสมัครงานออนไลน์ ดีไซเนอร์ได้วางช่องกรอก \"เบอร์โทรศัพท์\" ไว้ห่างจากช่อง \"ที่อยู่ปัจจุบัน\" เพียง 8 พิกเซล แต่กลับวางช่อง \"อีเมล\" ไว้ห่างออกไปถึง 48 พิกเซล ทำให้ผู้ใช้เข้าใจผิดว่าเบอร์โทรศัพท์และที่อยู่เป็นข้อมูลชุดเดียวกัน การเข้าใจผิดของผู้ใช้นี้เกิดจากผลกระทบของหลักการใดใน Visual Hierarchy?", "options": [{"key": "ก", "text": "Contrast"}, {"key": "ข", "text": "Proximity (ความใกล้ชิด)"}, {"key": "ค", "text": "Alignment"}, {"key": "ง", "text": "Repetition"}], "answer": "ข", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> หลักการ <strong>Proximity (กฎความใกล้ชิดของ Gestalt)</strong> ระบุว่า สิ่งของที่อยู่ใกล้กันทางกายภาพจะถูกสมองรับรู้และตีความว่าเป็นกลุ่มข้อมูลเดียวกันทันที หากต้องการแยกหมวดหมู่ข้อมูล ต้องเว้นระยะห่าง (Whitespace) ระหว่างกลุ่มให้มากกว่าระยะห่างภายในกลุ่ม</li>\n</ul>"}, {"id": "q_48", "chapter_id": "Summary_8_Wireframe_st.md", "chapter_name": "08. Wireframe & Visual Hierarchy", "trap_title": "กับดัก: Status Quo Bias ในงานออกแบบ", "stem": "เว็บไซต์ข่าวสารชื่อดังได้ทำการออกแบบหน้าตาเว็บไซต์ใหม่ทั้งหมด โดยเปลี่ยนตำแหน่งเมนูหลักจากแนวนอนด้านบน ย้ายไปซ่อนไว้ในแถบวงกลมหมุนที่มุมขวาล่าง เมื่อเปิดตัววันแรก ผู้ใช้ประจำจำนวนมากต่างแสดงความไม่พอใจอย่างรุนแรงและเรียกร้องให้เปลี่ยนกลับเป็นแบบเดิม ปรากฏการณ์นี้สอดคล้องกับแนวคิดทางจิตวิทยาและ UX ข้อใด?", "options": [{"key": "ก", "text": "Status Quo Bias และการละเมิด Jakob’s Law"}, {"key": "ข", "text": "Hick’s Law และ Fitts’s Law"}, {"key": "ค", "text": "Miller’s Law และ Cognitive Load Theory"}, {"key": "ง", "text": "Tesler’s Law และ Parkinson’s Law"}], "answer": "ก", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> <strong>Status Quo Bias</strong> คืออคติยึดติดสภาพเดิม มนุษย์ไม่ชอบการเปลี่ยนแปลงที่ไม่คุ้นเคย เมื่อนำมาประกอบกับ <strong>Jakob's Law</strong> ซึ่งผู้ใช้คาดหวังให้เว็บไซต์ทำงานตาม Mental Model เดิมที่คุ้นชิน การย้ายตำแหน่งสำคัญไปสู่ตำแหน่งที่แปลกประหลาดจะสร้างความคับข้องใจอย่างรุนแรง</li>\n</ul>"}, {"id": "q_49", "chapter_id": "Summary_8_Wireframe_st.md", "chapter_name": "08. Wireframe & Visual Hierarchy", "trap_title": "กับดัก: ชนิดของ Prototype - Feasibility Prototype", "stem": "ทีมวิศวกรต้องการพิสูจน์ว่า อัลกอริทึมจดจำลายนิ้วมือด้วยกล้องสมาร์ทโฟนสามารถประมวลผลเสร็จสิ้นได้ภายใน 0.5 วินาทีหรือไม่ โดยทีมงานได้เขียนโปรแกรมหน้าจอดำๆ คอนโซลตัวหนังสือล้วนๆ ไม่มีปุ่ม ไม่มีกราฟิก เพื่อทดสอบเฉพาะความเร็วในการประมวลผลของอัลกอริทึม ตัวต้นแบบนี้จัดเป็นประเภทใด?", "options": [{"key": "ก", "text": "Video Prototype"}, {"key": "ข", "text": "Clickthrough Prototype"}, {"key": "ค", "text": "Feasibility Prototype (Proof of Concept)"}, {"key": "ง", "text": "Horizontal Prototype"}], "answer": "ค", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> <strong>Feasibility Prototype</strong> มีเป้าหมายเพื่อทดสอบ \"ความเป็นไปได้ทางเทคนิค (Technical Feasibility)\" สถาปัตยกรรม หรืออัลกอริทึม โดยไม่สนใจหน้าตา UI หรือความสวยงาม เพื่อตอบคำถามว่าเทคโนโลยีนี้สามารถทำได้จริงหรือไม่ก่อนลงทุนสร้างผลิตภัณฑ์</li>\n</ul>"}, {"id": "q_50", "chapter_id": "Summary_8_Wireframe_st.md", "chapter_name": "08. Wireframe & Visual Hierarchy", "trap_title": "กับดัก: Visual Hierarchy - Alignment", "stem": "ในการออกแบบหน้าบทความอ่านข่าวยาวๆ (Long-form content) สำหรับผู้ใช้ภาษาไทยและภาษาอังกฤษ ข้อใดคือการจัดแนวข้อความ (Alignment) ที่ช่วยให้สายตาของผู้ใช้อ่านได้ราบรื่นและมีประสิทธิภาพสูงสุดตามหลักสากล?", "options": [{"key": "ก", "text": "จัดข้อความกึ่งกลาง (Center-aligned) ทั้งหมดทุกย่อหน้า"}, {"key": "ข", "text": "จัดข้อความชิดขวา (Right-aligned) เพื่อสร้างความแปลกใหม่"}, {"key": "ค", "text": "จัดข้อความชิดซ้าย (Left-aligned) เพื่อให้จุดเริ่มต้นของแต่ละบรรทัดคงที่และนำสายตาได้สม่ำเสมอ"}, {"key": "ง", "text": "จัดข้อความแบบกระจายเต็มบรรทัด (Justify) โดยปล่อยให้เกิดช่องว่างคำ (River of white space) ไม่สม่ำเสมอ"}], "answer": "ค", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> สำหรับภาษาที่อ่านจากซ้ายไปขวา การจัดแนวชิดซ้าย (Left-aligned) จะสร้างเส้นขอบซ้ายที่นิ่งสนิท ทำให้สายตาผู้ใช้กวาดกลับมาเริ่มต้นบรรทัดใหม่ได้อย่างแม่นยำ การจัดกึ่งกลาง (Center) เหมาะกับข้อความสั้นๆ ไม่กี่บรรทัด ส่วนการจัด Justify มักสร้างปัญหาช่องไฟระหว่างคำที่กว้างผิดปกติ (Rivers of white space) ทำให้อ่านยาก</li>\n</ul>"}, {"id": "q_51", "chapter_id": "Summary_9_UX_UI_measurement.md", "chapter_name": "09. UX Measurement & Statistics", "trap_title": "กับดัก: การคำนวณ NPS - การจัดการกลุ่ม Passives", "stem": "จากการส่งแบบสำรวจความภักดีต่อแบรนด์ (NPS) ของแอปพลิเคชันเพื่อการลงทุน มีผู้ตอบแบบสอบถามทั้งหมด 100 คน ผลคะแนนเป็นดังนี้: ค่า Net Promoter Score (NPS) ของแอปพลิเคชันนี้มีค่าเท่ากับเท่าใด?", "options": [{"key": "ก", "text": "$+40$"}, {"key": "ข", "text": "$+20$"}, {"key": "ค", "text": "$+60$"}, {"key": "ง", "text": "$0$"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> นักศึกษาจำนวนมากนำกลุ่ม Passives (40 คน) ไปหักลบด้วย หรือตัด Passives ทิ้งจนตัวหารผิด</li>\n<li><strong>วิธีคำนวณที่ถูกต้อง:</strong></li>\n<li>$\\% \\text{Promoters} = \\frac{40}{100} \\times 100 = 40\\%$</li>\n<li>$\\% \\text{Detractors} = \\frac{20}{100} \\times 100 = 20\\%$</li>\n<li>กลุ่ม Passives (คะแนน 7-8) มี 40% แต่ <strong>ไม่ถูกนำมาคิดในสูตรลบ</strong></li>\n<li>$\\text{NPS} = \\% \\text{Promoters} - \\% \\text{Detractors} = 40 - 20 = +20$</li>\n</ul>"}, {"id": "q_52", "chapter_id": "Summary_9_UX_UI_measurement.md", "chapter_name": "09. UX Measurement & Statistics", "trap_title": "กับดัก: การคำนวณ CSAT - สเกลที่นับเป็นความพึงพอใจ", "stem": "ในการประเมินความพึงพอใจ (CSAT) ของฟังก์ชันสแกนจ่ายเงิน มีผู้ร่วมตอบแบบประเมินสเกล 1-5 ทั้งหมด 200 คน ผลการให้คะแนนปรากฏดังนี้: ค่าคะแนน CSAT ของฟังก์ชันนี้มีค่ากี่เปอร์เซ็นต์?", "options": [{"key": "ก", "text": "75%"}, {"key": "ข", "text": "50%"}, {"key": "ค", "text": "60%"}, {"key": "ง", "text": "100%"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> คนส่วนใหญ่มักหลงคิดว่าคะแนน 3 (ปานกลาง) ถือว่าพอใจด้วย เลยเอา $(60 + 40 + 50) = 150$ ไปหาร 200 ได้ 75% ซึ่ง <strong>ผิดมหันต์</strong></li>\n<li><strong>กฎเหล็กของ CSAT:</strong> <strong>นับเฉพาะคะแนน 4 และ 5 เท่านั้น</strong> เป็นคำตอบที่พึงพอใจ\n$$\\text{CSAT} = \\frac{60 + 40}{200} \\times 100 = \\frac{100}{200} \\times 100 = 50\\%$$</li>\n</ul>"}, {"id": "q_53", "chapter_id": "Summary_9_UX_UI_measurement.md", "chapter_name": "09. UX Measurement & Statistics", "trap_title": "กับดัก: การเลือกสถิติ T-test - Independent vs Paired", "stem": "ทีมออกแบบต้องการพิสูจน์ว่า \"หน้าเช็คเอาต์รูปแบบใหม่ (แบบขั้นตอนเดียว - One Step)\" ช่วยลดเวลาในการชำระเงินได้ดีกว่า \"หน้าเช็คเอาต์เดิม (แบบ 3 ขั้นตอน)\" หรือไม่ โดยทีมงานได้คัดเลือกผู้ใช้จริงมาจำนวน 30 คน และให้ผู้ใช้ทั้ง 30 คนนี้ ทดลองใช้งานหน้าเช็คเอาต์เดิมก่อนเพื่อจับเวลา จากนั้นให้ผู้ใช้กลุ่มเดิมทั้ง 30 คนนี้มาทดลองใช้งานหน้าเช็คเอาต์รูปแบบใหม่เพื่อจับเวลาเปรียบเทียบกัน ในการวิเคราะห์ข้อมูลความแตกต่างของเวลา ทีมวิจัยต้องใช้สถิติข้อใดจึงจะถูกต้องตามระเบียบวิธีวิจัย?", "options": [{"key": "ก", "text": "One-Sample T-test"}, {"key": "ข", "text": "Independent Samples T-test"}, {"key": "ค", "text": "Paired / Dependent Samples T-test"}, {"key": "ง", "text": "Chi-Square Test"}], "answer": "ค", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> มักเห็นว่าเปรียบเทียบ 2 แบบ (หน้าเดิม vs หน้าใหม่) เลยรีบตอบ Independent Samples T-test</li>\n<li><strong>ทำไมถึงเป็น Paired T-test:</strong> กุญแจสำคัญคือ <strong>\"ผู้ใช้กลุ่มเดิม 30 คน ถูกทดสอบซ้ำทั้งสองเงื่อนไข (Within-Subjects / Pre-test vs Post-test)\"</strong> ข้อมูลของทั้งสองรอบมีความสัมพันธ์กันทางพันธุกรรมและพฤติกรรมส่วนบุคคล จึงต้องใช้ <strong>Paired Samples T-test</strong> (หากเป็นคนละกลุ่มกัน กลุ่มละ 30 คน ถึงจะใช้ Independent T-test)</li>\n</ul>"}, {"id": "q_54", "chapter_id": "Summary_9_UX_UI_measurement.md", "chapter_name": "09. UX Measurement & Statistics", "trap_title": "กับดัก: การเลือกสถิติ ANOVA - One-way vs Two-way", "stem": "นักวิจัย UX ต้องการศึกษาผลกระทบของ \"การผสมผสานระหว่างสีพื้นหลัง (โหมดสว่าง vs โหมดมืด)\" ร่วมกับ \"รูปแบบตัวอักษร (มีหัว Serif vs ไม่มีหัว Sans-serif)\" ว่าส่งผลต่อความเร็วในการอ่านบทความของผู้ใช้หรือไม่ การวิเคราะห์ผลการทดลองนี้ต้องใช้เครื่องมือทางสถิติใด?", "options": [{"key": "ก", "text": "One-Way ANOVA"}, {"key": "ข", "text": "Two-Way ANOVA"}, {"key": "ค", "text": "Independent Samples T-test"}, {"key": "ง", "text": "Linear Regression"}], "answer": "ข", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> มีตัวแปรต้น (Independent Variables) <strong>จำนวน 2 ตัวแปรพร้อมกัน</strong> คือ (1) สีพื้นหลัง (2 ระดับ: สว่าง vs มืด) และ (2) รูปแบบฟอนต์ (2 ระดับ: มีหัว vs ไม่มีหัว) สถิติที่ออกแบบมาเพื่อวิเคราะห์ตัวแปรต้น 2 ตัว และดูว่ามี Interaction Effect หรือไม่ คือ <strong>Two-Way ANOVA</strong></li>\n</ul>"}, {"id": "q_55", "chapter_id": "Summary_9_UX_UI_measurement.md", "chapter_name": "09. UX Measurement & Statistics", "trap_title": "กับดัก: Linear vs Logistic Regression", "stem": "ทีมนักวิเคราะห์ข้อมูลต้องการสร้างโมเดลพยากรณ์เพื่อทำนายว่า \"ผู้ใช้งานที่เข้ามาในเว็บไซต์จะตัดสินใจกดคลิก 'สมัครสมาชิกรายปี (ค่าเป็น 1)' หรือ 'ปิดหน้าต่างหนี (ค่าเป็น 0)'\" โดยวิเคราะห์จากตัวแปรจำนวนนาทีที่ใช้งานเว็บไซต์และคะแนนความพึงพอใจ CSAT ทีมงานควรเลือกใช้วิธีการถดถอยแบบใด?", "options": [{"key": "ก", "text": "Linear Regression"}, {"key": "ข", "text": "Logistic Regression"}, {"key": "ค", "text": "Polynomial Regression"}, {"key": "ง", "text": "Repeated Measures Regression"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> มักสับสนว่าจะใช้ Linear หรือ Logistic</li>\n<li><strong>กฎเกณฑ์:</strong></li>\n<li>หากสิ่งที่ต้องการทำนาย (ตัวแปรตาม) เป็น <strong>หมวดหมู่ทวิภาค 2 ทางเลือก (Binary: 0 หรือ 1, ซื้อ หรือ ไม่ซื้อ, ผ่าน หรือ ไม่ผ่าน)</strong> ต้องใช้ <strong>Logistic Regression</strong></li>\n<li>หากสิ่งที่ต้องการทำนายเป็น <strong>ตัวเลขเชิงปริมาณต่อเนื่อง (Continuous: เวลาเป็นวินาที, จำนวนเงินที่จ่าย)</strong> ถึงจะใช้ <strong>Linear Regression</strong></li>\n</ul>"}, {"id": "q_56", "chapter_id": "Summary_9_UX_UI_measurement.md", "chapter_name": "09. UX Measurement & Statistics", "trap_title": "กับดัก: การแปลผล $p$-value ทางสถิติ", "stem": "ในการทำ A/B Testing ระหว่างปุ่มชำระเงินสีแดง (Version A) และปุ่มสีเขียว (Version B) เพื่อดูผลต่างของเวลาในการทำภารกิจ พบว่าผลการวิเคราะห์ t-test ให้ค่าสถิติ $t = 1.15$ และมีค่า $p\\text{-value} = 0.26$ ที่ระดับนัยสำคัญ $\\alpha = 0.05$ ข้อใดคือข้อสรุปที่ถูกต้องตามหลักวิทยาศาสตร์?", "options": [{"key": "ก", "text": "ปุ่มสีเขียวดีกว่าปุ่มสีแดงอย่างมีนัยสำคัญทางสถิติถึง 74%"}, {"key": "ข", "text": "ไม่มีความแตกต่างของเวลาในการทำภารกิจระหว่างปุ่มสีแดงและปุ่มสีเขียวอย่างมีนัยสำคัญทางสถิติ"}, {"key": "ค", "text": "ปุ่มสีแดงเร็วกว่าปุ่มสีเขียวอย่างแน่นอน เพราะค่า $t$ เป็นบวก"}, {"key": "ง", "text": "การทดลองนี้ล้มเหลวเพราะคำนวณค่า $p$ ผิดพลาด"}], "answer": "ข", "explanation": "<ul>\n<li><strong>เกณฑ์การตัดสิน:</strong> เมื่อกำหนด $\\alpha = 0.05$ หากค่า <strong>$p\\text{-value} \\ge 0.05$</strong> (ในโจทย์คือ $0.26 &gt; 0.05$) แสดงว่าความแตกต่างที่เห็นเกิดจากความบังเอิญทางสถิติ (Random Chance) ไม่สามารถปฏิเสธสมมติฐานหลัก ($H_0$) ได้ จึงสรุปว่าทั้งสองปุ่ม <strong>\"ให้ผลลัพธ์ไม่แตกต่างกันในเชิงสถิติ\"</strong></li>\n</ul>"}, {"id": "q_57", "chapter_id": "Summary_9_UX_UI_measurement.md", "chapter_name": "09. UX Measurement & Statistics", "trap_title": "กับดัก: Chi-Square Test", "stem": "หากต้องการทดสอบว่า \"เพศของผู้ใช้งาน (ชาย vs หญิง)\" มีความสัมพันธ์กับ \"ประเภทอุปกรณ์ที่เลือกใช้เข้าสู่ระบบ (สมาร์ทโฟน vs แท็บเล็ต vs คอมพิวเตอร์)\" หรือไม่ เครื่องมือทางสถิติในข้อใดเหมาะสมที่สุดสำหรับชุดข้อมูลนี้?", "options": [{"key": "ก", "text": "Pearson Correlation"}, {"key": "ข", "text": "Chi-Square Test of Independence ($\\chi^2$)"}, {"key": "ค", "text": "Paired T-test"}, {"key": "ง", "text": "One-Sample T-test"}], "answer": "ข", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> ทั้งสองตัวแปรเป็น <strong>ข้อมูลเชิงคุณภาพ/นามบัญญัติ (Categorical/Nominal Data)</strong> ทั้งคู่ (เพศ: ชาย/หญิง และ อุปกรณ์: มือถือ/แท็บเล็ต/คอมพิวเตอร์) การตรวจสอบความสัมพันธ์ระหว่างตัวแปรที่เป็นหมวดหมู่แบบนี้ต้องใช้ <strong>Chi-Square Test ($\\chi^2$)</strong> เท่านั้น (ไม่สามารถใช้ Pearson Correlation ได้เพราะ Pearson ใช้กับตัวเลขต่อเนื่อง)</li>\n</ul>"}, {"id": "q_58", "chapter_id": "Summary_9_UX_UI_measurement.md", "chapter_name": "09. UX Measurement & Statistics", "trap_title": "กับดัก: First Call Resolution - การหักเคส Reopened", "stem": "แผนกบริการลูกค้าดิจิทัลของธนาคาร ได้รับเรื่องร้องเรียนปัญหาการใช้งานแอปพลิเคชันทั้งหมด 500 เรื่อง เจ้าหน้าที่สามารถแก้ไขปัญหาจบได้ในการติดต่อครั้งแรก 400 เรื่อง แต่หลังจากนั้น 3 วัน มีลูกค้าในกลุ่มดังกล่าวติดต่อกลับมาเปิดเคสร้องเรียนปัญหาเดิมซ้ำอีก 50 เรื่อง อัตรา First Call Resolution (Real FCR) ที่แท้จริงมีค่าเท่าใด?", "options": [{"key": "ก", "text": "80%"}, {"key": "ข", "text": "70%"}, {"key": "ค", "text": "90%"}, {"key": "ง", "text": "75%"}], "answer": "ข", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> มักนำ 400 ไปหาร 500 ทันที ได้ 80% โดยลืมหักเคสที่เปิดซ้ำ (Reopened)</li>\n<li><strong>สูตรคำนวณ Real FCR:</strong>\n$$\\text{Real FCR} = \\frac{\\text{เคสที่แก้จบครั้งแรก} - \\text{เคสที่ Reopened}}{\\text{เคสทั้งหมด}} \\times 100$$\n$$\\text{Real FCR} = \\frac{400 - 50}{500} \\times 100 = \\frac{350}{500} \\times 100 = 70\\%$$</li>\n</ul>"}, {"id": "q_59", "chapter_id": "Summary_9_UX_UI_measurement.md", "chapter_name": "09. UX Measurement & Statistics", "trap_title": "กับดัก: Repeated Measures ANOVA", "stem": "ในการวิจัยขนาดไอคอนที่เหมาะสมบนหน้าจอสมาร์ทวอทช์ ผู้วิจัยได้นำอาสาสมัครกลุ่มเดียวกันจำนวน 25 คน มาทดสอบกดปุ่มไอคอนครบทั้ง 4 ขนาด (ได้แก่ ขนาด 16x16, 24x24, 32x32, และ 40x40 พิกเซล) เพื่อบันทึกความแม่นยำในการสัมผัส สถิติใดที่ถูกออกแบบมาเพื่อวิเคราะห์ข้อมูลลักษณะนี้โดยตรง?", "options": [{"key": "ก", "text": "Independent Samples T-test"}, {"key": "ข", "text": "One-Way ANOVA แบบ Between-Subjects"}, {"key": "ค", "text": "Repeated Measures ANOVA (Within-Subjects)"}, {"key": "ง", "text": "Simple Linear Regression"}], "answer": "ค", "explanation": "<ul>\n<li><strong>คำอธิบาย:</strong> มีการเปรียบเทียบเงื่อนไขทดลองมากกว่า 2 เงื่อนไข (มี 4 ขนาด) และกระทำบน <strong>\"กลุ่มตัวอย่างกลุ่มเดิมกลุ่มเดียวซ้ำๆ ทุกเงื่อนไข (Repeated Measures / Within-Subjects)\"</strong> จึงต้องใช้ <strong>Repeated Measures ANOVA</strong> เพื่อขจัดความแปรปรวนระหว่างบุคคลออกไป</li>\n</ul>"}, {"id": "q_60", "chapter_id": "Summary_9_UX_UI_measurement.md", "chapter_name": "09. UX Measurement & Statistics", "trap_title": "กับดัก: Google HEART Framework - Adoption vs Retention", "stem": "ในการวัดผลความสำเร็จของฟีเจอร์ใหม่ \"ระบบโอนเงินด้วยเสียง\" ทีม Product ได้ดึงข้อมูลตัวเลขพบว่า \"มีผู้ใช้งานเดิมที่เคยใช้แอปพลิเคชันอยู่แล้ว กดเข้ามาเปิดใช้งานฟีเจอร์โอนเงินด้วยเสียงนี้เป็นครั้งแรกจำนวน 15,000 คนในสัปดาห์แรก\" ตัวชี้วัด 15,000 คนนี้ จัดอยู่ในมิติใดของ Google HEART Framework?", "options": [{"key": "ก", "text": "Engagement"}, {"key": "ข", "text": "Happiness"}, {"key": "ค", "text": "Adoption"}, {"key": "ง", "text": "Retention"}], "answer": "ค", "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> มักสับสนกับ Retention (การกลับมาใช้ซ้ำ) หรือ Engagement (การมีปฏิสัมพันธ์)</li>\n<li><strong>คำอธิบาย:</strong> <strong>Adoption (การเปิดรับใช้งาน)</strong> วัดจำนวนผู้ใช้ที่เริ่มหันมาใช้งานผลิตภัณฑ์ใหม่หรือฟีเจอร์ใหม่ <strong>\"เป็นครั้งแรก (First-time usage)\"</strong> ในช่วงเวลาที่กำหนด ส่วน <strong>Retention</strong> จะวัดเมื่อผู้ใช้รายนั้น <strong>กลับมาใช้งานฟีเจอร์นี้ซ้ำอีกครั้งในรอบถัดไป</strong></li>\n</ul>"}];
+const cheatSheetData = [{"category": "จิตวิทยาการรับรู้ (Psychology Laws)", "pair": "Hick's Law vs Miller's Law", "trap_core": "เวลาตัดสินใจ vs ความจำระยะสั้น", "how_to_decide": "ถ้าโจทย์วัดที่ 'เวลาที่ใช้เลือก/ตัดสินใจลดลง' -> ตอบ Hick's Law ทันที | ถ้าโจทย์วัดที่ 'การแบ่งกลุ่มข้อมูลตัวเลขช่วยจำ (Chunking)' หรือ 'ขีดจำกัด 7 ± 2' -> ตอบ Miller's Law"}, {"category": "จิตวิทยาการรับรู้ (Psychology Laws)", "pair": "Tesler's Law (คำลวงว่ากำจัดความซับซ้อน)", "trap_core": "ความซับซ้อนไม่เคยหายไป", "how_to_decide": "ถ้าตัวเลือกบอกว่า 'ระบบ AI ช่วยกำจัดความซับซ้อนให้หมดไปจากระบบ' -> ข้อนั้นผิดทันที! Tesler ระบุว่าความซับซ้อนถูกย้ายจากฝั่งผู้ใช้ไปไว้ฝั่งระบบเท่านั้น"}, {"category": "กลลวง Dark Patterns", "pair": "Confirm Shaming vs Interface Interference", "trap_core": "ประชดให้อับอาย vs ซ่อนปุ่มด้วยสไตล์", "how_to_decide": "ถ้าปุ่มปฏิเสธใช้คำพูดประชดให้อับอายหรือรู้สึกผิด เช่น 'ไม่ล่ะ ฉันไม่อยากมีอนาคตที่ดี' -> Confirm Shaming | ถ้าปุ่มปฏิเสธแค่ใช้สีเทากลืนกับพื้นหลังแต่ไม่ได้ด่า -> Interface Interference"}, {"category": "กลลวง Dark Patterns", "pair": "Drip Pricing vs Bait & Switch", "trap_core": "ของเดิมแต่หยดราคา vs สลับของหลอกลวง", "how_to_decide": "ถ้าเป็นสินค้าชิ้นเดิม แต่ค่อยๆ โผล่ค่าธรรมเนียมแอบแฝงทีละหน้า -> Drip Pricing | ถ้าล่อด้วยสินค้า A หรือปุ่มปิด [X] แต่คลิกแล้วกลับกลายเป็นสินค้า B หรือดาวน์โหลดโปรแกรม -> Bait & Switch"}, {"category": "การวิเคราะห์ผู้ใช้ (UX Problem & Journey)", "pair": "POV: Need vs Solution", "trap_core": "ห้ามล็อกเทคโนโลยีในช่อง Need", "how_to_decide": "ในสูตร POV: [User] needs [Need] because [Insight] ตัว Need ต้องเป็น 'เป้าหมายที่แท้จริง' ถ้าตัวเลือกใดเขียนว่า 'ต้องการแอปพลิเคชัน...' หรือ 'ต้องการระบบ Cloud...' -> ข้อนั้นผิดทันที เพราะนั่นคือ Solution"}, {"category": "การวิเคราะห์ผู้ใช้ (UX Problem & Journey)", "pair": "Process Pain Point vs Productivity Pain Point", "trap_core": "ขั้นตอนซ้ำซ้อน vs ระบบช้าอืดอาด", "how_to_decide": "ถ้าต้นเหตุเกิดจาก 'ระเบียบขั้นตอนบังคับกรอกซ้ำหลายหน้า' แม้จะทำให้เสียเวลา -> ต้องตอบ Process Pain Point | จะตอบ Productivity Pain Point ก็ต่อเมื่อความล่าช้าเกิดจากเครื่องมือหรือระบบประมวลผลช้า"}, {"category": "จริยธรรมการวิจัยและ PDPA", "pair": "Exemption vs Full Board Protocol", "trap_core": "กลุ่มเปราะบางตัดสิทธิ์ Exemption ทันที", "how_to_decide": "แม้จะเป็นการทดสอบหน้าจอซอฟต์แวร์ความเสี่ยงต่ำ แต่ถ้ามี 'เด็ก, ผู้ป่วยจิตเวช หรือผู้บกพร่องสติปัญญา' เข้าร่วม -> ห้ามขอ Exemption / Expedited เด็ดขาด ต้องเข้า Full Board (ชุดใหญ่) เท่านั้น"}, {"category": "จริยธรรมการวิจัยและ PDPA", "pair": "Privacy vs Confidentiality", "trap_core": "ตัวบุคคล vs การดูแลข้อมูล", "how_to_decide": "Privacy คือสิทธิในตัวบุคคลไม่ให้ถูกรุกล้ำ | Confidentiality คือหน้าที่ของนักวิจัยในการปกป้องข้อมูลไม่ให้รั่วไหล ถ้าผู้ใช้ยินยอมเล่าประวัติแล้วผู้วิจัยเอาไปโพสต์จนคนอื่นจำได้ -> Breach of Confidentiality"}, {"category": "การทดสอบ Usability", "pair": "Error Prevention vs Help Recover from Errors", "trap_core": "ก่อนเกิดเหตุ vs หลังเกิดเหตุ", "how_to_decide": "ถ้าฟังก์ชันทำงาน 'ก่อน' กดส่ง เช่น เช็กรหัสผ่านเรียลไทม์ไม่ให้กดพลาด -> Error Prevention (ข้อ 5) | ถ้าทำงาน 'หลัง' กดส่งผิดไปแล้ว มีข้อความแดงขึ้นบอกวิธีแก้ -> Help Recover from Errors (ข้อ 9)"}, {"category": "การออกแบบ Prototype", "pair": "Mockup vs Prototype", "trap_core": "ภาพนิ่ง vs มีปฏิสัมพันธ์", "how_to_decide": "ต่อให้ภาพจะสวย สีสันตรง CI แบรนด์ คมชัด 4K แค่ไหน ถ้าเป็นภาพนิ่งกดโต้ตอบไม่ได้ -> ตอบ Mockup ทันที! จะเป็น Prototype ได้ต้องมีความเป็น Interactive โต้ตอบได้จริง"}, {"category": "การวัดผลความพึงพอใจ (Metrics)", "pair": "สูตรคำนวณ NPS (Net Promoter Score)", "trap_core": "กลุ่ม Passives (คะแนน 7-8) ห้ามนำมาลบ", "how_to_decide": "NPS = % Promoters (9-10) ลบด้วย % Detractors (0-6) โดยกลุ่ม Passives (7-8) มีไว้เป็นตัวหารในจำนวนคนทั้งหมดเท่านั้น ห้ามนำเปอร์เซ็นต์ Passives ไปลบในสมการเด็ดขาด"}, {"category": "การวัดผลความพึงพอใจ (Metrics)", "pair": "สูตรคำนวณ CSAT", "trap_core": "นับเฉพาะคะแนน 4 และ 5 เท่านั้น", "how_to_decide": "คะแนน 3 (ปานกลาง) ห้ามนำมารวมเป็นพอใจ! สูตร CSAT คิดเฉพาะ (คนตอบ 4 + 5) / คนตอบทั้งหมด x 100"}, {"category": "สถิติในงานวิจัย UX", "pair": "Independent T-test vs Paired T-test", "trap_core": "คนละกลุ่ม vs กลุ่มเดิมวัดซ้ำ", "how_to_decide": "ถ้า A/B Testing ให้ผู้ใช้กลุ่ม A ทำหน้าเก่า และผู้ใช้กลุ่ม B ทำหน้าใหม่ -> Independent T-test | ถ้าเอาผู้ใช้กลุ่มเดิม 30 คนเดิม มาทำทั้งหน้าเก่าและหน้าใหม่เปรียบเทียบกัน -> Paired T-test"}, {"category": "สถิติในงานวิจัย UX", "pair": "Linear Regression vs Logistic Regression", "trap_core": "ทายตัวเลขต่อเนื่อง vs ทายหมวดหมู่ 0/1", "how_to_decide": "ถ้าผลลัพธ์ที่ต้องการทายเป็นตัวเลขต่อเนื่อง เช่น เวลาเป็นวินาที -> Linear Regression | ถ้าผลลัพธ์เป็น 2 ทางเลือก (ซื้อ/ไม่ซื้อ, ผ่าน/ไม่ผ่าน) -> Logistic Regression"}];
+
+let currentSubject = 'uxui';
+let currentMode = 'study';
+let currentChapterIdx = 0;
+let currentQIdx = 0;
+let userAnswers = {};
+let flaggedQuestions = new Set();
+let activeFilter = 'all';
+
+const navTabs = document.querySelectorAll('.nav-tab');
+const btnModeStudy = document.getElementById('btnModeStudy');
+const btnModeQuiz = document.getElementById('btnModeQuiz');
+const btnModeCheat = document.getElementById('btnModeCheat');
+const searchInput = document.getElementById('searchInput');
+const chapterNavBar = document.getElementById('chapterNavBar');
+
+const readerCanvas = document.getElementById('readerCanvas');
+const heroMetaNum = document.getElementById('heroMetaNum');
+const heroMetaTime = document.getElementById('heroMetaTime');
+const heroTitle = document.getElementById('heroTitle');
+const heroSubtitle = document.getElementById('heroSubtitle');
+const sectionsList = document.getElementById('sectionsList');
+
+const cheatSheetPanel = document.getElementById('cheatSheetPanel');
+const cheatCardsGrid = document.getElementById('cheatCardsGrid');
+const quizPanel = document.getElementById('quizPanel');
+const placeholderView = document.getElementById('placeholderView');
+const placeholderTitle = document.getElementById('placeholderTitle');
+const placeholderText = document.getElementById('placeholderText');
+
+const statProgress = document.getElementById('statProgress');
+const statScore = document.getElementById('statScore');
+const statAccuracy = document.getElementById('statAccuracy');
+const btnFlagQ = document.getElementById('btnFlagQ');
+const btnPrevQ = document.getElementById('btnPrevQ');
+const btnNextQ = document.getElementById('btnNextQ');
+const btnResetQuiz = document.getElementById('btnResetQuiz');
+const quizGrid = document.getElementById('quizGrid');
+const filterAll = document.getElementById('filterAll');
+const filterWrong = document.getElementById('filterWrong');
+const filterFlagged = document.getElementById('filterFlagged');
+const cntWrong = document.getElementById('cntWrong');
+const cntFlagged = document.getElementById('cntFlagged');
+
+const qMetaChapter = document.getElementById('qMetaChapter');
+const qMetaTrap = document.getElementById('qMetaTrap');
+const qText = document.getElementById('qText');
+const qOptions = document.getElementById('qOptions');
+const qExplanation = document.getElementById('qExplanation');
+const qExplanationBody = document.getElementById('qExplanationBody');
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxCaption = document.getElementById('lightboxCaption');
+
+function init() {
+  renderChapterNavBar();
+  loadChapter(0);
+  renderCheatSheet();
+  initQuizGrid();
+  loadQuestion(0);
+  bindEvents();
+}
+
+function bindEvents() {
+  navTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      if (tab.style.cursor === 'not-allowed') return;
+      navTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      currentSubject = tab.dataset.subject;
+      handleSubjectChange();
+    });
+  });
+
+  btnModeStudy.addEventListener('click', () => switchMode('study'));
+  btnModeQuiz.addEventListener('click', () => switchMode('quiz'));
+  btnModeCheat.addEventListener('click', () => switchMode('cheat'));
+
+  searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase().trim();
+    if (currentMode === 'study') filterStudySections(query);
+    else if (currentMode === 'cheat') filterCheatSheet(query);
+  });
+
+  btnFlagQ.addEventListener('click', () => toggleFlag(currentQIdx));
+
+  btnPrevQ.addEventListener('click', () => {
+    const list = getFilteredQuestionIndices();
+    const currPos = list.indexOf(currentQIdx);
+    if (currPos > 0) loadQuestion(list[currPos - 1]);
+  });
+
+  btnNextQ.addEventListener('click', () => {
+    const list = getFilteredQuestionIndices();
+    const currPos = list.indexOf(currentQIdx);
+    if (currPos !== -1 && currPos < list.length - 1) loadQuestion(list[currPos + 1]);
+  });
+
+  filterAll.addEventListener('click', () => setFilter('all'));
+  filterWrong.addEventListener('click', () => setFilter('wrong'));
+  filterFlagged.addEventListener('click', () => setFilter('flagged'));
+
+  btnResetQuiz.addEventListener('click', () => {
+    if (confirm('คุณต้องการรีเซ็ตผลการทำข้อสอบทั้งหมดใช่หรือไม่?')) {
+      userAnswers = {};
+      flaggedQuestions.clear();
+      setFilter('all');
+      initQuizGrid();
+      loadQuestion(0);
+      updateQuizStats();
+    }
+  });
+}
+
+function openLightbox(src, caption) {
+  lightboxImg.src = src;
+  lightboxCaption.textContent = caption;
+  lightbox.style.display = 'flex';
+}
+
+function closeLightbox() {
+  lightbox.style.display = 'none';
+}
+
+function handleSubjectChange() {
+  if (currentSubject === 'uxui') {
+    placeholderView.style.display = 'none';
+    btnModeStudy.style.display = 'inline-block';
+    btnModeQuiz.style.display = 'inline-block';
+    btnModeCheat.style.display = 'inline-block';
+    searchInput.style.display = 'inline-block';
+    switchMode(currentMode);
+  } else if (currentSubject === 'selected-topic') {
+    readerCanvas.style.display = 'none';
+    quizPanel.style.display = 'none';
+    cheatSheetPanel.style.display = 'none';
+    chapterNavBar.style.display = 'none';
+    placeholderView.style.display = 'block';
+    placeholderTitle.textContent = 'Selected Topic in IoT System and Information Engineering';
+    placeholderText.innerHTML = 'แปลงไฟล์เอกสารทั้ง 8 ชุด (L1 - L9 รวม 385 หน้า) ครบ 100% แล้ว<br>มีโจทย์คำนวณข้อเขียนของ L8-9 หน้า 9-13 (Span Design & PON) รอเปิดสลับเข้ามาในระบบ';
+  }
+}
+
+function switchMode(mode) {
+  currentMode = mode;
+  btnModeStudy.classList.remove('active');
+  btnModeQuiz.classList.remove('active');
+  btnModeCheat.classList.remove('active');
+  chapterNavBar.style.display = 'none';
+  readerCanvas.style.display = 'none';
+  quizPanel.style.display = 'none';
+  cheatSheetPanel.style.display = 'none';
+
+  if (mode === 'study') {
+    btnModeStudy.classList.add('active');
+    chapterNavBar.style.display = 'flex';
+    readerCanvas.style.display = 'flex';
+    searchInput.placeholder = 'Search keywords...';
+  } else if (mode === 'quiz') {
+    btnModeQuiz.classList.add('active');
+    quizPanel.style.display = 'flex';
+    searchInput.placeholder = 'Search questions...';
+    loadQuestion(currentQIdx);
+  } else if (mode === 'cheat') {
+    btnModeCheat.classList.add('active');
+    cheatSheetPanel.style.display = 'flex';
+    searchInput.placeholder = 'Search cheat sheet traps...';
+  }
+}
+
+function renderChapterNavBar() {
+  chapterNavBar.innerHTML = '';
+  chapters.forEach((chap, idx) => {
+    const btn = document.createElement('button');
+    btn.className = `chapter-btn ${idx === 0 ? 'active' : ''}`;
+    btn.textContent = `${chap.num}. ${chap.title}`;
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.chapter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      loadChapter(idx);
+    });
+    chapterNavBar.appendChild(btn);
+  });
+}
+
+function loadChapter(idx) {
+  currentChapterIdx = idx;
+  const chap = chapters[idx];
+  
+  heroMetaNum.textContent = `CHAPTER ${chap.num}`;
+  heroMetaTime.textContent = chap.reading_time.toUpperCase();
+  heroTitle.textContent = chap.title;
+  heroSubtitle.textContent = chap.subtitle;
+
+  sectionsList.innerHTML = '';
+  chap.sections.forEach(sec => {
+    const card = document.createElement('div');
+    card.className = 'section-card';
+
+    let imgBlock = '';
+    if (sec.image) {
+      imgBlock = `
+        <div class="section-slide-container" onclick="openLightbox('${sec.image}', '${sec.image_title}')">
+          <div class="section-slide-wrap">
+            <img src="${sec.image}" alt="${sec.image_title}" loading="lazy">
+          </div>
+          <div class="slide-caption-bar">
+            <span class="slide-caption-text">${sec.image_title}</span>
+            <span class="slide-expand-hint">Click to expand</span>
+          </div>
+        </div>
+      `;
+    }
+
+    card.innerHTML = `
+      <div class="section-header-title">${sec.title}</div>
+      ${imgBlock}
+      <div class="section-body">${sec.body_html}</div>
+    `;
+    sectionsList.appendChild(card);
+  });
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function filterStudySections(query) {
+  if (!query) {
+    loadChapter(currentChapterIdx);
+    return;
+  }
+  const cards = document.querySelectorAll('.section-card');
+  cards.forEach(c => {
+    const text = c.innerText.toLowerCase();
+    c.style.display = text.includes(query) ? 'flex' : 'none';
+  });
+}
+
+function renderCheatSheet() {
+  cheatCardsGrid.innerHTML = cheatSheetData.map(c => `
+    <div class="cheat-card">
+      <div class="cheat-badge-category">${c.category}</div>
+      <div class="cheat-pair">${c.pair}</div>
+      <div class="cheat-trap-core">${c.trap_core}</div>
+      <div class="cheat-how-to">${c.how_to_decide}</div>
+    </div>
+  `).join('');
+}
+
+function filterCheatSheet(query) {
+  if (!query) {
+    renderCheatSheet();
+    return;
+  }
+  const filtered = cheatSheetData.filter(c => 
+    c.pair.toLowerCase().includes(query) ||
+    c.trap_core.toLowerCase().includes(query) ||
+    c.how_to_decide.toLowerCase().includes(query)
+  );
+  cheatCardsGrid.innerHTML = filtered.map(c => `
+    <div class="cheat-card">
+      <div class="cheat-badge-category">${c.category}</div>
+      <div class="cheat-pair">${c.pair}</div>
+      <div class="cheat-trap-core">${c.trap_core}</div>
+      <div class="cheat-how-to">${c.how_to_decide}</div>
+    </div>
+  `).join('');
+}
+
+function getFilteredQuestionIndices() {
+  return allQuestions.map((q, idx) => idx).filter(idx => {
+    const q = allQuestions[idx];
+    if (activeFilter === 'wrong') {
+      return userAnswers[q.id] && userAnswers[q.id] !== q.answer;
+    } else if (activeFilter === 'flagged') {
+      return flaggedQuestions.has(idx);
+    }
+    return true;
+  });
+}
+
+function setFilter(filterType) {
+  activeFilter = filterType;
+  filterAll.classList.toggle('active', filterType === 'all');
+  filterWrong.classList.toggle('active', filterType === 'wrong');
+  filterFlagged.classList.toggle('active', filterType === 'flagged');
+
+  const filtered = getFilteredQuestionIndices();
+  initQuizGrid();
+  if (filtered.length > 0) {
+    loadQuestion(filtered[0]);
+  } else {
+    qText.textContent = 'ไม่พบข้อสอบในเงื่อนไขการกรองนี้';
+    qOptions.innerHTML = '';
+    qExplanation.style.display = 'none';
+  }
+}
+
+function toggleFlag(idx) {
+  if (flaggedQuestions.has(idx)) {
+    flaggedQuestions.delete(idx);
+    btnFlagQ.classList.remove('flagged');
+    btnFlagQ.textContent = 'Flag Question';
+  } else {
+    flaggedQuestions.add(idx);
+    btnFlagQ.classList.add('flagged');
+    btnFlagQ.textContent = 'Flagged';
+  }
+  const cell = document.getElementById(`gridCell_${idx}`);
+  if (cell) cell.classList.toggle('is-flagged', flaggedQuestions.has(idx));
+  cntFlagged.textContent = flaggedQuestions.size;
+}
+
+function initQuizGrid() {
+  quizGrid.innerHTML = '';
+  const filtered = getFilteredQuestionIndices();
+
+  filtered.forEach(idx => {
+    const cell = document.createElement('div');
+    cell.className = 'grid-num';
+    cell.id = `gridCell_${idx}`;
+    cell.textContent = idx + 1;
+    if (flaggedQuestions.has(idx)) cell.classList.add('is-flagged');
+
+    const q = allQuestions[idx];
+    if (userAnswers[q.id]) {
+      cell.classList.add(userAnswers[q.id] === q.answer ? 'correct' : 'wrong');
+    }
+
+    cell.addEventListener('click', () => loadQuestion(idx));
+    quizGrid.appendChild(cell);
+  });
+}
+
+function loadQuestion(idx) {
+  currentQIdx = idx;
+  const q = allQuestions[idx];
+
+  document.querySelectorAll('.grid-num').forEach(c => c.classList.remove('current'));
+  const currentCell = document.getElementById(`gridCell_${idx}`);
+  if (currentCell) currentCell.classList.add('current');
+
+  qMetaChapter.textContent = q.chapter_name;
+  qMetaTrap.textContent = q.trap_title;
+  qText.textContent = `${idx + 1}. ${q.stem}`;
+
+  btnFlagQ.classList.toggle('flagged', flaggedQuestions.has(idx));
+  btnFlagQ.textContent = flaggedQuestions.has(idx) ? 'Flagged' : 'Flag Question';
+
+  qOptions.innerHTML = '';
+  const answered = userAnswers[q.id];
+
+  q.options.forEach(opt => {
+    const optEl = document.createElement('div');
+    optEl.className = 'option-item';
+    optEl.innerHTML = `<span class="option-key">${opt.key}</span><span>${opt.text}</span>`;
+
+    if (answered) {
+      optEl.classList.add('locked');
+      if (opt.key === q.answer) {
+        optEl.classList.add('selected-correct');
+      } else if (opt.key === answered) {
+        optEl.classList.add('selected-wrong');
+      }
+    } else {
+      optEl.addEventListener('click', () => handleAnswer(q, opt.key));
+    }
+    qOptions.appendChild(optEl);
+  });
+
+  if (answered) {
+    qExplanation.style.display = 'block';
+    qExplanationBody.innerHTML = q.explanation;
+  } else {
+    qExplanation.style.display = 'none';
+  }
+
+  updateQuizStats();
+}
+
+function handleAnswer(q, selectedKey) {
+  if (userAnswers[q.id]) return;
+  userAnswers[q.id] = selectedKey;
+
+  const isCorrect = (selectedKey === q.answer);
+  const cell = document.getElementById(`gridCell_${currentQIdx}`);
+  if (cell) {
+    cell.classList.remove('correct', 'wrong');
+    cell.classList.add(isCorrect ? 'correct' : 'wrong');
+  }
+
+  loadQuestion(currentQIdx);
+}
+
+function updateQuizStats() {
+  const filtered = getFilteredQuestionIndices();
+  const currPos = filtered.indexOf(currentQIdx);
+  statProgress.textContent = `${currPos + 1} / ${filtered.length}`;
+
+  let correctCount = 0;
+  let answeredCount = 0;
+  let wrongCount = 0;
+
+  allQuestions.forEach(q => {
+    if (userAnswers[q.id]) {
+      answeredCount++;
+      if (userAnswers[q.id] === q.answer) {
+        correctCount++;
+      } else {
+        wrongCount++;
+      }
+    }
+  });
+
+  statScore.textContent = `${correctCount} / ${answeredCount}`;
+  const acc = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
+  statAccuracy.textContent = `${acc}%`;
+  cntWrong.textContent = wrongCount;
+  cntFlagged.textContent = flaggedQuestions.size;
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>
