@@ -4,23 +4,23 @@
     "chapter_id": "Summary_M02.md",
     "chapter_name": "02. Introduction to Developing on AWS",
     "trap_title": "Official AWS Knowledge Check (Mod 02)",
-    "stem": "[AWS Official KC] The systems development lifecycle (SDLC) has six phases. The first three phases are plan, define, and design. What are the last three phases of the SDLC?",
+    "stem": "[AWS Official KC] วงจรการพัฒนาระบบ (SDLC) ประกอบด้วย 6 เฟส โดย 3 เฟสแรกคือ plan, define และ design ข้อใดคือ 3 เฟสสุดท้ายของ SDLC?",
     "options": [
       {
         "key": "ก",
-        "text": "Code, build, and maintain"
+        "text": "Code, build และ maintain"
       },
       {
         "key": "ข",
-        "text": "Code, build, and test"
+        "text": "Code, build และ test"
       },
       {
         "key": "ค",
-        "text": "Test, deploy, and maintain"
+        "text": "Test, deploy และ maintain"
       },
       {
         "key": "ง",
-        "text": "Develop, deploy, and maintain"
+        "text": "Develop, deploy และ maintain"
       }
     ],
     "answer": "ง",
@@ -33,23 +33,23 @@
     "chapter_id": "Summary_M02.md",
     "chapter_name": "02. Introduction to Developing on AWS",
     "trap_title": "Official AWS Knowledge Check (Mod 02)",
-    "stem": "[AWS Official KC] Which task is performed during the develop stage of the systems development lifecycle (SDLC)?",
+    "stem": "[AWS Official KC] งานใดดำเนินการในขั้นตอนการพัฒนา (develop stage) ของวงจรการพัฒนาระบบ (SDLC)?",
     "options": [
       {
         "key": "ก",
-        "text": "Deficiencies are identified."
+        "text": "การระบุข้อบกพร่องและจุดที่ต้องแก้ไข"
       },
       {
         "key": "ข",
-        "text": "The system is put into use."
+        "text": "การนำระบบขึ้นใช้งานจริง"
       },
       {
         "key": "ค",
-        "text": "New system requirements are defined."
+        "text": "การกำหนดความต้องการใหม่ของระบบ"
       },
       {
         "key": "ง",
-        "text": "New components are obtained and installed."
+        "text": "การจัดหาและติดตั้งคอมโพเนนต์ใหม่"
       }
     ],
     "answer": "ง",
@@ -62,7 +62,7 @@
     "chapter_id": "Summary_M02.md",
     "chapter_name": "02. Introduction to Developing on AWS",
     "trap_title": "Official AWS Knowledge Check (Mod 02)",
-    "stem": "[AWS Official KC] A systems administrator must grant a new developer permissions that are associated with the developer role. This role is associated with the developer group. Which AWS service should the administrator use to assign the new developer to the developer group?",
+    "stem": "[AWS Official KC] ผู้ดูแลระบบต้องกำหนดสิทธิ์ที่เกี่ยวข้องกับ developer role ให้แก่นักพัฒนาคนใหม่ ซึ่ง role นี้ถูกผูกอยู่กับ developer group ผู้ดูแลระบบควรใช้บริการ AWS ใดในการเพิ่มนักพัฒนาเข้ากลุ่มดังกล่าว?",
     "options": [
       {
         "key": "ก",
@@ -91,23 +91,23 @@
     "chapter_id": "Summary_M02.md",
     "chapter_name": "02. Introduction to Developing on AWS",
     "trap_title": "Official AWS Knowledge Check (Mod 02)",
-    "stem": "[AWS Official KC] Which of the following is an important benefit of AWS CloudShell?",
+    "stem": "[AWS Official KC] ข้อใดคือประโยชน์สำคัญของ AWS CloudShell?",
     "options": [
       {
         "key": "ก",
-        "text": "You manually patch and update the environment."
+        "text": "ต้องแพตช์และอัปเดตสภาพแวดล้อมการทำงานด้วยตนเอง"
       },
       {
         "key": "ข",
-        "text": "Users get 500 MB of storage per region."
+        "text": "ผู้ใช้งานได้รับพื้นที่จัดเก็บข้อมูล 500 MB ต่อ Region"
       },
       {
         "key": "ค",
-        "text": "It inherits your credentials from the AWS Management Console."
+        "text": "สืบทอดสิทธิ์การยืนยันตัวตน (credentials) จาก AWS Management Console โดยอัตโนมัติ"
       },
       {
         "key": "ง",
-        "text": "You pay up front for reserved blocks of time and capacity."
+        "text": "ต้องจ่ายค่าบริการล่วงหน้าสำหรับช่วงเวลาและความจุที่สำรองไว้"
       }
     ],
     "answer": "ค",
@@ -120,11 +120,11 @@
     "chapter_id": "Summary_M02.md",
     "chapter_name": "02. Introduction to Developing on AWS",
     "trap_title": "Official AWS Knowledge Check (Mod 02)",
-    "stem": "[AWS Official KC] What are three ways to interact with AWS service application programming interfaces (APIs)? (Select the THREE best options.)",
+    "stem": "[AWS Official KC] สามช่องทางใดที่ใช้ติดต่อสื่อสารกับ Application Programming Interfaces (APIs) ของบริการ AWS? (เลือกคำตอบที่ถูกต้องที่สุด 3 ข้อ)",
     "options": [
       {
         "key": "ก",
-        "text": "AWS software development kits (SDKs)"
+        "text": "AWS Software Development Kits (SDKs)"
       },
       {
         "key": "ข",
@@ -161,7 +161,7 @@
     "chapter_id": "Summary_M02.md",
     "chapter_name": "02. Introduction to Developing on AWS",
     "trap_title": "Official AWS Knowledge Check (Mod 02)",
-    "stem": "[AWS Official KC] Which tool enables users to control their AWS services from the command line and automate service management with scripts?",
+    "stem": "[AWS Official KC] เครื่องมือใดช่วยให้ผู้ใช้สามารถควบคุมบริการ AWS ผ่าน Command Line และจัดการระบบแบบอัตโนมัติด้วยสคริปต์ได้?",
     "options": [
       {
         "key": "ก",
@@ -190,23 +190,23 @@
     "chapter_id": "Summary_M02.md",
     "chapter_name": "02. Introduction to Developing on AWS",
     "trap_title": "Official AWS Knowledge Check (Mod 02)",
-    "stem": "[AWS Official KC] What is Amazon Q Developer?",
+    "stem": "[AWS Official KC] Amazon Q Developer คืออะไร?",
     "options": [
       {
         "key": "ก",
-        "text": "A cloud-based integrated development environment (IDE)"
+        "text": "Integrated development environment (IDE) บนคลาวด์"
       },
       {
         "key": "ข",
-        "text": "A wizard that leads you through the steps to configure your integrated development environment (IDE)"
+        "text": "วิซาร์ดช่วยแนะนำขั้นตอนการกำหนดค่า integrated development environment (IDE)"
       },
       {
         "key": "ค",
-        "text": "A generative Al-powered coding assistant"
+        "text": "ผู้ช่วยเขียนโค้ดที่ขับเคลื่อนด้วย Generative AI"
       },
       {
         "key": "ง",
-        "text": "A browser-based CLI"
+        "text": "CLI ที่ทำงานผ่านเว็บเบราว์เซอร์"
       }
     ],
     "answer": "ค",
@@ -219,27 +219,27 @@
     "chapter_id": "Summary_M02.md",
     "chapter_name": "02. Introduction to Developing on AWS",
     "trap_title": "Official AWS Knowledge Check (Mod 02)",
-    "stem": "[AWS Official KC] Which statements describe AWS resource application programming interfaces (APIs)? (Select TWO.)",
+    "stem": "[AWS Official KC] ข้อความใดอธิบายถึง AWS resource APIs ได้ถูกต้อง? (เลือก สอง ข้อ)",
     "options": [
       {
         "key": "ก",
-        "text": "They have at least one class per conceptual resource."
+        "text": "มีอย่างน้อยหนึ่งคลาสต่อหนึ่ง conceptual resource"
       },
       {
         "key": "ข",
-        "text": "They have objects for request and result data."
+        "text": "มีอ็อบเจกต์สำหรับข้อมูล request และ result"
       },
       {
         "key": "ค",
-        "text": "They provide a lower-level abstraction than the higher-level calls made by service client APIs."
+        "text": "ให้ abstraction ระดับต่ำกว่าการเรียกใช้ระดับสูงของ service client APIs"
       },
       {
         "key": "ง",
-        "text": "They provide access to resources through objects and collections."
+        "text": "ให้การเข้าถึงทรัพยากรผ่านอ็อบเจกต์และ collections"
       },
       {
         "key": "จ",
-        "text": "They provide a higher-level abstraction than the low-level calls made by service client APIs."
+        "text": "ให้ abstraction ระดับสูงกว่าการเรียกใช้ระดับต่ำของ service client APIs"
       }
     ],
     "answer": [
@@ -255,23 +255,23 @@
     "chapter_id": "Summary_M02.md",
     "chapter_name": "02. Introduction to Developing on AWS",
     "trap_title": "Official AWS Knowledge Check (Mod 02)",
-    "stem": "[AWS Official KC] A developer is using the AWS software development kit (SDK) for Python (Bot03) and must specify the Region. Which method enables the developer specify the Region?",
+    "stem": "[AWS Official KC] นักพัฒนาใช้งาน AWS SDK for Python (Boto3) และต้องระบุ Region วิธีการใดช่วยให้นักพัฒนาระบุ Region ได้?",
     "options": [
       {
         "key": "ก",
-        "text": "By associating a default Region with their profile in the credentials file in the .aws folder within their \"home\" folder"
+        "text": "กำหนด Region เริ่มต้นให้กับโพรไฟล์ในไฟล์ credentials ภายใต้โฟลเดอร์ .aws ใน \"home\" ไดเรกทอรี"
       },
       {
         "key": "ข",
-        "text": "Users cannot specify the AWS Region in the service client"
+        "text": "ผู้ใช้ไม่สามารถระบุ AWS Region ใน service client ได้"
       },
       {
         "key": "ค",
-        "text": "By setting the Region when they instantiate the service client"
+        "text": "กำหนด Region ขณะทำ instantiate ให้กับ service client"
       },
       {
         "key": "ง",
-        "text": "By setting the AWS_PROFILE environment variable"
+        "text": "กำหนดผ่านตัวแปรสภาพแวดล้อม AWS_PROFILE"
       }
     ],
     "answer": "ค",
@@ -284,23 +284,23 @@
     "chapter_id": "Summary_M02.md",
     "chapter_name": "02. Introduction to Developing on AWS",
     "trap_title": "Official AWS Knowledge Check (Mod 02)",
-    "stem": "[AWS Official KC] A developer makes an application programming interface (API) call to access an Amazon Simple Storage Service (Amazon S3) bucket that doesn't exist. Which HTTP response code does the developer receive from the AWS service?",
+    "stem": "[AWS Official KC] นักพัฒนาเรียกใช้ API เพื่อเข้าถึง Amazon S3 bucket ที่ไม่มีอยู่จริง นักพัฒนาจะได้รับรหัสสถานะตอบกลับ HTTP ใดจากบริการ AWS?",
     "options": [
       {
         "key": "ก",
-        "text": "500 series"
+        "text": "กลุ่ม 500"
       },
       {
         "key": "ข",
-        "text": "200 series"
+        "text": "กลุ่ม 200"
       },
       {
         "key": "ค",
-        "text": "300 series"
+        "text": "กลุ่ม 300"
       },
       {
         "key": "ง",
-        "text": "400 series"
+        "text": "กลุ่ม 400"
       }
     ],
     "answer": "ง",
@@ -313,11 +313,11 @@
     "chapter_id": "Summary_M03.md",
     "chapter_name": "03. Amazon S3 Storage Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 03)",
-    "stem": "[AWS Official KC] A student is learning about Amazon Simple Storage Service (Amazon S3). During an interview, a potential employer asks the student to explain how Amazon S3 can be used as a storage solution. Which option is a use case for Amazon S3?",
+    "stem": "[AWS Official KC] นักศึกษากำลังเรียนรู้เกี่ยวกับ Amazon S3 ในการสัมภาษณ์งาน ผู้สัมภาษณ์ถามว่า Amazon S3 สามารถนำไปใช้เป็นโซลูชันจัดเก็บข้อมูลได้อย่างไร ตัวเลือกใดคือ use case ของ Amazon S3?",
     "options": [
       {
         "key": "ก",
-        "text": "Hosting active databases"
+        "text": "การโฮสต์ active databases"
       },
       {
         "key": "ข",
@@ -342,7 +342,7 @@
     "chapter_id": "Summary_M03.md",
     "chapter_name": "03. Amazon S3 Storage Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 03)",
-    "stem": "[AWS Official KC] A _______ organizes the Amazon Simple Storage Service (Amazon S3) namespace at the highest level.",
+    "stem": "[AWS Official KC] สิ่งใดใช้จัดระเบียบ namespace ของ Amazon S3 ในระดับสูงสุด?",
     "options": [
       {
         "key": "ก",
@@ -371,23 +371,23 @@
     "chapter_id": "Summary_M03.md",
     "chapter_name": "03. Amazon S3 Storage Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 03)",
-    "stem": "[AWS Official KC] A developer wants to store image files in a bucket that is called images-bucket, but receives the error BucketAlreadyExists. Which action must the developer take tresolve this error?",
+    "stem": "[AWS Official KC] นักพัฒนาต้องการจัดเก็บไฟล์รูปภาพใน Bucket ชื่อ images-bucket แต่ได้รับข้อผิดพลาด BucketAlreadyExists นักพัฒนาต้องดำเนินการอย่างไรเพื่อแก้ไขข้อผิดพลาดนี้?",
     "options": [
       {
         "key": "ก",
-        "text": "Bucket names are unique to the Region that they are created in. If the requested bucket name is not available, the developer must create the images-bucket in a different Region."
+        "text": "ชื่อ Bucket ไม่ซ้ำกันเฉพาะภายใน Region ที่สร้างขึ้น หากชื่อ Bucket ที่ต้องการไม่ว่าง นักพัฒนาต้องสร้าง images-bucket ใน Region อื่น"
       },
       {
         "key": "ข",
-        "text": "Bucket names are globally unique. If the requested bucket name is not available, the developer must rename the bucket."
+        "text": "ชื่อ Bucket ต้องไม่ซ้ำกันทั่วโลก (Globally Unique) หากชื่อ Bucket ที่ต้องการไม่ว่าง นักพัฒนาต้องเปลี่ยนชื่อ Bucket"
       },
       {
         "key": "ค",
-        "text": "Bucket names go to the highest bidder. The developer must outbid the current bucket owner."
+        "text": "ชื่อ Bucket จะตกเป็นของผู้ที่ประมูลราคาสูงสุด นักพัฒนาต้องประมูลแข่งกับเจ้าของ Bucket คนปัจจุบัน"
       },
       {
         "key": "ง",
-        "text": "The developer must contact AWS Support to request approval to use the same bucket name."
+        "text": "นักพัฒนาต้องติดต่อ AWS Support เพื่อขออนุมัติการใช้ชื่อ Bucket ซ้ำกัน"
       }
     ],
     "answer": "ข",
@@ -400,7 +400,7 @@
     "chapter_id": "Summary_M03.md",
     "chapter_name": "03. Amazon S3 Storage Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 03)",
-    "stem": "[AWS Official KC] A developer is using Amazon Simple Storage Service (Amazon S3) to host a static website in a bucket that is called frank-martha-cafe. This bucket is in the us-east-I Region. Which URL is the virtual-hosted-style URL for the website?",
+    "stem": "[AWS Official KC] นักพัฒนากำลังใช้ Amazon Simple Storage Service (Amazon S3) เพื่อโฮสต์เว็บไซต์แบบคงที่ (Static Website) ใน Bucket ชื่อ frank-martha-cafe โดย Bucket นี้อยู่ใน Region us-east-1 URL ใดคือ URL เว็บไซต์รูปแบบ Virtual-hosted-style?",
     "options": [
       {
         "key": "ก",
@@ -429,15 +429,15 @@
     "chapter_id": "Summary_M03.md",
     "chapter_name": "03. Amazon S3 Storage Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 03)",
-    "stem": "[AWS Official KC] After versioning is enabled on an Amazon Simple Storage Service (Amazon S3) bucket, it can be disabled.",
+    "stem": "[AWS Official KC] หลังจากเปิดใช้งานการกำหนดเวอร์ชัน (Versioning) บน Amazon Simple Storage Service (Amazon S3) Bucket แล้ว จะสามารถปิดการใช้งาน (Disable) ได้",
     "options": [
       {
         "key": "ก",
-        "text": "True"
+        "text": "จริง"
       },
       {
         "key": "ข",
-        "text": "False"
+        "text": "เท็จ"
       }
     ],
     "answer": "ข",
@@ -450,7 +450,7 @@
     "chapter_id": "Summary_M03.md",
     "chapter_name": "03. Amazon S3 Storage Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 03)",
-    "stem": "[AWS Official KC] What is the largest size of an object that a user can upload to Amazon Simple Storage Service (Amazon S3) in a single PUT operation?",
+    "stem": "[AWS Official KC] ขนาดออบเจกต์ที่ใหญ่ที่สุดที่ผู้ใช้สามารถอัปโหลดไปยัง Amazon Simple Storage Service (Amazon S3) ด้วยคำสั่ง PUT เพียงครั้งเดียวคือเท่าใด?",
     "options": [
       {
         "key": "ก",
@@ -479,7 +479,7 @@
     "chapter_id": "Summary_M03.md",
     "chapter_name": "03. Amazon S3 Storage Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 03)",
-    "stem": "[AWS Official KC] A developer uses an Amazon Simple Storage Service (Amazon S3) bucket. They want to allow a certain AWS Identity and Access Management (IAM) user to perform any S3 operations on the bucket and its objects. They also want to follow AWS recommendations for granting permissions. Which mechanism should the developer apply to the bucket?",
+    "stem": "[AWS Official KC] นักพัฒนาใช้งาน Amazon Simple Storage Service (Amazon S3) Bucket ต้องการอนุญาตให้ผู้ใช้ AWS Identity and Access Management (IAM) รายหนึ่งสามารถดำเนินการคำสั่ง S3 ใดๆ ก็ได้กับ Bucket และออบเจกต์ภายใน โดยต้องการปฏิบัติตามแนวทางปฏิบัติที่ดีที่สุดของ AWS (AWS Recommendations) ในการให้สิทธิ์ นักพัฒนาควรใช้วิธีการใดกับ Bucket?",
     "options": [
       {
         "key": "ก",
@@ -495,7 +495,7 @@
       },
       {
         "key": "ง",
-        "text": "Cross-Origin resource Sharing (CORS)"
+        "text": "Cross-Origin Resource Sharing (CORS)"
       }
     ],
     "answer": "ค",
@@ -508,7 +508,7 @@
     "chapter_id": "Summary_M03.md",
     "chapter_name": "03. Amazon S3 Storage Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 03)",
-    "stem": "[AWS Official KC] A developer wants to allow a user to download private objects directly from an Amazon Simple Storage Service (Amazon S3) bucket without needing AWS security credentials or permissions. What can the developer share with the user to grant them time-limited access to the objects?",
+    "stem": "[AWS Official KC] นักพัฒนาต้องการอนุญาตให้ผู้ใช้ดาวน์โหลดออบเจกต์ส่วนตัว (Private Object) จาก Amazon Simple Storage Service (Amazon S3) Bucket ได้โดยตรงโดยไม่ต้องมี AWS Security Credentials หรือสิทธิ์อนุญาต นักพัฒนาสามารถแชร์สิ่งใดให้แก่ผู้ใช้เพื่อให้เข้าถึงออบเจกต์แบบจำกัดเวลาได้?",
     "options": [
       {
         "key": "ก",
@@ -516,15 +516,15 @@
       },
       {
         "key": "ข",
-        "text": "Their AWS account root user credentials"
+        "text": "ข้อมูลรับรองประจำตัว Root User ของบัญชี AWS (AWS account root user credentials)"
       },
       {
         "key": "ค",
-        "text": "The bucket endpoint URL"
+        "text": "URL ประจำ Bucket Endpoint"
       },
       {
         "key": "ง",
-        "text": "A presigned URL"
+        "text": "Presigned URL"
       }
     ],
     "answer": "ง",
@@ -537,7 +537,7 @@
     "chapter_id": "Summary_M03.md",
     "chapter_name": "03. Amazon S3 Storage Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 03)",
-    "stem": "[AWS Official KC] Which method can be used to encrypt Amazon Simple Storage Service (Amazon S3) objects in transit?",
+    "stem": "[AWS Official KC] วิธีการใดสามารถใช้เข้ารหัสข้อมูล Amazon Simple Storage Service (Amazon S3) objects ขณะส่งผ่านเครือข่าย (in transit)?",
     "options": [
       {
         "key": "ก",
@@ -566,23 +566,23 @@
     "chapter_id": "Summary_M03.md",
     "chapter_name": "03. Amazon S3 Storage Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 03)",
-    "stem": "[AWS Official KC] A developer hosts a static website in an Amazon Simple Storage Service (Amazon S3) bucket. The website references image objects in another S3 bucket. However, these images do not display on the website. What could be the problem?",
+    "stem": "[AWS Official KC] นักพัฒนาโฮสต์ static website บน Amazon Simple Storage Service (Amazon S3) bucket โดยเว็บไซต์มีการอ้างอิงไฟล์รูปภาพจาก S3 bucket อื่น ทว่ารูปภาพเหล่านั้นกลับไม่แสดงผลบนเว็บไซต์ ปัญหาน่าจะเกิดจากสาเหตุใด?",
     "options": [
       {
         "key": "ก",
-        "text": "Amazon S3 does not support Object sharing between buckets."
+        "text": "Amazon S3 ไม่รองรับการแชร์ object ข้าม bucket"
       },
       {
         "key": "ข",
-        "text": "The security group of the S3 bucket does not include an inbound rule tallow HTTP traffic on port 80."
+        "text": "Security group ของ S3 bucket ไม่มี inbound rule อนุญาตทราฟฟิก HTTP บนพอร์ต 80"
       },
       {
         "key": "ค",
-        "text": "Cross-Region Replication (CRR) has not been enabled on the bucket where the assets are stored."
+        "text": "ยังไม่ได้เปิดใช้งาน Cross-Region Replication (CRR) บน bucket ที่จัดเก็บ assets"
       },
       {
         "key": "ง",
-        "text": "Cross-Origin Resource Sharing (CORS) has not been enabled on the bucket where the assets are stored."
+        "text": "ยังไม่ได้เปิดใช้งาน Cross-Origin Resource Sharing (CORS) บน bucket ที่จัดเก็บ assets"
       }
     ],
     "answer": "ง",
@@ -595,27 +595,27 @@
     "chapter_id": "Summary_M04.md",
     "chapter_name": "04. AWS IAM & Permissions",
     "trap_title": "Official AWS Knowledge Check (Mod 04)",
-    "stem": "[AWS Official KC] Which option is the Amazon Web Services (AWS) customer responsible for under the AWS shared responsibility model? (Select TWO.)",
+    "stem": "[AWS Official KC] ตัวเลือกใดเป็นความรับผิดชอบของลูกค้า Amazon Web Services (AWS) ภายใต้ AWS shared responsibility model? (เลือก 2 ข้อ)",
     "options": [
       {
         "key": "ก",
-        "text": "Security group configuration"
+        "text": "การกำหนดค่า Security group"
       },
       {
         "key": "ข",
-        "text": "Client-side data"
+        "text": "ข้อมูลฝั่ง Client (Client-side data)"
       },
       {
         "key": "ค",
-        "text": "Physical servers"
+        "text": "เซิร์ฟเวอร์กายภาพ (Physical servers)"
       },
       {
         "key": "ง",
-        "text": "Edge location infrastructure"
+        "text": "โครงสร้างพื้นฐานของ Edge location"
       },
       {
         "key": "จ",
-        "text": "Availability Zone security"
+        "text": "ความปลอดภัยของ Availability Zone"
       }
     ],
     "answer": [
@@ -631,7 +631,7 @@
     "chapter_id": "Summary_M04.md",
     "chapter_name": "04. AWS IAM & Permissions",
     "trap_title": "Official AWS Knowledge Check (Mod 04)",
-    "stem": "[AWS Official KC] Which AWS Identity and Access Management (IAM) resource explicitly grants or denies permissions to a user or group of users?",
+    "stem": "[AWS Official KC] รีซอร์สใดของ AWS Identity and Access Management (IAM) ที่ใช้กำหนดการอนุญาต (grant) หรือปฏิเสธ (deny) สิทธิ์แก่ user หรือกลุ่มของ user อย่างชัดเจน?",
     "options": [
       {
         "key": "ก",
@@ -660,7 +660,7 @@
     "chapter_id": "Summary_M04.md",
     "chapter_name": "04. AWS IAM & Permissions",
     "trap_title": "Official AWS Knowledge Check (Mod 04)",
-    "stem": "[AWS Official KC] What is the correct term for the process of verifying a user's identity as a developer?",
+    "stem": "[AWS Official KC] คำศัพท์ใดถูกต้องสำหรับกระบวนการตรวจสอบและยืนยันตัวตนของผู้ใช้งานในฐานะนักพัฒนา?",
     "options": [
       {
         "key": "ก",
@@ -689,27 +689,27 @@
     "chapter_id": "Summary_M04.md",
     "chapter_name": "04. AWS IAM & Permissions",
     "trap_title": "Official AWS Knowledge Check (Mod 04)",
-    "stem": "[AWS Official KC] Which statements about IAM user authentication are true? (Select TWO.)",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับการยืนยันตัวตนของ IAM user ที่ถูกต้อง? (เลือก 2 ข้อ)",
     "options": [
       {
         "key": "ก",
-        "text": "AWS credentials to authenticate with any supported services must be provided."
+        "text": "ต้องระบุ AWS credentials เพื่อใช้ยืนยันตัวตนกับบริการใดๆ ที่รองรับ"
       },
       {
         "key": "ข",
-        "text": "A user name and password to authenticate to the console must be provided."
+        "text": "ต้องระบุ username และ password เพื่อใช้ยืนยันตัวตนเข้าสู่ AWS Management Console"
       },
       {
         "key": "ค",
-        "text": "A .pem or .ppk file is used to authenticate programmatically to the AWS application programming interface (API)."
+        "text": "ไฟล์ .pem หรือ .ppk ใช้สำหรับยืนยันตัวตนเชิงโปรแกรมกับ AWS API"
       },
       {
         "key": "ง",
-        "text": "It is a best practice to use the account root user credentials to authenticate programmatically by using the AWS Command Line Interface (AWS CLI)."
+        "text": "การใช้ root user credentials ยืนยันตัวตนผ่าน AWS CLI จัดเป็น Best practice"
       },
       {
         "key": "จ",
-        "text": "Each AWS account can have only one administrator who manages other IAM users."
+        "text": "แต่ละ AWS account สามารถมีผู้ดูแลระบบที่จัดการ IAM users อื่นได้เพียงคนเดียวเท่านั้น"
       }
     ],
     "answer": [
@@ -725,23 +725,23 @@
     "chapter_id": "Summary_M04.md",
     "chapter_name": "04. AWS IAM & Permissions",
     "trap_title": "Official AWS Knowledge Check (Mod 04)",
-    "stem": "[AWS Official KC] Which suggestion is an Amazon Web Services (AWS) recommendation for securing AWS credentials for applications that run on Amazon Elastic Compute Cloud (Amazon EC2) instances?",
+    "stem": "[AWS Official KC] ข้อใดเป็นคำแนะนำจาก AWS ในการรักษาความปลอดภัยของ AWS credentials สำหรับแอปพลิเคชันที่ทำงานบน Amazon EC2 instance",
     "options": [
       {
         "key": "ก",
-        "text": "Embed AWS credentials in the software development kit (SDK) client code."
+        "text": "ฝัง AWS credentials ลงในโค้ดฝั่งไคลเอนต์ของ SDK"
       },
       {
         "key": "ข",
-        "text": "Store credentials in local AWS configuration files."
+        "text": "จัดเก็บ credentials ไว้ในไฟล์คอนฟิกูเรชัน AWS ภายในเครื่อง"
       },
       {
         "key": "ค",
-        "text": "Create an AWS Identity and Access Management (IAM) role and attach it to the EC2 instance."
+        "text": "สร้าง IAM role แล้วแนบเข้ากับ EC2 instance"
       },
       {
         "key": "ง",
-        "text": "Create an AWS Identity and Access Management (IAM) user and attach it to the EC2 instance."
+        "text": "สร้าง IAM user แล้วแนบเข้ากับ EC2 instance"
       }
     ],
     "answer": "ค",
@@ -754,7 +754,7 @@
     "chapter_id": "Summary_M04.md",
     "chapter_name": "04. AWS IAM & Permissions",
     "trap_title": "Official AWS Knowledge Check (Mod 04)",
-    "stem": "[AWS Official KC] What is the format of AWS Identity and Access Management (IAM) policies that define the allowable API calls an entity can invoke?",
+    "stem": "[AWS Official KC] รูปแบบ (Format) ของ IAM policy ที่ใช้กำหนดสิทธิ์การเรียกใช้งาน API สำหรับ entity คือข้อใด",
     "options": [
       {
         "key": "ก",
@@ -783,7 +783,7 @@
     "chapter_id": "Summary_M04.md",
     "chapter_name": "04. AWS IAM & Permissions",
     "trap_title": "Official AWS Knowledge Check (Mod 04)",
-    "stem": "[AWS Official KC] An administrator created an AWS Identity and Access Management (IAM) group called managers within an AWS account. A policy is attached to the managers group. It allows managers to read from and write to an Amazon Simple Storage Service (Amazon S3) bucket in the same AWS account. What is this type of policy?",
+    "stem": "[AWS Official KC] ผู้ดูแลระบบได้สร้าง IAM group ชื่อ managers ภายใน AWS account และแนบ policy เข้ากับกลุ่มนี้ โดยอนุญาตให้ managers อ่านและเขียนข้อมูลใน S3 bucket ภายใน account เดียวกันได้ นโยบายนี้จัดเป็นประเภทใด",
     "options": [
       {
         "key": "ก",
@@ -812,23 +812,23 @@
     "chapter_id": "Summary_M04.md",
     "chapter_name": "04. AWS IAM & Permissions",
     "trap_title": "Official AWS Knowledge Check (Mod 04)",
-    "stem": "[AWS Official KC] Which statement reflects best practices when granting permissions to users, groups, roles, and resources?",
+    "stem": "[AWS Official KC] ข้อความใดสอดคล้องกับแนวทางปฏิบัติที่ดีที่สุด (Best Practices) ในการกำหนดสิทธิ์ให้แก่ users, groups, roles และ resources",
     "options": [
       {
         "key": "ก",
-        "text": "Create policies that allow broad access and then limit permissions as needed, based on usage."
+        "text": "สร้าง policy ที่ให้สิทธิ์แบบกว้างไว้ก่อน แล้วค่อยจำกัดสิทธิ์ในภายหลังตามพฤติกรรมการใช้งาน"
       },
       {
         "key": "ข",
-        "text": "Use the account root user for routine tasks that the administrator performs."
+        "text": "ใช้ account root user สำหรับงานทั่วไปที่ผู้ดูแลระบบต้องปฏิบัติการ"
       },
       {
         "key": "ค",
-        "text": "Create policies that follow the principle of least privilege."
+        "text": "สร้าง policy ตามหลักการให้สิทธิ์ขั้นต่ำที่จำเป็น (Least Privilege)"
       },
       {
         "key": "ง",
-        "text": "Do not set policies for individual resources."
+        "text": "ไม่กำหนด policy สำหรับแต่ละ resource โดยเฉพาะเจาะจง"
       }
     ],
     "answer": "ค",
@@ -841,23 +841,23 @@
     "chapter_id": "Summary_M04.md",
     "chapter_name": "04. AWS IAM & Permissions",
     "trap_title": "Official AWS Knowledge Check (Mod 04)",
-    "stem": "[AWS Official KC] What is the effect of the following policy statement? \"Effect\": \"Deny\", \"Action\": ... \"NotResource\": [\"arn:aws:dynamodb:region:account-number:table/pollynotes\", ...]",
+    "stem": "[AWS Official KC] ผลลัพธ์ของ policy statement ต่อไปนี้คือข้อใด \"Effect\": \"Deny\", \"Action\": ... \"NotResource\": [\"arn:aws:dynamodb:region:account-number:table/pollynotes\", ...]",
     "options": [
       {
         "key": "ก",
-        "text": "Denies actions on DynamoDB or Amazon S3 resources except for the resources that are listed in the NotResource element"
+        "text": "ปฏิเสธ (Deny) การทำงานบน DynamoDB หรือ S3 ยกเว้น resources ที่ระบุไว้ในอิลิเมนต์ NotResource"
       },
       {
         "key": "ข",
-        "text": "Denies the ability to write to the pollynotes DynamoDB table"
+        "text": "ปฏิเสธสิทธิ์การเขียนข้อมูลลงในตาราง DynamoDB pollynotes"
       },
       {
         "key": "ค",
-        "text": "Denies the ability to read from the polly-notes-web S3 bucket"
+        "text": "ปฏิเสธสิทธิ์การอ่านข้อมูลจาก S3 bucket polly-notes-web"
       },
       {
         "key": "ง",
-        "text": "Denies actions on the DynamoDB table or S3 buckets that are listed in the NotResources element"
+        "text": "ปฏิเสธการทำงานบนตาราง DynamoDB หรือ S3 bucket ที่ระบุไว้ในอิลิเมนต์ NotResource"
       }
     ],
     "answer": "ก",
@@ -870,27 +870,27 @@
     "chapter_id": "Summary_M04.md",
     "chapter_name": "04. AWS IAM & Permissions",
     "trap_title": "Official AWS Knowledge Check (Mod 04)",
-    "stem": "[AWS Official KC] Which statements are true about evaluation logic for AWS Identity and Access Management (IAM) policies? (Select TWO.)",
+    "stem": "[AWS Official KC] ข้อความใดถูกต้องเกี่ยวกับตรรกะการประเมินสิทธิ์ (Evaluation Logic) ของ IAM policies (เลือก สอง คำตอบ)",
     "options": [
       {
         "key": "ก",
-        "text": "You cannot have deny and allow statements in the same policy."
+        "text": "ไม่สามารถมีคำสั่ง deny และ allow อยู่ภายใน policy เดียวกันได้"
       },
       {
         "key": "ข",
-        "text": "An explicit allow overrides an explicit deny."
+        "text": "การอนุญาตโดยตรง (Explicit allow) จะมีผลเหนือกว่าการปฏิเสธโดยตรง (Explicit deny)"
       },
       {
         "key": "ค",
-        "text": "An explicit deny overrides an explicit allow."
+        "text": "การปฏิเสธโดยตรง (Explicit deny) จะมีผลเหนือกว่าการอนุญาตโดยตรง (Explicit allow)"
       },
       {
         "key": "ง",
-        "text": "By default, all requests are denied."
+        "text": "ตามค่าเริ่มต้น (Default) ทุกคำขอจะถูกปฏิเสธ (Denied)"
       },
       {
         "key": "จ",
-        "text": "By default, all requests are allowed."
+        "text": "ตามค่าเริ่มต้น (Default) ทุกคำขอจะได้รับอนุญาต (Allowed)"
       }
     ],
     "answer": [
@@ -906,23 +906,23 @@
     "chapter_id": "Summary_M05.md",
     "chapter_name": "05. Amazon DynamoDB NoSQL Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 05)",
-    "stem": "[AWS Official KC] Which statement best describes Amazon DynamoDB?",
+    "stem": "[AWS Official KC] ข้อใดอธิบายเกี่ยวกับ Amazon DynamoDB ได้ถูกต้องที่สุด",
     "options": [
       {
         "key": "ก",
-        "text": "An in-memory data store that can boost the performance of databases"
+        "text": "ระบบจัดเก็บข้อมูลแบบ In-memory ที่ช่วยเพิ่มประสิทธิภาพการทำงานของฐานข้อมูล"
       },
       {
         "key": "ข",
-        "text": "A graph database engine that is optimized for storing billions of relationships"
+        "text": "Graph database engine ที่ปรับแต่งมาเพื่อจัดเก็บความสัมพันธ์ระดับหลายพันล้านรายการโดยเฉพาะ"
       },
       {
         "key": "ค",
-        "text": "A relational database that is built for the cloud and is compatible with MySQL and PostgreSQL"
+        "text": "ฐานข้อมูลแบบ Relational ที่สร้างขึ้นสำหรับคลาวด์ และรองรับการทำงานร่วมกับ MySQL และ PostgreSQL"
       },
       {
         "key": "ง",
-        "text": "A key-value and document database that scales horizontally and works well for internet-scale applications"
+        "text": "ฐานข้อมูลแบบ Key-value และ Document ที่ขยายระบบในแนวนอน (Scale horizontally) ได้ดี เหมาะสำหรับแอปพลิเคชันระดับ Internet-scale"
       }
     ],
     "answer": "ง",
@@ -935,7 +935,7 @@
     "chapter_id": "Summary_M05.md",
     "chapter_name": "05. Amazon DynamoDB NoSQL Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 05)",
-    "stem": "[AWS Official KC] Which component is part of an Amazon DynamoDB table?",
+    "stem": "[AWS Official KC] องค์ประกอบใดเป็นส่วนประกอบของตารางใน Amazon DynamoDB",
     "options": [
       {
         "key": "ก",
@@ -964,23 +964,23 @@
     "chapter_id": "Summary_M05.md",
     "chapter_name": "05. Amazon DynamoDB NoSQL Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 05)",
-    "stem": "[AWS Official KC] An Amazon DynamoDB table called SensorReadings captures sensor readings. These readings include a sensor ID attribute that acts as the partition key, and a timestamp attribute that is the sort key. Which statement is true?",
+    "stem": "[AWS Official KC] ตาราง Amazon DynamoDB ชื่อ SensorReadings จัดเก็บข้อมูลการอ่านค่าของเซนเซอร์ โดยมีแอตทริบิวต์ sensor ID ทำหน้าที่เป็น Partition key และแอตทริบิวต์ timestamp เป็น Sort key ข้อความใดต่อไปนี้ถูกต้อง",
     "options": [
       {
         "key": "ก",
-        "text": "The sensor ID together with the timestamp represent a simple primary key."
+        "text": "sensor ID ร่วมกับ timestamp ถือเป็น Simple primary key"
       },
       {
         "key": "ข",
-        "text": "It is impossible for two items in the SensorReadings table to have the same partition key."
+        "text": "ไอเทมสองรายการในตาราง SensorReadings จะมี Partition key ซ้ำกันไม่ได้เด็ดขาด"
       },
       {
         "key": "ค",
-        "text": "It is impossible for two items in the SensorReadings table to have the same sort key."
+        "text": "ไอเทมสองรายการในตาราง SensorReadings จะมี Sort key ซ้ำกันไม่ได้เด็ดขาด"
       },
       {
         "key": "ง",
-        "text": "It is impossible for two items in the SensorReadings table to have the same primary key."
+        "text": "ไอเทมสองรายการในตาราง SensorReadings จะมี Primary key ซ้ำกันไม่ได้เด็ดขาด"
       }
     ],
     "answer": "ง",
@@ -993,23 +993,23 @@
     "chapter_id": "Summary_M05.md",
     "chapter_name": "05. Amazon DynamoDB NoSQL Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 05)",
-    "stem": "[AWS Official KC] Which statement about Amazon DynamoDB partitions is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับ Partition ของ Amazon DynamoDB ถูกต้อง",
     "options": [
       {
         "key": "ก",
-        "text": "DynamoDB stores data in partitions and chooses the partition based on the range attribute."
+        "text": "DynamoDB จัดเก็บข้อมูลใน Partition และเลือก Partition ตาม Range attribute"
       },
       {
         "key": "ข",
-        "text": "If a table has a simple primary key (partition key only), DynamoDB stores and retrieves each item based on its hash attribute."
+        "text": "หากตารางมี Simple primary key (มีเฉพาะ Partition key) DynamoDB จะจัดเก็บและดึงข้อมูลของแต่ละไอเทมตาม Hash attribute"
       },
       {
         "key": "ค",
-        "text": "If a table has a composite primary key, DynamoDB will sort the items based on the sort key before selecting the partition for the item."
+        "text": "หากตารางมี Composite primary key ระบบ DynamoDB จะเรียงลำดับไอเทมตาม Sort key ก่อนเลือก Partition สำหรับไอเทมนั้น"
       },
       {
         "key": "ง",
-        "text": "A developer writes a hash function to tell DynamoDB how to partition the items."
+        "text": "นักพัฒนาต้องเขียน Hash function ขึ้นมาเองเพื่อกำหนดให้ DynamoDB ทราบวิธีแบ่ง Partition ของแต่ละไอเทม"
       }
     ],
     "answer": "ข",
@@ -1022,23 +1022,23 @@
     "chapter_id": "Summary_M05.md",
     "chapter_name": "05. Amazon DynamoDB NoSQL Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 05)",
-    "stem": "[AWS Official KC] Suppose that a developer has a restaurants database table that can be queried by name (the partition key), or by name and location (the sort key). What should the developer do if they also want to query by type of cuisine and average customer rating?",
+    "stem": "[AWS Official KC] สมมติว่านักพัฒนามีตารางฐานข้อมูลร้านอาหารที่สามารถ Query ด้วยชื่อร้าน (Partition key) หรือค้นหาด้วยชื่อร้านร่วมกับที่ตั้ง (Sort key) ได้ หากนักพัฒนาต้องการ Query ข้อมูลตามประเภทอาหารและคะแนนเฉลี่ยจากลูกค้าเพิ่มเติม ควรดำเนินการอย่างไร",
     "options": [
       {
         "key": "ก",
-        "text": "Set up a local secondary index on cuisine and customer rating."
+        "text": "สร้าง Local Secondary Index บนแอตทริบิวต์ประเภทอาหารและคะแนนรีวิวของลูกค้า"
       },
       {
         "key": "ข",
-        "text": "Set up a global secondary index on cuisine and customer rating."
+        "text": "สร้าง Global Secondary Index บนแอตทริบิวต์ประเภทอาหารและคะแนนรีวิวของลูกค้า"
       },
       {
         "key": "ค",
-        "text": "Change the primary key on the restaurant table to be a complex primary key based on cuisine and customer rating."
+        "text": "เปลี่ยน Primary key ของตารางร้านอาหารให้เป็น Complex primary key โดยอิงตามประเภทอาหารและคะแนนรีวิวของลูกค้า"
       },
       {
         "key": "ง",
-        "text": "Perform a query that uses the cuisine and average customer rating attributes."
+        "text": "สั่ง Query โดยระบุแอตทริบิวต์ประเภทอาหารและคะแนนเฉลี่ยจากลูกค้าโดยตรง"
       }
     ],
     "answer": "ข",
@@ -1051,23 +1051,23 @@
     "chapter_id": "Summary_M05.md",
     "chapter_name": "05. Amazon DynamoDB NoSQL Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 05)",
-    "stem": "[AWS Official KC] A video game developer who uses Amazon DynamoDB wants to ensure that players' profiles are updated correctly when they make in-game purchases. This process requires multiple updates as part of a single user action. What is the best choice to write this developer's application to manage these complex, all-or-nothing changes?",
+    "stem": "[AWS Official KC] นักพัฒนาวิดีโอเกมที่ใช้งาน Amazon DynamoDB ต้องการตรวจสอบให้แน่ใจว่าโปรไฟล์ของผู้เล่นได้รับการอัปเดตอย่างถูกต้องเมื่อมีการซื้อไอเทมในเกม กระบวนการนี้จำเป็นต้องอัปเดตข้อมูลหลายส่วนภายในการกระทำเดียวของผู้ใช้ ทางเลือกที่ดีที่สุดในการเขียนแอปพลิเคชันเพื่อจัดการการเปลี่ยนแปลงที่ซับซ้อนในลักษณะ All-or-nothing คือข้อใด",
     "options": [
       {
         "key": "ก",
-        "text": "Add an Amazon DynamoDB Accelerator (DAX) cluster."
+        "text": "เพิ่ม Amazon DynamoDB Accelerator (DAX) คลัสเตอร์"
       },
       {
         "key": "ข",
-        "text": "Implement global tables."
+        "text": "ใช้งาน Global Tables"
       },
       {
         "key": "ค",
-        "text": "Create application code to check that all parts of the transaction were written successfully, and then roll back the update if any part failed."
+        "text": "เขียนโค้ดฝั่งแอปพลิเคชันเพื่อตรวจสอบว่าทุกส่วนของ Transaction เขียนสำเร็จหรือไม่ แล้วสั่ง Rollback ข้อมูลเองหากมีส่วนใดล้มเหลว"
       },
       {
         "key": "ง",
-        "text": "Use DynamoDB transactions."
+        "text": "ใช้ DynamoDB Transactions"
       }
     ],
     "answer": "ง",
@@ -1080,27 +1080,27 @@
     "chapter_id": "Summary_M05.md",
     "chapter_name": "05. Amazon DynamoDB NoSQL Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 05)",
-    "stem": "[AWS Official KC] Which scenarios are example use cases for Amazon DynamoDB Streams? (Select TWO.)",
+    "stem": "[AWS Official KC] สถานการณ์ใดเป็นตัวอย่าง Use Case ในการใช้งาน Amazon DynamoDB Streams (เลือก 2 ข้อ)",
     "options": [
       {
         "key": "ก",
-        "text": "An application that requires the fastest possible response time for reads to support real-time bidding"
+        "text": "แอปพลิเคชันที่ต้องการ Response time ในการอ่านข้อมูลเร็วที่สุดเพื่อรองรับการประมูลแบบ Real-time"
       },
       {
         "key": "ข",
-        "text": "An application that requires repeated reads against a large set of regional weather data to perform a long-running analysis"
+        "text": "แอปพลิเคชันที่ต้องการอ่านข้อมูลสภาพอากาศระดับภูมิภาคชุดใหญ่ซ้ำ ๆ เพื่อประมวลผลการวิเคราะห์ที่ใช้เวลานาน"
       },
       {
         "key": "ค",
-        "text": "An application that automatically sends notifications to the mobile devices of all friends in a group when one friend uploads a new picture"
+        "text": "แอปพลิเคชันที่ส่งการแจ้งเตือนไปยังอุปกรณ์เคลื่อนที่ของเพื่อนทุกคนในกลุ่มโดยอัตโนมัติ เมื่อมีเพื่อนคนหนึ่งอัปโหลดรูปภาพใหม่"
       },
       {
         "key": "ง",
-        "text": "An application that must monitor changes to a DynamoDB table and take action on specific changes when a value reaches a certain threshold"
+        "text": "แอปพลิเคชันที่ต้องตรวจจับการเปลี่ยนแปลงในตาราง DynamoDB และดำเนินการต่อการเปลี่ยนแปลงเฉพาะเจาะจงเมื่อค่าถึงเกณฑ์ที่กำหนด"
       },
       {
         "key": "จ",
-        "text": "An application that requires an in-memory data store"
+        "text": "แอปพลิเคชันที่ต้องการ In-memory data store"
       }
     ],
     "answer": [
@@ -1116,23 +1116,23 @@
     "chapter_id": "Summary_M05.md",
     "chapter_name": "05. Amazon DynamoDB NoSQL Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 05)",
-    "stem": "[AWS Official KC] Which statement about global tables is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับ Global Tables ถูกต้อง",
     "options": [
       {
         "key": "ก",
-        "text": "Global tables provide a managed solution for replicating tables within a single AWS Region."
+        "text": "Global Tables เป็นโซลูชันที่มีการจัดการสำหรับการทำ Replication ตารางภายใน AWS Region เดียวกัน"
       },
       {
         "key": "ข",
-        "text": "Global tables use Amazon Simple Storage Service (Amazon S3) to propagate changes between replicas."
+        "text": "Global Tables ใช้ Amazon Simple Storage Service (Amazon S3) ในการส่งต่อการเปลี่ยนแปลงระหว่าง Replicas"
       },
       {
         "key": "ค",
-        "text": "When a global table is created, Amazon DynamoDB performs all necessary tasks to create identical tables and propagate ongoing data changes to specified Regions."
+        "text": "เมื่อสร้าง Global Table ทาง Amazon DynamoDB จะจัดการงานที่จำเป็นทั้งหมดในการสร้างตารางที่เหมือนกันและส่งต่อการเปลี่ยนแปลงของข้อมูลไปยัง Region ที่ระบุอย่างต่อเนื่อง"
       },
       {
         "key": "ง",
-        "text": "With a global table, Amazon DynamoDB supports partial replication of some of the items in a table."
+        "text": "เมื่อใช้ Global Table ทาง Amazon DynamoDB รองรับการทำ Replication เฉพาะบาง Item ในตาราง"
       }
     ],
     "answer": "ค",
@@ -1145,23 +1145,23 @@
     "chapter_id": "Summary_M05.md",
     "chapter_name": "05. Amazon DynamoDB NoSQL Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 05)",
-    "stem": "[AWS Official KC] How far back in days can an Amazon DynamoDB table be restored by using point-in-time recovery?",
+    "stem": "[AWS Official KC] การใช้ Point-in-time recovery สามารถกู้คืนตาราง Amazon DynamoDB ย้อนหลังได้สูงสุดกี่วัน",
     "options": [
       {
         "key": "ก",
-        "text": "The last week"
+        "text": "สัปดาห์ที่ผ่านมา"
       },
       {
         "key": "ข",
-        "text": "The last 10 days"
+        "text": "10 วันที่ผ่านมา"
       },
       {
         "key": "ค",
-        "text": "The last 35 days"
+        "text": "35 วันที่ผ่านมา"
       },
       {
         "key": "ง",
-        "text": "The last calendar month"
+        "text": "เดือนปฏิทินที่ผ่านมา"
       }
     ],
     "answer": "ค",
@@ -1174,23 +1174,23 @@
     "chapter_id": "Summary_M05.md",
     "chapter_name": "05. Amazon DynamoDB NoSQL Solutions",
     "trap_title": "Official AWS Knowledge Check (Mod 05)",
-    "stem": "[AWS Official KC] Which statement describes Amazon DynamoDB application programming interface (API) control operations that can be invoked by an application?",
+    "stem": "[AWS Official KC] ข้อความใดอธิบายถึงการดำเนินการประเภท Control ของ Amazon DynamoDB API ที่แอปพลิเคชันสามารถเรียกใช้งานได้",
     "options": [
       {
         "key": "ก",
-        "text": "Create and manage DynamoDB tables."
+        "text": "สร้างและจัดการตาราง DynamoDB"
       },
       {
         "key": "ข",
-        "text": "Create, read, update, and delete data in a table."
+        "text": "สร้าง อ่าน อัปเดต และลบข้อมูลภายในตาราง"
       },
       {
         "key": "ค",
-        "text": "Get and write batches of items in a DynamoDB table."
+        "text": "ดึงและเขียนข้อมูลแบบกลุ่ม (Batch) ในตาราง DynamoDB"
       },
       {
         "key": "ง",
-        "text": "Make coordinated, all-or-nothing changes to multiple items both within and across tables."
+        "text": "เปลี่ยนแปลงหลาย Item พร้อมกันแบบ All-or-nothing ทั้งภายในตารางเดียวกันและข้ามตาราง"
       }
     ],
     "answer": "ก",
@@ -1203,23 +1203,23 @@
     "chapter_id": "Summary_M06.md",
     "chapter_name": "06. Developing REST APIs with API Gateway",
     "trap_title": "Official AWS Knowledge Check (Mod 06)",
-    "stem": "[AWS Official KC] Which phrase best describes a RESTful API?",
+    "stem": "[AWS Official KC] ข้อความใดอธิบาย RESTful API ได้ถูกต้องที่สุด",
     "options": [
       {
         "key": "ก",
-        "text": "An API that uses HTTP to communicate between client and server"
+        "text": "API ที่ใช้ HTTP ในการสื่อสารระหว่าง Client และ Server"
       },
       {
         "key": "ข",
-        "text": "A proxy that exists between client and server to handle common problems that occur with API-driven applications"
+        "text": "Proxy ที่อยู่ระหว่าง Client และ Server เพื่อจัดการปัญหาทั่วไปที่เกิดขึ้นกับแอปพลิเคชันที่ขับเคลื่อนด้วย API"
       },
       {
         "key": "ค",
-        "text": "An API that follows the principles of the Representational State Transfer style"
+        "text": "API ที่ปฏิบัติตามหลักการทางสถาปัตยกรรมแบบ Representational State Transfer"
       },
       {
         "key": "ง",
-        "text": "An API that resides on the web server"
+        "text": "API ที่ทำงานอยู่บน Web server"
       }
     ],
     "answer": "ค",
@@ -1232,23 +1232,23 @@
     "chapter_id": "Summary_M06.md",
     "chapter_name": "06. Developing REST APIs with API Gateway",
     "trap_title": "Official AWS Knowledge Check (Mod 06)",
-    "stem": "[AWS Official KC] Which option suggests the use of WebSocket APIs?",
+    "stem": "[AWS Official KC] ตัวเลือกใดบ่งชี้ถึงความเหมาะสมในการใช้งาน WebSocket API",
     "options": [
       {
         "key": "ก",
-        "text": "An order processing application returns an order number to each customer when they submit an order."
+        "text": "แอปพลิเคชันประมวลผลคำสั่งซื้อที่ส่งคืนหมายเลขคำสั่งซื้อให้แก่ลูกค้าแต่ละรายเมื่อส่งคำสั่งซื้อ"
       },
       {
         "key": "ข",
-        "text": "A batch process bundles orders and sends them to a fulfillment center application."
+        "text": "กระบวนการ Batch ที่รวมคำสั่งซื้อเป็นชุดแล้วส่งไปยังแอปพลิเคชันของศูนย์กระจายสินค้า"
       },
       {
         "key": "ค",
-        "text": "A real-time chat application lets customers talk to customer support about their orders."
+        "text": "แอปพลิเคชันแชตแบบ Real-time ที่ให้ลูกค้าสามารถสนทนากับฝ่ายสนับสนุนเกี่ยวกับคำสั่งซื้อได้"
       },
       {
         "key": "ง",
-        "text": "A reporting application gives the sales team access to static daily reports from their phones."
+        "text": "แอปพลิเคชันออกรายงานที่ให้ทีมขายเข้าถึงรายงานประจำวันแบบคงที่ (Static) ได้จากโทรศัพท์มือถือ"
       }
     ],
     "answer": "ค",
@@ -1261,23 +1261,23 @@
     "chapter_id": "Summary_M06.md",
     "chapter_name": "06. Developing REST APIs with API Gateway",
     "trap_title": "Official AWS Knowledge Check (Mod 06)",
-    "stem": "[AWS Official KC] Which use case suggests using Amazon API Gateway HTTP APIs?",
+    "stem": "[AWS Official KC] กรณีการใช้งานใดที่เหมาะสมกับการเลือกใช้ Amazon API Gateway HTTP APIs?",
     "options": [
       {
         "key": "ก",
-        "text": "An application needs an API proxy in front of an AWS Lambda function."
+        "text": "แอปพลิเคชันต้องการ API proxy ด้านหน้าฟังก์ชัน AWS Lambda"
       },
       {
         "key": "ข",
-        "text": "An application must transform a response from an AWS Lambda function before returning the response to the client."
+        "text": "แอปพลิเคชันต้องแปลง response จากฟังก์ชัน AWS Lambda ก่อนส่งกลับไปยังไคลเอนต์"
       },
       {
         "key": "ค",
-        "text": "A developer wants to use mock endpoints to test their API."
+        "text": "นักพัฒนาต้องการใช้ mock endpoints เพื่อทดสอบ API"
       },
       {
         "key": "ง",
-        "text": "A developer wants to assign different API quotas by client."
+        "text": "นักพัฒนาต้องการกำหนด API quota ที่แตกต่างกันตามแต่ละไคลเอนต์"
       }
     ],
     "answer": "ก",
@@ -1290,23 +1290,23 @@
     "chapter_id": "Summary_M06.md",
     "chapter_name": "06. Developing REST APIs with API Gateway",
     "trap_title": "Official AWS Knowledge Check (Mod 06)",
-    "stem": "[AWS Official KC] Which statement about Amazon API Gateway integrations is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับ integration ของ Amazon API Gateway ที่ถูกต้อง?",
     "options": [
       {
         "key": "ก",
-        "text": "A first-class integration connects an API Gateway HTTP API route to an external third-party service API."
+        "text": "first-class integration ใช้เชื่อมต่อ route ของ API Gateway HTTP API ไปยัง API ของ third-party service ภายนอก"
       },
       {
         "key": "ข",
-        "text": "A developer can use HTTP proxy integrations to direct a route to a resource on the internet."
+        "text": "นักพัฒนาสามารถใช้ HTTP proxy integration เพื่อส่งต่อ route ไปยัง resource บนอินเทอร์เน็ตได้"
       },
       {
         "key": "ค",
-        "text": "API Gateway cannot access resources within a virtual private cloud (VPC)."
+        "text": "API Gateway ไม่สามารถเข้าถึง resource ภายใน Virtual Private Cloud (VPC) ได้"
       },
       {
         "key": "ง",
-        "text": "An API integration request encapsulates an HTTP request that the backend receives and is always different from the method request that the client submits."
+        "text": "API integration request ทำหน้าที่ห่อหุ้ม HTTP request ที่ backend ได้รับ และจะแตกต่างจาก method request ที่ไคลเอนต์ส่งมาเสมอ"
       }
     ],
     "answer": "ข",
@@ -1319,23 +1319,23 @@
     "chapter_id": "Summary_M06.md",
     "chapter_name": "06. Developing REST APIs with API Gateway",
     "trap_title": "Official AWS Knowledge Check (Mod 06)",
-    "stem": "[AWS Official KC] An application that uses Amazon API Gateway must capture contact information from a third-party client application. The client application sends given name, surname, business phone, and cell phone. The backend application database has only two fields: name and mobile phone. Which option requires the fewest application changes?",
+    "stem": "[AWS Official KC] แอปพลิเคชันที่ใช้ Amazon API Gateway ต้องรับข้อมูลการติดต่อจากแอปพลิเคชันไคลเอนต์ภายนอก โดยไคลเอนต์จะส่งชื่อจริง นามสกุล เบอร์ที่ทำงาน และเบอร์มือถือ แต่ฐานข้อมูลของแอปพลิเคชัน backend มีเพียงสองฟิลด์คือ name และ mobile phone ตัวเลือกใดต้องแก้ไขแอปพลิเคชันน้อยที่สุด?",
     "options": [
       {
         "key": "ก",
-        "text": "Export the API definition and use it to update the client."
+        "text": "Export นิยามของ API ออกมา แล้วนำไปใช้อัปเดตฝั่งไคลเอนต์"
       },
       {
         "key": "ข",
-        "text": "Use a mapping template to transform the request before it is sent to the database."
+        "text": "ใช้ mapping template เพื่อแปลง request ก่อนส่งไปยังฐานข้อมูล"
       },
       {
         "key": "ค",
-        "text": "Create a usage plan that describes the fields and applies only to this client."
+        "text": "สร้าง usage plan ที่กำหนดฟิลด์ดังกล่าวและนำไปใช้กับไคลเอนต์รายนี้เท่านั้น"
       },
       {
         "key": "ง",
-        "text": "Use a first-class integration to connect the client to the database."
+        "text": "ใช้ first-class integration เพื่อเชื่อมต่อไคลเอนต์เข้ากับฐานข้อมูลโดยตรง"
       }
     ],
     "answer": "ข",
@@ -1348,23 +1348,23 @@
     "chapter_id": "Summary_M06.md",
     "chapter_name": "06. Developing REST APIs with API Gateway",
     "trap_title": "Official AWS Knowledge Check (Mod 06)",
-    "stem": "[AWS Official KC] Which elements are part of the base URI that AWS generates for an Amazon API Gateway API?",
+    "stem": "[AWS Official KC] องค์ประกอบใดเป็นส่วนหนึ่งของ base URI ที่ AWS สร้างขึ้นสำหรับ Amazon API Gateway API?",
     "options": [
       {
         "key": "ก",
-        "text": "Region and stage name"
+        "text": "Region และ stage name"
       },
       {
         "key": "ข",
-        "text": "API identifier and version"
+        "text": "API identifier และ version"
       },
       {
         "key": "ค",
-        "text": "Account ID and stage name"
+        "text": "Account ID และ stage name"
       },
       {
         "key": "ง",
-        "text": "Region and version"
+        "text": "Region และ version"
       }
     ],
     "answer": "ก",
@@ -1377,7 +1377,7 @@
     "chapter_id": "Summary_M06.md",
     "chapter_name": "06. Developing REST APIs with API Gateway",
     "trap_title": "Official AWS Knowledge Check (Mod 06)",
-    "stem": "[AWS Official KC] Which option could replace the <?> to create an API route that returns an individual product value from an online catalog?",
+    "stem": "[AWS Official KC] ตัวเลือกใดสามารถแทนที่ <?> เพื่อสร้าง API route สำหรับส่งคืนข้อมูลของสินค้าชิ้นเดี่ยวจากระบบแคตตาล็อกออนไลน์ได้?",
     "options": [
       {
         "key": "ก",
@@ -1406,23 +1406,23 @@
     "chapter_id": "Summary_M06.md",
     "chapter_name": "06. Developing REST APIs with API Gateway",
     "trap_title": "Official AWS Knowledge Check (Mod 06)",
-    "stem": "[AWS Official KC] Which statement about Amazon API Gateway stages is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับ stage ของ Amazon API Gateway ที่ถูกต้อง?",
     "options": [
       {
         "key": "ก",
-        "text": "Stage names are sequentially assigned based on the API version."
+        "text": "Stage name จะถูกกำหนดตามลำดับโดยอิงจากเวอร์ชันของ API"
       },
       {
         "key": "ข",
-        "text": "Any stage on any API type can be set to autodeploy."
+        "text": "ทุก stage ของ API ทุกประเภทสามารถตั้งค่าให้เป็นแบบ autodeploy ได้"
       },
       {
         "key": "ค",
-        "text": "Developers can use stage variables to connect different stages to different backends."
+        "text": "นักพัฒนาสามารถใช้ stage variables เพื่อเชื่อมต่อ stage ที่แตกต่างกันไปยัง backend ที่ต่างกันได้"
       },
       {
         "key": "ง",
-        "text": "Developers should avoid creating different stages for each development environment."
+        "text": "นักพัฒนาควรหลีกเลี่ยงการสร้าง stage แยกสำหรับแต่ละสภาพแวดล้อมการพัฒนา"
       }
     ],
     "answer": "ค",
@@ -1435,23 +1435,23 @@
     "chapter_id": "Summary_M06.md",
     "chapter_name": "06. Developing REST APIs with API Gateway",
     "trap_title": "Official AWS Knowledge Check (Mod 06)",
-    "stem": "[AWS Official KC] A security team wants to know how to protect APIs in their internet application from common web exploits, like SQL injection or cross-site scripting. Which solution most directly addresses their specific concern?",
+    "stem": "[AWS Official KC] ทีมความปลอดภัยต้องการทราบวิธีป้องกัน API ของอินเทอร์เน็ตแอปพลิเคชันจากการโจมตีเว็บช่องโหว่ทั่วไป เช่น SQL injection หรือ cross-site scripting วิธีการใดแก้ไขปัญหานี้ได้ตรงจุดที่สุด",
     "options": [
       {
         "key": "ก",
-        "text": "Set throttling limits on their API methods in Amazon API Gateway."
+        "text": "กำหนดขีดจำกัด throttling บน API methods ใน Amazon API Gateway"
       },
       {
         "key": "ข",
-        "text": "Set all of their APIs to use private endpoints."
+        "text": "ตั้งค่า API ทั้งหมดให้ใช้ private endpoints"
       },
       {
         "key": "ค",
-        "text": "Configure a JSON Web Token (JWT)-based authorizer for Amazon API Gateway."
+        "text": "กำหนดค่า authorizer บน Amazon API Gateway โดยใช้ JSON Web Token (JWT)"
       },
       {
         "key": "ง",
-        "text": "Use AWS WAF with Amazon API Gateway."
+        "text": "ใช้งาน AWS WAF ร่วมกับ Amazon API Gateway"
       }
     ],
     "answer": "ง",
@@ -1464,23 +1464,23 @@
     "chapter_id": "Summary_M06.md",
     "chapter_name": "06. Developing REST APIs with API Gateway",
     "trap_title": "Official AWS Knowledge Check (Mod 06)",
-    "stem": "[AWS Official KC] What does the Amazon API Gateway integration Latency metric tell the user?",
+    "stem": "[AWS Official KC] ตัวชี้วัด Integration Latency ของ Amazon API Gateway บ่งบอกถึงสิ่งใด",
     "options": [
       {
         "key": "ก",
-        "text": "Frequency of server-side errors that affect latency"
+        "text": "ความถี่ของข้อผิดพลาดฝั่งเซิร์ฟเวอร์ที่ส่งผลต่อ latency"
       },
       {
         "key": "ข",
-        "text": "Speed of the API response back to the client"
+        "text": "ความเร็วในการส่งข้อมูลตอบกลับของ API ไปยัง client"
       },
       {
         "key": "ค",
-        "text": "Responsiveness of the backend"
+        "text": "ความเร็วในการตอบสนองของระบบ backend"
       },
       {
         "key": "ง",
-        "text": "How often requests are throttled"
+        "text": "ความถี่ที่คำขอถูกจำกัดอัตราการส่ง (throttled)"
       }
     ],
     "answer": "ค",
@@ -1493,23 +1493,23 @@
     "chapter_id": "Summary_M07.md",
     "chapter_name": "07. Event-Driven Serverless with AWS Lambda",
     "trap_title": "Official AWS Knowledge Check (Mod 07)",
-    "stem": "[AWS Official KC] Which statement describes a characteristic of AWS Lambda?",
+    "stem": "[AWS Official KC] ข้อความใดอธิบายคุณลักษณะของ AWS Lambda ได้ถูกต้อง",
     "options": [
       {
         "key": "ก",
-        "text": "Lambda runs code only when it is activated by an event and uses only the compute resources that are needed."
+        "text": "Lambda จะรันโค้ดเมื่อถูกกระตุ้นด้วย event เท่านั้น และใช้ทรัพยากรประมวลผลเท่าที่จำเป็น"
       },
       {
         "key": "ข",
-        "text": "A developer's methods and configuration options for ensuring high availability with Lambda are similar to their approach with Amazon Elastic Compute Cloud (Amazon EC2)."
+        "text": "วิธีการและตัวเลือกการตั้งค่า high availability ของนักพัฒนาบน Lambda คล้ายคลึงกับบน Amazon Elastic Compute Cloud (Amazon EC2)"
       },
       {
         "key": "ค",
-        "text": "Lambda functions run in on-demand, temporary environments, and the developer controls when new environments are created or shut down."
+        "text": "ฟังก์ชัน Lambda ทำงานในสภาพแวดล้อมชั่วคราวแบบ on-demand โดยนักพัฒนาสามารถควบคุมเวลาการสร้างหรือปิดสภาพแวดล้อมได้"
       },
       {
         "key": "ง",
-        "text": "A developer must write Lambda functions that use one of the runtimes that the Lambda service provides."
+        "text": "นักพัฒนาจำเป็นต้องเขียนฟังก์ชัน Lambda โดยใช้ runtime ที่ Lambda จัดเตรียมไว้ให้เท่านั้น"
       }
     ],
     "answer": "ก",
@@ -1522,7 +1522,7 @@
     "chapter_id": "Summary_M07.md",
     "chapter_name": "07. Event-Driven Serverless with AWS Lambda",
     "trap_title": "Official AWS Knowledge Check (Mod 07)",
-    "stem": "[AWS Official KC] Which constraint cannot be modified?",
+    "stem": "[AWS Official KC] ข้อจำกัดใดไม่สามารถปรับเปลี่ยนค่าได้",
     "options": [
       {
         "key": "ก",
@@ -1551,23 +1551,23 @@
     "chapter_id": "Summary_M07.md",
     "chapter_name": "07. Event-Driven Serverless with AWS Lambda",
     "trap_title": "Official AWS Knowledge Check (Mod 07)",
-    "stem": "[AWS Official KC] Which option describes how Amazon API Gateway invokes AWS Lambda?",
+    "stem": "[AWS Official KC] ข้อใดอธิบายรูปแบบการเรียกใช้ (invoke) AWS Lambda ของ Amazon API Gateway ได้ถูกต้อง",
     "options": [
       {
         "key": "ก",
-        "text": "API Gateway directly invokes a function with a synchronous invocation."
+        "text": "API Gateway เรียกใช้ฟังก์ชันโดยตรงแบบ synchronous invocation"
       },
       {
         "key": "ข",
-        "text": "Lambda processes API Gateway requests asynchronously and retries each request up to two times."
+        "text": "Lambda ประมวลผลคำขอจาก API Gateway แบบ asynchronous และลองใหม่สูงสุด 2 ครั้งในแต่ละคำขอ"
       },
       {
         "key": "ค",
-        "text": "Lambda uses an event source mapping and polls API Gateway for requests."
+        "text": "Lambda ใช้ event source mapping และทำการ poll คำขอจาก API Gateway"
       },
       {
         "key": "ง",
-        "text": "API Gateway directly invokes a function and retries the request until it succeeds or expires."
+        "text": "API Gateway เรียกใช้ฟังก์ชันโดยตรง และลองส่งคำขอใหม่จนกว่าจะสำเร็จหรือหมดเวลา"
       }
     ],
     "answer": "ก",
@@ -1580,27 +1580,27 @@
     "chapter_id": "Summary_M07.md",
     "chapter_name": "07. Event-Driven Serverless with AWS Lambda",
     "trap_title": "Official AWS Knowledge Check (Mod 07)",
-    "stem": "[AWS Official KC] Which actions require permissions that are defined in the AWS Lambda execution role? (Select TWO.)",
+    "stem": "[AWS Official KC] การกระทำใดต่อไปนี้ต้องใช้สิทธิ์ที่กำหนดไว้ใน AWS Lambda execution role (เลือก 2 ข้อ)",
     "options": [
       {
         "key": "ก",
-        "text": "A Lambda function writes to an Amazon DynamoDB table."
+        "text": "ฟังก์ชัน Lambda เขียนข้อมูลลงตาราง Amazon DynamoDB"
       },
       {
         "key": "ข",
-        "text": "An object that is written to an Amazon Simple Storage Service (Amazon S3) bucket initiates invocation of a Lambda function."
+        "text": "ออบเจกต์ที่เขียนลง Amazon Simple Storage Service (Amazon S3) bucket สั่งเรียกใช้งานฟังก์ชัน Lambda"
       },
       {
         "key": "ค",
-        "text": "Lambda polls an Amazon Simple Queue Service (Amazon SQS) queue for messages that initiate invocation of a Lambda function."
+        "text": "Lambda ทำการ poll ข้อความจากคิว Amazon Simple Queue Service (Amazon SQS) เพื่อใช้เรียกทำงานฟังก์ชัน Lambda"
       },
       {
         "key": "ง",
-        "text": "An Amazon API Gateway GET route initiates invocation of a Lambda function."
+        "text": "GET route ของ Amazon API Gateway สั่งเรียกใช้งานฟังก์ชัน Lambda"
       },
       {
         "key": "จ",
-        "text": "A message that is posted to an Amazon Simple Notification Service (Amazon SNS) topic initiates invocation of a Lambda function."
+        "text": "ข้อความที่ส่งไปยัง Amazon Simple Notification Service (Amazon SNS) topic สั่งเรียกใช้งานฟังก์ชัน Lambda"
       }
     ],
     "answer": [
@@ -1616,23 +1616,23 @@
     "chapter_id": "Summary_M07.md",
     "chapter_name": "07. Event-Driven Serverless with AWS Lambda",
     "trap_title": "Official AWS Knowledge Check (Mod 07)",
-    "stem": "[AWS Official KC] Which statement about the function handler in an AWS Lambda function is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับ Function Handler ใน AWS Lambda ถูกต้อง?",
     "options": [
       {
         "key": "ก",
-        "text": "The function handler is the entry point that Lambda calls to start running the Lambda function."
+        "text": "Function Handler คือ Entry Point ที่ Lambda เรียกใช้เพื่อเริ่มทำงาน Function"
       },
       {
         "key": "ข",
-        "text": "The function handler method might take an event object or a context object."
+        "text": "Method ของ Function Handler รับได้เพียง Event Object หรือ Context Object อย่างใดอย่างหนึ่งเท่านั้น"
       },
       {
         "key": "ค",
-        "text": "The event object provides information about the event that invoked the Lambda function. It must be a predefined object that an AWS service generates."
+        "text": "Event Object ให้ข้อมูลเกี่ยวกับเหตุการณ์ที่ Invoke ฟังก์ชัน ซึ่งต้องเป็น Predefined Object ที่สร้างโดยบริการ AWS เท่านั้น"
       },
       {
         "key": "ง",
-        "text": "The context object provides runtime information, and the developer must create a context object that matches the runtime that was selected for the function."
+        "text": "Context Object ให้ข้อมูล Runtime โดยนักพัฒนาต้องสร้าง Context Object ให้ตรงกับ Runtime ที่เลือกใช้สำหรับฟังก์ชัน"
       }
     ],
     "answer": "ก",
@@ -1645,23 +1645,23 @@
     "chapter_id": "Summary_M07.md",
     "chapter_name": "07. Event-Driven Serverless with AWS Lambda",
     "trap_title": "Official AWS Knowledge Check (Mod 07)",
-    "stem": "[AWS Official KC] Which issue might be addressed by adding provisioned concurrency to an AWS Lambda function?",
+    "stem": "[AWS Official KC] ปัญหาใดสามารถแก้ไขได้ด้วยการเพิ่ม Provisioned Concurrency ให้กับ AWS Lambda?",
     "options": [
       {
         "key": "ก",
-        "text": "Another Lambda function runs in the same account and Region. It sometimes spikes and consumes all available concurrency, causing the function to fail."
+        "text": "Lambda ฟังก์ชันอื่นใน Account และ Region เดียวกัน มีการเรียกใช้งานพุ่งสูงจนใช้ Concurrency ทั้งหมด ทำให้ฟังก์ชันนี้ทำงานล้มเหลว"
       },
       {
         "key": "ข",
-        "text": "An application that uses the Lambda function responds slowly for the first few users who sign in each day. Lambda metrics show higher latency for those initial requests."
+        "text": "แอปพลิเคชันที่ใช้ Lambda ตอบสนองช้าสำหรับผู้ใช้กลุ่มแรกในแต่ละวัน โดย Metrics ของ Lambda แสดงค่า Latency สูงสำหรับ Request เริ่มต้นเหล่านั้น"
       },
       {
         "key": "ค",
-        "text": "A legacy backend system fails intermittently when the developer connects to it. To avoid extra costs, they want to reduce the function's wait time when the backend fails."
+        "text": "ระบบ Backend แบบ Legacy เกิดข้อผิดพลาดเป็นระยะเมื่อเชื่อมต่อ นักพัฒนาต้องการลดระยะเวลาการรอของฟังก์ชันเพื่อลดค่าใช้จ่ายเพิ่มเติม"
       },
       {
         "key": "ง",
-        "text": "The developer wants more visibility into transactions that use the Lambda function to identify bottlenecks."
+        "text": "นักพัฒนาต้องการความสามารถในการตรวจสอบ Transaction ที่ใช้ Lambda เพิ่มขึ้น เพื่อระบุจุดที่เป็น Bottleneck"
       }
     ],
     "answer": "ข",
@@ -1674,7 +1674,7 @@
     "chapter_id": "Summary_M07.md",
     "chapter_name": "07. Event-Driven Serverless with AWS Lambda",
     "trap_title": "Official AWS Knowledge Check (Mod 07)",
-    "stem": "[AWS Official KC] Which AWS Lambda configuration setting might a developer use to manage function errors when configuring an Amazon Simple Notification Service (Amazon SNS) topic as the event source for a Lambda function? (Select TWO.)",
+    "stem": "[AWS Official KC] การตั้งค่า AWS Lambda ใดที่นักพัฒนาสามารถใช้เพื่อจัดการ Error ของฟังก์ชัน เมื่อกำหนด Amazon SNS Topic เป็น Event Source? (เลือก สอง ข้อ)",
     "options": [
       {
         "key": "ก",
@@ -1710,23 +1710,23 @@
     "chapter_id": "Summary_M07.md",
     "chapter_name": "07. Event-Driven Serverless with AWS Lambda",
     "trap_title": "Official AWS Knowledge Check (Mod 07)",
-    "stem": "[AWS Official KC] A zipped deployment package including code and custom libraries is 75 MB in size. Which AWS Lambda deployment option should be used?",
+    "stem": "[AWS Official KC] Deployment Package ในรูปแบบไฟล์ .zip ที่รวมโค้ดและ Custom Libraries มีขนาด 75 MB ควรใช้ตัวเลือกการ Deploy แบบใดสำหรับ AWS Lambda?",
     "options": [
       {
         "key": "ก",
-        "text": "Copy the code into the Lambda console editor to create and deploy the function."
+        "text": "คัดลอกโค้ดลงใน Code Editor บน Lambda Console เพื่อสร้างและ Deploy ฟังก์ชัน"
       },
       {
         "key": "ข",
-        "text": "Upload a .zip file from an integrated development environment (IDE) to load the deployment package directly into the Lambda console."
+        "text": "อัปโหลดไฟล์ .zip จาก IDE เพื่อโหลด Deployment Package เข้าสู่ Lambda Console โดยตรง"
       },
       {
         "key": "ค",
-        "text": "Upload the deployment package to an Amazon Simple Storage Service (Amazon S3) bucket, and specify the bucket name and object key on the Lambda console."
+        "text": "อัปโหลด Deployment Package ไปยัง Amazon S3 Bucket และระบุ Bucket Name กับ Object Key บน Lambda Console"
       },
       {
         "key": "ง",
-        "text": "Upload the deployment package to an Amazon Elastic Block Store (Amazon EBS) volume, and use the File Systems configuration to reference it."
+        "text": "อัปโหลด Deployment Package ไปยัง Amazon EBS Volume และใช้การตั้งค่า File Systems เพื่ออ้างอิงไฟล์"
       }
     ],
     "answer": "ค",
@@ -1739,23 +1739,23 @@
     "chapter_id": "Summary_M07.md",
     "chapter_name": "07. Event-Driven Serverless with AWS Lambda",
     "trap_title": "Official AWS Knowledge Check (Mod 07)",
-    "stem": "[AWS Official KC] A function's Amazon Resource Name (ARN) is as follows: arn:aws:lambda:aws-region:acct-id:function:helloworld:PROD. Which statement about this function is correct, based on its ARN?",
+    "stem": "[AWS Official KC] Function มี ARN ดังนี้: arn:aws:lambda:aws-region:acct-id:function:helloworld:PROD ข้อความใดถูกต้องเมื่อพิจารณาจาก ARN นี้?",
     "options": [
       {
         "key": "ก",
-        "text": "This ARN will invoke the immutable PROD version of the function."
+        "text": "ARN นี้จะเรียกใช้ Version PROD ของฟังก์ชันซึ่งเป็นแบบ Immutable"
       },
       {
         "key": "ข",
-        "text": "This ARN will invoke the version of the function that is currently associated with the PROD alias."
+        "text": "ARN นี้จะเรียกใช้ Version ของฟังก์ชันที่ผูกอยู่กับ Alias ชื่อ PROD ในปัจจุบัน"
       },
       {
         "key": "ค",
-        "text": "This ARN will invoke the function and include the AWS Lambda layer that is named PROD."
+        "text": "ARN นี้จะเรียกใช้ฟังก์ชันและรวมเอา AWS Lambda Layer ที่ชื่อ PROD เข้าไปด้วย"
       },
       {
         "key": "ง",
-        "text": "This ARN will deploy the helloworld function into the PROD account."
+        "text": "ARN นี้จะ Deploy ฟังก์ชัน helloworld ไปยัง Account ชื่อ PROD"
       }
     ],
     "answer": "ข",
@@ -1768,23 +1768,23 @@
     "chapter_id": "Summary_M07.md",
     "chapter_name": "07. Event-Driven Serverless with AWS Lambda",
     "trap_title": "Official AWS Knowledge Check (Mod 07)",
-    "stem": "[AWS Official KC] Users of a serverless application have reported errors that occur when they try to retrieve order information. Assuming that AWS X-Ray is enabled, what is the first step the developer might take in X-Ray to start troubleshooting the reported issues quickly?",
+    "stem": "[AWS Official KC] ผู้ใช้แอปพลิเคชันแบบ Serverless รายงานข้อผิดพลาดขณะดึงข้อมูลคำสั่งซื้อ หากเปิดใช้งาน AWS X-Ray ไว้ ขั้นตอนแรกที่นักพัฒนาควรทำใน X-Ray เพื่อเริ่มแก้ไขปัญหาได้อย่างรวดเร็วคืออะไร?",
     "options": [
       {
         "key": "ก",
-        "text": "Drill down into the most recent traces to look for errors."
+        "text": "เจาะลึกเข้าไปดู Trace ล่าสุดเพื่อค้นหาข้อผิดพลาด"
       },
       {
         "key": "ข",
-        "text": "Search for metadata that is related to the users who are reporting issues."
+        "text": "ค้นหา Metadata ที่เกี่ยวข้องกับผู้ใช้ที่รายงานปัญหา"
       },
       {
         "key": "ค",
-        "text": "Add annotations that the developer can use to start grouping and filtering traces."
+        "text": "เพิ่ม Annotation เพื่อใช้จัดกลุ่มและกรองข้อมูล Trace"
       },
       {
         "key": "ง",
-        "text": "Use the service map to visually locate errors across the application."
+        "text": "ใช้ Service Map เพื่อระบุตำแหน่งข้อผิดพลาดทั่วทั้งแอปพลิเคชันในรูปแบบแผนภาพ"
       }
     ],
     "answer": "ง",
@@ -1797,23 +1797,23 @@
     "chapter_id": "Summary_M08.md",
     "chapter_name": "08. Containers & ECS/Fargate",
     "trap_title": "Official AWS Knowledge Check (Mod 08)",
-    "stem": "[AWS Official KC] Which option describes a benefit that led the shipping industry and the software industry to use containers?",
+    "stem": "[AWS Official KC] ข้อใดอธิบายถึงข้อดีที่ทำให้ทั้งอุตสาหกรรมการขนส่งและอุตสาหกรรมซอฟต์แวร์หันมาใช้งานคอนเทนเนอร์?",
     "options": [
       {
         "key": "ก",
-        "text": "Infrastructure providers can create strong dependencies between their platform and the types of containers that they choose to work with."
+        "text": "ผู้ให้บริการโครงสร้างพื้นฐานสามารถสร้างความขึ้นต่อกัน (dependency) อย่างแน่นหนาระหว่างแพลตฟอร์มของตนกับประเภทของคอนเทนเนอร์ที่เลือกใช้ได้"
       },
       {
         "key": "ข",
-        "text": "The abstraction of details of what's being \"shipped\" increases the agility of a system."
+        "text": "การลดทอนรายละเอียด (abstraction) ของสิ่งที่กำลัง \"ขนส่ง\" ช่วยเพิ่มความคล่องตัว (agility) ให้แก่ระบบ"
       },
       {
         "key": "ค",
-        "text": "Increased visibility into the details of what's being \"shipped\" helps each point in the system to provide the right type of support."
+        "text": "การมองเห็นรายละเอียดภายในสิ่งที่กำลัง \"ขนส่ง\" ได้มากขึ้น ช่วยให้แต่ละจุดของระบบสามารถให้การรองรับได้อย่างถูกต้อง"
       },
       {
         "key": "ง",
-        "text": "The ability to use nonstandard types of containers gives producers flexibility."
+        "text": "ความสามารถในการใช้คอนเทนเนอร์รูปแบบที่ไม่เป็นมาตรฐาน ช่วยเพิ่มความยืดหยุ่นให้แก่ผู้ผลิต"
       }
     ],
     "answer": "ข",
@@ -1826,7 +1826,7 @@
     "chapter_id": "Summary_M08.md",
     "chapter_name": "08. Containers & ECS/Fargate",
     "trap_title": "Official AWS Knowledge Check (Mod 08)",
-    "stem": "[AWS Official KC] Which options are components of a container? (Select TWO.)",
+    "stem": "[AWS Official KC] ตัวเลือกใดจัดเป็นองค์ประกอบของคอนเทนเนอร์? (เลือก 2 ข้อ)",
     "options": [
       {
         "key": "ก",
@@ -1862,23 +1862,23 @@
     "chapter_id": "Summary_M08.md",
     "chapter_name": "08. Containers & ECS/Fargate",
     "trap_title": "Official AWS Knowledge Check (Mod 08)",
-    "stem": "[AWS Official KC] Which statement about Docker containers is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับ Docker container ถูกต้อง?",
     "options": [
       {
         "key": "ก",
-        "text": "A container is a runnable instance of an image."
+        "text": "คอนเทนเนอร์คือ runnable instance ที่ถูกสร้างขึ้นมาจาก image"
       },
       {
         "key": "ข",
-        "text": "A container registry is a template to launch containers."
+        "text": "Container registry คือเทมเพลตที่ใช้สำหรับเปิดใช้งานคอนเทนเนอร์"
       },
       {
         "key": "ค",
-        "text": "A container image is a writeable template."
+        "text": "Container image คือเทมเพลตที่สามารถเขียนข้อมูลทับได้ (writeable)"
       },
       {
         "key": "ง",
-        "text": "A container layer is a thin read-only layer that is associated with a running container."
+        "text": "Container layer คือ thin read-only layer ที่ผูกอยู่กับคอนเทนเนอร์ที่กำลังทำงาน"
       }
     ],
     "answer": "ก",
@@ -1891,7 +1891,7 @@
     "chapter_id": "Summary_M08.md",
     "chapter_name": "08. Containers & ECS/Fargate",
     "trap_title": "Official AWS Knowledge Check (Mod 08)",
-    "stem": "[AWS Official KC] Which Docker CLI command creates a container named my_app_l from the image named node_app?",
+    "stem": "[AWS Official KC] คำสั่ง Docker CLI ใดใช้สร้างคอนเทนเนอร์ชื่อ my_app_l จาก image ที่ชื่อ node_app?",
     "options": [
       {
         "key": "ก",
@@ -1920,23 +1920,23 @@
     "chapter_id": "Summary_M08.md",
     "chapter_name": "08. Containers & ECS/Fargate",
     "trap_title": "Official AWS Knowledge Check (Mod 08)",
-    "stem": "[AWS Official KC] Which statement about a Dockerfile is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับ Dockerfile ถูกต้อง?",
     "options": [
       {
         "key": "ก",
-        "text": "A Dockerfile is a YAML file that provides instructions to create a container image."
+        "text": "Dockerfile คือไฟล์ YAML ที่เก็บชุดคำสั่งสำหรับการสร้าง container image"
       },
       {
         "key": "ข",
-        "text": "Each instruction in a Dockerfile creates a read-only layer in the image."
+        "text": "แต่ละคำสั่ง (instruction) ใน Dockerfile จะสร้าง read-only layer ขึ้นมาภายใน image"
       },
       {
         "key": "ค",
-        "text": "If a developer changes the Dockerfile and rebuilds the image, all layers of the image must be rebuilt."
+        "text": "หากนักพัฒนาแก้ไข Dockerfile และสั่งบิลด์ image ใหม่ ทุก layer ของ image จะต้องถูกบิลด์ใหม่ทั้งหมดเสมอ"
       },
       {
         "key": "ง",
-        "text": "Developers cannot use the Dockerfile to run scripts that would run after the container is instantiated."
+        "text": "นักพัฒนาไม่สามารถใช้ Dockerfile ในการรันสคริปต์ที่กำหนดให้ทำงานหลังจากคอนเทนเนอร์ถูก instantiate ได้"
       }
     ],
     "answer": "ข",
@@ -1949,23 +1949,23 @@
     "chapter_id": "Summary_M08.md",
     "chapter_name": "08. Containers & ECS/Fargate",
     "trap_title": "Official AWS Knowledge Check (Mod 08)",
-    "stem": "[AWS Official KC] A developer wants to migrate a monolithic shopping website to a microservice-based application. Which option reflects a reason to choose containers?",
+    "stem": "[AWS Official KC] นักพัฒนาต้องการย้ายระบบเว็บไซต์ชอปปิงแบบ Monolithic ไปเป็นแอปพลิเคชันแบบ Microservices ตัวเลือกใดคือเหตุผลที่ควรเลือกใช้คอนเทนเนอร์?",
     "options": [
       {
         "key": "ก",
-        "text": "Each container can use the language and technology that are best suited for the service."
+        "text": "แต่ละคอนเทนเนอร์สามารถเลือกใช้ภาษาและเทคโนโลยีที่เหมาะสมที่สุดสำหรับแต่ละเซอร์วิสได้"
       },
       {
         "key": "ข",
-        "text": "Containerized components are not isolated, so the application will evolve as a singular system."
+        "text": "คอมโพเนนต์ที่ทำงานในคอนเทนเนอร์ไม่ได้ถูกแยกส่วนกัน (isolated) ทำให้แอปพลิเคชันสามารถพัฒนาไปในทิศทางเดียวกันเป็นระบบเดี่ยวได้"
       },
       {
         "key": "ค",
-        "text": "Containers are well-suited to designs that avoid the use of temporary resources."
+        "text": "คอนเทนเนอร์เหมาะอย่างยิ่งสำหรับสถาปัตยกรรมที่หลีกเลี่ยงการใช้ทรัพยากรแบบชั่วคราว (temporary resources)"
       },
       {
         "key": "ง",
-        "text": "Containers separate your dependencies and libraries into their own objects."
+        "text": "คอนเทนเนอร์ช่วยแยก dependencies และ libraries ออกเป็นอ็อบเจกต์เดี่ยวๆ ของตัวเอง"
       }
     ],
     "answer": "ก",
@@ -1978,23 +1978,23 @@
     "chapter_id": "Summary_M08.md",
     "chapter_name": "08. Containers & ECS/Fargate",
     "trap_title": "Official AWS Knowledge Check (Mod 08)",
-    "stem": "[AWS Official KC] A developer recently built a proof-of-concept application using containers, and the business owner wants to roll it out to production. Which option reflects a primary reason that the developer might use a container orchestration service?",
+    "stem": "[AWS Official KC] นักพัฒนาได้สร้างแอปพลิเคชันต้นแบบ (proof-of-concept) ด้วย Container และเจ้าของธุรกิจต้องการนำขึ้นสู่ระบบ Production ตัวเลือกใดคือเหตุผลหลักที่นักพัฒนาควรใช้บริการ Container Orchestration?",
     "options": [
       {
         "key": "ก",
-        "text": "To schedule container starts and stops and determine where to place containers"
+        "text": "เพื่อกำหนดเวลาการเริ่มต้นและหยุดทำงานของ Container และจัดการตำแหน่งการวาง Container บนโฮสต์"
       },
       {
         "key": "ข",
-        "text": "To base their containers on third-party images"
+        "text": "เพื่อสร้าง Container โดยอิงจาก Image ของบุคคลที่สาม"
       },
       {
         "key": "ค",
-        "text": "To remove the requirement to use a container registry"
+        "text": "เพื่อขจัดข้อกำหนดในการใช้งาน Container Registry"
       },
       {
         "key": "ง",
-        "text": "To receive automated recommendations about how to improve their application code to run on containers"
+        "text": "เพื่อรับคำแนะนำแบบอัตโนมัติในการปรับปรุงโค้ดของแอปพลิเคชันให้ทำงานบน Container ได้ดียิ่งขึ้น"
       }
     ],
     "answer": "ก",
@@ -2007,23 +2007,23 @@
     "chapter_id": "Summary_M08.md",
     "chapter_name": "08. Containers & ECS/Fargate",
     "trap_title": "Official AWS Knowledge Check (Mod 08)",
-    "stem": "[AWS Official KC] Which statement about the Amazon Elastic Container Service (Amazon ECS) is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับ Amazon Elastic Container Service (Amazon ECS) ถูกต้อง?",
     "options": [
       {
         "key": "ก",
-        "text": "Amazon ECS is a highly scalable container orchestration service that supports Docker containers."
+        "text": "Amazon ECS เป็นบริการ Container Orchestration ที่รองรับ Docker Container และมีความสามารถในการขยายระบบสูง"
       },
       {
         "key": "ข",
-        "text": "Amazon ECS requires the use of the Amazon Elastic Container Registry (Amazon ECR) for container images."
+        "text": "Amazon ECS บังคับให้ต้องจัดเก็บ Container Image ไว้ใน Amazon Elastic Container Registry (Amazon ECR) เท่านั้น"
       },
       {
         "key": "ค",
-        "text": "Amazon ECS supports launching containers in Amazon EC2 or AWS Lambda."
+        "text": "Amazon ECS รองรับการเปิดใช้งาน Container บน Amazon EC2 หรือ AWS Lambda"
       },
       {
         "key": "ง",
-        "text": "With Amazon ECS, you can deploy applications to containers even if they have not been architected specifically to run on containers."
+        "text": "Amazon ECS รองรับการ Deploy แอปพลิเคชันลงใน Container ได้ แม้ว่าแอปพลิเคชันนั้นจะไม่ได้ออกแบบมาเพื่อทำงานบน Container ก็ตาม"
       }
     ],
     "answer": "ก",
@@ -2036,7 +2036,7 @@
     "chapter_id": "Summary_M08.md",
     "chapter_name": "08. Containers & ECS/Fargate",
     "trap_title": "Official AWS Knowledge Check (Mod 08)",
-    "stem": "[AWS Official KC] What is the name for a logical collection of AWS Elastic Beanstalk components, which is conceptually similar to a folder?",
+    "stem": "[AWS Official KC] ชื่อเรียกของกลุ่มคอมโพเนนต์เชิงตรรกะใน AWS Elastic Beanstalk ที่มีแนวคิดเทียบเคียงได้กับโฟลเดอร์คือข้อใด?",
     "options": [
       {
         "key": "ก",
@@ -2065,7 +2065,7 @@
     "chapter_id": "Summary_M08.md",
     "chapter_name": "08. Containers & ECS/Fargate",
     "trap_title": "Official AWS Knowledge Check (Mod 08)",
-    "stem": "[AWS Official KC] A developer wants to do canary testing on a new deployment. Which AWS Elastic Beanstalk deployment policy option should the developer use?",
+    "stem": "[AWS Official KC] นักพัฒนาต้องการทำ Canary Testing สำหรับการ Deploy เวอร์ชันใหม่ นักพัฒนาควรเลือกใช้นโยบายการ Deploy (Deployment Policy) รูปแบบใดของ AWS Elastic Beanstalk?",
     "options": [
       {
         "key": "ก",
@@ -2094,23 +2094,23 @@
     "chapter_id": "Summary_M09.md",
     "chapter_name": "09. Caching with CloudFront & ElastiCache",
     "trap_title": "Official AWS Knowledge Check (Mod 09)",
-    "stem": "[AWS Official KC] An architect suggests that the developers implement caching on an existing application to address performance issues. Which option describes factors that the developers should consider when they decide where to add caching?",
+    "stem": "[AWS Official KC] สถาปนิกแนะนำให้นักพัฒนาทำ Caching บนแอปพลิเคชันเดิมเพื่อแก้ไขปัญหาประสิทธิภาพ ตัวเลือกใดอธิบายปัจจัยที่นักพัฒนาควรพิจารณาในการตัดสินใจเลือกตำแหน่งที่จะเพิ่ม Caching ได้ถูกต้อง?",
     "options": [
       {
         "key": "ก",
-        "text": "Avoid caching for data queries that are slow and expensive to run."
+        "text": "หลีกเลี่ยงการทำ Caching สำหรับการ Query ข้อมูลที่ทำงานช้าและสิ้นเปลืองทรัพยากรสูง"
       },
       {
         "key": "ข",
-        "text": "Review the data and its access patterns. Data that changes rapidly but is infrequently accessed should be cached."
+        "text": "ตรวจสอบข้อมูลและรูปแบบการเข้าถึงข้อมูล โดยข้อมูลที่มีการเปลี่ยนแปลงบ่อยแต่ถูกเรียกใช้น้อยควรนำมาทำ Caching"
       },
       {
         "key": "ค",
-        "text": "Consider the tolerance for stale data in each context where the data is used."
+        "text": "พิจารณาการยอมรับความล่าช้าหรือไม่เป็นปัจจุบันของข้อมูล (Stale Data) ในแต่ละบริบทที่มีการนำข้อมูลนั้นไปใช้งาน"
       },
       {
         "key": "ง",
-        "text": "Add as much caching in as many places as you can as early in development as possible."
+        "text": "เพิ่ม Caching ให้ได้มากจุดที่สุดเท่าที่จะทำได้ตั้งแต่ระยะแรกของการพัฒนา"
       }
     ],
     "answer": "ค",
@@ -2123,7 +2123,7 @@
     "chapter_id": "Summary_M09.md",
     "chapter_name": "09. Caching with CloudFront & ElastiCache",
     "trap_title": "Official AWS Knowledge Check (Mod 09)",
-    "stem": "[AWS Official KC] A developer has determined that an in-memory key-value store would improve performance of their application's queries. They want to keep the solution as simple as possible and need to support read replicas?",
+    "stem": "[AWS Official KC] นักพัฒนาพบว่าระบบจัดเก็บข้อมูลแบบ In-memory Key-Value จะช่วยเพิ่มประสิทธิภาพการ Query ของแอปพลิเคชันได้ โดยต้องการโซลูชันที่เรียบง่ายที่สุดและต้องรองรับ Read Replicas ควรเลือกใช้บริการใด?",
     "options": [
       {
         "key": "ก",
@@ -2152,23 +2152,23 @@
     "chapter_id": "Summary_M09.md",
     "chapter_name": "09. Caching with CloudFront & ElastiCache",
     "trap_title": "Official AWS Knowledge Check (Mod 09)",
-    "stem": "[AWS Official KC] Amazon ElastiCache is being added to an application to improve response times and alleviate database pressure. The backend database for the application is an Amazon Relational Database Service (Amazon RDS) database. Which task would be the responsibility of the application developer?",
+    "stem": "[AWS Official KC] มีการนำ Amazon ElastiCache มาใช้ร่วมกับแอปพลิเคชันเพื่อปรับปรุงเวลาตอบสนอง (Response time) และลดภาระของฐานข้อมูล โดยฐานข้อมูล backend ของแอปพลิเคชันคือ Amazon Relational Database Service (Amazon RDS) งานใดต่อไปนี้เป็นความรับผิดชอบของนักพัฒนาแอปพลิเคชัน",
     "options": [
       {
         "key": "ก",
-        "text": "Applying software patches to the cache instances"
+        "text": "การติดตั้งซอฟต์แวร์แพตช์ให้กับ Cache instance"
       },
       {
         "key": "ข",
-        "text": "Writing code to check the health of the cluster before writing to the cache"
+        "text": "การเขียนโค้ดตรวจสอบสถานะความพร้อมทำงาน (Health) ของคลัสเตอร์ก่อนเขียนข้อมูลลงแคช"
       },
       {
         "key": "ค",
-        "text": "Writing code that looks for the requested data in the cache and, if the data is not found, requests it from the origin"
+        "text": "การเขียนโค้ดค้นหาข้อมูลที่ร้องขอในแคช และหากไม่พบข้อมูล ให้ดึงข้อมูลจากแหล่งต้นทาง (Origin)"
       },
       {
         "key": "ง",
-        "text": "Write code to integrate the cache with the Amazon RDS instances that it will be reading from"
+        "text": "การเขียนโค้ดเพื่อเชื่อมโยงแคชเข้ากับ Amazon RDS instance ที่จะใช้สำหรับการอ่านข้อมูลโดยตรง"
       }
     ],
     "answer": "ค",
@@ -2181,23 +2181,23 @@
     "chapter_id": "Summary_M09.md",
     "chapter_name": "09. Caching with CloudFront & ElastiCache",
     "trap_title": "Official AWS Knowledge Check (Mod 09)",
-    "stem": "[AWS Official KC] Which statement about Amazon ElastiCache is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับ Amazon ElastiCache ถูกต้อง",
     "options": [
       {
         "key": "ก",
-        "text": "A node is a variable-size chunk of secure, network-attached RAM."
+        "text": "Node คือหน่วยความจำ RAM แบบ Network-attached ที่มีความปลอดภัยและปรับขนาดได้ตามต้องการ"
       },
       {
         "key": "ข",
-        "text": "Your application connects to an ElastiCache node by using a unique address called an endpoint."
+        "text": "แอปพลิเคชันเชื่อมต่อไปยัง ElastiCache node โดยใช้ที่อยู่เฉพาะที่เรียกว่า Endpoint"
       },
       {
         "key": "ค",
-        "text": "With the Memcached engine, data is partitioned across shards in a cluster."
+        "text": "สำหรับ Memcached engine ข้อมูลจะถูกแบ่งส่วน (Partition) ไปยัง Shard ต่างๆ ภายในคลัสเตอร์"
       },
       {
         "key": "ง",
-        "text": "Every node within a cluster must run the same cache engine, but the nodes can run on different instance types."
+        "text": "ทุกโหนดในคลัสเตอร์ต้องใช้ Cache engine เดียวกัน แต่สามารถใช้ Instance type ที่แตกต่างกันได้"
       }
     ],
     "answer": "ข",
@@ -2210,23 +2210,23 @@
     "chapter_id": "Summary_M09.md",
     "chapter_name": "09. Caching with CloudFront & ElastiCache",
     "trap_title": "Official AWS Knowledge Check (Mod 09)",
-    "stem": "[AWS Official KC] A developer has been asked to address complaints from customers in the London area about the performance of a web-based application that is hosted in New York. Which option might the developer implement?",
+    "stem": "[AWS Official KC] นักพัฒนาได้รับมอบหมายให้แก้ไขปัญหาการร้องเรียนเรื่องประสิทธิภาพของเว็บแอปพลิเคชันจากลูกค้าในพื้นที่ลอนดอน โดยแอปพลิเคชันดังกล่าวโฮสต์อยู่ที่นิวยอร์ก ทางเลือกใดที่นักพัฒนาควรนำมาปรับใช้",
     "options": [
       {
         "key": "ก",
-        "text": "Use Amazon CloudFront to replicate the application code on Amazon Elastic Compute Cloud (Amazon EC2) instances in the London Region."
+        "text": "ใช้ Amazon CloudFront จำลองโค้ดของแอปพลิเคชันไปยัง Amazon Elastic Compute Cloud (Amazon EC2) instance ใน Region ลอนดอน"
       },
       {
         "key": "ข",
-        "text": "Set up a CloudFront distribution that can serve static content from edge locations that are closer to UK users."
+        "text": "ตั้งค่า CloudFront distribution เพื่อส่งมอบเนื้อหาคงที่ (Static content) จาก Edge location ที่อยู่ใกล้กับผู้ใช้งานในสหราชอาณาจักรมากขึ้น"
       },
       {
         "key": "ค",
-        "text": "Set up a CloudFront regional edge location in the London Region."
+        "text": "สร้าง CloudFront Regional Edge location ขึ้นมาใหม่ใน Region ลอนดอน"
       },
       {
         "key": "ง",
-        "text": "Set up one CloudFront edge location in New York and one in London."
+        "text": "สร้าง CloudFront Edge location หนึ่งแห่งในนิวยอร์ก และอีกหนึ่งแห่งในลอนดอน"
       }
     ],
     "answer": "ข",
@@ -2239,23 +2239,23 @@
     "chapter_id": "Summary_M09.md",
     "chapter_name": "09. Caching with CloudFront & ElastiCache",
     "trap_title": "Official AWS Knowledge Check (Mod 09)",
-    "stem": "[AWS Official KC] A developer has been asked to increase the cache hit ratio for their Amazon CloudFront distribution. Which option should they try?",
+    "stem": "[AWS Official KC] นักพัฒนาได้รับมอบหมายให้เพิ่มอัตราส่วนการพบข้อมูลในแคช (Cache hit ratio) สำหรับ Amazon CloudFront distribution ควรเลือกใช้วิธีการใด",
     "options": [
       {
         "key": "ก",
-        "text": "Include only the minimum necessary values in the cache key."
+        "text": "กำหนดเฉพาะค่าที่จำเป็นขั้นต่ำลงใน Cache key"
       },
       {
         "key": "ข",
-        "text": "Decrease the maximum time to live (TTL) setting in a cache policy."
+        "text": "ลดค่า Maximum time to live (TTL) ใน Cache policy"
       },
       {
         "key": "ค",
-        "text": "Decrease the max-age setting in a file's Cache-Control header."
+        "text": "ลดค่า max-age ใน Cache-Control header ของไฟล์"
       },
       {
         "key": "ง",
-        "text": "Increase the cache hit setting in a cache policy."
+        "text": "เพิ่มการตั้งค่า Cache hit ใน Cache policy"
       }
     ],
     "answer": "ก",
@@ -2268,23 +2268,23 @@
     "chapter_id": "Summary_M09.md",
     "chapter_name": "09. Caching with CloudFront & ElastiCache",
     "trap_title": "Official AWS Knowledge Check (Mod 09)",
-    "stem": "[AWS Official KC] Which statement about Amazon CloudFront cached file expiration is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับการหมดอายุของไฟล์ที่แคชไว้ใน Amazon CloudFront ถูกต้อง",
     "options": [
       {
         "key": "ก",
-        "text": "Each file in the cache automatically expires after 24 hours, and you cannot modify this setting."
+        "text": "ไฟล์แต่ละไฟล์ในแคชจะหมดอายุโดยอัตโนมัติหลังจาก 24 ชั่วโมง และไม่สามารถปรับเปลี่ยนการตั้งค่านี้ได้"
       },
       {
         "key": "ข",
-        "text": "After a file expires, the next time the edge location gets a user request for the file, CloudFront forwards the request to the origin server."
+        "text": "หลังจากไฟล์หมดอายุ เมื่อมีคำขอไฟล์นั้นมายัง Edge location ในครั้งถัดไป CloudFront จะส่งต่อคำขอไปยัง Origin server"
       },
       {
         "key": "ค",
-        "text": "When the origin receives a request, the origin sends the latest version of the file regardless of whether it is the same as the expired version in the cache."
+        "text": "เมื่อ Origin ได้รับคำขอ Origin จะส่งไฟล์เวอร์ชันล่าสุดกลับมาเสมอ ไม่ว่าไฟล์นั้นจะเหมือนกับเวอร์ชันที่หมดอายุในแคชหรือไม่ก็ตาม"
       },
       {
         "key": "ง",
-        "text": "You can control cache file duration with CloudFront cache policy settings or through Cache-Control settings in the origin file headers. However, you cannot combine these options."
+        "text": "สามารถควบคุมระยะเวลาแคชไฟล์ผ่านการตั้งค่า CloudFront cache policy หรือการตั้งค่า Cache-Control ใน Header ของไฟล์ต้นทางได้ แต่ไม่สามารถใช้ทั้งสองวิธีร่วมกันได้"
       }
     ],
     "answer": "ข",
@@ -2297,23 +2297,23 @@
     "chapter_id": "Summary_M09.md",
     "chapter_name": "09. Caching with CloudFront & ElastiCache",
     "trap_title": "Official AWS Knowledge Check (Mod 09)",
-    "stem": "[AWS Official KC] Which use case suggests the use of Amazon CloudFront Functions?",
+    "stem": "[AWS Official KC] กรณีการใช้งานใดเหมาะสมสำหรับการเลือกใช้ Amazon CloudFront Functions",
     "options": [
       {
         "key": "ก",
-        "text": "A function that redirects the viewer to a different URL and adds a custom response header"
+        "text": "ฟังก์ชันที่ทำหน้าที่ Redirect ผู้ใช้งานไปยัง URL อื่นและเพิ่ม Custom response header"
       },
       {
         "key": "ข",
-        "text": "A function that uses a third-party library"
+        "text": "ฟังก์ชันที่ต้องใช้งานไลบรารีภายนอก (Third-party library)"
       },
       {
         "key": "ค",
-        "text": "A function that requires network access to use external services for processing"
+        "text": "ฟังก์ชันที่ต้องการการเข้าถึงเครือข่ายเพื่อเรียกใช้บริการภายนอกในการประมวลผล"
       },
       {
         "key": "ง",
-        "text": "A function that requires access to the body of HTTP requests"
+        "text": "ฟังก์ชันที่จำเป็นต้องเข้าถึง Body ของ HTTP request"
       }
     ],
     "answer": "ก",
@@ -2326,23 +2326,23 @@
     "chapter_id": "Summary_M09.md",
     "chapter_name": "09. Caching with CloudFront & ElastiCache",
     "trap_title": "Official AWS Knowledge Check (Mod 09)",
-    "stem": "[AWS Official KC] Which statement reflects a benefit of lazy loading as a caching strategy?",
+    "stem": "[AWS Official KC] ข้อใดกล่าวถึงประโยชน์ของกลยุทธ์การทำ Caching แบบ Lazy Loading ได้ถูกต้อง?",
     "options": [
       {
         "key": "ก",
-        "text": "Lazy loading avoids filling up the cache with data that is not requested."
+        "text": "Lazy Loading ช่วยป้องกันไม่ให้ Cache เต็มไปด้วยข้อมูลที่ไม่มีการเรียกใช้"
       },
       {
         "key": "ข",
-        "text": "With lazy loading, data in the cache never becomes stale."
+        "text": "เมื่อใช้ Lazy Loading ข้อมูลใน Cache จะไม่มีทางล้าสมัย (Stale Data)"
       },
       {
         "key": "ค",
-        "text": "With lazy loading, every write involves two trips—a write to the cache and a write to the database—which adds latency to the process."
+        "text": "เมื่อใช้ Lazy Loading การเขียนข้อมูลทุกครั้งต้องทำสองรอบ คือเขียนลง Cache และเขียนลง Database ทำให้เกิด Latency เพิ่มขึ้น"
       },
       {
         "key": "ง",
-        "text": "Lazy loading might result in cache churn. The cache might be updated often if certain records are updated repeatedly."
+        "text": "Lazy Loading อาจทำให้เกิด Cache Churn โดย Cache อาจถูกอัปเดตบ่อยเกินไปหากบางระเบียนมีการอัปเดตซ้ำๆ"
       }
     ],
     "answer": "ก",
@@ -2355,23 +2355,23 @@
     "chapter_id": "Summary_M09.md",
     "chapter_name": "09. Caching with CloudFront & ElastiCache",
     "trap_title": "Official AWS Knowledge Check (Mod 09)",
-    "stem": "[AWS Official KC] A developer has been asked whether caching might improve the performance of their online bidding application. How should they answer this question?",
+    "stem": "[AWS Official KC] นักพัฒนาได้รับคำถามว่าการทำ Caching จะช่วยเพิ่มประสิทธิภาพให้กับแอปพลิเคชันการประมูลออนไลน์ได้หรือไม่ ควรตอบคำถามนี้อย่างไร?",
     "options": [
       {
         "key": "ก",
-        "text": "Caching probably will not yield much performance improvement for this type of application."
+        "text": "การทำ Caching แทบจะไม่ช่วยเพิ่มประสิทธิภาพให้กับแอปพลิเคชันประเภทนี้"
       },
       {
         "key": "ข",
-        "text": "Caching might improve performance by reducing the number of hits to the backend database. However, caching cannot improve performance issues that occur between the client and the web server."
+        "text": "การทำ Caching อาจช่วยเพิ่มประสิทธิภาพโดยลดจำนวนการเรียกไปยัง Backend Database แต่ไม่สามารถแก้ปัญหาประสิทธิภาพระหว่าง Client และ Web Server ได้"
       },
       {
         "key": "ค",
-        "text": "Using different types of caching at each application layer might improve both the frontend and backend performance."
+        "text": "การใช้ Caching ประเภทต่างๆ ในแต่ละ Layer ของแอปพลิเคชัน สามารถช่วยเพิ่มประสิทธิภาพได้ทั้งฝั่ง Frontend และ Backend"
       },
       {
         "key": "ง",
-        "text": "Caching might greatly improve performance if the application is compute heavy, but if the application is read heavy, a cache will not provide much benefit."
+        "text": "การทำ Caching จะช่วยเพิ่มประสิทธิภาพได้อย่างมากหากแอปพลิเคชันเน้นการประมวลผล (Compute-heavy) แต่หากเป็นแอปพลิเคชันที่เน้นการอ่านข้อมูล (Read-heavy) Cache จะไม่ให้ประโยชน์มากนัก"
       }
     ],
     "answer": "ค",
@@ -2384,23 +2384,23 @@
     "chapter_id": "Summary_M10.md",
     "chapter_name": "10. Messaging with SQS & SNS",
     "trap_title": "Official AWS Knowledge Check (Mod 10)",
-    "stem": "[AWS Official KC] Which option describes how a message queue processes messages?",
+    "stem": "[AWS Official KC] ข้อใดอธิบายการประมวลผลข้อความของ Message Queue ได้ถูกต้อง?",
     "options": [
       {
         "key": "ก",
-        "text": "The queue polls producers for new messages."
+        "text": "Queue จะทำการ Poll ข้อความใหม่จาก Producer"
       },
       {
         "key": "ข",
-        "text": "Consumers poll the queue for messages."
+        "text": "Consumer จะทำการ Poll ข้อความจาก Queue"
       },
       {
         "key": "ค",
-        "text": "The queue broadcasts messages to consumers."
+        "text": "Queue จะกระจายข้อความแบบ Broadcast ไปยัง Consumer ทั้งหมด"
       },
       {
         "key": "ง",
-        "text": "Consumers notify the queue when a message has been successfully processed. The queue configuration determines whether the message should be available to other consumers."
+        "text": "Consumer จะแจ้ง Queue เมื่อประมวลผลข้อความสำเร็จ โดยการตั้งค่าของ Queue จะเป็นตัวกำหนดว่าข้อความนั้นควรเปิดให้ Consumer รายอื่นเข้าถึงได้หรือไม่"
       }
     ],
     "answer": "ข",
@@ -2413,23 +2413,23 @@
     "chapter_id": "Summary_M10.md",
     "chapter_name": "10. Messaging with SQS & SNS",
     "trap_title": "Official AWS Knowledge Check (Mod 10)",
-    "stem": "[AWS Official KC] Which option describes how publish/subscribe (pub/sub) messaging works?",
+    "stem": "[AWS Official KC] ข้อใดอธิบายหลักการทำงานของระบบส่งข้อความแบบ Publish/Subscribe (Pub/Sub) ได้ถูกต้อง?",
     "options": [
       {
         "key": "ก",
-        "text": "Producers send messages to subscribers."
+        "text": "Producer ส่งข้อความตรงไปยัง Subscriber"
       },
       {
         "key": "ข",
-        "text": "Subscribers poll topics for new messages."
+        "text": "Subscriber ทำการ Poll ข้อความใหม่จาก Topic"
       },
       {
         "key": "ค",
-        "text": "When a topic receives a new message, the topic sends the message to the first subscriber who responds to a notification."
+        "text": "เมื่อ Topic ได้รับข้อความใหม่ Topic จะส่งข้อความไปยัง Subscriber รายแรกที่ตอบสนองต่อการแจ้งเตือน"
       },
       {
         "key": "ง",
-        "text": "A new topic message is pushed out to all topic subscribers."
+        "text": "ข้อความใหม่ใน Topic จะถูกผลัก (Push) ไปยังผู้ติดตาม (Subscriber) ทุกรายของ Topic นั้น"
       }
     ],
     "answer": "ง",
@@ -2442,23 +2442,23 @@
     "chapter_id": "Summary_M10.md",
     "chapter_name": "10. Messaging with SQS & SNS",
     "trap_title": "Official AWS Knowledge Check (Mod 10)",
-    "stem": "[AWS Official KC] A developer wants to add an Amazon Simple Queue Service (Amazon SQS) queue to decouple incoming order requests from a backend database. Which Amazon SQS operations might be part of this update?",
+    "stem": "[AWS Official KC] นักพัฒนาต้องการเพิ่ม Amazon SQS เพื่อแยกการเชื่อมต่อ (Decouple) ระหว่าง Order Request ที่เข้ามากับ Database ที่ส่วน Backend การดำเนินการของ Amazon SQS ในข้อใดอาจเป็นส่วนหนึ่งของการอัปเดตระบบนี้?",
     "options": [
       {
         "key": "ก",
-        "text": "Use the SendMessage operation with the QueueURL mapped to the database endpoint to put messages on the queue."
+        "text": "ใช้คำสั่ง SendMessage โดยระบุ QueueURL ชี้ไปยัง Endpoint ของ Database เพื่อนำข้อความเข้าสู่ Queue"
       },
       {
         "key": "ข",
-        "text": "Use the ReceiveMessage operation with MaxNumberOfMessages set to 5 to retrieve up to 5 messages off the queue at one time."
+        "text": "ใช้คำสั่ง ReceiveMessage โดยตั้งค่า MaxNumberOfMessages เป็น 5 เพื่อดึงข้อความจาก Queue ออกมาสูงสุดครั้งละ 5 ข้อความ"
       },
       {
         "key": "ค",
-        "text": "Use the DeleteMessage operation to change the visibility of the message as soon as the ReceiptHandle is received."
+        "text": "ใช้คำสั่ง DeleteMessage เพื่อเปลี่ยนค่าการมองเห็น (Visibility) ของข้อความทันทีที่ได้รับ ReceiptHandle"
       },
       {
         "key": "ง",
-        "text": "Use the ReceiveMessage operation with the WaitTimeSeconds parameter set to O to reduce the number of empty requests."
+        "text": "ใช้คำสั่ง ReceiveMessage โดยกำหนดพารามิเตอร์ WaitTimeSeconds เป็น 0 เพื่อลดจำนวนคำขอที่ส่งกลับมาเป็นค่าว่าง (Empty Requests)"
       }
     ],
     "answer": "ข",
@@ -2471,23 +2471,23 @@
     "chapter_id": "Summary_M10.md",
     "chapter_name": "10. Messaging with SQS & SNS",
     "trap_title": "Official AWS Knowledge Check (Mod 10)",
-    "stem": "[AWS Official KC] A tester reports that Amazon Simple Queue Service (Amazon SQS) messages are being processed more than once. The developer finds that processing servers are not completing as quickly as expected, and messages are made available to other consumers before the prior consumer deletes them. Which option might reduce occurrences of this issue?",
+    "stem": "[AWS Official KC] ผู้ทดสอบระบบรายงานว่าข้อความใน Amazon SQS ถูกประมวลผลซ้ำมากกว่าหนึ่งครั้ง นักพัฒนาพบว่าเซิร์ฟเวอร์ประมวลผลทำงานเสร็จช้ากว่าที่คาดการณ์ไว้ ส่งผลให้ข้อความกลับไปเปิดให้ Consumer ตัวอื่นเข้าถึงได้ก่อนที่ Consumer ตัวเดิมจะลบข้อความออก ข้อใดช่วยลดการเกิดปัญหานี้ได้?",
     "options": [
       {
         "key": "ก",
-        "text": "Increase the visibility timeout."
+        "text": "เพิ่มระยะเวลา Visibility Timeout"
       },
       {
         "key": "ข",
-        "text": "Increase maxReceiveCount."
+        "text": "เพิ่มค่า maxReceiveCount"
       },
       {
         "key": "ค",
-        "text": "Increase MaxNumberOfMessages."
+        "text": "เพิ่มค่า MaxNumberOfMessages"
       },
       {
         "key": "ง",
-        "text": "Increase the number of producers on the queue."
+        "text": "เพิ่มจำนวน Producer ของ Queue"
       }
     ],
     "answer": "ก",
@@ -2500,23 +2500,23 @@
     "chapter_id": "Summary_M10.md",
     "chapter_name": "10. Messaging with SQS & SNS",
     "trap_title": "Official AWS Knowledge Check (Mod 10)",
-    "stem": "[AWS Official KC] For an order-processing application that uses an Amazon Simple Queue Service (Amazon SQS) queue, a developer finds that an older version of the client generates order records that fail the backend process. The failures cause a bottleneck on the queue. How might the developer reduce the impact of the failed records?",
+    "stem": "[AWS Official KC] สำหรับแอปพลิเคชันประมวลผลคำสั่งซื้อที่ใช้คิว Amazon Simple Queue Service (Amazon SQS) นักพัฒนาพบว่าไคลเอนต์เวอร์ชันเก่าสร้างข้อมูลคำสั่งซื้อที่ประมวลผลล้มเหลวในฝั่ง backend ส่งผลให้เกิดคอขวดบนคิว นักพัฒนาควรลดผลกระทบจากข้อมูลที่ล้มเหลวดังกล่าวอย่างไร?",
     "options": [
       {
         "key": "ก",
-        "text": "Increase the visibility timeout and set a high value for MaxNumberOfMessages."
+        "text": "เพิ่ม Visibility Timeout และกำหนดค่า MaxNumberOfMessages ให้สูงขึ้น"
       },
       {
         "key": "ข",
-        "text": "Add a dead-letter queue and set a low maxReceiveCount."
+        "text": "เพิ่ม Dead-Letter Queue (DLQ) และกำหนดค่า maxReceiveCount ให้น้อยลง"
       },
       {
         "key": "ค",
-        "text": "Use long polling and set a high wait time."
+        "text": "ใช้ Long Polling และตั้งค่าเวลารอ (Wait Time) ให้สูงขึ้น"
       },
       {
         "key": "ง",
-        "text": "Change the queue type from standard to First-ln-First-Out (FIFO) and set a high throughput rate."
+        "text": "เปลี่ยนประเภทคิวจาก Standard เป็น First-In-First-Out (FIFO) และตั้งค่า Throughput Rate ให้สูงขึ้น"
       }
     ],
     "answer": "ข",
@@ -2529,23 +2529,23 @@
     "chapter_id": "Summary_M10.md",
     "chapter_name": "10. Messaging with SQS & SNS",
     "trap_title": "Official AWS Knowledge Check (Mod 10)",
-    "stem": "[AWS Official KC] Which statement about Amazon Simple Queue Service (Amazon SQS) polling options is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับตัวเลือกการทำ Polling ของ Amazon Simple Queue Service (Amazon SQS) ถูกต้องที่สุด?",
     "options": [
       {
         "key": "ก",
-        "text": "By default, when you make a ReceiveMessage API call, Amazon SQS performs long polling."
+        "text": "โดยเริ่มต้น เมื่อเรียกใช้ API ReceiveMessage ตัว Amazon SQS จะทำงานแบบ Long Polling"
       },
       {
         "key": "ข",
-        "text": "When long polling is configured, WaitTimeSeconds is set to O."
+        "text": "เมื่อกำหนดค่าเป็น Long Polling ค่า WaitTimeSeconds จะถูกตั้งไว้ที่ 0"
       },
       {
         "key": "ค",
-        "text": "When short polling is configured, Amazon SQS queries all of its servers."
+        "text": "เมื่อกำหนดค่าเป็น Short Polling ตัว Amazon SQS จะคิวรีไปยังเซิร์ฟเวอร์ทั้งหมด"
       },
       {
         "key": "ง",
-        "text": "When short polling is configured, Amazon SQS samples a subset of its servers."
+        "text": "เมื่อกำหนดค่าเป็น Short Polling ตัว Amazon SQS จะสุ่มตรวจเฉพาะเซิร์ฟเวอร์บางส่วน (Subset)"
       }
     ],
     "answer": "ง",
@@ -2558,23 +2558,23 @@
     "chapter_id": "Summary_M10.md",
     "chapter_name": "10. Messaging with SQS & SNS",
     "trap_title": "Official AWS Knowledge Check (Mod 10)",
-    "stem": "[AWS Official KC] Which statement about Amazon Simple Notification Service (Amazon SNS) is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับ Amazon Simple Notification Service (Amazon SNS) ถูกต้องที่สุด?",
     "options": [
       {
         "key": "ก",
-        "text": "An SNS topic is a logical access point, which acts as a communication channel."
+        "text": "SNS Topic คือ Logical Access Point ที่ทำหน้าที่เป็นช่องทางการสื่อสาร"
       },
       {
         "key": "ข",
-        "text": "A publisher can only send messages to topics that they have created."
+        "text": "Publisher สามารถส่งข้อความได้เฉพาะ Topic ที่ตนเองสร้างขึ้นเท่านั้น"
       },
       {
         "key": "ค",
-        "text": "By default, different subscribers to a topic receive different messages."
+        "text": "โดยเริ่มต้น Subscriber แต่ละรายที่สมัครรับข้อมูลใน Topic เดียวกันจะได้รับข้อความที่แตกต่างกัน"
       },
       {
         "key": "ง",
-        "text": "Amazon SNS defines a single delivery policy, which is applied to all delivery protocols."
+        "text": "Amazon SNS กำหนด Delivery Policy เพียงรูปแบบเดียวสำหรับใช้งานร่วมกับทุกโพรโทคอลการส่งข้อมูล"
       }
     ],
     "answer": "ก",
@@ -2587,23 +2587,23 @@
     "chapter_id": "Summary_M10.md",
     "chapter_name": "10. Messaging with SQS & SNS",
     "trap_title": "Official AWS Knowledge Check (Mod 10)",
-    "stem": "[AWS Official KC] An Amazon Simple Notification Service (Amazon SNS) topic receives messages about orders. An AWS Lambda function that processes canceled orders is subscribed to the topic. How might the developer reduce costs by only invoking the Lambda function for canceled orders?",
+    "stem": "[AWS Official KC] Topic ของ Amazon Simple Notification Service (Amazon SNS) ได้รับข้อความเกี่ยวกับคำสั่งซื้อ โดยมี AWS Lambda ฟังก์ชันที่ประมวลผลการยกเลิกคำสั่งซื้อสมัครรับข้อมูล (Subscribe) อยู่ นักพัฒนาจะลดค่าใช้จ่ายโดยให้ Lambda ถูกเรียกใช้เฉพาะเมื่อมีคำสั่งซื้อที่ถูกยกเลิกได้อย่างไร?",
     "options": [
       {
         "key": "ก",
-        "text": "Put an Amazon Simple Queue Service (Amazon SQS) queue in front of the Lambda function."
+        "text": "นำคิว Amazon Simple Queue Service (Amazon SQS) มาวางคั่นไว้ด้านหน้า AWS Lambda ฟังก์ชัน"
       },
       {
         "key": "ข",
-        "text": "Separate the new order and cancel order messages to be sent by two different publishers."
+        "text": "แยกการส่งข้อความสั่งซื้อใหม่และข้อยกเลิกคำสั่งซื้อให้อยู่คนละ Publisher"
       },
       {
         "key": "ค",
-        "text": "Set up a filter policy so that the Lambda function subscription only receives cancel order messages."
+        "text": "ตั้งค่า Filter Policy เพื่อให้ Subscription ของ AWS Lambda ฟังก์ชันรับเฉพาะข้อความยกเลิกคำสั่งซื้อ"
       },
       {
         "key": "ง",
-        "text": "Use the ConfirmSubscription operation to limit which messages the Lambda function receives."
+        "text": "ใช้คำสั่ง ConfirmSubscription เพื่อจำกัดข้อความที่ AWS Lambda ฟังก์ชันจะได้รับ"
       }
     ],
     "answer": "ค",
@@ -2616,23 +2616,23 @@
     "chapter_id": "Summary_M10.md",
     "chapter_name": "10. Messaging with SQS & SNS",
     "trap_title": "Official AWS Knowledge Check (Mod 10)",
-    "stem": "[AWS Official KC] A developer needs to build a custom application to put customer application log records onto an Amazon Kinesis data stream. What should they use to build the application?",
+    "stem": "[AWS Official KC] นักพัฒนาต้องการสร้างแอปพลิเคชันแบบกำหนดเองเพื่อส่งข้อมูล Log ของแอปพลิเคชันลูกค้าไปยัง Amazon Kinesis Data Stream ควรใช้อะไรในการสร้างแอปพลิเคชันดังกล่าว?",
     "options": [
       {
         "key": "ก",
-        "text": "Use the Kinesis API."
+        "text": "ใช้ Kinesis API"
       },
       {
         "key": "ข",
-        "text": "Use the Kinesis Producer Library (KPL)."
+        "text": "ใช้ Kinesis Producer Library (KPL)"
       },
       {
         "key": "ค",
-        "text": "Use the Kinesis Client Library (KCL)."
+        "text": "ใช้ Kinesis Client Library (KCL)"
       },
       {
         "key": "ง",
-        "text": "Use Amazon Kinesis Data Analytics."
+        "text": "ใช้ Amazon Kinesis Data Analytics"
       }
     ],
     "answer": "ข",
@@ -2645,23 +2645,23 @@
     "chapter_id": "Summary_M10.md",
     "chapter_name": "10. Messaging with SQS & SNS",
     "trap_title": "Official AWS Knowledge Check (Mod 10)",
-    "stem": "[AWS Official KC] Which statement about Amazon Kinesis Data Streams is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับ Amazon Kinesis Data Streams ถูกต้องที่สุด?",
     "options": [
       {
         "key": "ก",
-        "text": "When a record is added to the stream, the record is available until a consumer deletes it."
+        "text": "เมื่อ Record ถูกเพิ่มเข้าไปใน Stream ข้อมูลจะยังคงอยู่จนกว่า Consumer จะเป็นผู้ลบ"
       },
       {
         "key": "ข",
-        "text": "The data records in a data stream are distributed into shards."
+        "text": "Data Record ใน Data Stream จะถูกกระจายจัดเก็บอยู่ภายใน Shard ต่าง ๆ"
       },
       {
         "key": "ค",
-        "text": "A standard data stream can have one consumer. With the enhanced fanout option, you can add multiple consumers."
+        "text": "Data Stream แบบมาตรฐานรองรับ Consumer ได้เพียงรายเดียว หากเปิดใช้งาน Enhanced Fan-out จึงจะเพิ่ม Consumer ได้หลายราย"
       },
       {
         "key": "ง",
-        "text": "A stream consumer must delete the records that it processes successfully."
+        "text": "Stream Consumer ต้องสั่งลบ Record ทิ้งหลังจากประมวลผลสำเร็จแล้ว"
       }
     ],
     "answer": "ข",
@@ -2674,23 +2674,23 @@
     "chapter_id": "Summary_M11.md",
     "chapter_name": "11. Workflows & Step Functions",
     "trap_title": "Official AWS Knowledge Check (Mod 11)",
-    "stem": "[AWS Official KC] Which scenario suggests the need for a task coordination service such as AWS Step Functions?",
+    "stem": "[AWS Official KC] สถานการณ์ใดบ่งชี้ถึงความจำเป็นในการใช้บริการจัดการลำดับงาน (task coordination service) เช่น AWS Step Functions?",
     "options": [
       {
         "key": "ก",
-        "text": "A website that serves static content is expanding its reach to a global audience."
+        "text": "เว็บไซต์ที่ให้บริการ static content กำลังขยายการเข้าถึงไปยังกลุ่มผู้ใช้ทั่วโลก"
       },
       {
         "key": "ข",
-        "text": "A serverless application must run a series of AWS Lambda functions that are dependent on each other."
+        "text": "แอปพลิเคชันแบบ serverless ต้องรันชุดฟังก์ชันของ AWS Lambda ที่ขึ้นต่อกันตามลำดับ"
       },
       {
         "key": "ค",
-        "text": "A monolithic application that is written in Java is updating its technology stack."
+        "text": "แอปพลิเคชันแบบ monolithic ที่เขียนด้วย Java กำลังอัปเดต technology stack"
       },
       {
         "key": "ง",
-        "text": "A reporting application must update its calculation logic to provide more analytical data to business users."
+        "text": "แอปพลิเคชันระบบรายงานต้องอัปเดต calculation logic เพื่อส่งมอบข้อมูลการวิเคราะห์เชิงลึกให้กับผู้ใช้งานฝั่งธุรกิจ"
       }
     ],
     "answer": "ข",
@@ -2703,23 +2703,23 @@
     "chapter_id": "Summary_M11.md",
     "chapter_name": "11. Workflows & Step Functions",
     "trap_title": "Official AWS Knowledge Check (Mod 11)",
-    "stem": "[AWS Official KC] Which statement describes a benefit of using AWS Step Functions for an application?",
+    "stem": "[AWS Official KC] ข้อความใดอธิบายประโยชน์ของการใช้ AWS Step Functions ในแอปพลิเคชันได้ถูกต้อง?",
     "options": [
       {
         "key": "ก",
-        "text": "Step Functions integrates with state machines so that developers can transition between their Step Functions workflow and their state machine workflow."
+        "text": "Step Functions ผสานการทำงานร่วมกับ state machines ทำให้นักพัฒนาสามารถสลับการทำงานระหว่าง Step Functions workflow และ state machine workflow ได้"
       },
       {
         "key": "ข",
-        "text": "Step Functions can be configured with Amazon EC2 Auto Scaling to scale up and down."
+        "text": "Step Functions สามารถกำหนดค่าร่วมกับ Amazon EC2 Auto Scaling เพื่อขยายหรือลดขนาดระบบได้"
       },
       {
         "key": "ค",
-        "text": "Step Functions can be defined by using either Python or Node.js."
+        "text": "Step Functions สามารถนิยามโครงสร้างการทำงานได้ด้วยการเขียนโค้ดภาษา Python หรือ Node.js"
       },
       {
         "key": "ง",
-        "text": "Developers can use Step Functions to build visual workflows."
+        "text": "นักพัฒนาสามารถใช้ Step Functions เพื่อสร้าง visual workflows ได้"
       }
     ],
     "answer": "ง",
@@ -2732,23 +2732,23 @@
     "chapter_id": "Summary_M11.md",
     "chapter_name": "11. Workflows & Step Functions",
     "trap_title": "Official AWS Knowledge Check (Mod 11)",
-    "stem": "[AWS Official KC] What is the role of the Task state type in AWS Step Functions?",
+    "stem": "[AWS Official KC] หน้าที่ของ Task state ใน AWS Step Functions คืออะไร?",
     "options": [
       {
         "key": "ก",
-        "text": "Task states are used to stop a failed workflow."
+        "text": "Task state มีไว้ใช้หยุด workflow ที่ทำงานล้มเหลว"
       },
       {
         "key": "ข",
-        "text": "Task states perform a unit of work."
+        "text": "Task state ใช้สำหรับประมวลผลการทำงานหนึ่งหน่วย (unit of work)"
       },
       {
         "key": "ค",
-        "text": "Task states provide branching logic."
+        "text": "Task state ทำหน้าที่กำหนดตรรกะการแยกสาขาการทำงาน (branching logic)"
       },
       {
         "key": "ง",
-        "text": "Task states tell the state machine the order to perform the steps in."
+        "text": "Task state ทำหน้าที่กำหนดลำดับขั้นตอนการทำงานให้แก่ state machine"
       }
     ],
     "answer": "ข",
@@ -2761,7 +2761,7 @@
     "chapter_id": "Summary_M11.md",
     "chapter_name": "11. Workflows & Step Functions",
     "trap_title": "Official AWS Knowledge Check (Mod 11)",
-    "stem": "[AWS Official KC] An application that processes order returns must complete different steps depending on whether the return is within 30 days of purchase. Which AWS Step Functions state could a developer use to implement this logic?",
+    "stem": "[AWS Official KC] แอปพลิเคชันประมวลผลการคืนสินค้าต้องดำเนินการขั้นตอนที่แตกต่างกัน ขึ้นอยู่กับว่าการคืนสินค้านั้นอยู่ภายใน 30 วันนับจากวันที่ซื้อหรือไม่ นักพัฒนาควรใช้ state ชนิดใดใน AWS Step Functions เพื่อสร้างเงื่อนไขดังกล่าว?",
     "options": [
       {
         "key": "ก",
@@ -2790,7 +2790,7 @@
     "chapter_id": "Summary_M11.md",
     "chapter_name": "11. Workflows & Step Functions",
     "trap_title": "Official AWS Knowledge Check (Mod 11)",
-    "stem": "[AWS Official KC] An application that processes order returns must run the same AWS Lambda function for each item in an order. Which AWS Step Functions state could a developer use to implement this logic?",
+    "stem": "[AWS Official KC] แอปพลิเคชันประมวลผลการคืนสินค้าต้องรันฟังก์ชัน AWS Lambda ตัวเดิมซ้ำกับสินค้าแต่ละรายการในคำสั่งซื้อ นักพัฒนาควรใช้ state ชนิดใดใน AWS Step Functions เพื่อสร้างตรรกะการทำงานดังกล่าว?",
     "options": [
       {
         "key": "ก",
@@ -2819,23 +2819,23 @@
     "chapter_id": "Summary_M11.md",
     "chapter_name": "11. Workflows & Step Functions",
     "trap_title": "Official AWS Knowledge Check (Mod 11)",
-    "stem": "[AWS Official KC] Which statement is true for both Succeed states and Fail states?",
+    "stem": "[AWS Official KC] ข้อความใดถูกต้องเกี่ยวกับทั้ง Succeed state และ Fail state?",
     "options": [
       {
         "key": "ก",
-        "text": "Succeed states and Fail states do not include the Next field."
+        "text": "ทั้ง Succeed state และ Fail state จะไม่มีฟิลด์ Next"
       },
       {
         "key": "ข",
-        "text": "The End field is not required because Succeed states and Fail states are not terminal states."
+        "text": "ฟิลด์ End ไม่จำเป็นต้องมี เนื่องจาก Succeed state และ Fail state ไม่ใช่ terminal states"
       },
       {
         "key": "ค",
-        "text": "The Type field is optional for Succeed states and Fail states."
+        "text": "ฟิลด์ Type เป็นแบบเลือกใส่ได้ (optional) สำหรับ Succeed state และ Fail state"
       },
       {
         "key": "ง",
-        "text": "The End field is required because Succeed states and Fail states are terminal states."
+        "text": "จำเป็นต้องระบุฟิลด์ End เนื่องจาก Succeed state และ Fail state เป็น terminal states"
       }
     ],
     "answer": "ก",
@@ -2848,7 +2848,7 @@
     "chapter_id": "Summary_M11.md",
     "chapter_name": "11. Workflows & Step Functions",
     "trap_title": "Official AWS Knowledge Check (Mod 11)",
-    "stem": "[AWS Official KC] An application that processes order returns must run two independent audit checks. When both checks are successfully completed, the return authorization step is run. Which AWS Step Functions state could a developer use to implement this logic?",
+    "stem": "[AWS Official KC] แอปพลิเคชันประมวลผลการคืนสินค้าต้องทำการตรวจสอบ (Audit Check) สองขั้นตอนที่เป็นอิสระต่อกัน เมื่อการตรวจสอบทั้งสองส่วนเสร็จสมบูรณ์ ขั้นตอนการอนุมัติการคืนสินค้าจึงจะเริ่มทำงาน นักพัฒนาควรใช้ State ใดของ AWS Step Functions เพื่อสร้างตรรกะการทำงานนี้",
     "options": [
       {
         "key": "ก",
@@ -2877,23 +2877,23 @@
     "chapter_id": "Summary_M11.md",
     "chapter_name": "11. Workflows & Step Functions",
     "trap_title": "Official AWS Knowledge Check (Mod 11)",
-    "stem": "[AWS Official KC] How is a taskToken used in an AWS Step Functions use case that includes a manual approval step?",
+    "stem": "[AWS Official KC] taskToken ถูกนำมาใช้งานอย่างไรใน AWS Step Functions สำหรับ Use Case ที่ต้องมีการอนุมัติโดยมนุษย์ (Manual Approval)",
     "options": [
       {
         "key": "ก",
-        "text": "A taskToken is generated when the workflow hits a Wait state. The taskToken tracks how long the workflow has been waiting for a task to finish."
+        "text": "taskToken จะถูกสร้างขึ้นเมื่อ Workflow เข้าสู่ Wait State เพื่อติดตามระยะเวลาที่ Workflow รอให้ Task เสร็จสิ้น"
       },
       {
         "key": "ข",
-        "text": "A taskToken is used to transition between each state in the workflow and is defined in the Next field."
+        "text": "taskToken ใช้สำหรับเปลี่ยนผ่าน State ต่างๆ ภายใน Workflow และถูกกำหนดไว้ในฟิลด์ Next"
       },
       {
         "key": "ค",
-        "text": "A taskToken is returned as part of a call to the GetActivityTask action and is used when calling the SendTaskSuccess action to associate a result with a task."
+        "text": "taskToken จะถูกส่งกลับมาพร้อมกับคำสั่ง GetActivityTask และใช้เมื่อเรียกคำสั่ง SendTaskSuccess เพื่อจับคู่ผลลัพธ์เข้ากับ Task ดังกล่าว"
       },
       {
         "key": "ง",
-        "text": "A taskToken is an output of the Success state in a synchronous Step Functions Express workflow. A taskToken is used to confirm success of all tasks."
+        "text": "taskToken เป็นเอาต์พุตของ Success State ใน Step Functions Express Workflow แบบ Synchronous เพื่อยืนยันว่าทุก Task ทำงานสำเร็จ"
       }
     ],
     "answer": "ค",
@@ -2906,23 +2906,23 @@
     "chapter_id": "Summary_M11.md",
     "chapter_name": "11. Workflows & Step Functions",
     "trap_title": "Official AWS Knowledge Check (Mod 11)",
-    "stem": "[AWS Official KC] Which use case is a good fit for AWS Step Functions Express workflows?",
+    "stem": "[AWS Official KC] Use Case ใดเหมาะสมที่สุดสำหรับการใช้งาน AWS Step Functions Express Workflows",
     "options": [
       {
         "key": "ก",
-        "text": "All workflows in the application must be auditable up to 90 days after a completed run."
+        "text": "Workflow ทั้งหมดในแอปพลิเคชันต้องสามารถตรวจสอบย้อนหลัง (Audit) ได้สูงสุด 90 วันหลังจากการประมวลผลเสร็จสิ้น"
       },
       {
         "key": "ข",
-        "text": "The workflow requires a step that will run an application that is hosted on an Amazon Elastic Compute Cloud (Amazon EC2) instance."
+        "text": "Workflow จำเป็นต้องมีขั้นตอนที่สั่งรันแอปพลิเคชันบน Amazon Elastic Compute Cloud (Amazon EC2) Instance"
       },
       {
         "key": "ค",
-        "text": "The workflow takes between 30 minutes and 1 hour to run."
+        "text": "Workflow ใช้เวลาประมวลผลระหว่าง 30 นาทีถึง 1 ชั่วโมง"
       },
       {
         "key": "ง",
-        "text": "The workflow must support a very high rate of events that come from Internet of Things (IoT) devices."
+        "text": "Workflow ต้องรองรับ Event ปริมาณมหาศาลที่ส่งมาจากอุปกรณ์ Internet of Things (IoT)"
       }
     ],
     "answer": "ง",
@@ -2935,23 +2935,23 @@
     "chapter_id": "Summary_M11.md",
     "chapter_name": "11. Workflows & Step Functions",
     "trap_title": "Official AWS Knowledge Check (Mod 11)",
-    "stem": "[AWS Official KC] Which statement about AWS Step Functions is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับ AWS Step Functions ถูกต้อง",
     "options": [
       {
         "key": "ก",
-        "text": "A developer can use Amazon API Gateway to associate their Step Functions APIs with methods in an API Gateway API."
+        "text": "นักพัฒนาสามารถใช้ Amazon API Gateway เพื่อเชื่อมโยง Step Functions API เข้ากับ Method ภายใน API ของ API Gateway ได้"
       },
       {
         "key": "ข",
-        "text": "Step Functions has quotas at the account level regarding the number of registered state machines, but no quotas are related to individual Step Functions runs."
+        "text": "Step Functions มีโควตาจำกัดจำนวน State Machine ที่ลงทะเบียนในระดับบัญชี แต่ไม่มีโควตาจำกัดที่เกี่ยวข้องกับการสั่งรัน Step Functions แต่ละครั้ง"
       },
       {
         "key": "ค",
-        "text": "Step Functions must be created in the visual editor on the Step Functions console but can be edited with the AWS SDKs."
+        "text": "Step Functions ต้องสร้างผ่าน Visual Editor บน Step Functions Console เท่านั้น แต่สามารถแก้ไขได้ด้วย AWS SDK"
       },
       {
         "key": "ง",
-        "text": "A developer can use the Describe API action to get a summary of all state machines and the number of times that each has been run."
+        "text": "นักพัฒนาสามารถใช้ API Describe เพื่อดูสรุปข้อมูลของ State Machine ทั้งหมดรวมถึงจำนวนครั้งที่ถูกรันได้"
       }
     ],
     "answer": "ก",
@@ -2964,23 +2964,23 @@
     "chapter_id": "Summary_M12.md",
     "chapter_name": "12. Developing Secure Applications & Cognito",
     "trap_title": "Official AWS Knowledge Check (Mod 12)",
-    "stem": "[AWS Official KC] Which statement about creating secure connections is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับการสร้างการเชื่อมต่อที่ปลอดภัย (Secure Connection) ถูกต้อง",
     "options": [
       {
         "key": "ก",
-        "text": "Both Secure Sockets Layer (SSL) and Transport Layer Security (TLS) are standards that AWS developed for secure communications."
+        "text": "ทั้ง Secure Sockets Layer (SSL) และ Transport Layer Security (TLS) เป็นมาตรฐานที่ AWS พัฒนาขึ้นสำหรับการสื่อสารที่ปลอดภัย"
       },
       {
         "key": "ข",
-        "text": "SSL uses certificates to establish website identity, but TLS does not."
+        "text": "SSL ใช้ใบรับรองในการยืนยันตัวตนของเว็บไซต์ แต่ TLS ไม่ได้ใช้งาน"
       },
       {
         "key": "ค",
-        "text": "Both SSL and TLS encrypt network communications between connected resources."
+        "text": "ทั้ง SSL และ TLS เข้ารหัสการสื่อสารเครือข่ายระหว่าง Resource ที่เชื่อมต่อกัน"
       },
       {
         "key": "ง",
-        "text": "SSL is a newer version of TLS. Both are used to establish the identify of websites."
+        "text": "SSL เป็นเวอร์ชันที่ใหม่กว่าของ TLS โดยทั้งสองอย่างใช้สำหรับยืนยันตัวตนของเว็บไซต์"
       }
     ],
     "answer": "ค",
@@ -2993,23 +2993,23 @@
     "chapter_id": "Summary_M12.md",
     "chapter_name": "12. Developing Secure Applications & Cognito",
     "trap_title": "Official AWS Knowledge Check (Mod 12)",
-    "stem": "[AWS Official KC] Which step in the secure connection process is the responsibility of the certificate authority (CA)?",
+    "stem": "[AWS Official KC] ขั้นตอนใดในกระบวนการเชื่อมต่อที่ปลอดภัยเป็นหน้าที่ของ Certificate Authority (CA)",
     "options": [
       {
         "key": "ก",
-        "text": "Issue a certificate."
+        "text": "ออกใบรับรอง (Issue a certificate)"
       },
       {
         "key": "ข",
-        "text": "Verify whether the certificate is from a trusted source."
+        "text": "ตรวจสอบว่าใบรับรองมาจากแหล่งที่เชื่อถือได้หรือไม่"
       },
       {
         "key": "ค",
-        "text": "Send an encrypted session key."
+        "text": "ส่ง Session Key ที่เข้ารหัสแล้ว"
       },
       {
         "key": "ง",
-        "text": "Send a certificate and public key to the client."
+        "text": "ส่งใบรับรองและ Public Key ไปยัง Client"
       }
     ],
     "answer": "ก",
@@ -3022,23 +3022,23 @@
     "chapter_id": "Summary_M12.md",
     "chapter_name": "12. Developing Secure Applications & Cognito",
     "trap_title": "Official AWS Knowledge Check (Mod 12)",
-    "stem": "[AWS Official KC] Which statement about AWS Certificate Manager (ACM) is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับ AWS Certificate Manager (ACM) ถูกต้อง?",
     "options": [
       {
         "key": "ก",
-        "text": "ACM can provision public certificates, but for private certificates, developers must produce their own certificate and connect it to ACM."
+        "text": "ACM สามารถจัดเตรียม public certificate ได้ แต่สำหรับ private certificate นักพัฒนาต้องสร้างขึ้นเองแล้วนำมาเชื่อมต่อกับ ACM"
       },
       {
         "key": "ข",
-        "text": "ACM manages certificate renewals for both public and private certificates."
+        "text": "ACM จัดการการต่ออายุ certificate ให้ทั้งแบบ public certificate และ private certificate โดยอัตโนมัติ"
       },
       {
         "key": "ค",
-        "text": "ACM costs are based on the number of active public certificates in an AWS account."
+        "text": "ค่าบริการของ ACM คิดตามจำนวนของ active public certificate ในบัญชี AWS"
       },
       {
         "key": "ง",
-        "text": "A developer must configure a load balancer to use ACM certificates."
+        "text": "นักพัฒนาจำเป็นต้องกำหนดค่า load balancer เพื่อใช้งาน ACM certificate"
       }
     ],
     "answer": "ข",
@@ -3051,23 +3051,23 @@
     "chapter_id": "Summary_M12.md",
     "chapter_name": "12. Developing Secure Applications & Cognito",
     "trap_title": "Official AWS Knowledge Check (Mod 12)",
-    "stem": "[AWS Official KC] Which statement reflects a best practice for security credentials?",
+    "stem": "[AWS Official KC] ข้อความใดสะท้อนถึงแนวทางปฏิบัติที่ดีที่สุด (best practice) สำหรับ security credentials?",
     "options": [
       {
         "key": "ก",
-        "text": "Only share access keys between users in the same AWS account."
+        "text": "แชร์ access key ระหว่างผู้ใช้ที่อยู่ในบัญชี AWS เดียวกันเท่านั้น"
       },
       {
         "key": "ข",
-        "text": "Use AWS Identity and Access Management (IAM) roles to retrieve temporary security credentials."
+        "text": "ใช้ AWS Identity and Access Management (IAM) role เพื่อขอรับ temporary security credentials"
       },
       {
         "key": "ค",
-        "text": "If there are unencrypted access keys, embed them in code that is available only to developers but not accessible to users."
+        "text": "หากมี access key ที่ไม่ได้เข้ารหัส ให้ฝังไว้ในโค้ดที่เข้าถึงได้เฉพาะนักพัฒนา แต่ผู้ใช้ทั่วไปเข้าไม่ถึง"
       },
       {
         "key": "ง",
-        "text": "Do not allow programmatic authentication to AWS services."
+        "text": "ไม่อนุญาตให้มีการยืนยันตัวตนแบบ programmatic ไปยังบริการต่างๆ ของ AWS"
       }
     ],
     "answer": "ข",
@@ -3080,23 +3080,23 @@
     "chapter_id": "Summary_M12.md",
     "chapter_name": "12. Developing Secure Applications & Cognito",
     "trap_title": "Official AWS Knowledge Check (Mod 12)",
-    "stem": "[AWS Official KC] What is the primary difference between AWS Security Token Service (AWS STS) authentication by federated users and AWS STS authentication by AWS Identity and Access Management (IAM) users?",
+    "stem": "[AWS Official KC] ข้อแตกต่างหลักระหว่างการยืนยันตัวตนผ่าน AWS Security Token Service (AWS STS) ของ federated user กับของ AWS Identity and Access Management (IAM) user คืออะไร?",
     "options": [
       {
         "key": "ก",
-        "text": "With federated users, the application calls an identity broker, but this step is skipped with IAM users."
+        "text": "สำหรับ federated user แอปพลิเคชันจะเรียกใช้ identity broker แต่ขั้นตอนนี้จะถูกข้ามไปสำหรับ IAM user"
       },
       {
         "key": "ข",
-        "text": "With federated users, the first authentication is made against an IdP. With IAM users, the first authentication is made against IAM."
+        "text": "สำหรับ federated user การยืนยันตัวตนครั้งแรกจะทำกับ IdP ส่วน IAM user การยืนยันตัวตนครั้งแรกจะทำกับ IAM"
       },
       {
         "key": "ค",
-        "text": "With federated users, the second authentication is made against an IdP. With IAM users, the second authentication is made against IAM"
+        "text": "สำหรับ federated user การยืนยันตัวตนครั้งที่สองจะทำกับ IdP ส่วน IAM user การยืนยันตัวตนครั้งที่สองจะทำกับ IAM"
       },
       {
         "key": "ง",
-        "text": "With federated users, applications use the temporary security credentials and token to make requests to an AWS service. No token is necessary with IAM users."
+        "text": "สำหรับ federated user แอปพลิเคชันจะใช้ temporary security credentials และ token ในการส่งคำขอไปยังบริการ AWS ส่วน IAM user ไม่จำเป็นต้องใช้ token"
       }
     ],
     "answer": "ข",
@@ -3109,23 +3109,23 @@
     "chapter_id": "Summary_M12.md",
     "chapter_name": "12. Developing Secure Applications & Cognito",
     "trap_title": "Official AWS Knowledge Check (Mod 12)",
-    "stem": "[AWS Official KC] A developer has been asked to investigate how website files have been deleted from an Amazon Simple Storage Service (Amazon S3) bucket. Which approach should they take?",
+    "stem": "[AWS Official KC] นักพัฒนาได้รับมอบหมายให้ตรวจสอบสาเหตุที่ไฟล์ของเว็บไซต์ถูกลบออกจาก Amazon Simple Storage Service (Amazon S3) bucket ควรเลือกใช้วิธีการใด?",
     "options": [
       {
         "key": "ก",
-        "text": "Use AWS CloudTrail to search for information about delete object events on the S3 bucket."
+        "text": "ใช้ AWS CloudTrail เพื่อค้นหาข้อมูลเกี่ยวกับ event การลบ object บน S3 bucket"
       },
       {
         "key": "ข",
-        "text": "Use AWS Security Token Service (AWS STS) to block deletions from the S3 bucket."
+        "text": "ใช้ AWS Security Token Service (AWS STS) เพื่อบล็อกการลบไฟล์จาก S3 bucket"
       },
       {
         "key": "ค",
-        "text": "Use AWS Identity and Access Management (IAM) to search for users who have used their delete permissions on the S3 bucket."
+        "text": "ใช้ AWS Identity and Access Management (IAM) เพื่อค้นหาผู้ใช้ที่ใช้สิทธิ์ในการลบข้อมูลบน S3 bucket"
       },
       {
         "key": "ง",
-        "text": "Use the AWS STS GetSessionToken API call to retrieve information about users who deleted files from the S3 bucket."
+        "text": "เรียกใช้ AWS STS API GetSessionToken เพื่อดึงข้อมูลผู้ใช้ที่ลบไฟล์ออกจาก S3 bucket"
       }
     ],
     "answer": "ก",
@@ -3138,7 +3138,7 @@
     "chapter_id": "Summary_M12.md",
     "chapter_name": "12. Developing Secure Applications & Cognito",
     "trap_title": "Official AWS Knowledge Check (Mod 12)",
-    "stem": "[AWS Official KC] A developer has been asked to add a sign-up and sign-in service to their application. Which Amazon Cognito feature should they use?",
+    "stem": "[AWS Official KC] นักพัฒนาได้รับมอบหมายให้เพิ่มระบบลงทะเบียน (sign-up) และเข้าสู่ระบบ (sign-in) ให้กับแอปพลิเคชัน ควรเลือกใช้ฟีเจอร์ใดของ Amazon Cognito?",
     "options": [
       {
         "key": "ก",
@@ -3167,7 +3167,7 @@
     "chapter_id": "Summary_M12.md",
     "chapter_name": "12. Developing Secure Applications & Cognito",
     "trap_title": "Official AWS Knowledge Check (Mod 12)",
-    "stem": "[AWS Official KC] A developer has been asked to reduce the security risk of users who sign in to their application with username and password pairs that they use on other websites. Which Amazon Cognito user pool feature might the developer configure?",
+    "stem": "[AWS Official KC] นักพัฒนาได้รับมอบหมายให้ลดความเสี่ยงด้านความปลอดภัยจากการที่ผู้ใช้เข้าสู่ระบบแอปพลิเคชันด้วยชื่อผู้ใช้และรหัสผ่านชุดเดียวกับที่ใช้บนเว็บไซต์อื่น ควรตั้งค่าฟีเจอร์ใดของ Amazon Cognito user pool?",
     "options": [
       {
         "key": "ก",
@@ -3196,23 +3196,23 @@
     "chapter_id": "Summary_M12.md",
     "chapter_name": "12. Developing Secure Applications & Cognito",
     "trap_title": "Official AWS Knowledge Check (Mod 12)",
-    "stem": "[AWS Official KC] Which statement about Amazon Cognito identity pools is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับ Amazon Cognito identity pools ถูกต้อง",
     "options": [
       {
         "key": "ก",
-        "text": "With an identity pool, users can obtain temporary, limited_privilege AWS credentials to access other AWS services."
+        "text": "การใช้ identity pool ช่วยให้ผู้ใช้ได้รับ AWS credentials แบบชั่วคราวและจำกัดสิทธิ์ เพื่อเข้าถึงบริการอื่นๆ ของ AWS"
       },
       {
         "key": "ข",
-        "text": "Identity pools replace the need for a third-party identity provider."
+        "text": "Identity pools เข้ามาแทนที่ความจำเป็นในการใช้ third-party identity provider"
       },
       {
         "key": "ค",
-        "text": "When using Amazon Cognito identity pools, a user would not also use Amazon Cognito user pools."
+        "text": "เมื่อใช้ Amazon Cognito identity pools ผู้ใช้จะไม่สามารถใช้ Amazon Cognito user pools ร่วมด้วยได้"
       },
       {
         "key": "ง",
-        "text": "Identity pools provide sign-up and sign-in functionality for mobile apps."
+        "text": "Identity pools ให้บริการฟังก์ชันการลงทะเบียน (sign-up) และเข้าสู่ระบบ (sign-in) สำหรับแอปพลิเคชันมือถือ"
       }
     ],
     "answer": "ก",
@@ -3225,23 +3225,23 @@
     "chapter_id": "Summary_M12.md",
     "chapter_name": "12. Developing Secure Applications & Cognito",
     "trap_title": "Official AWS Knowledge Check (Mod 12)",
-    "stem": "[AWS Official KC] A developer plans to use Amazon Cognito user pools with Amazon API Gateway. Which step is part of the user pool authentication flow with API Gateway?",
+    "stem": "[AWS Official KC] นักพัฒนาวางแผนใช้ Amazon Cognito user pools ร่วมกับ Amazon API Gateway ขั้นตอนใดเป็นส่วนหนึ่งของกระบวนการยืนยันตัวตน (authentication flow) ของ user pool กับ API Gateway",
     "options": [
       {
         "key": "ก",
-        "text": "A mobile app sends a request to API Gateway, and API Gateway gets JSON Web Tokens (JWTs) from the user pool."
+        "text": "แอปพลิเคชันมือถือส่ง request ไปยัง API Gateway และ API Gateway จะดึง JSON Web Tokens (JWTs) จาก user pool"
       },
       {
         "key": "ข",
-        "text": "A mobile app user authenticates with a user pool, and the user pool returns JWTs to the app."
+        "text": "ผู้ใช้แอปพลิเคชันมือถือยืนยันตัวตนกับ user pool และ user pool จะส่ง JWTs กลับไปยังแอปพลิเคชัน"
       },
       {
         "key": "ค",
-        "text": "The user pool validates the tokens against an identity pool."
+        "text": "User pool ตรวจสอบความถูกต้องของ token เทียบกับ identity pool"
       },
       {
         "key": "ง",
-        "text": "Amazon Cognito invokes the API after successfully validating the permissions."
+        "text": "Amazon Cognito เรียกใช้งาน API หลังจากตรวจสอบสิทธิ์เรียบร้อยแล้ว"
       }
     ],
     "answer": "ข",
@@ -3254,23 +3254,23 @@
     "chapter_id": "Summary_M13.md",
     "chapter_name": "13. Automating Deployment with CI/CD",
     "trap_title": "Official AWS Knowledge Check (Mod 13)",
-    "stem": "[AWS Official KC] Which option describes the philosophy of DevOps?",
+    "stem": "[AWS Official KC] ตัวเลือกใดอธิบายปรัชญาของ DevOps ได้ถูกต้อง",
     "options": [
       {
         "key": "ก",
-        "text": "DevOps is about teaching development and operations teams to use the same set of tools to shorten testing and deployment cycles."
+        "text": "DevOps คือการสอนให้ทีมพัฒนาและทีมปฏิบัติการใช้ชุดเครื่องมือเดียวกัน เพื่อลดระยะเวลาในรอบการทดสอบและ deployment"
       },
       {
         "key": "ข",
-        "text": "DevOps is about removing barriers between development and operations functions to optimize productivity and reliability."
+        "text": "DevOps คือการทลายกำแพงระหว่างฝ่ายพัฒนาและฝ่ายปฏิบัติการ เพื่อเพิ่มประสิทธิภาพการทำงานและความน่าเชื่อถือของระบบ"
       },
       {
         "key": "ค",
-        "text": "DevOps culture is reflected in the idea of \"Processes over people,\" which means that, with strong processes, any team member can perform any task."
+        "text": "วัฒนธรรม DevOps สะท้อนผ่านแนวคิด \"กระบวนการสำคัญกว่าคน\" ซึ่งหมายถึงหากมีกระบวนการที่แข็งแกร่ง สมาชิกในทีมทุกคนจะทำงานใดก็ได้"
       },
       {
         "key": "ง",
-        "text": "DevOps culture is reflected in the idea that tight coupling leads to tighter parity between development, test, and production environments."
+        "text": "วัฒนธรรม DevOps สะท้อนผ่านแนวคิดที่ว่า tight coupling ช่วยให้สภาพแวดล้อม development, test และ production สอดคล้องกันมากขึ้น"
       }
     ],
     "answer": "ข",
@@ -3283,23 +3283,23 @@
     "chapter_id": "Summary_M13.md",
     "chapter_name": "13. Automating Deployment with CI/CD",
     "trap_title": "Official AWS Knowledge Check (Mod 13)",
-    "stem": "[AWS Official KC] How are DevOps practices reflected in the software development lifecycle for cloud architectures?",
+    "stem": "[AWS Official KC] แนวทางปฏิบัติของ DevOps สะท้อนอยู่ในวงจรการพัฒนาซอฟต์แวร์ (SDLC) สำหรับสถาปัตยกรรมคลาวด์อย่างไร",
     "options": [
       {
         "key": "ก",
-        "text": "Every phase of the software development lifecycle is automated."
+        "text": "ทุกขั้นตอนของวงจรการพัฒนาซอฟต์แวร์ทำงานแบบอัตโนมัติทั้งหมด"
       },
       {
         "key": "ข",
-        "text": "Developers can use continuous integration to merge code into their local repository and connect to the test environment for authentic test scenarios."
+        "text": "นักพัฒนาใช้ continuous integration เพื่อผสานโค้ดเข้าสู่ local repository และเชื่อมต่อไปยัง test environment สำหรับการทดสอบจริง"
       },
       {
         "key": "ค",
-        "text": "With continuous delivery, developers can deploy code without the need for continuous monitoring."
+        "text": "การใช้ continuous delivery ช่วยให้นักพัฒนาสามารถ deploy โค้ดได้โดยไม่จำเป็นต้องมี continuous monitoring"
       },
       {
         "key": "ง",
-        "text": "Infrastructure tools compare local development environments to test environments and staging environments, and report on environmental differences so that the operations team can ensure parity."
+        "text": "เครื่องมือจัดการโครงสร้างพื้นฐานจะเปรียบเทียบ local development environment กับ test และ staging environments พร้อมรายงานความแตกต่าง เพื่อให้ทีมปฏิบัติการควบคุมความสอดคล้องได้"
       }
     ],
     "answer": "ก",
@@ -3312,23 +3312,23 @@
     "chapter_id": "Summary_M13.md",
     "chapter_name": "13. Automating Deployment with CI/CD",
     "trap_title": "Official AWS Knowledge Check (Mod 13)",
-    "stem": "[AWS Official KC] How might a developer use AWS CodePipeline in their continuous integration and continuous deployment (CI/CD) process?",
+    "stem": "[AWS Official KC] นักพัฒนาสามารถนำ AWS CodePipeline ไปใช้ในกระบวนการ CI/CD ได้อย่างไร",
     "options": [
       {
         "key": "ก",
-        "text": "Compile source code, run tests, and produce software packages that are ready to deploy."
+        "text": "คอมไพล์ source code, รันชุดทดสอบ และสร้าง software package ที่พร้อมสำหรับการ deploy"
       },
       {
         "key": "ข",
-        "text": "Host Git-based repositories and provide source control."
+        "text": "โฮสต์ Git repository และให้บริการระบบควบคุมเวอร์ชัน (source control)"
       },
       {
         "key": "ค",
-        "text": "Deploy to a variety of compute services."
+        "text": "Deploy แอปพลิเคชันไปยังบริการประมวลผล (compute services) ต่างๆ"
       },
       {
         "key": "ง",
-        "text": "Automate the steps that are required to release software based on a release model that the developer defines."
+        "text": "จัดการขั้นตอนการ release ซอฟต์แวร์ให้เป็นไปโดยอัตโนมัติตามโมเดลที่นักพัฒนากำหนด"
       }
     ],
     "answer": "ง",
@@ -3341,23 +3341,23 @@
     "chapter_id": "Summary_M13.md",
     "chapter_name": "13. Automating Deployment with CI/CD",
     "trap_title": "Official AWS Knowledge Check (Mod 13)",
-    "stem": "[AWS Official KC] Which statement about continuous integration and continuous delivery/deployment (CI/CD) is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับ continuous integration และ continuous delivery/deployment (CI/CD) ถูกต้อง",
     "options": [
       {
         "key": "ก",
-        "text": "Continuous deployment reduces the risk of production bugs, but it might increase the time that it takes to deliver new features."
+        "text": "Continuous deployment ช่วยลดความเสี่ยงของการเกิดบั๊กบน production แต่อาจเพิ่มระยะเวลาในการส่งมอบฟีเจอร์ใหม่"
       },
       {
         "key": "ข",
-        "text": "Continuous integration requires teams to write automated tests."
+        "text": "Continuous integration กำหนดให้ทีมต้องเขียน automated tests"
       },
       {
         "key": "ค",
-        "text": "Continuous delivery extends all the way to production deployment without human intervention."
+        "text": "Continuous delivery ครอบคลุมการทำงานไปจนถึงการ deploy ขึ้น production โดยไม่ต้องมีการแทรกแซงจากมนุษย์"
       },
       {
         "key": "ง",
-        "text": "Continuous deployment extends from check-in through production, but some manual intervention occurs after code is checked in and before that code is released to customers."
+        "text": "Continuous deployment ครอบคลุมตั้งแต่การ check-in โค้ดไปจนถึง production แต่ยังคงมีขั้นตอนที่ต้องดำเนินการด้วยตนเองหลังจาก check-in และก่อน release สู่ผู้ใช้งาน"
       }
     ],
     "answer": "ข",
@@ -3370,23 +3370,23 @@
     "chapter_id": "Summary_M13.md",
     "chapter_name": "13. Automating Deployment with CI/CD",
     "trap_title": "Official AWS Knowledge Check (Mod 13)",
-    "stem": "[AWS Official KC] A developer wants to use infrastructure as code for their Java-based web application on AWS. Which task might be part of their work?",
+    "stem": "[AWS Official KC] นักพัฒนาต้องการใช้ Infrastructure as Code สำหรับเว็บแอปพลิเคชันภาษา Java บน AWS งานใดต่อไปนี้จัดเป็นส่วนหนึ่งของกระบวนการดังกล่าว?",
     "options": [
       {
         "key": "ก",
-        "text": "Create an Amazon Elastic Compute Cloud (Amazon EC2) instance by using AWS CodeBuild, and use AWS CodeDeploy to automatically push the application to the EC2 instance."
+        "text": "สร้าง Amazon EC2 instance โดยใช้ AWS CodeBuild และใช้ AWS CodeDeploy เพื่อ push แอปพลิเคชันไปยัง EC2 instance โดยอัตโนมัติ"
       },
       {
         "key": "ข",
-        "text": "Create a Java AWS CloudFormation template that defines the application and database layers for the application."
+        "text": "สร้าง AWS CloudFormation template ด้วยภาษา Java เพื่อกำหนดชั้นของแอปพลิเคชันและฐานข้อมูล"
       },
       {
         "key": "ค",
-        "text": "Create an AWS CloudFormation template with a Resources section that defines the AWS resources for the application."
+        "text": "สร้าง AWS CloudFormation template ที่มีส่วน Resources เพื่อกำหนด AWS resources สำหรับแอปพลิเคชัน"
       },
       {
         "key": "ง",
-        "text": "Use AWS CodePipeline to create a pipeline that automates the complete release of the application."
+        "text": "ใช้ AWS CodePipeline เพื่อสร้าง pipeline สำหรับทำ release แอปพลิเคชันทั้งหมดแบบอัตโนมัติ"
       }
     ],
     "answer": "ค",
@@ -3399,23 +3399,23 @@
     "chapter_id": "Summary_M13.md",
     "chapter_name": "13. Automating Deployment with CI/CD",
     "trap_title": "Official AWS Knowledge Check (Mod 13)",
-    "stem": "[AWS Official KC] A developer wants to use a single AWS CloudFormation template for both the test and production environments. Which section of the template might they use to support this approach?",
+    "stem": "[AWS Official KC] นักพัฒนาต้องการใช้ AWS CloudFormation template เพียงไฟล์เดียวสำหรับทั้งสภาพแวดล้อม test และ production ส่วนใดของ template ที่ช่วยสนับสนุนแนวทางนี้ได้?",
     "options": [
       {
         "key": "ก",
-        "text": "Use the Transform section to define the variables that must be changed for each environment during stack creation or update."
+        "text": "ใช้ส่วน Transform เพื่อกำหนดตัวแปรที่ต้องเปลี่ยนแปลงในแต่ละสภาพแวดล้อมระหว่างการสร้างหรืออัปเดต stack"
       },
       {
         "key": "ข",
-        "text": "Use the Format Version section to define the parameters to be passed for each environment during stack creation or update."
+        "text": "ใช้ส่วน Format Version เพื่อกำหนด parameters ที่ต้องส่งผ่านสำหรับแต่ละสภาพแวดล้อมระหว่างการสร้างหรืออัปเดต stack"
       },
       {
         "key": "ค",
-        "text": "Use the Outputs section to define each environment that the template should create during stack creation or update."
+        "text": "ใช้ส่วน Outputs เพื่อกำหนดแต่ละสภาพแวดล้อมที่ template ควรสร้างขึ้นระหว่างการสร้างหรืออัปเดต stack"
       },
       {
         "key": "ง",
-        "text": "Use the Conditions section to control whether certain resources are created during stack creation or update."
+        "text": "ใช้ส่วน Conditions เพื่อควบคุมการสร้างทรัพยากรบางรายการระหว่างการสร้างหรืออัปเดต stack"
       }
     ],
     "answer": "ง",
@@ -3428,23 +3428,23 @@
     "chapter_id": "Summary_M13.md",
     "chapter_name": "13. Automating Deployment with CI/CD",
     "trap_title": "Official AWS Knowledge Check (Mod 13)",
-    "stem": "[AWS Official KC] Which statement about AWS CloudFormation stacks is true?",
+    "stem": "[AWS Official KC] ข้อความใดเกี่ยวกับ AWS CloudFormation stack ถูกต้อง?",
     "options": [
       {
         "key": "ก",
-        "text": "Deleting a stack deletes its CloudFormation template but does not delete any resources that the most recent deployment created."
+        "text": "การลบ stack จะลบ CloudFormation template แต่จะไม่ลบทรัพยากรใดๆ ที่สร้างขึ้นจากการ deploy ล่าสุด"
       },
       {
         "key": "ข",
-        "text": "A CloudFormation stack is a unit of deployment."
+        "text": "CloudFormation stack คือหน่วยพื้นฐานของการ deploy"
       },
       {
         "key": "ค",
-        "text": "An existing stack must be deleted before deploying an updated template to modify the resource parameters of that stack."
+        "text": "ต้องลบ stack ที่มีอยู่เดิมทิ้งก่อน deploy template ที่อัปเดตเพื่อแก้ไข resource parameters ของ stack นั้น"
       },
       {
         "key": "ง",
-        "text": "CloudFormation has some quotas that are related to the resources defined in each stack, but no quotas are related to the number of stacks themselves."
+        "text": "CloudFormation มี quota สำหรับทรัพยากรที่กำหนดไว้ในแต่ละ stack แต่ไม่มี quota สำหรับจำนวน stack ทั้งหมด"
       }
     ],
     "answer": "ข",
@@ -3457,23 +3457,23 @@
     "chapter_id": "Summary_M13.md",
     "chapter_name": "13. Automating Deployment with CI/CD",
     "trap_title": "Official AWS Knowledge Check (Mod 13)",
-    "stem": "[AWS Official KC] A developer is building their first serverless application on AWS. What must they think about differently with respect to deploying the application?",
+    "stem": "[AWS Official KC] นักพัฒนากำลังสร้างแอปพลิเคชัน serverless บน AWS เป็นครั้งแรก สิ่งใดที่ต้องคำนึงถึงต่างไปจากเดิมในแง่ของการ deploy แอปพลิเคชัน?",
     "options": [
       {
         "key": "ก",
-        "text": "They can't replicate the production environment locally in the same way that they might with a server-based deployment."
+        "text": "ไม่สามารถจำลองสภาพแวดล้อม production บนเครื่อง local ได้เหมือนกับการ deploy แบบใช้เซิร์ฟเวอร์ดั้งเดิม"
       },
       {
         "key": "ข",
-        "text": "They can't use AWS CloudFormation for infrastructure as code to deploy the application."
+        "text": "ไม่สามารถใช้ AWS CloudFormation เพื่อทำ Infrastructure as Code สำหรับ deploy แอปพลิเคชันได้"
       },
       {
         "key": "ค",
-        "text": "The steps to connect to the AWS Lambda server for debugging are different than those to connect to a traditional server."
+        "text": "ขั้นตอนการเชื่อมต่อไปยัง AWS Lambda server เพื่อ debug แตกต่างจากการเชื่อมต่อไปยังเซิร์ฟเวอร์แบบดั้งเดิม"
       },
       {
         "key": "ง",
-        "text": "Serverless development tools are not integrated with other AWS development tools that are used in the deployment pipeline."
+        "text": "เครื่องมือพัฒนาแบบ serverless ไม่สามารถทำงานร่วมกับเครื่องมือพัฒนาอื่นๆ ของ AWS ที่ใช้ใน deployment pipeline ได้"
       }
     ],
     "answer": "ก",
@@ -3486,23 +3486,23 @@
     "chapter_id": "Summary_M13.md",
     "chapter_name": "13. Automating Deployment with CI/CD",
     "trap_title": "Official AWS Knowledge Check (Mod 13)",
-    "stem": "[AWS Official KC] How does an AWS Serverless Application Model (AWS SAM) template differ from an AWS CloudFormation template?",
+    "stem": "[AWS Official KC] AWS Serverless Application Model (AWS SAM) template แตกต่างจาก AWS CloudFormation template อย่างไร?",
     "options": [
       {
         "key": "ก",
-        "text": "AWS SAM templates are written in the same language as the AWS Lambda runtime that is used in the functions that are being deployed."
+        "text": "AWS SAM template เขียนด้วยภาษาเดียวกับ AWS Lambda runtime ที่ใช้งานในฟังก์ชันที่ถูก deploy"
       },
       {
         "key": "ข",
-        "text": "The Globals section is found only in AWS SAM templates."
+        "text": "ส่วน Globals มีอยู่เฉพาะใน AWS SAM template เท่านั้น"
       },
       {
         "key": "ค",
-        "text": "The Resources section in an AWS SAM template may only contain serverless resources."
+        "text": "ส่วน Resources ใน AWS SAM template สามารถระบุได้เฉพาะทรัพยากรประเภท serverless เท่านั้น"
       },
       {
         "key": "ง",
-        "text": "The Transform declaration is not required for AWS SAM templates."
+        "text": "AWS SAM template ไม่จำเป็นต้องประกาศคำสั่ง Transform"
       }
     ],
     "answer": "ข",
@@ -3515,23 +3515,23 @@
     "chapter_id": "Summary_M13.md",
     "chapter_name": "13. Automating Deployment with CI/CD",
     "trap_title": "Official AWS Knowledge Check (Mod 13)",
-    "stem": "[AWS Official KC] The following lines are in the Resources section of an AWS Serverless Application Model (AWS SAM) template. What would these lines create? Resources: Orders: Type: AWS::Serverless::SimpleTable",
+    "stem": "[AWS Official KC] โค้ดต่อไปนี้อยู่ในส่วน Resources ของ AWS Serverless Application Model (AWS SAM) template โค้ดชุดนี้จะสร้างทรัพยากรใด? Resources: Orders: Type: AWS::Serverless::SimpleTable",
     "options": [
       {
         "key": "ก",
-        "text": "An AWS Lambda function that is named Orders and is connected to an Amazon DynamoDB table"
+        "text": "AWS Lambda function ชื่อ Orders ที่เชื่อมต่อกับ Amazon DynamoDB table"
       },
       {
         "key": "ข",
-        "text": "An Amazon DynamoDB table that is called Orders"
+        "text": "Amazon DynamoDB table ชื่อ Orders"
       },
       {
         "key": "ค",
-        "text": "An API GET method that reads from the Orders table"
+        "text": "API GET method ที่อ่านข้อมูลจากตาราง Orders"
       },
       {
         "key": "ง",
-        "text": "A MySQL table that is called Orders"
+        "text": "ตาราง MySQL ชื่อ Orders"
       }
     ],
     "answer": "ข",
