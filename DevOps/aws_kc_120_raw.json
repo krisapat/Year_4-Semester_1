@@ -1,0 +1,1949 @@
+[
+  {
+    "id": 201,
+    "mod": 2,
+    "q": "The systems development lifecycle (SDLC) has six phases. The first three phases are plan, define, and design. What are the last three phases of the SDLC?",
+    "opts": [
+      "Code, build, and maintain",
+      "Code, build, and test",
+      "Test, deploy, and maintain",
+      "Develop, deploy, and maintain"
+    ],
+    "ans": [
+      "Develop, deploy, and maintain"
+    ],
+    "type": "single",
+    "rationale": "วงจร SDLC 6 ระยะประกอบด้วย 1.Plan 2.Define 3.Design 4.Develop (การสร้างระบบ/จัดหาอุปกรณ์) 5.Deploy (การติดตั้งใช้งานจริง) และ 6.Maintain (การดูแลรักษาและปรับปรุง)"
+  },
+  {
+    "id": 202,
+    "mod": 2,
+    "q": "Which task is performed during the develop stage of the systems development lifecycle (SDLC)?",
+    "opts": [
+      "Deficiencies are identified.",
+      "The system is put into use.",
+      "New system requirements are defined.",
+      "New components are obtained and installed."
+    ],
+    "ans": [
+      "New components are obtained and installed."
+    ],
+    "type": "single",
+    "rationale": "ในระยะ Develop (หรือ Build) จะเป็นขั้นตอนการเขียนโค้ด การจัดหาซอฟต์แวร์ หรือการติดตั้งส่วนประกอบใหม่ๆ เข้ามาในระบบเพื่อให้พร้อมสำหรับการทดสอบ"
+  },
+  {
+    "id": 203,
+    "mod": 2,
+    "q": "A systems administrator must grant a new developer permissions that are associated with the developer role. This role is associated with the developer group. Which AWS service should the administrator use to assign the new developer to the developer group?",
+    "opts": [
+      "AWS Resource Access Manager (AWS RAM)",
+      "AWS Identity and Access Management (IAM)",
+      "Amazon Elastic Compute Cloud (Amazon EC2)",
+      "Amazon Simple Storage Service (Amazon S3)"
+    ],
+    "ans": [
+      "AWS Identity and Access Management (IAM)"
+    ],
+    "type": "single",
+    "rationale": "AWS Identity and Access Management (IAM) เป็นบริการหลักที่ใช้จัดการ User, Group, Role และ Permission ต่างๆ เพื่อควบคุมว่าใครสามารถเข้าถึงทรัพยากรอะไรได้บ้าง"
+  },
+  {
+    "id": 204,
+    "mod": 2,
+    "q": "Which of the following is an important benefit of AWS CloudShell?",
+    "opts": [
+      "You manually patch and update the environment.",
+      "Users get 500 MB of storage per region.",
+      "It inherits your credentials from the AWS Management Console.",
+      "You pay up front for reserved blocks of time and capacity."
+    ],
+    "ans": [
+      "It inherits your credentials from the AWS Management Console."
+    ],
+    "type": "single",
+    "rationale": "CloudShell เป็น Terminal บนเบราว์เซอร์ที่อำนวยความสะดวกมาก เพราะมันจะใช้สิทธิ์ (Credentials) เดียวกับที่คุณล็อกอินไว้ในหน้า Console โดยไม่ต้องตั้งค่า Access Key ใหม่"
+  },
+  {
+    "id": 205,
+    "mod": 2,
+    "q": "What are three ways to interact with AWS service application programming interfaces (APIs)? (Select the THREE best options.)",
+    "opts": [
+      "AWS software development kits (SDKs)",
+      "AWS Identity and Access Management (IAM)",
+      "AWS X-Ray",
+      "AWS Management Console",
+      "AWS Command Line Interface (AWS CLI)",
+      "AWS CloudTrail"
+    ],
+    "ans": [
+      "AWS software development kits (SDKs)",
+      "AWS Management Console",
+      "AWS Command Line Interface (AWS CLI)"
+    ],
+    "type": "multi",
+    "count": 3,
+    "rationale": "การส่งคำสั่งไปยัง AWS ทำได้ 3 ทางหลัก: 1.หน้าเว็บ (Console) 2.บรรทัดคำสั่ง (CLI) และ 3.ผ่านโค้ดโปรแกรม (SDKs)"
+  },
+  {
+    "id": 206,
+    "mod": 2,
+    "q": "Which tool enables users to control their AWS services from the command line and automate service management with scripts?",
+    "opts": [
+      "Amazon Q Developer",
+      "AWS X-Ray",
+      "AWS Tools for PowerShell",
+      "AWS Identity and Access Management (IAM)"
+    ],
+    "ans": [
+      "AWS Tools for PowerShell"
+    ],
+    "type": "single",
+    "rationale": "AWS Tools for PowerShell ช่วยให้ผู้ที่คุ้นเคยกับ PowerShell สามารถเขียนสคริปต์เพื่อสั่งงานและจัดการทรัพยากรบน AWS ได้โดยอัตโนมัติ"
+  },
+  {
+    "id": 207,
+    "mod": 2,
+    "q": "What is Amazon Q Developer?",
+    "opts": [
+      "A cloud-based integrated development environment (IDE)",
+      "A wizard that leads you through the steps to configure your integrated development environment (IDE)",
+      "A generative Al-powered coding assistant",
+      "A browser-based CLI"
+    ],
+    "ans": [
+      "A generative Al-powered coding assistant"
+    ],
+    "type": "single",
+    "rationale": "Amazon Q Developer เป็นผู้ช่วยเขียนโค้ดที่ขับเคลื่อนด้วย Generative AI ช่วยให้นักพัฒนาเขียนโค้ดได้เร็วขึ้นและแก้ปัญหาทางเทคนิคได้ง่ายขึ้น"
+  },
+  {
+    "id": 208,
+    "mod": 2,
+    "q": "Which statements describe AWS resource application programming interfaces (APIs)? (Select TWO.)",
+    "opts": [
+      "They have at least one class per conceptual resource.",
+      "They have objects for request and result data.",
+      "They provide a lower-level abstraction than the higher-level calls made by service client APIs.",
+      "They provide access to resources through objects and collections.",
+      "They provide a higher-level abstraction than the low-level calls made by service client APIs."
+    ],
+    "ans": [
+      "They provide access to resources through objects and collections.",
+      "They provide a higher-level abstraction than the low-level calls made by service client APIs."
+    ],
+    "type": "multi",
+    "count": 2,
+    "rationale": "Resource APIs ถูกออกแบบมาให้อยู่ในระดับสูง (Higher-level) เน้นจัดการทรัพยากรผ่าน Object และ Collection ทำให้โค้ดอ่านง่ายและจัดการทรัพยากรได้เป็นกลุ่ม"
+  },
+  {
+    "id": 209,
+    "mod": 2,
+    "q": "A developer is using the AWS software development kit (SDK) for Python (Bot03) and must specify the Region. Which method enables the developer specify the Region?",
+    "opts": [
+      "By associating a default Region with their profile in the credentials file in the .aws folder within their \"home\" folder",
+      "Users cannot specify the AWS Region in the service client",
+      "By setting the Region when they instantiate the service client",
+      "By setting the AWS_PROFILE environment variable"
+    ],
+    "ans": [
+      "By setting the Region when they instantiate the service client"
+    ],
+    "type": "single",
+    "rationale": "ในการเขียนโปรแกรมด้วย SDK (เช่น Boto3) นักพัฒนาสามารถระบุ Region ที่ต้องการเชื่อมต่อได้ทันทีในขั้นตอนการสร้าง (Instantiate) ตัว Service Client"
+  },
+  {
+    "id": 210,
+    "mod": 2,
+    "q": "A developer makes an application programming interface (API) call to access an Amazon Simple Storage Service (Amazon S3) bucket that doesn't exist. Which HTTP response code does the developer receive from the AWS service?",
+    "opts": [
+      "500 series",
+      "200 series",
+      "300 series",
+      "400 series"
+    ],
+    "ans": [
+      "400 series"
+    ],
+    "type": "single",
+    "rationale": "HTTP 400 Series คือ Client Error หมายความว่าความผิดพลาดเกิดจากฝั่งผู้ใช้ เช่น การระบุชื่อ Bucket ที่ไม่มีอยู่จริง (404 Not Found)"
+  },
+  {
+    "id": 301,
+    "mod": 3,
+    "q": "A student is learning about Amazon Simple Storage Service (Amazon S3). During an interview, a potential employer asks the student to explain how Amazon S3 can be used as a storage solution. Which option is a use case for Amazon S3?",
+    "opts": [
+      "Hosting active databases",
+      "Data lake",
+      "Shared file systems",
+      "Block-level storage"
+    ],
+    "ans": [
+      "Data lake"
+    ],
+    "type": "single",
+    "rationale": "S3 เป็น Object Storage ที่สเกลได้มหาศาล จึงนิยมใช้ทำ Data Lake เพื่อเก็บข้อมูลดิบจำนวนมากเพื่อรอการวิเคราะห์ แต่ไม่เหมาะกับฐานข้อมูล (Database) ที่มีการเขียนอ่านตลอดเวลา"
+  },
+  {
+    "id": 302,
+    "mod": 3,
+    "q": "A _______ organizes the Amazon Simple Storage Service (Amazon S3) namespace at the highest level.",
+    "opts": [
+      "Container",
+      "Bucket",
+      "Region",
+      "Group"
+    ],
+    "ans": [
+      "Bucket"
+    ],
+    "type": "single",
+    "rationale": "Bucket คือหน่วยจัดเก็บระดับสูงสุดใน S3 เปรียบเสมือนโฟลเดอร์หลักที่บรรจุไฟล์ (Objects) และต้องมีชื่อที่ไม่ซ้ำกับใครในโลก"
+  },
+  {
+    "id": 303,
+    "mod": 3,
+    "q": "A developer wants to store image files in a bucket that is called images-bucket, but receives the error BucketAlreadyExists. Which action must the developer take tresolve this error?",
+    "opts": [
+      "Bucket names are unique to the Region that they are created in. If the requested bucket name is not available, the developer must create the images-bucket in a different Region.",
+      "Bucket names are globally unique. If the requested bucket name is not available, the developer must rename the bucket.",
+      "Bucket names go to the highest bidder. The developer must outbid the current bucket owner.",
+      "The developer must contact AWS Support to request approval to use the same bucket name."
+    ],
+    "ans": [
+      "Bucket names are globally unique. If the requested bucket name is not available, the developer must rename the bucket."
+    ],
+    "type": "single",
+    "rationale": "ชื่อของ S3 Bucket ต้องไม่ซ้ำกัน 'ทั่วโลก' (Globally Unique) หากชื่อนั้นมีคนอื่นใช้ไปแล้วใน Region ใดก็ตาม เราจะไม่สามารถใช้ชื่อนั้นได้อีก"
+  },
+  {
+    "id": 304,
+    "mod": 3,
+    "q": "A developer is using Amazon Simple Storage Service (Amazon S3) to host a static website in a bucket that is called frank-martha-cafe. This bucket is in the us-east-I Region. Which URL is the virtual-hosted-style URL for the website?",
+    "opts": [
+      "https://wwwfrank-martha-cafes3-website-us-east-I.amazonaws.com",
+      "https://frank-martha-cafes3-us-east-1.amazonaws.com",
+      "https://s3-website-us-east-1.amazonaws.com/frank-martha-cafe",
+      "https://frank-martha-cafes3-website-us-east-1.amazonaws.com"
+    ],
+    "ans": [
+      "https://frank-martha-cafes3-website-us-east-1.amazonaws.com"
+    ],
+    "type": "single",
+    "rationale": "รูปแบบ URL สำหรับ Static Website บน S3 คือ [bucket-name].s3-website-[region].amazonaws.com"
+  },
+  {
+    "id": 305,
+    "mod": 3,
+    "q": "After versioning is enabled on an Amazon Simple Storage Service (Amazon S3) bucket, it can be disabled.",
+    "opts": [
+      "True",
+      "False"
+    ],
+    "ans": [
+      "False"
+    ],
+    "type": "single",
+    "rationale": "เมื่อเปิดใช้งาน Versioning แล้ว จะไม่สามารถ 'ปิด' (Disable) ได้ ทำได้เพียงแค่ 'ระงับ' (Suspend) ไว้เท่านั้น เพื่อไม่ให้มีการสร้าง Version ใหม่เพิ่ม"
+  },
+  {
+    "id": 306,
+    "mod": 3,
+    "q": "What is the largest size of an object that a user can upload to Amazon Simple Storage Service (Amazon S3) in a single PUT operation?",
+    "opts": [
+      "1 GB",
+      "5 GB",
+      "100 MB",
+      "5 TB"
+    ],
+    "ans": [
+      "5 GB"
+    ],
+    "type": "single",
+    "rationale": "การอัปโหลดไฟล์เดียวผ่านคำสั่ง PUT รองรับขนาดสูงสุดที่ 5 GB หากไฟล์ใหญ่กว่านั้นต้องใช้การอัปโหลดแบบ Multipart Upload"
+  },
+  {
+    "id": 307,
+    "mod": 3,
+    "q": "A developer uses an Amazon Simple Storage Service (Amazon S3) bucket. They want to allow a certain AWS Identity and Access Management (IAM) user to perform any S3 operations on the bucket and its objects. They also want to follow AWS recommendations for granting permissions. Which mechanism should the developer apply to the bucket?",
+    "opts": [
+      "IAM policy",
+      "Bucket access control list (ACL)",
+      "Bucket policy",
+      "Cross-Origin resource Sharing (CORS)"
+    ],
+    "ans": [
+      "Bucket policy"
+    ],
+    "type": "single",
+    "rationale": "Bucket Policy เป็นวิธีที่แนะนำในการจัดการสิทธิ์ในระดับ Bucket ซึ่งช่วยให้ระบุได้ละเอียดว่าใคร (IAM User) ทำอะไรได้บ้างใน Bucket นั้น"
+  },
+  {
+    "id": 308,
+    "mod": 3,
+    "q": "A developer wants to allow a user to download private objects directly from an Amazon Simple Storage Service (Amazon S3) bucket without needing AWS security credentials or permissions. What can the developer share with the user to grant them time-limited access to the objects?",
+    "opts": [
+      "A temporary token",
+      "Their AWS account root user credentials",
+      "The bucket endpoint URL",
+      "A presigned URL"
+    ],
+    "ans": [
+      "A presigned URL"
+    ],
+    "type": "single",
+    "rationale": "Presigned URL เป็นการสร้างลิงก์ชั่วคราวที่มีสิทธิ์การเข้าถึงไฟล์แนบไปด้วย ช่วยให้คนภายนอกโหลดไฟล์ส่วนตัวได้ในช่วงเวลาที่กำหนดโดยไม่ต้องมี User ใน AWS"
+  },
+  {
+    "id": 309,
+    "mod": 3,
+    "q": "Which method can be used to encrypt Amazon Simple Storage Service (Amazon S3) objects in transit?",
+    "opts": [
+      "Server-Side Encryption with AWS KMS-Managed Keys (SSE-KMS)",
+      "Secure Sockets Layer/ Transport Layer Security (SSL/TLS)",
+      "Server-Side Encryption with Customer-Provided Keys (SSE-C)",
+      "Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)"
+    ],
+    "ans": [
+      "Secure Sockets Layer/ Transport Layer Security (SSL/TLS)"
+    ],
+    "type": "single",
+    "rationale": "การเข้ารหัส 'In Transit' หมายถึงระหว่างการรับส่งข้อมูลผ่านเครือข่าย ซึ่งจะใช้โปรโตคอล HTTPS (SSL/TLS) เสมอ"
+  },
+  {
+    "id": 310,
+    "mod": 3,
+    "q": "A developer hosts a static website in an Amazon Simple Storage Service (Amazon S3) bucket. The website references image objects in another S3 bucket. However, these images do not display on the website. What could be the problem?",
+    "opts": [
+      "Amazon S3 does not support Object sharing between buckets.",
+      "The security group of the S3 bucket does not include an inbound rule tallow HTTP traffic on port 80.",
+      "Cross-Region Replication (CRR) has not been enabled on the bucket where the assets are stored.",
+      "Cross-Origin Resource Sharing (CORS) has not been enabled on the bucket where the assets are stored."
+    ],
+    "ans": [
+      "Cross-Origin Resource Sharing (CORS) has not been enabled on the bucket where the assets are stored."
+    ],
+    "type": "single",
+    "rationale": "เมื่อเว็บจาก Bucket หนึ่ง พยายามดึงทรัพยากร (เช่น รูปภาพ) จากอีก Bucket หนึ่ง ระบบความปลอดภัยของเบราว์เซอร์จะบล็อกไว้ เว้นแต่จะเปิดใช้งาน CORS ใน Bucket ที่เก็บรูปภาพนั้น"
+  },
+  {
+    "id": 401,
+    "mod": 4,
+    "q": "Which option is the Amazon Web Services (AWS) customer responsible for under the AWS shared responsibility model? (Select TWO.)",
+    "opts": [
+      "Security group configuration",
+      "Client-side data",
+      "Physical servers",
+      "Edge location infrastructure",
+      "Availability Zone security"
+    ],
+    "ans": [
+      "Security group configuration",
+      "Client-side data"
+    ],
+    "type": "multi",
+    "count": 2,
+    "rationale": "ภายใต้ Shared Responsibility Model ลูกค้ามีหน้าที่ดูแล 'ความปลอดภัยในคลาวด์' (Security IN the Cloud) เช่น การตั้งค่า Firewall (Security Group) และข้อมูลของตัวเอง"
+  },
+  {
+    "id": 402,
+    "mod": 4,
+    "q": "Which AWS Identity and Access Management (IAM) resource explicitly grants or denies permissions to a user or group of users?",
+    "opts": [
+      "IAM roles",
+      "IAM users",
+      "IAM groups",
+      "IAM policies"
+    ],
+    "ans": [
+      "IAM policies"
+    ],
+    "type": "single",
+    "rationale": "IAM Policy คือเอกสาร JSON ที่ระบุชัดเจนว่าอนุญาต (Allow) หรือปฏิเสธ (Deny) การกระทำใดๆ ต่อทรัพยากรของ AWS"
+  },
+  {
+    "id": 403,
+    "mod": 4,
+    "q": "What is the correct term for the process of verifying a user's identity as a developer?",
+    "opts": [
+      "Endorsement",
+      "Authentication",
+      "Confirmation",
+      "Authorization"
+    ],
+    "ans": [
+      "Authentication"
+    ],
+    "type": "single",
+    "rationale": "Authentication คือการยืนยันตัวตน (คุณคือใคร) ส่วน Authorization คือการตรวจสอบสิทธิ์ (คุณทำอะไรได้บ้าง)"
+  },
+  {
+    "id": 404,
+    "mod": 4,
+    "q": "Which statements about IAM user authentication are true? (Select TWO.)",
+    "opts": [
+      "AWS credentials to authenticate with any supported services must be provided.",
+      "A user name and password to authenticate to the console must be provided.",
+      "A .pem or .ppk file is used to authenticate programmatically to the AWS application programming interface (API).",
+      "It is a best practice to use the account root user credentials to authenticate programmatically by using the AWS Command Line Interface (AWS CLI).",
+      "Each AWS account can have only one administrator who manages other IAM users."
+    ],
+    "ans": [
+      "AWS credentials to authenticate with any supported services must be provided.",
+      "A user name and password to authenticate to the console must be provided."
+    ],
+    "type": "multi",
+    "count": 2,
+    "rationale": "การเข้าหน้า Console ต้องใช้ User/Password ส่วนการเรียกใช้บริการผ่าน API/CLI ต้องใช้ Credentials (Access Key/Secret Key)"
+  },
+  {
+    "id": 405,
+    "mod": 4,
+    "q": "Which suggestion is an Amazon Web Services (AWS) recommendation for securing AWS credentials for applications that run on Amazon Elastic Compute Cloud (Amazon EC2) instances?",
+    "opts": [
+      "Embed AWS credentials in the software development kit (SDK) client code.",
+      "Store credentials in local AWS configuration files.",
+      "Create an AWS Identity and Access Management (IAM) role and attach it to the EC2 instance.",
+      "Create an AWS Identity and Access Management (IAM) user and attach it to the EC2 instance."
+    ],
+    "ans": [
+      "Create an AWS Identity and Access Management (IAM) role and attach it to the EC2 instance."
+    ],
+    "type": "single",
+    "rationale": "Best Practice ของ AWS คือการใช้ IAM Role ผูกกับ EC2 แทนการเก็บ Access Key ไว้ในโค้ดหรือไฟล์ในเครื่อง เพราะ Role จะสร้างรหัสชั่วคราวที่หมุนเวียนให้เองโดยอัตโนมัติ"
+  },
+  {
+    "id": 406,
+    "mod": 4,
+    "q": "What is the format of AWS Identity and Access Management (IAM) policies that define the allowable API calls an entity can invoke?",
+    "opts": [
+      "YAML Ain't Markup Language (YAML)",
+      "Security Assertion Markup Language (SAML)",
+      "Comma-separated values (CSV)",
+      "JavaScript Object Notation (JSON)"
+    ],
+    "ans": [
+      "JavaScript Object Notation (JSON)"
+    ],
+    "type": "single",
+    "rationale": "IAM Policy ถูกเขียนและจัดเก็บในรูปแบบ JSON (JavaScript Object Notation) เพื่อความสะดวกในการประมวลผลสิทธิ์"
+  },
+  {
+    "id": 407,
+    "mod": 4,
+    "q": "An administrator created an AWS Identity and Access Management (IAM) group called managers within an AWS account. A policy is attached to the managers group. It allows managers to read from and write to an Amazon Simple Storage Service (Amazon S3) bucket in the same AWS account. What is this type of policy?",
+    "opts": [
+      "Identity-based",
+      "Resource-based",
+      "Cross-account access",
+      "AdministratorAccess managed"
+    ],
+    "ans": [
+      "Identity-based"
+    ],
+    "type": "single",
+    "rationale": "นโยบายที่ถูกนำไปผูกติดกับตัวตน (User, Group, Role) เรียกว่า Identity-based policy"
+  },
+  {
+    "id": 408,
+    "mod": 4,
+    "q": "Which statement reflects best practices when granting permissions to users, groups, roles, and resources?",
+    "opts": [
+      "Create policies that allow broad access and then limit permissions as needed, based on usage.",
+      "Use the account root user for routine tasks that the administrator performs.",
+      "Create policies that follow the principle of least privilege.",
+      "Do not set policies for individual resources."
+    ],
+    "ans": [
+      "Create policies that follow the principle of least privilege."
+    ],
+    "type": "single",
+    "rationale": "Least Privilege คือการให้สิทธิ์ 'เท่าที่จำเป็น' ต่อการทำงานเท่านั้น เพื่อลดความเสี่ยงหากบัญชีถูกบุกรุก"
+  },
+  {
+    "id": 409,
+    "mod": 4,
+    "q": "What is the effect of the following policy statement? \"Effect\": \"Deny\", \"Action\": ... \"NotResource\": [\"arn:aws:dynamodb:region:account-number:table/pollynotes\", ...]",
+    "opts": [
+      "Denies actions on DynamoDB or Amazon S3 resources except for the resources that are listed in the NotResource element",
+      "Denies the ability to write to the pollynotes DynamoDB table",
+      "Denies the ability to read from the polly-notes-web S3 bucket",
+      "Denies actions on the DynamoDB table or S3 buckets that are listed in the NotResources element"
+    ],
+    "ans": [
+      "Denies actions on DynamoDB or Amazon S3 resources except for the resources that are listed in the NotResource element"
+    ],
+    "type": "single",
+    "rationale": "การใช้ Deny ร่วมกับ NotResource หมายถึงการสั่ง 'ปฏิเสธ' ทุกอย่าง ยกเว้นรายการทรัพยากรที่ระบุไว้ในลิสต์นั้น"
+  },
+  {
+    "id": 410,
+    "mod": 4,
+    "q": "Which statements are true about evaluation logic for AWS Identity and Access Management (IAM) policies? (Select TWO.)",
+    "opts": [
+      "You cannot have deny and allow statements in the same policy.",
+      "An explicit allow overrides an explicit deny.",
+      "An explicit deny overrides an explicit allow.",
+      "By default, all requests are denied.",
+      "By default, all requests are allowed."
+    ],
+    "ans": [
+      "An explicit deny overrides an explicit allow.",
+      "By default, all requests are denied."
+    ],
+    "type": "multi",
+    "count": 2,
+    "rationale": "หลักการของ IAM คือ 1.เริ่มจาก Default Deny (ไม่อนุญาตไว้ก่อน) 2.หากมี Explicit Deny (การสั่งปฏิเสธชัดเจน) จะมีผลชนะ Allow เสมอ"
+  },
+  {
+    "id": 501,
+    "mod": 5,
+    "q": "Which statement best describes Amazon DynamoDB?",
+    "opts": [
+      "An in-memory data store that can boost the performance of databases",
+      "A graph database engine that is optimized for storing billions of relationships",
+      "A relational database that is built for the cloud and is compatible with MySQL and PostgreSQL",
+      "A key-value and document database that scales horizontally and works well for internet-scale applications"
+    ],
+    "ans": [
+      "A key-value and document database that scales horizontally and works well for internet-scale applications"
+    ],
+    "type": "single",
+    "rationale": "DynamoDB เป็นฐานข้อมูล NoSQL แบบ Key-Value และ Document ที่เด่นเรื่องความเร็วในระดับ Millisecond และการขยายตัว (Scale) แบบไร้ขีดจำกัด"
+  },
+  {
+    "id": 502,
+    "mod": 5,
+    "q": "Which component is part of an Amazon DynamoDB table?",
+    "opts": [
+      "Predefined schema",
+      "SQL-based queries",
+      "Attributes",
+      "Columns"
+    ],
+    "ans": [
+      "Attributes"
+    ],
+    "type": "single",
+    "rationale": "ใน DynamoDB ข้อมูล 1 แถวเรียกว่า Item และแต่ละ Item จะประกอบไปด้วย Attributes (คุณลักษณะของข้อมูล) ซึ่งแต่ละแถวไม่จำเป็นต้องมี Attributes เหมือนกันหมดก็ได้"
+  },
+  {
+    "id": 503,
+    "mod": 5,
+    "q": "An Amazon DynamoDB table called SensorReadings captures sensor readings. These readings include a sensor ID attribute that acts as the partition key, and a timestamp attribute that is the sort key. Which statement is true?",
+    "opts": [
+      "The sensor ID together with the timestamp represent a simple primary key.",
+      "It is impossible for two items in the SensorReadings table to have the same partition key.",
+      "It is impossible for two items in the SensorReadings table to have the same sort key.",
+      "It is impossible for two items in the SensorReadings table to have the same primary key."
+    ],
+    "ans": [
+      "It is impossible for two items in the SensorReadings table to have the same primary key."
+    ],
+    "type": "single",
+    "rationale": "Primary Key (ซึ่งเกิดจาก Partition Key + Sort Key) ต้องมีความเป็นเอกลักษณ์ (Unique) ห้ามซ้ำกันเด็ดขาดในตารางเดียวกัน"
+  },
+  {
+    "id": 504,
+    "mod": 5,
+    "q": "Which statement about Amazon DynamoDB partitions is true?",
+    "opts": [
+      "DynamoDB stores data in partitions and chooses the partition based on the range attribute.",
+      "If a table has a simple primary key (partition key only), DynamoDB stores and retrieves each item based on its hash attribute.",
+      "If a table has a composite primary key, DynamoDB will sort the items based on the sort key before selecting the partition for the item.",
+      "A developer writes a hash function to tell DynamoDB how to partition the items."
+    ],
+    "ans": [
+      "If a table has a simple primary key (partition key only), DynamoDB stores and retrieves each item based on its hash attribute."
+    ],
+    "type": "single",
+    "rationale": "DynamoDB ใช้การ Hash ค่าของ Partition Key เพื่อตัดสินใจว่าข้อมูลนั้นจะถูกเก็บไว้ที่ Partition ไหน"
+  },
+  {
+    "id": 505,
+    "mod": 5,
+    "q": "Suppose that a developer has a restaurants database table that can be queried by name (the partition key), or by name and location (the sort key). What should the developer do if they also want to query by type of cuisine and average customer rating?",
+    "opts": [
+      "Set up a local secondary index on cuisine and customer rating.",
+      "Set up a global secondary index on cuisine and customer rating.",
+      "Change the primary key on the restaurant table to be a complex primary key based on cuisine and customer rating.",
+      "Perform a query that uses the cuisine and average customer rating attributes."
+    ],
+    "ans": [
+      "Set up a global secondary index on cuisine and customer rating."
+    ],
+    "type": "single",
+    "rationale": "GSI (Global Secondary Index) ช่วยให้เราสามารถสร้างดัชนีใหม่จาก Attribute ใดๆ ก็ได้ เพื่อใช้ในการค้นหาที่นอกเหนือจาก Primary Key หลัก"
+  },
+  {
+    "id": 506,
+    "mod": 5,
+    "q": "A video game developer who uses Amazon DynamoDB wants to ensure that players' profiles are updated correctly when they make in-game purchases. This process requires multiple updates as part of a single user action. What is the best choice to write this developer's application to manage these complex, all-or-nothing changes?",
+    "opts": [
+      "Add an Amazon DynamoDB Accelerator (DAX) cluster.",
+      "Implement global tables.",
+      "Create application code to check that all parts of the transaction were written successfully, and then roll back the update if any part failed.",
+      "Use DynamoDB transactions."
+    ],
+    "ans": [
+      "Use DynamoDB transactions."
+    ],
+    "type": "single",
+    "rationale": "DynamoDB Transactions รองรับการทำงานแบบ ACID (All-or-nothing) ช่วยให้มั่นใจว่ากลุ่มของคำสั่งจะสำเร็จทั้งหมดหรือล้มเหลวทั้งหมด เพื่อรักษาความถูกต้องของข้อมูล"
+  },
+  {
+    "id": 507,
+    "mod": 5,
+    "q": "Which scenarios are example use cases for Amazon DynamoDB Streams? (Select TWO.)",
+    "opts": [
+      "An application that requires the fastest possible response time for reads to support real-time bidding",
+      "An application that requires repeated reads against a large set of regional weather data to perform a long-running analysis",
+      "An application that automatically sends notifications to the mobile devices of all friends in a group when one friend uploads a new picture",
+      "An application that must monitor changes to a DynamoDB table and take action on specific changes when a value reaches a certain threshold",
+      "An application that requires an in-memory data store"
+    ],
+    "ans": [
+      "An application that automatically sends notifications to the mobile devices of all friends in a group when one friend uploads a new picture",
+      "An application that must monitor changes to a DynamoDB table and take action on specific changes when a value reaches a certain threshold"
+    ],
+    "type": "multi",
+    "count": 2,
+    "rationale": "DynamoDB Streams จะบันทึกทุกลำดับการเปลี่ยนแปลงในตาราง เหมาะสำหรับการนำไป Trigger เหตุการณ์อื่นๆ เช่น การส่งแจ้งเตือนเมื่อมีการอัปโหลดรูปภาพใหม่"
+  },
+  {
+    "id": 508,
+    "mod": 5,
+    "q": "Which statement about global tables is true?",
+    "opts": [
+      "Global tables provide a managed solution for replicating tables within a single AWS Region.",
+      "Global tables use Amazon Simple Storage Service (Amazon S3) to propagate changes between replicas.",
+      "When a global table is created, Amazon DynamoDB performs all necessary tasks to create identical tables and propagate ongoing data changes to specified Regions.",
+      "With a global table, Amazon DynamoDB supports partial replication of some of the items in a table."
+    ],
+    "ans": [
+      "When a global table is created, Amazon DynamoDB performs all necessary tasks to create identical tables and propagate ongoing data changes to specified Regions."
+    ],
+    "type": "single",
+    "rationale": "Global Tables คือโซลูชันแบบ Multi-Region ที่ AWS จะทำการคัดลอกและซิงค์ข้อมูลให้เราโดยอัตโนมัติในหลายๆ Region ทั่วโลก"
+  },
+  {
+    "id": 509,
+    "mod": 5,
+    "q": "How far back in days can an Amazon DynamoDB table be restored by using point-in-time recovery?",
+    "opts": [
+      "The last week",
+      "The last 10 days",
+      "The last 35 days",
+      "The last calendar month"
+    ],
+    "ans": [
+      "The last 35 days"
+    ],
+    "type": "single",
+    "rationale": "Point-in-time recovery (PITR) ของ DynamoDB ช่วยให้คุณสามารถกู้คืนข้อมูลย้อนกลับไปได้ถึง 35 วัน"
+  },
+  {
+    "id": 510,
+    "mod": 5,
+    "q": "Which statement describes Amazon DynamoDB application programming interface (API) control operations that can be invoked by an application?",
+    "opts": [
+      "Create and manage DynamoDB tables.",
+      "Create, read, update, and delete data in a table.",
+      "Get and write batches of items in a DynamoDB table.",
+      "Make coordinated, all-or-nothing changes to multiple items both within and across tables."
+    ],
+    "ans": [
+      "Create and manage DynamoDB tables."
+    ],
+    "type": "single",
+    "rationale": "Control Operations คือกลุ่มคำสั่ง API ที่ใช้จัดการโครงสร้าง เช่น สร้าง ลบ หรือแก้ไขการตั้งค่าของตัว Table เอง"
+  },
+  {
+    "id": 601,
+    "mod": 6,
+    "q": "Which phrase best describes a RESTful API?",
+    "opts": [
+      "An API that uses HTTP to communicate between client and server",
+      "A proxy that exists between client and server to handle common problems that occur with API-driven applications",
+      "An API that follows the principles of the Representational State Transfer style",
+      "An API that resides on the web server"
+    ],
+    "ans": [
+      "An API that follows the principles of the Representational State Transfer style"
+    ],
+    "type": "single",
+    "rationale": "REST (Representational State Transfer) คือรูปแบบสถาปัตยกรรมที่เน้นการใช้ HTTP Methods (GET, POST, etc.) เพื่อจัดการกับทรัพยากรผ่าน Stateless communication"
+  },
+  {
+    "id": 602,
+    "mod": 6,
+    "q": "Which option suggests the use of WebSocket APIs?",
+    "opts": [
+      "An order processing application returns an order number to each customer when they submit an order.",
+      "A batch process bundles orders and sends them to a fulfillment center application.",
+      "A real-time chat application lets customers talk to customer support about their orders.",
+      "A reporting application gives the sales team access to static daily reports from their phones."
+    ],
+    "ans": [
+      "A real-time chat application lets customers talk to customer support about their orders."
+    ],
+    "type": "single",
+    "rationale": "WebSocket เหมาะสำหรับการสื่อสารแบบสองทาง (Full-duplex) ที่ต้องการความเร็วแบบ Real-time เช่น ระบบ Chat หรือ Dashboard ที่ข้อมูลเปลี่ยนตลอดเวลา"
+  },
+  {
+    "id": 603,
+    "mod": 6,
+    "q": "Which use case suggests using Amazon API Gateway HTTP APIs?",
+    "opts": [
+      "An application needs an API proxy in front of an AWS Lambda function.",
+      "An application must transform a response from an AWS Lambda function before returning the response to the client.",
+      "A developer wants to use mock endpoints to test their API.",
+      "A developer wants to assign different API quotas by client."
+    ],
+    "ans": [
+      "An application needs an API proxy in front of an AWS Lambda function."
+    ],
+    "type": "single",
+    "rationale": "HTTP APIs ถูกออกแบบมาให้เน้นประสิทธิภาพและความประหยัด เหมาะมากสำหรับใช้เป็น Proxy เรียบง่ายเพื่อเรียกใช้งาน Lambda"
+  },
+  {
+    "id": 604,
+    "mod": 6,
+    "q": "Which statement about Amazon API Gateway integrations is true?",
+    "opts": [
+      "A first-class integration connects an API Gateway HTTP API route to an external third-party service API.",
+      "A developer can use HTTP proxy integrations to direct a route to a resource on the internet.",
+      "API Gateway cannot access resources within a virtual private cloud (VPC).",
+      "An API integration request encapsulates an HTTP request that the backend receives and is always different from the method request that the client submits."
+    ],
+    "ans": [
+      "A developer can use HTTP proxy integrations to direct a route to a resource on the internet."
+    ],
+    "type": "single",
+    "rationale": "HTTP Proxy Integration ช่วยให้ API Gateway สามารถส่งต่อ (Forward) คำขอไปยังปลายทางใดก็ได้บนอินเทอร์เน็ตผ่าน HTTP URL"
+  },
+  {
+    "id": 605,
+    "mod": 6,
+    "q": "An application that uses Amazon API Gateway must capture contact information from a third-party client application. The client application sends given name, surname, business phone, and cell phone. The backend application database has only two fields: name and mobile phone. Which option requires the fewest application changes?",
+    "opts": [
+      "Export the API definition and use it to update the client.",
+      "Use a mapping template to transform the request before it is sent to the database.",
+      "Create a usage plan that describes the fields and applies only to this client.",
+      "Use a first-class integration to connect the client to the database."
+    ],
+    "ans": [
+      "Use a mapping template to transform the request before it is sent to the database."
+    ],
+    "type": "single",
+    "rationale": "Mapping Template ช่วยให้เราแปลงรูปแบบข้อมูล (Payload Transformation) ได้ที่ระดับ API Gateway โดยไม่ต้องไปแก้ไขโค้ดที่ Client หรือ Backend"
+  },
+  {
+    "id": 606,
+    "mod": 6,
+    "q": "Which elements are part of the base URI that AWS generates for an Amazon API Gateway API?",
+    "opts": [
+      "Region and stage name",
+      "API identifier and version",
+      "Account ID and stage name",
+      "Region and version"
+    ],
+    "ans": [
+      "Region and stage name"
+    ],
+    "type": "single",
+    "rationale": "URL มาตรฐานของ API Gateway จะประกอบด้วย API ID, Region และ Stage Name (เช่น https://[api-id].execute-api.[region].amazonaws.com/[stage-name])"
+  },
+  {
+    "id": 607,
+    "mod": 6,
+    "q": "Which option could replace the <?> to create an API route that returns an individual product value from an online catalog?",
+    "opts": [
+      "route-key 'GET /products/{product_id}'",
+      "route-key 'PUT /products'",
+      "route-selection-expression '$GET/product'",
+      "route-selection-expression 'PUT /products/(proxy+)'"
+    ],
+    "ans": [
+      "route-key 'GET /products/{product_id}'"
+    ],
+    "type": "single",
+    "rationale": "การดึงข้อมูลรายชิ้น (Individual) ต้องใช้ Method GET และระบุ Path Parameter ภายใต้ปีกกา { } เพื่อรับค่า ID นั้นๆ"
+  },
+  {
+    "id": 608,
+    "mod": 6,
+    "q": "Which statement about Amazon API Gateway stages is true?",
+    "opts": [
+      "Stage names are sequentially assigned based on the API version.",
+      "Any stage on any API type can be set to autodeploy.",
+      "Developers can use stage variables to connect different stages to different backends.",
+      "Developers should avoid creating different stages for each development environment."
+    ],
+    "ans": [
+      "Developers can use stage variables to connect different stages to different backends."
+    ],
+    "type": "single",
+    "rationale": "Stage Variables เปรียบเสมือนตัวแปร Environment ที่ช่วยให้เราใช้ API ชุดเดียวแต่ชี้ไปหา Backend ที่ต่างกันได้ (เช่น Dev/Prod)"
+  },
+  {
+    "id": 609,
+    "mod": 6,
+    "q": "A security team wants to know how to protect APIs in their internet application from common web exploits, like SQL injection or cross-site scripting. Which solution most directly addresses their specific concern?",
+    "opts": [
+      "Set throttling limits on their API methods in Amazon API Gateway.",
+      "Set all of their APIs to use private endpoints.",
+      "Configure a JSON Web Token (JWT)-based authorizer for Amazon API Gateway.",
+      "Use AWS WAF with Amazon API Gateway."
+    ],
+    "ans": [
+      "Use AWS WAF with Amazon API Gateway."
+    ],
+    "type": "single",
+    "rationale": "AWS WAF (Web Application Firewall) ทำหน้าที่กรอง Traffic เพื่อป้องกันการโจมตีระดับ Application เช่น SQL Injection และ XSS ได้โดยตรง"
+  },
+  {
+    "id": 610,
+    "mod": 6,
+    "q": "What does the Amazon API Gateway integration Latency metric tell the user?",
+    "opts": [
+      "Frequency of server-side errors that affect latency",
+      "Speed of the API response back to the client",
+      "Responsiveness of the backend",
+      "How often requests are throttled"
+    ],
+    "ans": [
+      "Responsiveness of the backend"
+    ],
+    "type": "single",
+    "rationale": "Integration Latency วัดเฉพาะเวลาที่ Backend (เช่น Lambda) ใช้ในการประมวลผล ไม่รวมเวลาที่ใช้ในการส่งข้อมูลผ่านเครือข่ายไปยัง Client"
+  },
+  {
+    "id": 701,
+    "mod": 7,
+    "q": "Which statement describes a characteristic of AWS Lambda?",
+    "opts": [
+      "Lambda runs code only when it is activated by an event and uses only the compute resources that are needed.",
+      "A developer's methods and configuration options for ensuring high availability with Lambda are similar to their approach with Amazon Elastic Compute Cloud (Amazon EC2).",
+      "Lambda functions run in on-demand, temporary environments, and the developer controls when new environments are created or shut down.",
+      "A developer must write Lambda functions that use one of the runtimes that the Lambda service provides."
+    ],
+    "ans": [
+      "Lambda runs code only when it is activated by an event and uses only the compute resources that are needed."
+    ],
+    "type": "single",
+    "rationale": "Lambda เป็น Event-driven และใช้ทรัพยากรประมวลผลตามจริง (On-demand) ทำให้ไม่ต้องบริหารจัดการ Server เอง"
+  },
+  {
+    "id": 702,
+    "mod": 7,
+    "q": "Which constraint cannot be modified?",
+    "opts": [
+      "Function timeout",
+      "Reserved concurrency",
+      "Burst quota",
+      "Regional quota"
+    ],
+    "ans": [
+      "Burst quota"
+    ],
+    "type": "single",
+    "rationale": "Burst Quota เป็นขีดจำกัดตายตัวในแต่ละ Region ที่ระบบกำหนดไว้เพื่อป้องกันการใช้ทรัพยากรเกินขนาดในทันทีทันใด"
+  },
+  {
+    "id": 703,
+    "mod": 7,
+    "q": "Which option describes how Amazon API Gateway invokes AWS Lambda?",
+    "opts": [
+      "API Gateway directly invokes a function with a synchronous invocation.",
+      "Lambda processes API Gateway requests asynchronously and retries each request up to two times.",
+      "Lambda uses an event source mapping and polls API Gateway for requests.",
+      "API Gateway directly invokes a function and retries the request until it succeeds or expires."
+    ],
+    "ans": [
+      "API Gateway directly invokes a function with a synchronous invocation."
+    ],
+    "type": "single",
+    "rationale": "ปกติ API Gateway จะเรียก Lambda แบบ Synchronous เพราะ Client ต้องการรอรับผลตอบกลับ (Response) ทันที"
+  },
+  {
+    "id": 704,
+    "mod": 7,
+    "q": "Which actions require permissions that are defined in the AWS Lambda execution role? (Select TWO.)",
+    "opts": [
+      "A Lambda function writes to an Amazon DynamoDB table.",
+      "An object that is written to an Amazon Simple Storage Service (Amazon S3) bucket initiates invocation of a Lambda function.",
+      "Lambda polls an Amazon Simple Queue Service (Amazon SQS) queue for messages that initiate invocation of a Lambda function.",
+      "An Amazon API Gateway GET route initiates invocation of a Lambda function.",
+      "A message that is posted to an Amazon Simple Notification Service (Amazon SNS) topic initiates invocation of a Lambda function."
+    ],
+    "ans": [
+      "A Lambda function writes to an Amazon DynamoDB table.",
+      "Lambda polls an Amazon Simple Queue Service (Amazon SQS) queue for messages that initiate invocation of a Lambda function."
+    ],
+    "type": "multi",
+    "count": 2,
+    "rationale": "Execution Role คือสิทธิ์ที่ Lambda ต้องมีเพื่อ 'ออกไปหา' หรือทำอะไรกับบริการอื่น เช่น เขียนไฟล์ลง DB หรือไปดึงข้อมูลจาก Queue"
+  },
+  {
+    "id": 705,
+    "mod": 7,
+    "q": "Which statement about the function handler in an AWS Lambda function is true?",
+    "opts": [
+      "The function handler is the entry point that Lambda calls to start running the Lambda function.",
+      "The function handler method might take an event object or a context object.",
+      "The event object provides information about the event that invoked the Lambda function. It must be a predefined object that an AWS service generates.",
+      "The context object provides runtime information, and the developer must create a context object that matches the runtime that was selected for the function."
+    ],
+    "ans": [
+      "The function handler is the entry point that Lambda calls to start running the Lambda function."
+    ],
+    "type": "single",
+    "rationale": "Handler คือฟังก์ชันหลักในโค้ดที่คุณกำหนดไว้ให้ Lambda เรียกใช้เป็นอันดับแรกเมื่อมีการ Trigger"
+  },
+  {
+    "id": 706,
+    "mod": 7,
+    "q": "Which issue might be addressed by adding provisioned concurrency to an AWS Lambda function?",
+    "opts": [
+      "Another Lambda function runs in the same account and Region. It sometimes spikes and consumes all available concurrency, causing the function to fail.",
+      "An application that uses the Lambda function responds slowly for the first few users who sign in each day. Lambda metrics show higher latency for those initial requests.",
+      "A legacy backend system fails intermittently when the developer connects to it. To avoid extra costs, they want to reduce the function's wait time when the backend fails.",
+      "The developer wants more visibility into transactions that use the Lambda function to identify bottlenecks."
+    ],
+    "ans": [
+      "An application that uses the Lambda function responds slowly for the first few users who sign in each day. Lambda metrics show higher latency for those initial requests."
+    ],
+    "type": "single",
+    "rationale": "Provisioned Concurrency ช่วยเตรียมสภาพแวดล้อมให้พร้อมทำงานตลอดเวลา เพื่อแก้ปัญหาความล่าช้าจากการเริ่มรันครั้งแรก (Cold Start)"
+  },
+  {
+    "id": 707,
+    "mod": 7,
+    "q": "Which AWS Lambda configuration setting might a developer use to manage function errors when configuring an Amazon Simple Notification Service (Amazon SNS) topic as the event source for a Lambda function? (Select TWO.)",
+    "opts": [
+      "State machines",
+      "File systems",
+      "Destinations",
+      "Virtual private cloud",
+      "Asynchronous invocations"
+    ],
+    "ans": [
+      "Destinations",
+      "Asynchronous invocations"
+    ],
+    "type": "multi",
+    "count": 2,
+    "rationale": "เมื่อ SNS เรียก Lambda แบบ Asynchronous เราสามารถกำหนด 'Destinations' เพื่อจัดการว่าถ้าสำเร็จหรือล้มเหลวให้ส่งผลลัพธ์ไปที่ไหนต่อ"
+  },
+  {
+    "id": 708,
+    "mod": 7,
+    "q": "A zipped deployment package including code and custom libraries is 75 MB in size. Which AWS Lambda deployment option should be used?",
+    "opts": [
+      "Copy the code into the Lambda console editor to create and deploy the function.",
+      "Upload a .zip file from an integrated development environment (IDE) to load the deployment package directly into the Lambda console.",
+      "Upload the deployment package to an Amazon Simple Storage Service (Amazon S3) bucket, and specify the bucket name and object key on the Lambda console.",
+      "Upload the deployment package to an Amazon Elastic Block Store (Amazon EBS) volume, and use the File Systems configuration to reference it."
+    ],
+    "ans": [
+      "Upload the deployment package to an Amazon Simple Storage Service (Amazon S3) bucket, and specify the bucket name and object key on the Lambda console."
+    ],
+    "type": "single",
+    "rationale": "หากไฟล์ Deployment มีขนาดใหญ่ (เกิน 50 MB) AWS แนะนำให้ฝากไฟล์ไว้ที่ S3 แล้วค่อยระบุตำแหน่งไฟล์ในหน้า Console แทนการอัปโหลดตรง"
+  },
+  {
+    "id": 709,
+    "mod": 7,
+    "q": "A function's Amazon Resource Name (ARN) is as follows: arn:aws:lambda:aws-region:acct-id:function:helloworld:PROD. Which statement about this function is correct, based on its ARN?",
+    "opts": [
+      "This ARN will invoke the immutable PROD version of the function.",
+      "This ARN will invoke the version of the function that is currently associated with the PROD alias.",
+      "This ARN will invoke the function and include the AWS Lambda layer that is named PROD.",
+      "This ARN will deploy the helloworld function into the PROD account."
+    ],
+    "ans": [
+      "This ARN will invoke the version of the function that is currently associated with the PROD alias."
+    ],
+    "type": "single",
+    "rationale": "ส่วนท้ายของ ARN (helloworld:PROD) หมายถึงการชี้ไปยัง 'Alias' ชื่อ PROD ซึ่งจะเรียก Version ของฟังก์ชันที่ผูกไว้กับชื่อนั้น"
+  },
+  {
+    "id": 710,
+    "mod": 7,
+    "q": "Users of a serverless application have reported errors that occur when they try to retrieve order information. Assuming that AWS X-Ray is enabled, what is the first step the developer might take in X-Ray to start troubleshooting the reported issues quickly?",
+    "opts": [
+      "Drill down into the most recent traces to look for errors.",
+      "Search for metadata that is related to the users who are reporting issues.",
+      "Add annotations that the developer can use to start grouping and filtering traces.",
+      "Use the service map to visually locate errors across the application."
+    ],
+    "ans": [
+      "Use the service map to visually locate errors across the application."
+    ],
+    "type": "single",
+    "rationale": "Service Map ช่วยให้เห็นความสัมพันธ์ระหว่างบริการต่างๆ และระบุจุดที่เกิด Error ได้รวดเร็วที่สุดผ่านภาพรวมทางภาพ"
+  },
+  {
+    "id": 801,
+    "mod": 8,
+    "q": "Which option describes a benefit that led the shipping industry and the software industry to use containers?",
+    "opts": [
+      "Infrastructure providers can create strong dependencies between their platform and the types of containers that they choose to work with.",
+      "The abstraction of details of what's being \"shipped\" increases the agility of a system.",
+      "Increased visibility into the details of what's being \"shipped\" helps each point in the system to provide the right type of support.",
+      "The ability to use nonstandard types of containers gives producers flexibility."
+    ],
+    "ans": [
+      "The abstraction of details of what's being \"shipped\" increases the agility of a system."
+    ],
+    "type": "single",
+    "rationale": "Container ช่วยปกปิดรายละเอียดภายในแอพ ทำให้ออกแบบระบบได้ยืดหยุ่น ย้ายไปรันที่ไหนก็ได้โดยไม่ต้องกังวลเรื่อง Infrastructure"
+  },
+  {
+    "id": 802,
+    "mod": 8,
+    "q": "Which options are components of a container? (Select TWO.)",
+    "opts": [
+      "Host server",
+      "Runtime engine",
+      "Operating system",
+      "Application code",
+      "Virtual machine"
+    ],
+    "ans": [
+      "Runtime engine",
+      "Application code"
+    ],
+    "type": "multi",
+    "count": 2,
+    "rationale": "Container ประกอบด้วยส่วนหลักๆ คือ Runtime Engine (เช่น Docker) และโค้ดของแอปพลิเคชันพร้อม dependencies"
+  },
+  {
+    "id": 803,
+    "mod": 8,
+    "q": "Which statement about Docker containers is true?",
+    "opts": [
+      "A container is a runnable instance of an image.",
+      "A container registry is a template to launch containers.",
+      "A container image is a writeable template.",
+      "A container layer is a thin read-only layer that is associated with a running container."
+    ],
+    "ans": [
+      "A container is a runnable instance of an image."
+    ],
+    "type": "single",
+    "rationale": "Image คือพิมพ์เขียว (Blueprint) ส่วน Container คือสิ่งที่ 'รันอยู่จริง' จากพิมพ์เขียวนั้น"
+  },
+  {
+    "id": 804,
+    "mod": 8,
+    "q": "Which Docker CLI command creates a container named my_app_l from the image named node_app?",
+    "opts": [
+      "docker run --name my_app_l node_app",
+      "docker build --tag my_app_l",
+      "docker exec -it my_app_l sh",
+      "docker images my_app_l from node_app"
+    ],
+    "ans": [
+      "docker run --name my_app_l node_app"
+    ],
+    "type": "single",
+    "rationale": "คำสั่ง docker run ใช้เพื่อสร้างและเริ่มทำงาน Container จาก Image ที่กำหนด พร้อมตั้งชื่อผ่าน --name"
+  },
+  {
+    "id": 805,
+    "mod": 8,
+    "q": "Which statement about a Dockerfile is true?",
+    "opts": [
+      "A Dockerfile is a YAML file that provides instructions to create a container image.",
+      "Each instruction in a Dockerfile creates a read-only layer in the image.",
+      "If a developer changes the Dockerfile and rebuilds the image, all layers of the image must be rebuilt.",
+      "Developers cannot use the Dockerfile to run scripts that would run after the container is instantiated."
+    ],
+    "ans": [
+      "Each instruction in a Dockerfile creates a read-only layer in the image."
+    ],
+    "type": "single",
+    "rationale": "ทุกๆ บรรทัดคำสั่งใน Dockerfile จะสร้างเป็น Layer แบบ Read-only ซ้อนทับกันจนเกิดเป็น Container Image"
+  },
+  {
+    "id": 806,
+    "mod": 8,
+    "q": "A developer wants to migrate a monolithic shopping website to a microservice-based application. Which option reflects a reason to choose containers?",
+    "opts": [
+      "Each container can use the language and technology that are best suited for the service.",
+      "Containerized components are not isolated, so the application will evolve as a singular system.",
+      "Containers are well-suited to designs that avoid the use of temporary resources.",
+      "Containers separate your dependencies and libraries into their own objects."
+    ],
+    "ans": [
+      "Each container can use the language and technology that are best suited for the service."
+    ],
+    "type": "single",
+    "rationale": "Container ช่วยให้แต่ละ Microservice สามารถใช้ภาษาหรือ Stack ที่ต่างกันได้โดยไม่รบกวนกัน (Polyglot persistence/development)"
+  },
+  {
+    "id": 807,
+    "mod": 8,
+    "q": "A developer recently built a proof-of-concept application using containers, and the business owner wants to roll it out to production. Which option reflects a primary reason that the developer might use a container orchestration service?",
+    "opts": [
+      "To schedule container starts and stops and determine where to place containers",
+      "To base their containers on third-party images",
+      "To remove the requirement to use a container registry",
+      "To receive automated recommendations about how to improve their application code to run on containers"
+    ],
+    "ans": [
+      "To schedule container starts and stops and determine where to place containers"
+    ],
+    "type": "single",
+    "rationale": "Orchestration (เช่น ECS หรือ Kubernetes) ช่วยจัดการเรื่องการวาง Container (Placement) และการสเกลอัตโนมัติให้เป็นระบบ"
+  },
+  {
+    "id": 808,
+    "mod": 8,
+    "q": "Which statement about the Amazon Elastic Container Service (Amazon ECS) is true?",
+    "opts": [
+      "Amazon ECS is a highly scalable container orchestration service that supports Docker containers.",
+      "Amazon ECS requires the use of the Amazon Elastic Container Registry (Amazon ECR) for container images.",
+      "Amazon ECS supports launching containers in Amazon EC2 or AWS Lambda.",
+      "With Amazon ECS, you can deploy applications to containers even if they have not been architected specifically to run on containers."
+    ],
+    "ans": [
+      "Amazon ECS is a highly scalable container orchestration service that supports Docker containers."
+    ],
+    "type": "single",
+    "rationale": "Amazon ECS เป็นบริการหลักของ AWS ที่ใช้บริหารจัดการ Docker Container ให้ทำงานได้อย่างมีประสิทธิภาพและสเกลได้ง่าย"
+  },
+  {
+    "id": 809,
+    "mod": 8,
+    "q": "What is the name for a logical collection of AWS Elastic Beanstalk components, which is conceptually similar to a folder?",
+    "opts": [
+      "Environment",
+      "Platform",
+      "Application",
+      "Environment tier"
+    ],
+    "ans": [
+      "Application"
+    ],
+    "type": "single",
+    "rationale": "ใน Beanstalk คำว่า 'Application' คือระดับบนสุดที่รวบรวม Version และ Environment ต่างๆ เข้าไว้ด้วยกัน"
+  },
+  {
+    "id": 810,
+    "mod": 8,
+    "q": "A developer wants to do canary testing on a new deployment. Which AWS Elastic Beanstalk deployment policy option should the developer use?",
+    "opts": [
+      "Immutable",
+      "Rolling with batch",
+      "Traffic Splitting",
+      "Blue/Green"
+    ],
+    "ans": [
+      "Traffic Splitting"
+    ],
+    "type": "single",
+    "rationale": "Traffic Splitting ช่วยให้คุณแบ่งเปอร์เซ็นต์ของผู้ใช้งาน (เช่น 10%) ไปลองใช้ระบบเวอร์ชันใหม่เพื่อทดสอบความเสถียร (Canary)"
+  },
+  {
+    "id": 901,
+    "mod": 9,
+    "q": "An architect suggests that the developers implement caching on an existing application to address performance issues. Which option describes factors that the developers should consider when they decide where to add caching?",
+    "opts": [
+      "Avoid caching for data queries that are slow and expensive to run.",
+      "Review the data and its access patterns. Data that changes rapidly but is infrequently accessed should be cached.",
+      "Consider the tolerance for stale data in each context where the data is used.",
+      "Add as much caching in as many places as you can as early in development as possible."
+    ],
+    "ans": [
+      "Consider the tolerance for stale data in each context where the data is used."
+    ],
+    "type": "single",
+    "rationale": "ความทนทานต่อ 'ข้อมูลเก่า' (Stale Data) เป็นหัวใจสำคัญ เพราะแต่ละฟังก์ชันของแอปรับความเก่าได้ไม่เท่ากัน"
+  },
+  {
+    "id": 902,
+    "mod": 9,
+    "q": "A developer has determined that an in-memory key-value store would improve performance of their application's queries. They want to keep the solution as simple as possible and need to support read replicas?",
+    "opts": [
+      "Amazon ElastiCache for Memcached",
+      "Amazon ElastiCache for Redis",
+      "Amazon CloudFront Functions",
+      "Lambda@Edge"
+    ],
+    "ans": [
+      "Amazon ElastiCache for Redis"
+    ],
+    "type": "single",
+    "rationale": "Redis เป็น Key-value store ที่รองรับการทำ Read Replicas เพื่อช่วยเรื่องความเร็วในการอ่านข้อมูลมหาศาล"
+  },
+  {
+    "id": 903,
+    "mod": 9,
+    "q": "Amazon ElastiCache is being added to an application to improve response times and alleviate database pressure. The backend database for the application is an Amazon Relational Database Service (Amazon RDS) database. Which task would be the responsibility of the application developer?",
+    "opts": [
+      "Applying software patches to the cache instances",
+      "Writing code to check the health of the cluster before writing to the cache",
+      "Writing code that looks for the requested data in the cache and, if the data is not found, requests it from the origin",
+      "Write code to integrate the cache with the Amazon RDS instances that it will be reading from"
+    ],
+    "ans": [
+      "Writing code that looks for the requested data in the cache and, if the data is not found, requests it from the origin"
+    ],
+    "type": "single",
+    "rationale": "นี่คือหลักการของ 'Lazy Loading' ที่นักพัฒนาต้องเขียน Logic เช็คของใน Cache ก่อน ถ้าไม่มีค่อยไปดึงจาก Database จริง"
+  },
+  {
+    "id": 904,
+    "mod": 9,
+    "q": "Which statement about Amazon ElastiCache is true?",
+    "opts": [
+      "A node is a variable-size chunk of secure, network-attached RAM.",
+      "Your application connects to an ElastiCache node by using a unique address called an endpoint.",
+      "With the Memcached engine, data is partitioned across shards in a cluster.",
+      "Every node within a cluster must run the same cache engine, but the nodes can run on different instance types."
+    ],
+    "ans": [
+      "Your application connects to an ElastiCache node by using a unique address called an endpoint."
+    ],
+    "type": "single",
+    "rationale": "การเชื่อมต่อกับ Cache Node ของ ElastiCache จะต้องทำผ่าน 'Endpoint' ที่ AWS กำหนดให้"
+  },
+  {
+    "id": 905,
+    "mod": 9,
+    "q": "A developer has been asked to address complaints from customers in the London area about the performance of a web-based application that is hosted in New York. Which option might the developer implement?",
+    "opts": [
+      "Use Amazon CloudFront to replicate the application code on Amazon Elastic Compute Cloud (Amazon EC2) instances in the London Region.",
+      "Set up a CloudFront distribution that can serve static content from edge locations that are closer to UK users.",
+      "Set up a CloudFront regional edge location in the London Region.",
+      "Set up one CloudFront edge location in New York and one in London."
+    ],
+    "ans": [
+      "Set up a CloudFront distribution that can serve static content from edge locations that are closer to UK users."
+    ],
+    "type": "single",
+    "rationale": "CloudFront ช่วยลดความหน่วง (Latency) โดยการนำไฟล์ไปเก็บไว้ที่ Edge Location ที่อยู่ใกล้ผู้ใช้งานมากที่สุด"
+  },
+  {
+    "id": 906,
+    "mod": 9,
+    "q": "A developer has been asked to increase the cache hit ratio for their Amazon CloudFront distribution. Which option should they try?",
+    "opts": [
+      "Include only the minimum necessary values in the cache key.",
+      "Decrease the maximum time to live (TTL) setting in a cache policy.",
+      "Decrease the max-age setting in a file's Cache-Control header.",
+      "Increase the cache hit setting in a cache policy."
+    ],
+    "ans": [
+      "Include only the minimum necessary values in the cache key."
+    ],
+    "type": "single",
+    "rationale": "Cache Key ยิ่งเจาะจงน้อยเท่าไหร่ โอกาสที่คำขอจากหลายคนจะตรงกับ Key เดิม (Cache Hit) ก็ยิ่งสูงขึ้นเท่านั้น"
+  },
+  {
+    "id": 907,
+    "mod": 9,
+    "q": "Which statement about Amazon CloudFront cached file expiration is true?",
+    "opts": [
+      "Each file in the cache automatically expires after 24 hours, and you cannot modify this setting.",
+      "After a file expires, the next time the edge location gets a user request for the file, CloudFront forwards the request to the origin server.",
+      "When the origin receives a request, the origin sends the latest version of the file regardless of whether it is the same as the expired version in the cache.",
+      "You can control cache file duration with CloudFront cache policy settings or through Cache-Control settings in the origin file headers. However, you cannot combine these options."
+    ],
+    "ans": [
+      "After a file expires, the next time the edge location gets a user request for the file, CloudFront forwards the request to the origin server."
+    ],
+    "type": "single",
+    "rationale": "เมื่อ Cache หมดอายุ CloudFront จะวิ่งกลับไปถามที่ต้นทาง (Origin) เพื่อเช็คว่าไฟล์มีการอัปเดตหรือไม่"
+  },
+  {
+    "id": 908,
+    "mod": 9,
+    "q": "Which use case suggests the use of Amazon CloudFront Functions?",
+    "opts": [
+      "A function that redirects the viewer to a different URL and adds a custom response header",
+      "A function that uses a third-party library",
+      "A function that requires network access to use external services for processing",
+      "A function that requires access to the body of HTTP requests"
+    ],
+    "ans": [
+      "A function that redirects the viewer to a different URL and adds a custom response header"
+    ],
+    "type": "single",
+    "rationale": "CloudFront Functions เหมาะกับงานเบาๆ ที่ต้องการความเร็วสูงมาก เช่น การแก้ Header หรือทำ URL Redirect ที่ Edge"
+  },
+  {
+    "id": 909,
+    "mod": 9,
+    "q": "Which statement reflects a benefit of lazy loading as a caching strategy?",
+    "opts": [
+      "Lazy loading avoids filling up the cache with data that is not requested.",
+      "With lazy loading, data in the cache never becomes stale.",
+      "With lazy loading, every write involves two trips—a write to the cache and a write to the database—which adds latency to the process.",
+      "Lazy loading might result in cache churn. The cache might be updated often if certain records are updated repeatedly."
+    ],
+    "ans": [
+      "Lazy loading avoids filling up the cache with data that is not requested."
+    ],
+    "type": "single",
+    "rationale": "Lazy Loading ช่วยประหยัดพื้นที่แคช เพราะจะเก็บเฉพาะข้อมูลที่ 'มีคนเรียกใช้งานจริง' เท่านั้น"
+  },
+  {
+    "id": 910,
+    "mod": 9,
+    "q": "A developer has been asked whether caching might improve the performance of their online bidding application. How should they answer this question?",
+    "opts": [
+      "Caching probably will not yield much performance improvement for this type of application.",
+      "Caching might improve performance by reducing the number of hits to the backend database. However, caching cannot improve performance issues that occur between the client and the web server.",
+      "Using different types of caching at each application layer might improve both the frontend and backend performance.",
+      "Caching might greatly improve performance if the application is compute heavy, but if the application is read heavy, a cache will not provide much benefit."
+    ],
+    "ans": [
+      "Using different types of caching at each application layer might improve both the frontend and backend performance."
+    ],
+    "type": "single",
+    "rationale": "การทำ Cache หลายชั้น (Multi-layer Caching) ตั้งแต่ระดับหน้าบ้านไปจนถึงฐานข้อมูล จะช่วยให้ระบบโดยรวมลื่นไหลที่สุด"
+  },
+  {
+    "id": 1001,
+    "mod": 10,
+    "q": "Which option describes how a message queue processes messages?",
+    "opts": [
+      "The queue polls producers for new messages.",
+      "Consumers poll the queue for messages.",
+      "The queue broadcasts messages to consumers.",
+      "Consumers notify the queue when a message has been successfully processed. The queue configuration determines whether the message should be available to other consumers."
+    ],
+    "ans": [
+      "Consumers poll the queue for messages."
+    ],
+    "type": "single",
+    "rationale": "ในระบบ Queue (SQS) ตัวรับสาร (Consumer) จะต้องเป็นฝ่ายส่งคำขอ (Poll) เพื่อดึงข้อมูลออกมาประมวลผลเอง ไม่ใช่การที่คิวส่งข้อมูลออกไปหา (Push)"
+  },
+  {
+    "id": 1002,
+    "mod": 10,
+    "q": "Which option describes how publish/subscribe (pub/sub) messaging works?",
+    "opts": [
+      "Producers send messages to subscribers.",
+      "Subscribers poll topics for new messages.",
+      "When a topic receives a new message, the topic sends the message to the first subscriber who responds to a notification.",
+      "A new topic message is pushed out to all topic subscribers."
+    ],
+    "ans": [
+      "A new topic message is pushed out to all topic subscribers."
+    ],
+    "type": "single",
+    "rationale": "รูปแบบ Pub/Sub (เช่น SNS) จะเน้นการกระจายข่าวสารแบบ 'Fan-out' โดยเมื่อมีข้อความใหม่เข้า Topic ระบบจะดัน (Push) ข้อความนั้นไปหาผู้ติดตามทุกคนทันที"
+  },
+  {
+    "id": 1003,
+    "mod": 10,
+    "q": "A developer wants to add an Amazon Simple Queue Service (Amazon SQS) queue to decouple incoming order requests from a backend database. Which Amazon SQS operations might be part of this update?",
+    "opts": [
+      "Use the SendMessage operation with the QueueURL mapped to the database endpoint to put messages on the queue.",
+      "Use the ReceiveMessage operation with MaxNumberOfMessages set to 5 to retrieve up to 5 messages off the queue at one time.",
+      "Use the DeleteMessage operation to change the visibility of the message as soon as the ReceiptHandle is received.",
+      "Use the ReceiveMessage operation with the WaitTimeSeconds parameter set to O to reduce the number of empty requests."
+    ],
+    "ans": [
+      "Use the ReceiveMessage operation with MaxNumberOfMessages set to 5 to retrieve up to 5 messages off the queue at one time."
+    ],
+    "type": "single",
+    "rationale": "การตั้งค่า MaxNumberOfMessages ช่วยให้เราดึงข้อความเป็นชุด (Batch) ได้สูงสุด 10 ข้อความในครั้งเดียว ช่วยลดจำนวน API Call และประหยัดค่าใช้จ่าย"
+  },
+  {
+    "id": 1004,
+    "mod": 10,
+    "q": "A tester reports that Amazon Simple Queue Service (Amazon SQS) messages are being processed more than once. The developer finds that processing servers are not completing as quickly as expected, and messages are made available to other consumers before the prior consumer deletes them. Which option might reduce occurrences of this issue?",
+    "opts": [
+      "Increase the visibility timeout.",
+      "Increase maxReceiveCount.",
+      "Increase MaxNumberOfMessages.",
+      "Increase the number of producers on the queue."
+    ],
+    "ans": [
+      "Increase the visibility timeout."
+    ],
+    "type": "single",
+    "rationale": "Visibility Timeout คือเวลาที่ข้อความจะถูก 'ซ่อน' ขณะประมวลผล หากงานใช้เวลานานเกินไปจนเวลาหมด ข้อความจะกลับมาปรากฏในคิวทำให้เกิดการทำงานซ้ำ การเพิ่มเวลานี้จะช่วยแก้ปัญหาได้"
+  },
+  {
+    "id": 1005,
+    "mod": 10,
+    "q": "For an order-processing application that uses an Amazon Simple Queue Service (Amazon SQS) queue, a developer finds that an older version of the client generates order records that fail the backend process. The failures cause a bottleneck on the queue. How might the developer reduce the impact of the failed records?",
+    "opts": [
+      "Increase the visibility timeout and set a high value for MaxNumberOfMessages.",
+      "Add a dead-letter queue and set a low maxReceiveCount.",
+      "Use long polling and set a high wait time.",
+      "Change the queue type from standard to First-ln-First-Out (FIFO) and set a high throughput rate."
+    ],
+    "ans": [
+      "Add a dead-letter queue and set a low maxReceiveCount."
+    ],
+    "type": "single",
+    "rationale": "Dead-letter Queue (DLQ) ใช้สำหรับแยกข้อความที่มีปัญหา (Poison messages) ออกไปเก็บไว้ต่างหากเพื่อไม่ให้ขวางทางข้อความดีๆ โดยกำหนดผ่านจำนวนครั้งที่พยายามประมวลผลซ้ำ (maxReceiveCount)"
+  },
+  {
+    "id": 1006,
+    "mod": 10,
+    "q": "Which statement about Amazon Simple Queue Service (Amazon SQS) polling options is true?",
+    "opts": [
+      "By default, when you make a ReceiveMessage API call, Amazon SQS performs long polling.",
+      "When long polling is configured, WaitTimeSeconds is set to O.",
+      "When short polling is configured, Amazon SQS queries all of its servers.",
+      "When short polling is configured, Amazon SQS samples a subset of its servers."
+    ],
+    "ans": [
+      "When short polling is configured, Amazon SQS samples a subset of its servers."
+    ],
+    "type": "single",
+    "rationale": "Short Polling จะสุ่มตรวจข้อมูลจากเซิร์ฟเวอร์ย่อยๆ บางส่วนเท่านั้น ซึ่งรวดเร็วกว่าแต่อาจได้รับข้อความไม่ครบในครั้งเดียว ในขณะที่ Long Polling จะรอนานกว่าแต่ได้ข้อมูลแน่นอนและประหยัด API call"
+  },
+  {
+    "id": 1007,
+    "mod": 10,
+    "q": "Which statement about Amazon Simple Notification Service (Amazon SNS) is true?",
+    "opts": [
+      "An SNS topic is a logical access point, which acts as a communication channel.",
+      "A publisher can only send messages to topics that they have created.",
+      "By default, different subscribers to a topic receive different messages.",
+      "Amazon SNS defines a single delivery policy, which is applied to all delivery protocols."
+    ],
+    "ans": [
+      "An SNS topic is a logical access point, which acts as a communication channel."
+    ],
+    "type": "single",
+    "rationale": "SNS Topic เปรียบเสมือน 'ศูนย์กระจายสัญญาณ' (Logical access point) ที่รวบรวมข้อความจากผู้ส่ง แล้วส่งกระจายไปยังผู้รับหลายๆ รูปแบบพร้อมกัน"
+  },
+  {
+    "id": 1008,
+    "mod": 10,
+    "q": "An Amazon Simple Notification Service (Amazon SNS) topic receives messages about orders. An AWS Lambda function that processes canceled orders is subscribed to the topic. How might the developer reduce costs by only invoking the Lambda function for canceled orders?",
+    "opts": [
+      "Put an Amazon Simple Queue Service (Amazon SQS) queue in front of the Lambda function.",
+      "Separate the new order and cancel order messages to be sent by two different publishers.",
+      "Set up a filter policy so that the Lambda function subscription only receives cancel order messages.",
+      "Use the ConfirmSubscription operation to limit which messages the Lambda function receives."
+    ],
+    "ans": [
+      "Set up a filter policy so that the Lambda function subscription only receives cancel order messages."
+    ],
+    "type": "single",
+    "rationale": "Filter Policy ช่วยให้เราเลือกรับเฉพาะข้อความที่ต้องการ (เช่น เฉพาะ Order ที่ยกเลิก) ทำให้ไม่ต้องเรียก Lambda มาทำงานโดยไม่จำเป็น ช่วยประหยัดค่าใช้จ่ายได้มาก"
+  },
+  {
+    "id": 1009,
+    "mod": 10,
+    "q": "A developer needs to build a custom application to put customer application log records onto an Amazon Kinesis data stream. What should they use to build the application?",
+    "opts": [
+      "Use the Kinesis API.",
+      "Use the Kinesis Producer Library (KPL).",
+      "Use the Kinesis Client Library (KCL).",
+      "Use Amazon Kinesis Data Analytics."
+    ],
+    "ans": [
+      "Use the Kinesis Producer Library (KPL)."
+    ],
+    "type": "single",
+    "rationale": "KPL เป็น Library ที่ถูกออกแบบมาเพื่อส่งข้อมูล (Put records) ขึ้น Kinesis ได้อย่างมีประสิทธิภาพสูงสุด รองรับการทำ Batching และการจัดการ Retry อัตโนมัติ"
+  },
+  {
+    "id": 1010,
+    "mod": 10,
+    "q": "Which statement about Amazon Kinesis Data Streams is true?",
+    "opts": [
+      "When a record is added to the stream, the record is available until a consumer deletes it.",
+      "The data records in a data stream are distributed into shards.",
+      "A standard data stream can have one consumer. With the enhanced fanout option, you can add multiple consumers.",
+      "A stream consumer must delete the records that it processes successfully."
+    ],
+    "ans": [
+      "The data records in a data stream are distributed into shards."
+    ],
+    "type": "single",
+    "rationale": "หัวใจของ Kinesis Streams คือ Shards ซึ่งเป็นหน่วยประมวลผลที่ช่วยให้เราสามารถขยายขนาด (Scale-out) เพื่อรับส่งข้อมูลปริมาณมหาศาลพร้อมกันได้"
+  },
+  {
+    "id": 1101,
+    "mod": 11,
+    "q": "Which scenario suggests the need for a task coordination service such as AWS Step Functions?",
+    "opts": [
+      "A website that serves static content is expanding its reach to a global audience.",
+      "A serverless application must run a series of AWS Lambda functions that are dependent on each other.",
+      "A monolithic application that is written in Java is updating its technology stack.",
+      "A reporting application must update its calculation logic to provide more analytical data to business users."
+    ],
+    "ans": [
+      "A serverless application must run a series of AWS Lambda functions that are dependent on each other."
+    ],
+    "type": "single",
+    "rationale": "Step Functions เหมาะกับการจัดการลำดับงาน (Workflow) ที่ซับซ้อน โดยเฉพาะเมื่อเรามี Lambda หลายตัวที่ต้องทำงานต่อเนื่องกันหรือรอผลจากกันและกัน"
+  },
+  {
+    "id": 1102,
+    "mod": 11,
+    "q": "Which statement describes a benefit of using AWS Step Functions for an application?",
+    "opts": [
+      "Step Functions integrates with state machines so that developers can transition between their Step Functions workflow and their state machine workflow.",
+      "Step Functions can be configured with Amazon EC2 Auto Scaling to scale up and down.",
+      "Step Functions can be defined by using either Python or Node.js.",
+      "Developers can use Step Functions to build visual workflows."
+    ],
+    "ans": [
+      "Developers can use Step Functions to build visual workflows."
+    ],
+    "type": "single",
+    "rationale": "จุดเด่นที่สุดคือหน้า Visual Workflow ที่ช่วยให้เราเห็นสถานะการทำงานในแต่ละขั้นตอนเป็นรูปภาพ ทำให้การ Debug และการออกแบบทำได้ง่ายมาก"
+  },
+  {
+    "id": 1103,
+    "mod": 11,
+    "q": "What is the role of the Task state type in AWS Step Functions?",
+    "opts": [
+      "Task states are used to stop a failed workflow.",
+      "Task states perform a unit of work.",
+      "Task states provide branching logic.",
+      "Task states tell the state machine the order to perform the steps in."
+    ],
+    "ans": [
+      "Task states perform a unit of work."
+    ],
+    "type": "single",
+    "rationale": "Task State คือสถานะที่ 'ลงมือทำงานจริง' เช่น การเรียกใช้งาน Lambda, การรันงานบน Container หรือการเชื่อมต่อกับบริการอื่นๆ"
+  },
+  {
+    "id": 1104,
+    "mod": 11,
+    "q": "An application that processes order returns must complete different steps depending on whether the return is within 30 days of purchase. Which AWS Step Functions state could a developer use to implement this logic?",
+    "opts": [
+      "Parallel",
+      "Task",
+      "Choice",
+      "Wait"
+    ],
+    "ans": [
+      "Choice"
+    ],
+    "type": "single",
+    "rationale": "Choice State ทำหน้าที่เหมือนคำสั่ง if/else ในการเขียนโปรแกรม เพื่อตัดสินใจว่าจะให้ Workflow เดินหน้าไปทางไหนตามเงื่อนไขที่กำหนด"
+  },
+  {
+    "id": 1105,
+    "mod": 11,
+    "q": "An application that processes order returns must run the same AWS Lambda function for each item in an order. Which AWS Step Functions state could a developer use to implement this logic?",
+    "opts": [
+      "Parallel",
+      "Pass",
+      "Map",
+      "Task"
+    ],
+    "ans": [
+      "Map"
+    ],
+    "type": "single",
+    "rationale": "Map State ใช้สำหรับการวนลูป (Iterate) เพื่อประมวลผลรายการในอาร์เรย์ (เช่น สินค้าหลายรายการในหนึ่งคำสั่งซื้อ) ทีละชิ้นพร้อมกันได้"
+  },
+  {
+    "id": 1106,
+    "mod": 11,
+    "q": "Which statement is true for both Succeed states and Fail states?",
+    "opts": [
+      "Succeed states and Fail states do not include the Next field.",
+      "The End field is not required because Succeed states and Fail states are not terminal states.",
+      "The Type field is optional for Succeed states and Fail states.",
+      "The End field is required because Succeed states and Fail states are terminal states."
+    ],
+    "ans": [
+      "Succeed states and Fail states do not include the Next field."
+    ],
+    "type": "single",
+    "rationale": "ทั้ง Succeed และ Fail คือจุดจบของ Workflow (Terminal states) ดังนั้นจึงไม่จำเป็นต้องระบุขั้นตอนถัดไป (Next) อีก"
+  },
+  {
+    "id": 1107,
+    "mod": 11,
+    "q": "An application that processes order returns must run two independent audit checks. When both checks are successfully completed, the return authorization step is run. Which AWS Step Functions state could a developer use to implement this logic?",
+    "opts": [
+      "Parallel",
+      "Task",
+      "Choice",
+      "Wait"
+    ],
+    "ans": [
+      "Parallel"
+    ],
+    "type": "single",
+    "rationale": "Parallel State ช่วยให้เราสามารถรันหลายขั้นตอนที่แยกจากกันได้พร้อมๆ กัน และรอให้ทุกอย่างเสร็จสิ้นก่อนจะไปขั้นตอนถัดไป"
+  },
+  {
+    "id": 1108,
+    "mod": 11,
+    "q": "How is a taskToken used in an AWS Step Functions use case that includes a manual approval step?",
+    "opts": [
+      "A taskToken is generated when the workflow hits a Wait state. The taskToken tracks how long the workflow has been waiting for a task to finish.",
+      "A taskToken is used to transition between each state in the workflow and is defined in the Next field.",
+      "A taskToken is returned as part of a call to the GetActivityTask action and is used when calling the SendTaskSuccess action to associate a result with a task.",
+      "A taskToken is an output of the Success state in a synchronous Step Functions Express workflow. A taskToken is used to confirm success of all tasks."
+    ],
+    "ans": [
+      "A taskToken is returned as part of a call to the GetActivityTask action and is used when calling the SendTaskSuccess action to associate a result with a task."
+    ],
+    "type": "single",
+    "rationale": "taskToken คือรหัสอ้างอิงของงานที่ระบบรอคำยืนยัน เมื่อมีการอนุมัติ (เช่น จากมนุษย์) ระบบภายนอกจะส่ง Token นี้กลับมาพร้อมผลลัพธ์เพื่อให้ Workflow เดินหน้าต่อ"
+  },
+  {
+    "id": 1109,
+    "mod": 11,
+    "q": "Which use case is a good fit for AWS Step Functions Express workflows?",
+    "opts": [
+      "All workflows in the application must be auditable up to 90 days after a completed run.",
+      "The workflow requires a step that will run an application that is hosted on an Amazon Elastic Compute Cloud (Amazon EC2) instance.",
+      "The workflow takes between 30 minutes and 1 hour to run.",
+      "The workflow must support a very high rate of events that come from Internet of Things (IoT) devices."
+    ],
+    "ans": [
+      "The workflow must support a very high rate of events that come from Internet of Things (IoT) devices."
+    ],
+    "type": "single",
+    "rationale": "Express Workflows ถูกออกแบบมาเพื่อความเร็วสูงมาก (High throughput) ในราคาประหยัด สำหรับงานที่จบไวและมีจำนวนมหาศาล เช่น ข้อมูลจากอุปกรณ์ IoT"
+  },
+  {
+    "id": 1110,
+    "mod": 11,
+    "q": "Which statement about AWS Step Functions is true?",
+    "opts": [
+      "A developer can use Amazon API Gateway to associate their Step Functions APIs with methods in an API Gateway API.",
+      "Step Functions has quotas at the account level regarding the number of registered state machines, but no quotas are related to individual Step Functions runs.",
+      "Step Functions must be created in the visual editor on the Step Functions console but can be edited with the AWS SDKs.",
+      "A developer can use the Describe API action to get a summary of all state machines and the number of times that each has been run."
+    ],
+    "ans": [
+      "A developer can use Amazon API Gateway to associate their Step Functions APIs with methods in an API Gateway API."
+    ],
+    "type": "single",
+    "rationale": "เราสามารถนำ API Gateway มาวางข้างหน้าเพื่อเปลี่ยนคำขอ HTTP จากภายนอกให้กลายเป็นการสั่งเริ่มทำงาน (Execution) ของ Step Functions ได้โดยตรง"
+  },
+  {
+    "id": 1201,
+    "mod": 12,
+    "q": "Which statement about creating secure connections is true?",
+    "opts": [
+      "Both Secure Sockets Layer (SSL) and Transport Layer Security (TLS) are standards that AWS developed for secure communications.",
+      "SSL uses certificates to establish website identity, but TLS does not.",
+      "Both SSL and TLS encrypt network communications between connected resources.",
+      "SSL is a newer version of TLS. Both are used to establish the identify of websites."
+    ],
+    "ans": [
+      "Both SSL and TLS encrypt network communications between connected resources."
+    ],
+    "type": "single",
+    "rationale": "SSL และ TLS คือโปรโตคอลความปลอดภัยที่ใช้เข้ารหัสข้อมูลระหว่างต้นทางและปลายทาง เพื่อป้องกันการดักฟัง (Eavesdropping) โดย TLS คือรุ่นที่ใหม่กว่าและปลอดภัยกว่า"
+  },
+  {
+    "id": 1202,
+    "mod": 12,
+    "q": "Which step in the secure connection process is the responsibility of the certificate authority (CA)?",
+    "opts": [
+      "Issue a certificate.",
+      "Verify whether the certificate is from a trusted source.",
+      "Send an encrypted session key.",
+      "Send a certificate and public key to the client."
+    ],
+    "ans": [
+      "Issue a certificate."
+    ],
+    "type": "single",
+    "rationale": "หน่วยงานออกใบรับรอง (CA) มีหน้าที่หลักในการตรวจสอบความเป็นเจ้าของโดเมนและออกใบรับรองดิจิทัล (Certificate) เพื่อยืนยันตัวตนของเว็บไซต์นั้นๆ"
+  },
+  {
+    "id": 1203,
+    "mod": 12,
+    "q": "Which statement about AWS Certificate Manager (ACM) is true?",
+    "opts": [
+      "ACM can provision public certificates, but for private certificates, developers must produce their own certificate and connect it to ACM.",
+      "ACM manages certificate renewals for both public and private certificates.",
+      "ACM costs are based on the number of active public certificates in an AWS account.",
+      "A developer must configure a load balancer to use ACM certificates."
+    ],
+    "ans": [
+      "ACM manages certificate renewals for both public and private certificates."
+    ],
+    "type": "single",
+    "rationale": "ข้อดีที่โดดเด่นของ ACM คือการช่วยต่ออายุใบรับรอง (Renewal) ให้เราโดยอัตโนมัติ ทำให้ไม่ต้องกังวลว่าเว็บไซต์จะเข้าไม่ได้เพราะใบรับรองหมดอายุ"
+  },
+  {
+    "id": 1204,
+    "mod": 12,
+    "q": "Which statement reflects a best practice for security credentials?",
+    "opts": [
+      "Only share access keys between users in the same AWS account.",
+      "Use AWS Identity and Access Management (IAM) roles to retrieve temporary security credentials.",
+      "If there are unencrypted access keys, embed them in code that is available only to developers but not accessible to users.",
+      "Do not allow programmatic authentication to AWS services."
+    ],
+    "ans": [
+      "Use AWS Identity and Access Management (IAM) roles to retrieve temporary security credentials."
+    ],
+    "type": "single",
+    "rationale": "การใช้ IAM Roles เพื่อขอสิทธิ์ชั่วคราว (STS) เป็นวิธีที่ปลอดภัยที่สุด เพราะไม่มีการฝังรหัสถาวรไว้ในโค้ด และสิทธิ์จะหมดอายุเองโดยอัตโนมัติ"
+  },
+  {
+    "id": 1205,
+    "mod": 12,
+    "q": "What is the primary difference between AWS Security Token Service (AWS STS) authentication by federated users and AWS STS authentication by AWS Identity and Access Management (IAM) users?",
+    "opts": [
+      "With federated users, the application calls an identity broker, but this step is skipped with IAM users.",
+      "With federated users, the first authentication is made against an IdP. With IAM users, the first authentication is made against IAM.",
+      "With federated users, the second authentication is made against an IdP. With IAM users, the second authentication is made against IAM",
+      "With federated users, applications use the temporary security credentials and token to make requests to an AWS service. No token is necessary with IAM users."
+    ],
+    "ans": [
+      "With federated users, the first authentication is made against an IdP. With IAM users, the first authentication is made against IAM."
+    ],
+    "type": "single",
+    "rationale": "Federated users จะต้องผ่านการยืนยันตัวตนกับ Identity Provider ภายนอก (เช่น Google, Facebook) ก่อนเป็นอันดับแรกเพื่อขอใบเบิกทางมายัง AWS"
+  },
+  {
+    "id": 1206,
+    "mod": 12,
+    "q": "A developer has been asked to investigate how website files have been deleted from an Amazon Simple Storage Service (Amazon S3) bucket. Which approach should they take?",
+    "opts": [
+      "Use AWS CloudTrail to search for information about delete object events on the S3 bucket.",
+      "Use AWS Security Token Service (AWS STS) to block deletions from the S3 bucket.",
+      "Use AWS Identity and Access Management (IAM) to search for users who have used their delete permissions on the S3 bucket.",
+      "Use the AWS STS GetSessionToken API call to retrieve information about users who deleted files from the S3 bucket."
+    ],
+    "ans": [
+      "Use AWS CloudTrail to search for information about delete object events on the S3 bucket."
+    ],
+    "type": "single",
+    "rationale": "CloudTrail คือ 'กล้องวงจรปิด' ของ AWS ที่บันทึกทุกกิจกรรมและคำสั่งที่เกิดขึ้น ช่วยให้เราตรวจสอบได้ว่าใครเป็นคนลบไฟล์และทำผ่านคำสั่งอะไร"
+  },
+  {
+    "id": 1207,
+    "mod": 12,
+    "q": "A developer has been asked to add a sign-up and sign-in service to their application. Which Amazon Cognito feature should they use?",
+    "opts": [
+      "Amazon Cognito identity pool",
+      "Amazon Cognito user pool",
+      "Amazon Cognito Lambda trigger",
+      "Amazon Cognito access token"
+    ],
+    "ans": [
+      "Amazon Cognito user pool."
+    ],
+    "type": "single",
+    "rationale": "User Pool เปรียบเสมือนระบบสมาชิก (Directory) ที่รองรับการสมัครสมาชิก ล็อกอิน และการกู้คืนรหัสผ่านของผู้ใช้แอปพลิเคชันโดยตรง"
+  },
+  {
+    "id": 1208,
+    "mod": 12,
+    "q": "A developer has been asked to reduce the security risk of users who sign in to their application with username and password pairs that they use on other websites. Which Amazon Cognito user pool feature might the developer configure?",
+    "opts": [
+      "Identity tokens",
+      "Phone and email verification",
+      "Adaptive authentication",
+      "Compromised credentials check"
+    ],
+    "ans": [
+      "Compromised credentials check."
+    ],
+    "type": "single",
+    "rationale": "ฟีเจอร์นี้จะช่วยตรวจสอบว่ารหัสผ่านที่ผู้ใช้ป้อนมานั้น เคยอยู่ในฐานข้อมูลที่รั่วไหล (Data Breach) จากเว็บอื่นหรือไม่ เพื่อบังคับให้ผู้ใช้เปลี่ยนรหัสผ่านที่ปลอดภัยกว่า"
+  },
+  {
+    "id": 1209,
+    "mod": 12,
+    "q": "Which statement about Amazon Cognito identity pools is true?",
+    "opts": [
+      "With an identity pool, users can obtain temporary, limited_privilege AWS credentials to access other AWS services.",
+      "Identity pools replace the need for a third-party identity provider.",
+      "When using Amazon Cognito identity pools, a user would not also use Amazon Cognito user pools.",
+      "Identity pools provide sign-up and sign-in functionality for mobile apps."
+    ],
+    "ans": [
+      "With an identity pool, users can obtain temporary, limited_privilege AWS credentials to access other AWS services."
+    ],
+    "type": "single",
+    "rationale": "Identity Pool (Federated Identities) มีหน้าที่มอบ 'กุญแจ' (AWS Credentials) ชั่วคราวให้กับผู้ที่ล็อกอินผ่านช่องทางต่างๆ เพื่อให้มีสิทธิ์เข้าถึงทรัพยากรบน AWS ได้โดยตรง"
+  },
+  {
+    "id": 1210,
+    "mod": 12,
+    "q": "A developer plans to use Amazon Cognito user pools with Amazon API Gateway. Which step is part of the user pool authentication flow with API Gateway?",
+    "opts": [
+      "A mobile app sends a request to API Gateway, and API Gateway gets JSON Web Tokens (JWTs) from the user pool.",
+      "A mobile app user authenticates with a user pool, and the user pool returns JWTs to the app.",
+      "The user pool validates the tokens against an identity pool.",
+      "Amazon Cognito invokes the API after successfully validating the permissions."
+    ],
+    "ans": [
+      "A mobile app user authenticates with a user pool, and the user pool returns JWTs to the app."
+    ],
+    "type": "single",
+    "rationale": "ลำดับคือผู้ใช้ล็อกอินกับ User Pool -> ได้ Token (JWT) กลับมาที่แอป -> จากนั้นแอปจึงนำ Token นี้ไปยื่นให้กับ API Gateway เพื่อขอใช้บริการ"
+  },
+  {
+    "id": 1301,
+    "mod": 13,
+    "q": "Which option describes the philosophy of DevOps?",
+    "opts": [
+      "DevOps is about teaching development and operations teams to use the same set of tools to shorten testing and deployment cycles.",
+      "DevOps is about removing barriers between development and operations functions to optimize productivity and reliability.",
+      "DevOps culture is reflected in the idea of \"Processes over people,\" which means that, with strong processes, any team member can perform any task.",
+      "DevOps culture is reflected in the idea that tight coupling leads to tighter parity between development, test, and production environments."
+    ],
+    "ans": [
+      "DevOps is about removing barriers between development and operations functions to optimize productivity and reliability."
+    ],
+    "type": "single",
+    "rationale": "DevOps ไม่ได้เป็นแค่เรื่องเครื่องมือ แต่เป็น 'ปรัชญา' ในการสร้างความร่วมมือระหว่างทีมพัฒนา (Dev) และทีมดูแลระบบ (Ops) เพื่อให้ส่งมอบงานได้เร็วและมีคุณภาพมากขึ้น"
+  },
+  {
+    "id": 1302,
+    "mod": 13,
+    "q": "How are DevOps practices reflected in the software development lifecycle for cloud architectures?",
+    "opts": [
+      "Every phase of the software development lifecycle is automated.",
+      "Developers can use continuous integration to merge code into their local repository and connect to the test environment for authentic test scenarios.",
+      "With continuous delivery, developers can deploy code without the need for continuous monitoring.",
+      "Infrastructure tools compare local development environments to test environments and staging environments, and report on environmental differences so that the operations team can ensure parity."
+    ],
+    "ans": [
+      "Every phase of the software development lifecycle is automated."
+    ],
+    "type": "single",
+    "rationale": "ในโลกของคลาวด์ DevOps จะเน้นการลดภาระงานทำมือ (Manual tasks) โดยการทำทุกขั้นตอนตั้งแต่เขียนโค้ดจนถึงติดตั้งใช้งานให้เป็นระบบอัตโนมัติทั้งหมด"
+  },
+  {
+    "id": 1303,
+    "mod": 13,
+    "q": "How might a developer use AWS CodePipeline in their continuous integration and continuous deployment (CI/CD) process?",
+    "opts": [
+      "Compile source code, run tests, and produce software packages that are ready to deploy.",
+      "Host Git-based repositories and provide source control.",
+      "Deploy to a variety of compute services.",
+      "Automate the steps that are required to release software based on a release model that the developer defines."
+    ],
+    "ans": [
+      "Automate the steps that are required to release software based on a release model that the developer defines."
+    ],
+    "type": "single",
+    "rationale": "CodePipeline ทำหน้าที่เป็น 'ผู้ควบคุมลำดับงาน' (Orchestrator) ที่จะพาโค้ดจากจุดเริ่มต้นผ่านด่านต่างๆ จนถึงมือผู้ใช้ตามขั้นตอนที่เรากำหนดไว้"
+  },
+  {
+    "id": 1304,
+    "mod": 13,
+    "q": "Which statement about continuous integration and continuous delivery/deployment (CI/CD) is true?",
+    "opts": [
+      "Continuous deployment reduces the risk of production bugs, but it might increase the time that it takes to deliver new features.",
+      "Continuous integration requires teams to write automated tests.",
+      "Continuous delivery extends all the way to production deployment without human intervention.",
+      "Continuous deployment extends from check-in through production, but some manual intervention occurs after code is checked in and before that code is released to customers."
+    ],
+    "ans": [
+      "Continuous integration requires teams to write automated tests."
+    ],
+    "type": "single",
+    "rationale": "CI ที่ดีต้องมาคู่กับการทดสอบอัตโนมัติ เพื่อให้มั่นใจได้ว่าโค้ดใหม่ที่รวมเข้ามาจะไม่ไปทำให้โค้ดเดิมพัง (Regression) ก่อนที่จะปล่อยออกไป"
+  },
+  {
+    "id": 1305,
+    "mod": 13,
+    "q": "A developer wants to use infrastructure as code for their Java-based web application on AWS. Which task might be part of their work?",
+    "opts": [
+      "Create an Amazon Elastic Compute Cloud (Amazon EC2) instance by using AWS CodeBuild, and use AWS CodeDeploy to automatically push the application to the EC2 instance.",
+      "Create a Java AWS CloudFormation template that defines the application and database layers for the application.",
+      "Create an AWS CloudFormation template with a Resources section that defines the AWS resources for the application.",
+      "Use AWS CodePipeline to create a pipeline that automates the complete release of the application."
+    ],
+    "ans": [
+      "Create an AWS CloudFormation template with a Resources section that defines the AWS resources for the application."
+    ],
+    "type": "single",
+    "rationale": "การทำ IaC (Infrastructure as Code) คือการเขียนไฟล์ต้นแบบ (Template) เพื่อระบุทรัพยากร (Resources) ที่ต้องการใช้ทั้งหมดในรูปแบบไฟล์ข้อความ"
+  },
+  {
+    "id": 1306,
+    "mod": 13,
+    "q": "A developer wants to use a single AWS CloudFormation template for both the test and production environments. Which section of the template might they use to support this approach?",
+    "opts": [
+      "Use the Transform section to define the variables that must be changed for each environment during stack creation or update.",
+      "Use the Format Version section to define the parameters to be passed for each environment during stack creation or update.",
+      "Use the Outputs section to define each environment that the template should create during stack creation or update.",
+      "Use the Conditions section to control whether certain resources are created during stack creation or update."
+    ],
+    "ans": [
+      "Use the Conditions section to control whether certain resources are created during stack creation or update."
+    ],
+    "type": "single",
+    "rationale": "Conditions ช่วยให้เราใส่เงื่อนไขได้ว่าทรัพยากรบางอย่างจะให้สร้างเฉพาะใน Production เท่านั้น หรือเปลี่ยนขนาดเครื่องตามสิ่งแวดล้อมที่กำลังติดตั้ง"
+  },
+  {
+    "id": 1307,
+    "mod": 13,
+    "q": "Which statement about AWS CloudFormation stacks is true?",
+    "opts": [
+      "Deleting a stack deletes its CloudFormation template but does not delete any resources that the most recent deployment created.",
+      "A CloudFormation stack is a unit of deployment.",
+      "An existing stack must be deleted before deploying an updated template to modify the resource parameters of that stack.",
+      "CloudFormation has some quotas that are related to the resources defined in each stack, but no quotas are related to the number of stacks themselves."
+    ],
+    "ans": [
+      "A CloudFormation stack is a unit of deployment."
+    ],
+    "type": "single",
+    "rationale": "Stack คือกลุ่มทรัพยากรที่ถูกมัดรวมกันเป็นหน่วยเดียว เมื่อจะติดตั้ง อัปเดต หรือลบทิ้ง ก็จะกระทำพร้อมกันทั้งกลุ่มอย่างเป็นระบบ"
+  },
+  {
+    "id": 1308,
+    "mod": 13,
+    "q": "A developer is building their first serverless application on AWS. What must they think about differently with respect to deploying the application?",
+    "opts": [
+      "They can't replicate the production environment locally in the same way that they might with a server-based deployment.",
+      "They can't use AWS CloudFormation for infrastructure as code to deploy the application.",
+      "The steps to connect to the AWS Lambda server for debugging are different than those to connect to a traditional server.",
+      "Serverless development tools are not integrated with other AWS development tools that are used in the deployment pipeline."
+    ],
+    "ans": [
+      "They can't replicate the production environment locally in the same way that they might with a server-based deployment."
+    ],
+    "type": "single",
+    "rationale": "แอปแบบ Serverless พึ่งพาบริการเฉพาะของ AWS สูงมาก การจะจำลองสภาพแวดล้อมทั้งหมดมาไว้ในคอมพิวเตอร์ส่วนตัวให้เหมือน Production 100% จึงทำได้ยากกว่าระบบแบบใช้ Server"
+  },
+  {
+    "id": 1309,
+    "mod": 13,
+    "q": "How does an AWS Serverless Application Model (AWS SAM) template differ from an AWS CloudFormation template?",
+    "opts": [
+      "AWS SAM templates are written in the same language as the AWS Lambda runtime that is used in the functions that are being deployed.",
+      "The Globals section is found only in AWS SAM templates.",
+      "The Resources section in an AWS SAM template may only contain serverless resources.",
+      "The Transform declaration is not required for AWS SAM templates."
+    ],
+    "ans": [
+      "The Globals section is found only in AWS SAM templates."
+    ],
+    "type": "single",
+    "rationale": "SAM เป็นส่วนต่อขยายของ CloudFormation โดยเพิ่มส่วน 'Globals' มาให้เพื่อช่วยลดความซ้ำซ้อนในการตั้งค่าที่เหมือนกันของหลายๆ ทรัพยากร"
+  },
+  {
+    "id": 1310,
+    "mod": 13,
+    "q": "The following lines are in the Resources section of an AWS Serverless Application Model (AWS SAM) template. What would these lines create? Resources: Orders: Type: AWS::Serverless::SimpleTable",
+    "opts": [
+      "An AWS Lambda function that is named Orders and is connected to an Amazon DynamoDB table",
+      "An Amazon DynamoDB table that is called Orders",
+      "An API GET method that reads from the Orders table",
+      "A MySQL table that is called Orders"
+    ],
+    "ans": [
+      "An Amazon DynamoDB table that is called Orders."
+    ],
+    "type": "single",
+    "rationale": "ประเภท 'SimpleTable' ใน SAM คือทางลัดที่ใช้สร้างตาราง Amazon DynamoDB แบบมาตรฐานได้อย่างรวดเร็วด้วยการเขียนโค้ดเพียงไม่กี่บรรทัด"
+  }
+]
