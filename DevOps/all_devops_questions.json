@@ -26,7 +26,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> วงจร SDLC 6 ระยะประกอบด้วย 1.Plan 2.Define 3.Design 4.Develop (การสร้างระบบ/จัดหาอุปกรณ์) 5.Deploy (การติดตั้งใช้งานจริง) และ 6.Maintain (การดูแลรักษาและปรับปรุง)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Develop, deploy, and maintain</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> วงจร SDLC 6 ระยะประกอบด้วย 1.Plan 2.Define 3.Design 4.Develop (การสร้างระบบ/จัดหาอุปกรณ์) 5.Deploy (การติดตั้งใช้งานจริง) และ 6.Maintain (การดูแลรักษาและปรับปรุง)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Develop, deploy, and maintain</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_202",
@@ -55,7 +57,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ในระยะ Develop (หรือ Build) จะเป็นขั้นตอนการเขียนโค้ด การจัดหาซอฟต์แวร์ หรือการติดตั้งส่วนประกอบใหม่ๆ เข้ามาในระบบเพื่อให้พร้อมสำหรับการทดสอบ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> New components are obtained and installed.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ในระยะ Develop (หรือ Build) จะเป็นขั้นตอนการเขียนโค้ด การจัดหาซอฟต์แวร์ หรือการติดตั้งส่วนประกอบใหม่ๆ เข้ามาในระบบเพื่อให้พร้อมสำหรับการทดสอบ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> New components are obtained and installed.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_203",
@@ -84,7 +88,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> AWS Identity and Access Management (IAM) เป็นบริการหลักที่ใช้จัดการ User, Group, Role และ Permission ต่างๆ เพื่อควบคุมว่าใครสามารถเข้าถึงทรัพยากรอะไรได้บ้าง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> AWS Identity and Access Management (IAM)</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> AWS Identity and Access Management (IAM) เป็นบริการหลักที่ใช้จัดการ User, Group, Role และ Permission ต่างๆ เพื่อควบคุมว่าใครสามารถเข้าถึงทรัพยากรอะไรได้บ้าง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> AWS Identity and Access Management (IAM)</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_204",
@@ -113,7 +119,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> CloudShell เป็น Terminal บนเบราว์เซอร์ที่อำนวยความสะดวกมาก เพราะมันจะใช้สิทธิ์ (Credentials) เดียวกับที่คุณล็อกอินไว้ในหน้า Console โดยไม่ต้องตั้งค่า Access Key ใหม่</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> It inherits your credentials from the AWS Management Console.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> CloudShell เป็น Terminal บนเบราว์เซอร์ที่อำนวยความสะดวกมาก เพราะมันจะใช้สิทธิ์ (Credentials) เดียวกับที่คุณล็อกอินไว้ในหน้า Console โดยไม่ต้องตั้งค่า Access Key ใหม่</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> It inherits your credentials from the AWS Management Console.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_205",
@@ -154,7 +162,9 @@
     ],
     "is_multi": true,
     "multi_count": 3,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การส่งคำสั่งไปยัง AWS ทำได้ 3 ทางหลัก: 1.หน้าเว็บ (Console) 2.บรรทัดคำสั่ง (CLI) และ 3.ผ่านโค้ดโปรแกรม (SDKs)</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> AWS software development kits (SDKs), AWS Management Console, AWS Command Line Interface (AWS CLI)</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การส่งคำสั่งไปยัง AWS ทำได้ 3 ทางหลัก: 1.หน้าเว็บ (Console) 2.บรรทัดคำสั่ง (CLI) และ 3.ผ่านโค้ดโปรแกรม (SDKs)</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> AWS software development kits (SDKs), AWS Management Console, AWS Command Line Interface (AWS CLI)</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_206",
@@ -183,7 +193,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> AWS Tools for PowerShell ช่วยให้ผู้ที่คุ้นเคยกับ PowerShell สามารถเขียนสคริปต์เพื่อสั่งงานและจัดการทรัพยากรบน AWS ได้โดยอัตโนมัติ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> AWS Tools for PowerShell</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> AWS Tools for PowerShell ช่วยให้ผู้ที่คุ้นเคยกับ PowerShell สามารถเขียนสคริปต์เพื่อสั่งงานและจัดการทรัพยากรบน AWS ได้โดยอัตโนมัติ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> AWS Tools for PowerShell</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_207",
@@ -212,7 +224,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Amazon Q Developer เป็นผู้ช่วยเขียนโค้ดที่ขับเคลื่อนด้วย Generative AI ช่วยให้นักพัฒนาเขียนโค้ดได้เร็วขึ้นและแก้ปัญหาทางเทคนิคได้ง่ายขึ้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A generative Al-powered coding assistant</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Amazon Q Developer เป็นผู้ช่วยเขียนโค้ดที่ขับเคลื่อนด้วย Generative AI ช่วยให้นักพัฒนาเขียนโค้ดได้เร็วขึ้นและแก้ปัญหาทางเทคนิคได้ง่ายขึ้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A generative Al-powered coding assistant</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_208",
@@ -248,7 +262,9 @@
     ],
     "is_multi": true,
     "multi_count": 2,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Resource APIs ถูกออกแบบมาให้อยู่ในระดับสูง (Higher-level) เน้นจัดการทรัพยากรผ่าน Object และ Collection ทำให้โค้ดอ่านง่ายและจัดการทรัพยากรได้เป็นกลุ่ม</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> They provide access to resources through objects and collections., They provide a higher-level abstraction than the low-level calls made by service client APIs.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Resource APIs ถูกออกแบบมาให้อยู่ในระดับสูง (Higher-level) เน้นจัดการทรัพยากรผ่าน Object และ Collection ทำให้โค้ดอ่านง่ายและจัดการทรัพยากรได้เป็นกลุ่ม</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> They provide access to resources through objects and collections., They provide a higher-level abstraction than the low-level calls made by service client APIs.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_209",
@@ -277,7 +293,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ในการเขียนโปรแกรมด้วย SDK (เช่น Boto3) นักพัฒนาสามารถระบุ Region ที่ต้องการเชื่อมต่อได้ทันทีในขั้นตอนการสร้าง (Instantiate) ตัว Service Client</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> By setting the Region when they instantiate the service client</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ในการเขียนโปรแกรมด้วย SDK (เช่น Boto3) นักพัฒนาสามารถระบุ Region ที่ต้องการเชื่อมต่อได้ทันทีในขั้นตอนการสร้าง (Instantiate) ตัว Service Client</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> By setting the Region when they instantiate the service client</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_210",
@@ -306,7 +324,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> HTTP 400 Series คือ Client Error หมายความว่าความผิดพลาดเกิดจากฝั่งผู้ใช้ เช่น การระบุชื่อ Bucket ที่ไม่มีอยู่จริง (404 Not Found)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> 400 series</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> HTTP 400 Series คือ Client Error หมายความว่าความผิดพลาดเกิดจากฝั่งผู้ใช้ เช่น การระบุชื่อ Bucket ที่ไม่มีอยู่จริง (404 Not Found)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> 400 series</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_301",
@@ -335,7 +355,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> S3 เป็น Object Storage ที่สเกลได้มหาศาล จึงนิยมใช้ทำ Data Lake เพื่อเก็บข้อมูลดิบจำนวนมากเพื่อรอการวิเคราะห์ แต่ไม่เหมาะกับฐานข้อมูล (Database) ที่มีการเขียนอ่านตลอดเวลา</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Data lake</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> S3 เป็น Object Storage ที่สเกลได้มหาศาล จึงนิยมใช้ทำ Data Lake เพื่อเก็บข้อมูลดิบจำนวนมากเพื่อรอการวิเคราะห์ แต่ไม่เหมาะกับฐานข้อมูล (Database) ที่มีการเขียนอ่านตลอดเวลา</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Data lake</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_302",
@@ -364,7 +386,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Bucket คือหน่วยจัดเก็บระดับสูงสุดใน S3 เปรียบเสมือนโฟลเดอร์หลักที่บรรจุไฟล์ (Objects) และต้องมีชื่อที่ไม่ซ้ำกับใครในโลก</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Bucket</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Bucket คือหน่วยจัดเก็บระดับสูงสุดใน S3 เปรียบเสมือนโฟลเดอร์หลักที่บรรจุไฟล์ (Objects) และต้องมีชื่อที่ไม่ซ้ำกับใครในโลก</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Bucket</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_303",
@@ -393,7 +417,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ชื่อของ S3 Bucket ต้องไม่ซ้ำกัน 'ทั่วโลก' (Globally Unique) หากชื่อนั้นมีคนอื่นใช้ไปแล้วใน Region ใดก็ตาม เราจะไม่สามารถใช้ชื่อนั้นได้อีก</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Bucket names are globally unique. If the requested bucket name is not available, the developer must rename the bucket.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ชื่อของ S3 Bucket ต้องไม่ซ้ำกัน 'ทั่วโลก' (Globally Unique) หากชื่อนั้นมีคนอื่นใช้ไปแล้วใน Region ใดก็ตาม เราจะไม่สามารถใช้ชื่อนั้นได้อีก</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Bucket names are globally unique. If the requested bucket name is not available, the developer must rename the bucket.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_304",
@@ -422,7 +448,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> รูปแบบ URL สำหรับ Static Website บน S3 คือ [bucket-name].s3-website-[region].amazonaws.com</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> https://frank-martha-cafes3-website-us-east-1.amazonaws.com</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> รูปแบบ URL สำหรับ Static Website บน S3 คือ [bucket-name].s3-website-[region].amazonaws.com</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> https://frank-martha-cafes3-website-us-east-1.amazonaws.com</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_305",
@@ -443,7 +471,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> เมื่อเปิดใช้งาน Versioning แล้ว จะไม่สามารถ 'ปิด' (Disable) ได้ ทำได้เพียงแค่ 'ระงับ' (Suspend) ไว้เท่านั้น เพื่อไม่ให้มีการสร้าง Version ใหม่เพิ่ม</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> False</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> เมื่อเปิดใช้งาน Versioning แล้ว จะไม่สามารถ 'ปิด' (Disable) ได้ ทำได้เพียงแค่ 'ระงับ' (Suspend) ไว้เท่านั้น เพื่อไม่ให้มีการสร้าง Version ใหม่เพิ่ม</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> False</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_306",
@@ -472,7 +502,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การอัปโหลดไฟล์เดียวผ่านคำสั่ง PUT รองรับขนาดสูงสุดที่ 5 GB หากไฟล์ใหญ่กว่านั้นต้องใช้การอัปโหลดแบบ Multipart Upload</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> 5 GB</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การอัปโหลดไฟล์เดียวผ่านคำสั่ง PUT รองรับขนาดสูงสุดที่ 5 GB หากไฟล์ใหญ่กว่านั้นต้องใช้การอัปโหลดแบบ Multipart Upload</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> 5 GB</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_307",
@@ -501,7 +533,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Bucket Policy เป็นวิธีที่แนะนำในการจัดการสิทธิ์ในระดับ Bucket ซึ่งช่วยให้ระบุได้ละเอียดว่าใคร (IAM User) ทำอะไรได้บ้างใน Bucket นั้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Bucket policy</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Bucket Policy เป็นวิธีที่แนะนำในการจัดการสิทธิ์ในระดับ Bucket ซึ่งช่วยให้ระบุได้ละเอียดว่าใคร (IAM User) ทำอะไรได้บ้างใน Bucket นั้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Bucket policy</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_308",
@@ -530,7 +564,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Presigned URL เป็นการสร้างลิงก์ชั่วคราวที่มีสิทธิ์การเข้าถึงไฟล์แนบไปด้วย ช่วยให้คนภายนอกโหลดไฟล์ส่วนตัวได้ในช่วงเวลาที่กำหนดโดยไม่ต้องมี User ใน AWS</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A presigned URL</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Presigned URL เป็นการสร้างลิงก์ชั่วคราวที่มีสิทธิ์การเข้าถึงไฟล์แนบไปด้วย ช่วยให้คนภายนอกโหลดไฟล์ส่วนตัวได้ในช่วงเวลาที่กำหนดโดยไม่ต้องมี User ใน AWS</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A presigned URL</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_309",
@@ -559,7 +595,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การเข้ารหัส 'In Transit' หมายถึงระหว่างการรับส่งข้อมูลผ่านเครือข่าย ซึ่งจะใช้โปรโตคอล HTTPS (SSL/TLS) เสมอ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Secure Sockets Layer/ Transport Layer Security (SSL/TLS)</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การเข้ารหัส 'In Transit' หมายถึงระหว่างการรับส่งข้อมูลผ่านเครือข่าย ซึ่งจะใช้โปรโตคอล HTTPS (SSL/TLS) เสมอ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Secure Sockets Layer/ Transport Layer Security (SSL/TLS)</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_310",
@@ -588,7 +626,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> เมื่อเว็บจาก Bucket หนึ่ง พยายามดึงทรัพยากร (เช่น รูปภาพ) จากอีก Bucket หนึ่ง ระบบความปลอดภัยของเบราว์เซอร์จะบล็อกไว้ เว้นแต่จะเปิดใช้งาน CORS ใน Bucket ที่เก็บรูปภาพนั้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Cross-Origin Resource Sharing (CORS) has not been enabled on the bucket where the assets are stored.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> เมื่อเว็บจาก Bucket หนึ่ง พยายามดึงทรัพยากร (เช่น รูปภาพ) จากอีก Bucket หนึ่ง ระบบความปลอดภัยของเบราว์เซอร์จะบล็อกไว้ เว้นแต่จะเปิดใช้งาน CORS ใน Bucket ที่เก็บรูปภาพนั้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Cross-Origin Resource Sharing (CORS) has not been enabled on the bucket where the assets are stored.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_401",
@@ -624,7 +664,9 @@
     ],
     "is_multi": true,
     "multi_count": 2,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ภายใต้ Shared Responsibility Model ลูกค้ามีหน้าที่ดูแล 'ความปลอดภัยในคลาวด์' (Security IN the Cloud) เช่น การตั้งค่า Firewall (Security Group) และข้อมูลของตัวเอง</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> Security group configuration, Client-side data</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ภายใต้ Shared Responsibility Model ลูกค้ามีหน้าที่ดูแล 'ความปลอดภัยในคลาวด์' (Security IN the Cloud) เช่น การตั้งค่า Firewall (Security Group) และข้อมูลของตัวเอง</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> Security group configuration, Client-side data</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_402",
@@ -653,7 +695,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> IAM Policy คือเอกสาร JSON ที่ระบุชัดเจนว่าอนุญาต (Allow) หรือปฏิเสธ (Deny) การกระทำใดๆ ต่อทรัพยากรของ AWS</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> IAM policies</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> IAM Policy คือเอกสาร JSON ที่ระบุชัดเจนว่าอนุญาต (Allow) หรือปฏิเสธ (Deny) การกระทำใดๆ ต่อทรัพยากรของ AWS</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> IAM policies</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_403",
@@ -682,7 +726,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Authentication คือการยืนยันตัวตน (คุณคือใคร) ส่วน Authorization คือการตรวจสอบสิทธิ์ (คุณทำอะไรได้บ้าง)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Authentication</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Authentication คือการยืนยันตัวตน (คุณคือใคร) ส่วน Authorization คือการตรวจสอบสิทธิ์ (คุณทำอะไรได้บ้าง)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Authentication</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_404",
@@ -718,7 +764,9 @@
     ],
     "is_multi": true,
     "multi_count": 2,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การเข้าหน้า Console ต้องใช้ User/Password ส่วนการเรียกใช้บริการผ่าน API/CLI ต้องใช้ Credentials (Access Key/Secret Key)</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> AWS credentials to authenticate with any supported services must be provided., A user name and password to authenticate to the console must be provided.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การเข้าหน้า Console ต้องใช้ User/Password ส่วนการเรียกใช้บริการผ่าน API/CLI ต้องใช้ Credentials (Access Key/Secret Key)</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> AWS credentials to authenticate with any supported services must be provided., A user name and password to authenticate to the console must be provided.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_405",
@@ -747,7 +795,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Best Practice ของ AWS คือการใช้ IAM Role ผูกกับ EC2 แทนการเก็บ Access Key ไว้ในโค้ดหรือไฟล์ในเครื่อง เพราะ Role จะสร้างรหัสชั่วคราวที่หมุนเวียนให้เองโดยอัตโนมัติ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Create an AWS Identity and Access Management (IAM) role and attach it to the EC2 instance.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Best Practice ของ AWS คือการใช้ IAM Role ผูกกับ EC2 แทนการเก็บ Access Key ไว้ในโค้ดหรือไฟล์ในเครื่อง เพราะ Role จะสร้างรหัสชั่วคราวที่หมุนเวียนให้เองโดยอัตโนมัติ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Create an AWS Identity and Access Management (IAM) role and attach it to the EC2 instance.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_406",
@@ -776,7 +826,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> IAM Policy ถูกเขียนและจัดเก็บในรูปแบบ JSON (JavaScript Object Notation) เพื่อความสะดวกในการประมวลผลสิทธิ์</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> JavaScript Object Notation (JSON)</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> IAM Policy ถูกเขียนและจัดเก็บในรูปแบบ JSON (JavaScript Object Notation) เพื่อความสะดวกในการประมวลผลสิทธิ์</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> JavaScript Object Notation (JSON)</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_407",
@@ -805,7 +857,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> นโยบายที่ถูกนำไปผูกติดกับตัวตน (User, Group, Role) เรียกว่า Identity-based policy</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Identity-based</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> นโยบายที่ถูกนำไปผูกติดกับตัวตน (User, Group, Role) เรียกว่า Identity-based policy</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Identity-based</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_408",
@@ -834,7 +888,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Least Privilege คือการให้สิทธิ์ 'เท่าที่จำเป็น' ต่อการทำงานเท่านั้น เพื่อลดความเสี่ยงหากบัญชีถูกบุกรุก</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Create policies that follow the principle of least privilege.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Least Privilege คือการให้สิทธิ์ 'เท่าที่จำเป็น' ต่อการทำงานเท่านั้น เพื่อลดความเสี่ยงหากบัญชีถูกบุกรุก</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Create policies that follow the principle of least privilege.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_409",
@@ -863,7 +919,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การใช้ Deny ร่วมกับ NotResource หมายถึงการสั่ง 'ปฏิเสธ' ทุกอย่าง ยกเว้นรายการทรัพยากรที่ระบุไว้ในลิสต์นั้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Denies actions on DynamoDB or Amazon S3 resources except for the resources that are listed in the NotResource element</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การใช้ Deny ร่วมกับ NotResource หมายถึงการสั่ง 'ปฏิเสธ' ทุกอย่าง ยกเว้นรายการทรัพยากรที่ระบุไว้ในลิสต์นั้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Denies actions on DynamoDB or Amazon S3 resources except for the resources that are listed in the NotResource element</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_410",
@@ -899,7 +957,9 @@
     ],
     "is_multi": true,
     "multi_count": 2,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> หลักการของ IAM คือ 1.เริ่มจาก Default Deny (ไม่อนุญาตไว้ก่อน) 2.หากมี Explicit Deny (การสั่งปฏิเสธชัดเจน) จะมีผลชนะ Allow เสมอ</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> An explicit deny overrides an explicit allow., By default, all requests are denied.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> หลักการของ IAM คือ 1.เริ่มจาก Default Deny (ไม่อนุญาตไว้ก่อน) 2.หากมี Explicit Deny (การสั่งปฏิเสธชัดเจน) จะมีผลชนะ Allow เสมอ</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> An explicit deny overrides an explicit allow., By default, all requests are denied.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_501",
@@ -928,7 +988,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> DynamoDB เป็นฐานข้อมูล NoSQL แบบ Key-Value และ Document ที่เด่นเรื่องความเร็วในระดับ Millisecond และการขยายตัว (Scale) แบบไร้ขีดจำกัด</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A key-value and document database that scales horizontally and works well for internet-scale applications</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> DynamoDB เป็นฐานข้อมูล NoSQL แบบ Key-Value และ Document ที่เด่นเรื่องความเร็วในระดับ Millisecond และการขยายตัว (Scale) แบบไร้ขีดจำกัด</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A key-value and document database that scales horizontally and works well for internet-scale applications</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_502",
@@ -957,7 +1019,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ใน DynamoDB ข้อมูล 1 แถวเรียกว่า Item และแต่ละ Item จะประกอบไปด้วย Attributes (คุณลักษณะของข้อมูล) ซึ่งแต่ละแถวไม่จำเป็นต้องมี Attributes เหมือนกันหมดก็ได้</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Attributes</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ใน DynamoDB ข้อมูล 1 แถวเรียกว่า Item และแต่ละ Item จะประกอบไปด้วย Attributes (คุณลักษณะของข้อมูล) ซึ่งแต่ละแถวไม่จำเป็นต้องมี Attributes เหมือนกันหมดก็ได้</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Attributes</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_503",
@@ -986,7 +1050,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Primary Key (ซึ่งเกิดจาก Partition Key + Sort Key) ต้องมีความเป็นเอกลักษณ์ (Unique) ห้ามซ้ำกันเด็ดขาดในตารางเดียวกัน</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> It is impossible for two items in the SensorReadings table to have the same primary key.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Primary Key (ซึ่งเกิดจาก Partition Key + Sort Key) ต้องมีความเป็นเอกลักษณ์ (Unique) ห้ามซ้ำกันเด็ดขาดในตารางเดียวกัน</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> It is impossible for two items in the SensorReadings table to have the same primary key.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_504",
@@ -1015,7 +1081,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> DynamoDB ใช้การ Hash ค่าของ Partition Key เพื่อตัดสินใจว่าข้อมูลนั้นจะถูกเก็บไว้ที่ Partition ไหน</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> If a table has a simple primary key (partition key only), DynamoDB stores and retrieves each item based on its hash attribute.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> DynamoDB ใช้การ Hash ค่าของ Partition Key เพื่อตัดสินใจว่าข้อมูลนั้นจะถูกเก็บไว้ที่ Partition ไหน</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> If a table has a simple primary key (partition key only), DynamoDB stores and retrieves each item based on its hash attribute.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_505",
@@ -1044,7 +1112,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> GSI (Global Secondary Index) ช่วยให้เราสามารถสร้างดัชนีใหม่จาก Attribute ใดๆ ก็ได้ เพื่อใช้ในการค้นหาที่นอกเหนือจาก Primary Key หลัก</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Set up a global secondary index on cuisine and customer rating.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> GSI (Global Secondary Index) ช่วยให้เราสามารถสร้างดัชนีใหม่จาก Attribute ใดๆ ก็ได้ เพื่อใช้ในการค้นหาที่นอกเหนือจาก Primary Key หลัก</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Set up a global secondary index on cuisine and customer rating.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_506",
@@ -1073,7 +1143,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> DynamoDB Transactions รองรับการทำงานแบบ ACID (All-or-nothing) ช่วยให้มั่นใจว่ากลุ่มของคำสั่งจะสำเร็จทั้งหมดหรือล้มเหลวทั้งหมด เพื่อรักษาความถูกต้องของข้อมูล</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use DynamoDB transactions.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> DynamoDB Transactions รองรับการทำงานแบบ ACID (All-or-nothing) ช่วยให้มั่นใจว่ากลุ่มของคำสั่งจะสำเร็จทั้งหมดหรือล้มเหลวทั้งหมด เพื่อรักษาความถูกต้องของข้อมูล</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use DynamoDB transactions.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_507",
@@ -1109,7 +1181,9 @@
     ],
     "is_multi": true,
     "multi_count": 2,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> DynamoDB Streams จะบันทึกทุกลำดับการเปลี่ยนแปลงในตาราง เหมาะสำหรับการนำไป Trigger เหตุการณ์อื่นๆ เช่น การส่งแจ้งเตือนเมื่อมีการอัปโหลดรูปภาพใหม่</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> An application that automatically sends notifications to the mobile devices of all friends in a group when one friend uploads a new picture, An application that must monitor changes to a DynamoDB table and take action on specific changes when a value reaches a certain threshold</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> DynamoDB Streams จะบันทึกทุกลำดับการเปลี่ยนแปลงในตาราง เหมาะสำหรับการนำไป Trigger เหตุการณ์อื่นๆ เช่น การส่งแจ้งเตือนเมื่อมีการอัปโหลดรูปภาพใหม่</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> An application that automatically sends notifications to the mobile devices of all friends in a group when one friend uploads a new picture, An application that must monitor changes to a DynamoDB table and take action on specific changes when a value reaches a certain threshold</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_508",
@@ -1138,7 +1212,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Global Tables คือโซลูชันแบบ Multi-Region ที่ AWS จะทำการคัดลอกและซิงค์ข้อมูลให้เราโดยอัตโนมัติในหลายๆ Region ทั่วโลก</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> When a global table is created, Amazon DynamoDB performs all necessary tasks to create identical tables and propagate ongoing data changes to specified Regions.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Global Tables คือโซลูชันแบบ Multi-Region ที่ AWS จะทำการคัดลอกและซิงค์ข้อมูลให้เราโดยอัตโนมัติในหลายๆ Region ทั่วโลก</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> When a global table is created, Amazon DynamoDB performs all necessary tasks to create identical tables and propagate ongoing data changes to specified Regions.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_509",
@@ -1167,7 +1243,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Point-in-time recovery (PITR) ของ DynamoDB ช่วยให้คุณสามารถกู้คืนข้อมูลย้อนกลับไปได้ถึง 35 วัน</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> The last 35 days</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Point-in-time recovery (PITR) ของ DynamoDB ช่วยให้คุณสามารถกู้คืนข้อมูลย้อนกลับไปได้ถึง 35 วัน</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> The last 35 days</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_510",
@@ -1196,7 +1274,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Control Operations คือกลุ่มคำสั่ง API ที่ใช้จัดการโครงสร้าง เช่น สร้าง ลบ หรือแก้ไขการตั้งค่าของตัว Table เอง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Create and manage DynamoDB tables.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Control Operations คือกลุ่มคำสั่ง API ที่ใช้จัดการโครงสร้าง เช่น สร้าง ลบ หรือแก้ไขการตั้งค่าของตัว Table เอง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Create and manage DynamoDB tables.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_601",
@@ -1225,7 +1305,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> REST (Representational State Transfer) คือรูปแบบสถาปัตยกรรมที่เน้นการใช้ HTTP Methods (GET, POST, etc.) เพื่อจัดการกับทรัพยากรผ่าน Stateless communication</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> An API that follows the principles of the Representational State Transfer style</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> REST (Representational State Transfer) คือรูปแบบสถาปัตยกรรมที่เน้นการใช้ HTTP Methods (GET, POST, etc.) เพื่อจัดการกับทรัพยากรผ่าน Stateless communication</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> An API that follows the principles of the Representational State Transfer style</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_602",
@@ -1254,7 +1336,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> WebSocket เหมาะสำหรับการสื่อสารแบบสองทาง (Full-duplex) ที่ต้องการความเร็วแบบ Real-time เช่น ระบบ Chat หรือ Dashboard ที่ข้อมูลเปลี่ยนตลอดเวลา</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A real-time chat application lets customers talk to customer support about their orders.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> WebSocket เหมาะสำหรับการสื่อสารแบบสองทาง (Full-duplex) ที่ต้องการความเร็วแบบ Real-time เช่น ระบบ Chat หรือ Dashboard ที่ข้อมูลเปลี่ยนตลอดเวลา</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A real-time chat application lets customers talk to customer support about their orders.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_603",
@@ -1283,7 +1367,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> HTTP APIs ถูกออกแบบมาให้เน้นประสิทธิภาพและความประหยัด เหมาะมากสำหรับใช้เป็น Proxy เรียบง่ายเพื่อเรียกใช้งาน Lambda</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> An application needs an API proxy in front of an AWS Lambda function.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> HTTP APIs ถูกออกแบบมาให้เน้นประสิทธิภาพและความประหยัด เหมาะมากสำหรับใช้เป็น Proxy เรียบง่ายเพื่อเรียกใช้งาน Lambda</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> An application needs an API proxy in front of an AWS Lambda function.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_604",
@@ -1312,7 +1398,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> HTTP Proxy Integration ช่วยให้ API Gateway สามารถส่งต่อ (Forward) คำขอไปยังปลายทางใดก็ได้บนอินเทอร์เน็ตผ่าน HTTP URL</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A developer can use HTTP proxy integrations to direct a route to a resource on the internet.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> HTTP Proxy Integration ช่วยให้ API Gateway สามารถส่งต่อ (Forward) คำขอไปยังปลายทางใดก็ได้บนอินเทอร์เน็ตผ่าน HTTP URL</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A developer can use HTTP proxy integrations to direct a route to a resource on the internet.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_605",
@@ -1341,7 +1429,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Mapping Template ช่วยให้เราแปลงรูปแบบข้อมูล (Payload Transformation) ได้ที่ระดับ API Gateway โดยไม่ต้องไปแก้ไขโค้ดที่ Client หรือ Backend</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use a mapping template to transform the request before it is sent to the database.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Mapping Template ช่วยให้เราแปลงรูปแบบข้อมูล (Payload Transformation) ได้ที่ระดับ API Gateway โดยไม่ต้องไปแก้ไขโค้ดที่ Client หรือ Backend</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use a mapping template to transform the request before it is sent to the database.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_606",
@@ -1370,7 +1460,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> URL มาตรฐานของ API Gateway จะประกอบด้วย API ID, Region และ Stage Name (เช่น https://[api-id].execute-api.[region].amazonaws.com/[stage-name])</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Region and stage name</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> URL มาตรฐานของ API Gateway จะประกอบด้วย API ID, Region และ Stage Name (เช่น https://[api-id].execute-api.[region].amazonaws.com/[stage-name])</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Region and stage name</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_607",
@@ -1399,7 +1491,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การดึงข้อมูลรายชิ้น (Individual) ต้องใช้ Method GET และระบุ Path Parameter ภายใต้ปีกกา { } เพื่อรับค่า ID นั้นๆ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> route-key 'GET /products/{product_id}'</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การดึงข้อมูลรายชิ้น (Individual) ต้องใช้ Method GET และระบุ Path Parameter ภายใต้ปีกกา { } เพื่อรับค่า ID นั้นๆ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> route-key 'GET /products/{product_id}'</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_608",
@@ -1428,7 +1522,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Stage Variables เปรียบเสมือนตัวแปร Environment ที่ช่วยให้เราใช้ API ชุดเดียวแต่ชี้ไปหา Backend ที่ต่างกันได้ (เช่น Dev/Prod)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Developers can use stage variables to connect different stages to different backends.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Stage Variables เปรียบเสมือนตัวแปร Environment ที่ช่วยให้เราใช้ API ชุดเดียวแต่ชี้ไปหา Backend ที่ต่างกันได้ (เช่น Dev/Prod)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Developers can use stage variables to connect different stages to different backends.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_609",
@@ -1457,7 +1553,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> AWS WAF (Web Application Firewall) ทำหน้าที่กรอง Traffic เพื่อป้องกันการโจมตีระดับ Application เช่น SQL Injection และ XSS ได้โดยตรง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use AWS WAF with Amazon API Gateway.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> AWS WAF (Web Application Firewall) ทำหน้าที่กรอง Traffic เพื่อป้องกันการโจมตีระดับ Application เช่น SQL Injection และ XSS ได้โดยตรง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use AWS WAF with Amazon API Gateway.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_610",
@@ -1486,7 +1584,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Integration Latency วัดเฉพาะเวลาที่ Backend (เช่น Lambda) ใช้ในการประมวลผล ไม่รวมเวลาที่ใช้ในการส่งข้อมูลผ่านเครือข่ายไปยัง Client</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Responsiveness of the backend</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Integration Latency วัดเฉพาะเวลาที่ Backend (เช่น Lambda) ใช้ในการประมวลผล ไม่รวมเวลาที่ใช้ในการส่งข้อมูลผ่านเครือข่ายไปยัง Client</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Responsiveness of the backend</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_701",
@@ -1515,7 +1615,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Lambda เป็น Event-driven และใช้ทรัพยากรประมวลผลตามจริง (On-demand) ทำให้ไม่ต้องบริหารจัดการ Server เอง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Lambda runs code only when it is activated by an event and uses only the compute resources that are needed.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Lambda เป็น Event-driven และใช้ทรัพยากรประมวลผลตามจริง (On-demand) ทำให้ไม่ต้องบริหารจัดการ Server เอง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Lambda runs code only when it is activated by an event and uses only the compute resources that are needed.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_702",
@@ -1544,7 +1646,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Burst Quota เป็นขีดจำกัดตายตัวในแต่ละ Region ที่ระบบกำหนดไว้เพื่อป้องกันการใช้ทรัพยากรเกินขนาดในทันทีทันใด</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Burst quota</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Burst Quota เป็นขีดจำกัดตายตัวในแต่ละ Region ที่ระบบกำหนดไว้เพื่อป้องกันการใช้ทรัพยากรเกินขนาดในทันทีทันใด</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Burst quota</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_703",
@@ -1573,7 +1677,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ปกติ API Gateway จะเรียก Lambda แบบ Synchronous เพราะ Client ต้องการรอรับผลตอบกลับ (Response) ทันที</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> API Gateway directly invokes a function with a synchronous invocation.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ปกติ API Gateway จะเรียก Lambda แบบ Synchronous เพราะ Client ต้องการรอรับผลตอบกลับ (Response) ทันที</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> API Gateway directly invokes a function with a synchronous invocation.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_704",
@@ -1609,7 +1715,9 @@
     ],
     "is_multi": true,
     "multi_count": 2,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Execution Role คือสิทธิ์ที่ Lambda ต้องมีเพื่อ 'ออกไปหา' หรือทำอะไรกับบริการอื่น เช่น เขียนไฟล์ลง DB หรือไปดึงข้อมูลจาก Queue</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> A Lambda function writes to an Amazon DynamoDB table., Lambda polls an Amazon Simple Queue Service (Amazon SQS) queue for messages that initiate invocation of a Lambda function.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Execution Role คือสิทธิ์ที่ Lambda ต้องมีเพื่อ 'ออกไปหา' หรือทำอะไรกับบริการอื่น เช่น เขียนไฟล์ลง DB หรือไปดึงข้อมูลจาก Queue</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> A Lambda function writes to an Amazon DynamoDB table., Lambda polls an Amazon Simple Queue Service (Amazon SQS) queue for messages that initiate invocation of a Lambda function.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_705",
@@ -1638,7 +1746,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Handler คือฟังก์ชันหลักในโค้ดที่คุณกำหนดไว้ให้ Lambda เรียกใช้เป็นอันดับแรกเมื่อมีการ Trigger</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> The function handler is the entry point that Lambda calls to start running the Lambda function.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Handler คือฟังก์ชันหลักในโค้ดที่คุณกำหนดไว้ให้ Lambda เรียกใช้เป็นอันดับแรกเมื่อมีการ Trigger</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> The function handler is the entry point that Lambda calls to start running the Lambda function.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_706",
@@ -1667,7 +1777,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Provisioned Concurrency ช่วยเตรียมสภาพแวดล้อมให้พร้อมทำงานตลอดเวลา เพื่อแก้ปัญหาความล่าช้าจากการเริ่มรันครั้งแรก (Cold Start)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> An application that uses the Lambda function responds slowly for the first few users who sign in each day. Lambda metrics show higher latency for those initial requests.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Provisioned Concurrency ช่วยเตรียมสภาพแวดล้อมให้พร้อมทำงานตลอดเวลา เพื่อแก้ปัญหาความล่าช้าจากการเริ่มรันครั้งแรก (Cold Start)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> An application that uses the Lambda function responds slowly for the first few users who sign in each day. Lambda metrics show higher latency for those initial requests.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_707",
@@ -1703,7 +1815,9 @@
     ],
     "is_multi": true,
     "multi_count": 2,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> เมื่อ SNS เรียก Lambda แบบ Asynchronous เราสามารถกำหนด 'Destinations' เพื่อจัดการว่าถ้าสำเร็จหรือล้มเหลวให้ส่งผลลัพธ์ไปที่ไหนต่อ</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> Destinations, Asynchronous invocations</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> เมื่อ SNS เรียก Lambda แบบ Asynchronous เราสามารถกำหนด 'Destinations' เพื่อจัดการว่าถ้าสำเร็จหรือล้มเหลวให้ส่งผลลัพธ์ไปที่ไหนต่อ</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> Destinations, Asynchronous invocations</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_708",
@@ -1732,7 +1846,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> หากไฟล์ Deployment มีขนาดใหญ่ (เกิน 50 MB) AWS แนะนำให้ฝากไฟล์ไว้ที่ S3 แล้วค่อยระบุตำแหน่งไฟล์ในหน้า Console แทนการอัปโหลดตรง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Upload the deployment package to an Amazon Simple Storage Service (Amazon S3) bucket, and specify the bucket name and object key on the Lambda console.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> หากไฟล์ Deployment มีขนาดใหญ่ (เกิน 50 MB) AWS แนะนำให้ฝากไฟล์ไว้ที่ S3 แล้วค่อยระบุตำแหน่งไฟล์ในหน้า Console แทนการอัปโหลดตรง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Upload the deployment package to an Amazon Simple Storage Service (Amazon S3) bucket, and specify the bucket name and object key on the Lambda console.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_709",
@@ -1761,7 +1877,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ส่วนท้ายของ ARN (helloworld:PROD) หมายถึงการชี้ไปยัง 'Alias' ชื่อ PROD ซึ่งจะเรียก Version ของฟังก์ชันที่ผูกไว้กับชื่อนั้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> This ARN will invoke the version of the function that is currently associated with the PROD alias.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ส่วนท้ายของ ARN (helloworld:PROD) หมายถึงการชี้ไปยัง 'Alias' ชื่อ PROD ซึ่งจะเรียก Version ของฟังก์ชันที่ผูกไว้กับชื่อนั้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> This ARN will invoke the version of the function that is currently associated with the PROD alias.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_710",
@@ -1790,7 +1908,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Service Map ช่วยให้เห็นความสัมพันธ์ระหว่างบริการต่างๆ และระบุจุดที่เกิด Error ได้รวดเร็วที่สุดผ่านภาพรวมทางภาพ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use the service map to visually locate errors across the application.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Service Map ช่วยให้เห็นความสัมพันธ์ระหว่างบริการต่างๆ และระบุจุดที่เกิด Error ได้รวดเร็วที่สุดผ่านภาพรวมทางภาพ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use the service map to visually locate errors across the application.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_801",
@@ -1819,7 +1939,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Container ช่วยปกปิดรายละเอียดภายในแอพ ทำให้ออกแบบระบบได้ยืดหยุ่น ย้ายไปรันที่ไหนก็ได้โดยไม่ต้องกังวลเรื่อง Infrastructure</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> The abstraction of details of what's being \"shipped\" increases the agility of a system.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Container ช่วยปกปิดรายละเอียดภายในแอพ ทำให้ออกแบบระบบได้ยืดหยุ่น ย้ายไปรันที่ไหนก็ได้โดยไม่ต้องกังวลเรื่อง Infrastructure</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> The abstraction of details of what's being \"shipped\" increases the agility of a system.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_802",
@@ -1855,7 +1977,9 @@
     ],
     "is_multi": true,
     "multi_count": 2,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Container ประกอบด้วยส่วนหลักๆ คือ Runtime Engine (เช่น Docker) และโค้ดของแอปพลิเคชันพร้อม dependencies</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> Runtime engine, Application code</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Container ประกอบด้วยส่วนหลักๆ คือ Runtime Engine (เช่น Docker) และโค้ดของแอปพลิเคชันพร้อม dependencies</li><li><strong>คำตอบที่ถูกต้อง (multi):</strong> Runtime engine, Application code</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_803",
@@ -1884,7 +2008,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Image คือพิมพ์เขียว (Blueprint) ส่วน Container คือสิ่งที่ 'รันอยู่จริง' จากพิมพ์เขียวนั้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A container is a runnable instance of an image.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Image คือพิมพ์เขียว (Blueprint) ส่วน Container คือสิ่งที่ 'รันอยู่จริง' จากพิมพ์เขียวนั้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A container is a runnable instance of an image.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_804",
@@ -1913,7 +2039,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> คำสั่ง docker run ใช้เพื่อสร้างและเริ่มทำงาน Container จาก Image ที่กำหนด พร้อมตั้งชื่อผ่าน --name</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> docker run --name my_app_l node_app</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> คำสั่ง docker run ใช้เพื่อสร้างและเริ่มทำงาน Container จาก Image ที่กำหนด พร้อมตั้งชื่อผ่าน --name</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> docker run --name my_app_l node_app</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_805",
@@ -1942,7 +2070,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ทุกๆ บรรทัดคำสั่งใน Dockerfile จะสร้างเป็น Layer แบบ Read-only ซ้อนทับกันจนเกิดเป็น Container Image</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Each instruction in a Dockerfile creates a read-only layer in the image.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ทุกๆ บรรทัดคำสั่งใน Dockerfile จะสร้างเป็น Layer แบบ Read-only ซ้อนทับกันจนเกิดเป็น Container Image</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Each instruction in a Dockerfile creates a read-only layer in the image.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_806",
@@ -1971,7 +2101,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Container ช่วยให้แต่ละ Microservice สามารถใช้ภาษาหรือ Stack ที่ต่างกันได้โดยไม่รบกวนกัน (Polyglot persistence/development)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Each container can use the language and technology that are best suited for the service.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Container ช่วยให้แต่ละ Microservice สามารถใช้ภาษาหรือ Stack ที่ต่างกันได้โดยไม่รบกวนกัน (Polyglot persistence/development)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Each container can use the language and technology that are best suited for the service.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_807",
@@ -2000,7 +2132,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Orchestration (เช่น ECS หรือ Kubernetes) ช่วยจัดการเรื่องการวาง Container (Placement) และการสเกลอัตโนมัติให้เป็นระบบ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> To schedule container starts and stops and determine where to place containers</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Orchestration (เช่น ECS หรือ Kubernetes) ช่วยจัดการเรื่องการวาง Container (Placement) และการสเกลอัตโนมัติให้เป็นระบบ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> To schedule container starts and stops and determine where to place containers</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_808",
@@ -2029,7 +2163,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Amazon ECS เป็นบริการหลักของ AWS ที่ใช้บริหารจัดการ Docker Container ให้ทำงานได้อย่างมีประสิทธิภาพและสเกลได้ง่าย</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Amazon ECS is a highly scalable container orchestration service that supports Docker containers.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Amazon ECS เป็นบริการหลักของ AWS ที่ใช้บริหารจัดการ Docker Container ให้ทำงานได้อย่างมีประสิทธิภาพและสเกลได้ง่าย</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Amazon ECS is a highly scalable container orchestration service that supports Docker containers.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_809",
@@ -2058,7 +2194,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ใน Beanstalk คำว่า 'Application' คือระดับบนสุดที่รวบรวม Version และ Environment ต่างๆ เข้าไว้ด้วยกัน</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Application</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ใน Beanstalk คำว่า 'Application' คือระดับบนสุดที่รวบรวม Version และ Environment ต่างๆ เข้าไว้ด้วยกัน</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Application</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_810",
@@ -2087,7 +2225,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Traffic Splitting ช่วยให้คุณแบ่งเปอร์เซ็นต์ของผู้ใช้งาน (เช่น 10%) ไปลองใช้ระบบเวอร์ชันใหม่เพื่อทดสอบความเสถียร (Canary)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Traffic Splitting</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Traffic Splitting ช่วยให้คุณแบ่งเปอร์เซ็นต์ของผู้ใช้งาน (เช่น 10%) ไปลองใช้ระบบเวอร์ชันใหม่เพื่อทดสอบความเสถียร (Canary)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Traffic Splitting</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_901",
@@ -2116,7 +2256,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ความทนทานต่อ 'ข้อมูลเก่า' (Stale Data) เป็นหัวใจสำคัญ เพราะแต่ละฟังก์ชันของแอปรับความเก่าได้ไม่เท่ากัน</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Consider the tolerance for stale data in each context where the data is used.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ความทนทานต่อ 'ข้อมูลเก่า' (Stale Data) เป็นหัวใจสำคัญ เพราะแต่ละฟังก์ชันของแอปรับความเก่าได้ไม่เท่ากัน</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Consider the tolerance for stale data in each context where the data is used.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_902",
@@ -2145,7 +2287,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Redis เป็น Key-value store ที่รองรับการทำ Read Replicas เพื่อช่วยเรื่องความเร็วในการอ่านข้อมูลมหาศาล</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Amazon ElastiCache for Redis</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Redis เป็น Key-value store ที่รองรับการทำ Read Replicas เพื่อช่วยเรื่องความเร็วในการอ่านข้อมูลมหาศาล</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Amazon ElastiCache for Redis</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_903",
@@ -2174,7 +2318,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> นี่คือหลักการของ 'Lazy Loading' ที่นักพัฒนาต้องเขียน Logic เช็คของใน Cache ก่อน ถ้าไม่มีค่อยไปดึงจาก Database จริง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Writing code that looks for the requested data in the cache and, if the data is not found, requests it from the origin</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> นี่คือหลักการของ 'Lazy Loading' ที่นักพัฒนาต้องเขียน Logic เช็คของใน Cache ก่อน ถ้าไม่มีค่อยไปดึงจาก Database จริง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Writing code that looks for the requested data in the cache and, if the data is not found, requests it from the origin</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_904",
@@ -2203,7 +2349,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การเชื่อมต่อกับ Cache Node ของ ElastiCache จะต้องทำผ่าน 'Endpoint' ที่ AWS กำหนดให้</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Your application connects to an ElastiCache node by using a unique address called an endpoint.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การเชื่อมต่อกับ Cache Node ของ ElastiCache จะต้องทำผ่าน 'Endpoint' ที่ AWS กำหนดให้</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Your application connects to an ElastiCache node by using a unique address called an endpoint.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_905",
@@ -2232,7 +2380,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> CloudFront ช่วยลดความหน่วง (Latency) โดยการนำไฟล์ไปเก็บไว้ที่ Edge Location ที่อยู่ใกล้ผู้ใช้งานมากที่สุด</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Set up a CloudFront distribution that can serve static content from edge locations that are closer to UK users.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> CloudFront ช่วยลดความหน่วง (Latency) โดยการนำไฟล์ไปเก็บไว้ที่ Edge Location ที่อยู่ใกล้ผู้ใช้งานมากที่สุด</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Set up a CloudFront distribution that can serve static content from edge locations that are closer to UK users.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_906",
@@ -2261,7 +2411,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Cache Key ยิ่งเจาะจงน้อยเท่าไหร่ โอกาสที่คำขอจากหลายคนจะตรงกับ Key เดิม (Cache Hit) ก็ยิ่งสูงขึ้นเท่านั้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Include only the minimum necessary values in the cache key.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Cache Key ยิ่งเจาะจงน้อยเท่าไหร่ โอกาสที่คำขอจากหลายคนจะตรงกับ Key เดิม (Cache Hit) ก็ยิ่งสูงขึ้นเท่านั้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Include only the minimum necessary values in the cache key.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_907",
@@ -2290,7 +2442,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> เมื่อ Cache หมดอายุ CloudFront จะวิ่งกลับไปถามที่ต้นทาง (Origin) เพื่อเช็คว่าไฟล์มีการอัปเดตหรือไม่</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> After a file expires, the next time the edge location gets a user request for the file, CloudFront forwards the request to the origin server.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> เมื่อ Cache หมดอายุ CloudFront จะวิ่งกลับไปถามที่ต้นทาง (Origin) เพื่อเช็คว่าไฟล์มีการอัปเดตหรือไม่</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> After a file expires, the next time the edge location gets a user request for the file, CloudFront forwards the request to the origin server.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_908",
@@ -2319,7 +2473,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> CloudFront Functions เหมาะกับงานเบาๆ ที่ต้องการความเร็วสูงมาก เช่น การแก้ Header หรือทำ URL Redirect ที่ Edge</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A function that redirects the viewer to a different URL and adds a custom response header</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> CloudFront Functions เหมาะกับงานเบาๆ ที่ต้องการความเร็วสูงมาก เช่น การแก้ Header หรือทำ URL Redirect ที่ Edge</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A function that redirects the viewer to a different URL and adds a custom response header</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_909",
@@ -2348,7 +2504,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Lazy Loading ช่วยประหยัดพื้นที่แคช เพราะจะเก็บเฉพาะข้อมูลที่ 'มีคนเรียกใช้งานจริง' เท่านั้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Lazy loading avoids filling up the cache with data that is not requested.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Lazy Loading ช่วยประหยัดพื้นที่แคช เพราะจะเก็บเฉพาะข้อมูลที่ 'มีคนเรียกใช้งานจริง' เท่านั้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Lazy loading avoids filling up the cache with data that is not requested.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_910",
@@ -2377,7 +2535,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การทำ Cache หลายชั้น (Multi-layer Caching) ตั้งแต่ระดับหน้าบ้านไปจนถึงฐานข้อมูล จะช่วยให้ระบบโดยรวมลื่นไหลที่สุด</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Using different types of caching at each application layer might improve both the frontend and backend performance.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การทำ Cache หลายชั้น (Multi-layer Caching) ตั้งแต่ระดับหน้าบ้านไปจนถึงฐานข้อมูล จะช่วยให้ระบบโดยรวมลื่นไหลที่สุด</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Using different types of caching at each application layer might improve both the frontend and backend performance.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1001",
@@ -2406,7 +2566,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ในระบบ Queue (SQS) ตัวรับสาร (Consumer) จะต้องเป็นฝ่ายส่งคำขอ (Poll) เพื่อดึงข้อมูลออกมาประมวลผลเอง ไม่ใช่การที่คิวส่งข้อมูลออกไปหา (Push)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Consumers poll the queue for messages.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ในระบบ Queue (SQS) ตัวรับสาร (Consumer) จะต้องเป็นฝ่ายส่งคำขอ (Poll) เพื่อดึงข้อมูลออกมาประมวลผลเอง ไม่ใช่การที่คิวส่งข้อมูลออกไปหา (Push)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Consumers poll the queue for messages.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1002",
@@ -2435,7 +2597,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> รูปแบบ Pub/Sub (เช่น SNS) จะเน้นการกระจายข่าวสารแบบ 'Fan-out' โดยเมื่อมีข้อความใหม่เข้า Topic ระบบจะดัน (Push) ข้อความนั้นไปหาผู้ติดตามทุกคนทันที</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A new topic message is pushed out to all topic subscribers.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> รูปแบบ Pub/Sub (เช่น SNS) จะเน้นการกระจายข่าวสารแบบ 'Fan-out' โดยเมื่อมีข้อความใหม่เข้า Topic ระบบจะดัน (Push) ข้อความนั้นไปหาผู้ติดตามทุกคนทันที</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A new topic message is pushed out to all topic subscribers.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1003",
@@ -2464,7 +2628,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การตั้งค่า MaxNumberOfMessages ช่วยให้เราดึงข้อความเป็นชุด (Batch) ได้สูงสุด 10 ข้อความในครั้งเดียว ช่วยลดจำนวน API Call และประหยัดค่าใช้จ่าย</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use the ReceiveMessage operation with MaxNumberOfMessages set to 5 to retrieve up to 5 messages off the queue at one time.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การตั้งค่า MaxNumberOfMessages ช่วยให้เราดึงข้อความเป็นชุด (Batch) ได้สูงสุด 10 ข้อความในครั้งเดียว ช่วยลดจำนวน API Call และประหยัดค่าใช้จ่าย</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use the ReceiveMessage operation with MaxNumberOfMessages set to 5 to retrieve up to 5 messages off the queue at one time.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1004",
@@ -2493,7 +2659,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Visibility Timeout คือเวลาที่ข้อความจะถูก 'ซ่อน' ขณะประมวลผล หากงานใช้เวลานานเกินไปจนเวลาหมด ข้อความจะกลับมาปรากฏในคิวทำให้เกิดการทำงานซ้ำ การเพิ่มเวลานี้จะช่วยแก้ปัญหาได้</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Increase the visibility timeout.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Visibility Timeout คือเวลาที่ข้อความจะถูก 'ซ่อน' ขณะประมวลผล หากงานใช้เวลานานเกินไปจนเวลาหมด ข้อความจะกลับมาปรากฏในคิวทำให้เกิดการทำงานซ้ำ การเพิ่มเวลานี้จะช่วยแก้ปัญหาได้</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Increase the visibility timeout.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1005",
@@ -2522,7 +2690,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Dead-letter Queue (DLQ) ใช้สำหรับแยกข้อความที่มีปัญหา (Poison messages) ออกไปเก็บไว้ต่างหากเพื่อไม่ให้ขวางทางข้อความดีๆ โดยกำหนดผ่านจำนวนครั้งที่พยายามประมวลผลซ้ำ (maxReceiveCount)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Add a dead-letter queue and set a low maxReceiveCount.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Dead-letter Queue (DLQ) ใช้สำหรับแยกข้อความที่มีปัญหา (Poison messages) ออกไปเก็บไว้ต่างหากเพื่อไม่ให้ขวางทางข้อความดีๆ โดยกำหนดผ่านจำนวนครั้งที่พยายามประมวลผลซ้ำ (maxReceiveCount)</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Add a dead-letter queue and set a low maxReceiveCount.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1006",
@@ -2551,7 +2721,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Short Polling จะสุ่มตรวจข้อมูลจากเซิร์ฟเวอร์ย่อยๆ บางส่วนเท่านั้น ซึ่งรวดเร็วกว่าแต่อาจได้รับข้อความไม่ครบในครั้งเดียว ในขณะที่ Long Polling จะรอนานกว่าแต่ได้ข้อมูลแน่นอนและประหยัด API call</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> When short polling is configured, Amazon SQS samples a subset of its servers.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Short Polling จะสุ่มตรวจข้อมูลจากเซิร์ฟเวอร์ย่อยๆ บางส่วนเท่านั้น ซึ่งรวดเร็วกว่าแต่อาจได้รับข้อความไม่ครบในครั้งเดียว ในขณะที่ Long Polling จะรอนานกว่าแต่ได้ข้อมูลแน่นอนและประหยัด API call</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> When short polling is configured, Amazon SQS samples a subset of its servers.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1007",
@@ -2580,7 +2752,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> SNS Topic เปรียบเสมือน 'ศูนย์กระจายสัญญาณ' (Logical access point) ที่รวบรวมข้อความจากผู้ส่ง แล้วส่งกระจายไปยังผู้รับหลายๆ รูปแบบพร้อมกัน</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> An SNS topic is a logical access point, which acts as a communication channel.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> SNS Topic เปรียบเสมือน 'ศูนย์กระจายสัญญาณ' (Logical access point) ที่รวบรวมข้อความจากผู้ส่ง แล้วส่งกระจายไปยังผู้รับหลายๆ รูปแบบพร้อมกัน</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> An SNS topic is a logical access point, which acts as a communication channel.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1008",
@@ -2609,7 +2783,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Filter Policy ช่วยให้เราเลือกรับเฉพาะข้อความที่ต้องการ (เช่น เฉพาะ Order ที่ยกเลิก) ทำให้ไม่ต้องเรียก Lambda มาทำงานโดยไม่จำเป็น ช่วยประหยัดค่าใช้จ่ายได้มาก</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Set up a filter policy so that the Lambda function subscription only receives cancel order messages.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Filter Policy ช่วยให้เราเลือกรับเฉพาะข้อความที่ต้องการ (เช่น เฉพาะ Order ที่ยกเลิก) ทำให้ไม่ต้องเรียก Lambda มาทำงานโดยไม่จำเป็น ช่วยประหยัดค่าใช้จ่ายได้มาก</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Set up a filter policy so that the Lambda function subscription only receives cancel order messages.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1009",
@@ -2638,7 +2814,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> KPL เป็น Library ที่ถูกออกแบบมาเพื่อส่งข้อมูล (Put records) ขึ้น Kinesis ได้อย่างมีประสิทธิภาพสูงสุด รองรับการทำ Batching และการจัดการ Retry อัตโนมัติ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use the Kinesis Producer Library (KPL).</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> KPL เป็น Library ที่ถูกออกแบบมาเพื่อส่งข้อมูล (Put records) ขึ้น Kinesis ได้อย่างมีประสิทธิภาพสูงสุด รองรับการทำ Batching และการจัดการ Retry อัตโนมัติ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use the Kinesis Producer Library (KPL).</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1010",
@@ -2667,7 +2845,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> หัวใจของ Kinesis Streams คือ Shards ซึ่งเป็นหน่วยประมวลผลที่ช่วยให้เราสามารถขยายขนาด (Scale-out) เพื่อรับส่งข้อมูลปริมาณมหาศาลพร้อมกันได้</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> The data records in a data stream are distributed into shards.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> หัวใจของ Kinesis Streams คือ Shards ซึ่งเป็นหน่วยประมวลผลที่ช่วยให้เราสามารถขยายขนาด (Scale-out) เพื่อรับส่งข้อมูลปริมาณมหาศาลพร้อมกันได้</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> The data records in a data stream are distributed into shards.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1101",
@@ -2696,7 +2876,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Step Functions เหมาะกับการจัดการลำดับงาน (Workflow) ที่ซับซ้อน โดยเฉพาะเมื่อเรามี Lambda หลายตัวที่ต้องทำงานต่อเนื่องกันหรือรอผลจากกันและกัน</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A serverless application must run a series of AWS Lambda functions that are dependent on each other.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Step Functions เหมาะกับการจัดการลำดับงาน (Workflow) ที่ซับซ้อน โดยเฉพาะเมื่อเรามี Lambda หลายตัวที่ต้องทำงานต่อเนื่องกันหรือรอผลจากกันและกัน</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A serverless application must run a series of AWS Lambda functions that are dependent on each other.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1102",
@@ -2725,7 +2907,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> จุดเด่นที่สุดคือหน้า Visual Workflow ที่ช่วยให้เราเห็นสถานะการทำงานในแต่ละขั้นตอนเป็นรูปภาพ ทำให้การ Debug และการออกแบบทำได้ง่ายมาก</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Developers can use Step Functions to build visual workflows.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> จุดเด่นที่สุดคือหน้า Visual Workflow ที่ช่วยให้เราเห็นสถานะการทำงานในแต่ละขั้นตอนเป็นรูปภาพ ทำให้การ Debug และการออกแบบทำได้ง่ายมาก</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Developers can use Step Functions to build visual workflows.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1103",
@@ -2754,7 +2938,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Task State คือสถานะที่ 'ลงมือทำงานจริง' เช่น การเรียกใช้งาน Lambda, การรันงานบน Container หรือการเชื่อมต่อกับบริการอื่นๆ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Task states perform a unit of work.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Task State คือสถานะที่ 'ลงมือทำงานจริง' เช่น การเรียกใช้งาน Lambda, การรันงานบน Container หรือการเชื่อมต่อกับบริการอื่นๆ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Task states perform a unit of work.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1104",
@@ -2783,7 +2969,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Choice State ทำหน้าที่เหมือนคำสั่ง if/else ในการเขียนโปรแกรม เพื่อตัดสินใจว่าจะให้ Workflow เดินหน้าไปทางไหนตามเงื่อนไขที่กำหนด</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Choice</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Choice State ทำหน้าที่เหมือนคำสั่ง if/else ในการเขียนโปรแกรม เพื่อตัดสินใจว่าจะให้ Workflow เดินหน้าไปทางไหนตามเงื่อนไขที่กำหนด</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Choice</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1105",
@@ -2812,7 +3000,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Map State ใช้สำหรับการวนลูป (Iterate) เพื่อประมวลผลรายการในอาร์เรย์ (เช่น สินค้าหลายรายการในหนึ่งคำสั่งซื้อ) ทีละชิ้นพร้อมกันได้</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Map</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Map State ใช้สำหรับการวนลูป (Iterate) เพื่อประมวลผลรายการในอาร์เรย์ (เช่น สินค้าหลายรายการในหนึ่งคำสั่งซื้อ) ทีละชิ้นพร้อมกันได้</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Map</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1106",
@@ -2841,7 +3031,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ทั้ง Succeed และ Fail คือจุดจบของ Workflow (Terminal states) ดังนั้นจึงไม่จำเป็นต้องระบุขั้นตอนถัดไป (Next) อีก</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Succeed states and Fail states do not include the Next field.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ทั้ง Succeed และ Fail คือจุดจบของ Workflow (Terminal states) ดังนั้นจึงไม่จำเป็นต้องระบุขั้นตอนถัดไป (Next) อีก</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Succeed states and Fail states do not include the Next field.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1107",
@@ -2870,7 +3062,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Parallel State ช่วยให้เราสามารถรันหลายขั้นตอนที่แยกจากกันได้พร้อมๆ กัน และรอให้ทุกอย่างเสร็จสิ้นก่อนจะไปขั้นตอนถัดไป</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Parallel</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Parallel State ช่วยให้เราสามารถรันหลายขั้นตอนที่แยกจากกันได้พร้อมๆ กัน และรอให้ทุกอย่างเสร็จสิ้นก่อนจะไปขั้นตอนถัดไป</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Parallel</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1108",
@@ -2899,7 +3093,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> taskToken คือรหัสอ้างอิงของงานที่ระบบรอคำยืนยัน เมื่อมีการอนุมัติ (เช่น จากมนุษย์) ระบบภายนอกจะส่ง Token นี้กลับมาพร้อมผลลัพธ์เพื่อให้ Workflow เดินหน้าต่อ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A taskToken is returned as part of a call to the GetActivityTask action and is used when calling the SendTaskSuccess action to associate a result with a task.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> taskToken คือรหัสอ้างอิงของงานที่ระบบรอคำยืนยัน เมื่อมีการอนุมัติ (เช่น จากมนุษย์) ระบบภายนอกจะส่ง Token นี้กลับมาพร้อมผลลัพธ์เพื่อให้ Workflow เดินหน้าต่อ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A taskToken is returned as part of a call to the GetActivityTask action and is used when calling the SendTaskSuccess action to associate a result with a task.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1109",
@@ -2928,7 +3124,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Express Workflows ถูกออกแบบมาเพื่อความเร็วสูงมาก (High throughput) ในราคาประหยัด สำหรับงานที่จบไวและมีจำนวนมหาศาล เช่น ข้อมูลจากอุปกรณ์ IoT</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> The workflow must support a very high rate of events that come from Internet of Things (IoT) devices.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Express Workflows ถูกออกแบบมาเพื่อความเร็วสูงมาก (High throughput) ในราคาประหยัด สำหรับงานที่จบไวและมีจำนวนมหาศาล เช่น ข้อมูลจากอุปกรณ์ IoT</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> The workflow must support a very high rate of events that come from Internet of Things (IoT) devices.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1110",
@@ -2957,7 +3155,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> เราสามารถนำ API Gateway มาวางข้างหน้าเพื่อเปลี่ยนคำขอ HTTP จากภายนอกให้กลายเป็นการสั่งเริ่มทำงาน (Execution) ของ Step Functions ได้โดยตรง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A developer can use Amazon API Gateway to associate their Step Functions APIs with methods in an API Gateway API.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> เราสามารถนำ API Gateway มาวางข้างหน้าเพื่อเปลี่ยนคำขอ HTTP จากภายนอกให้กลายเป็นการสั่งเริ่มทำงาน (Execution) ของ Step Functions ได้โดยตรง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A developer can use Amazon API Gateway to associate their Step Functions APIs with methods in an API Gateway API.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1201",
@@ -2986,7 +3186,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> SSL และ TLS คือโปรโตคอลความปลอดภัยที่ใช้เข้ารหัสข้อมูลระหว่างต้นทางและปลายทาง เพื่อป้องกันการดักฟัง (Eavesdropping) โดย TLS คือรุ่นที่ใหม่กว่าและปลอดภัยกว่า</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Both SSL and TLS encrypt network communications between connected resources.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> SSL และ TLS คือโปรโตคอลความปลอดภัยที่ใช้เข้ารหัสข้อมูลระหว่างต้นทางและปลายทาง เพื่อป้องกันการดักฟัง (Eavesdropping) โดย TLS คือรุ่นที่ใหม่กว่าและปลอดภัยกว่า</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Both SSL and TLS encrypt network communications between connected resources.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1202",
@@ -3015,7 +3217,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> หน่วยงานออกใบรับรอง (CA) มีหน้าที่หลักในการตรวจสอบความเป็นเจ้าของโดเมนและออกใบรับรองดิจิทัล (Certificate) เพื่อยืนยันตัวตนของเว็บไซต์นั้นๆ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Issue a certificate.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> หน่วยงานออกใบรับรอง (CA) มีหน้าที่หลักในการตรวจสอบความเป็นเจ้าของโดเมนและออกใบรับรองดิจิทัล (Certificate) เพื่อยืนยันตัวตนของเว็บไซต์นั้นๆ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Issue a certificate.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1203",
@@ -3044,7 +3248,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ข้อดีที่โดดเด่นของ ACM คือการช่วยต่ออายุใบรับรอง (Renewal) ให้เราโดยอัตโนมัติ ทำให้ไม่ต้องกังวลว่าเว็บไซต์จะเข้าไม่ได้เพราะใบรับรองหมดอายุ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> ACM manages certificate renewals for both public and private certificates.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ข้อดีที่โดดเด่นของ ACM คือการช่วยต่ออายุใบรับรอง (Renewal) ให้เราโดยอัตโนมัติ ทำให้ไม่ต้องกังวลว่าเว็บไซต์จะเข้าไม่ได้เพราะใบรับรองหมดอายุ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> ACM manages certificate renewals for both public and private certificates.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1204",
@@ -3073,7 +3279,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การใช้ IAM Roles เพื่อขอสิทธิ์ชั่วคราว (STS) เป็นวิธีที่ปลอดภัยที่สุด เพราะไม่มีการฝังรหัสถาวรไว้ในโค้ด และสิทธิ์จะหมดอายุเองโดยอัตโนมัติ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use AWS Identity and Access Management (IAM) roles to retrieve temporary security credentials.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การใช้ IAM Roles เพื่อขอสิทธิ์ชั่วคราว (STS) เป็นวิธีที่ปลอดภัยที่สุด เพราะไม่มีการฝังรหัสถาวรไว้ในโค้ด และสิทธิ์จะหมดอายุเองโดยอัตโนมัติ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use AWS Identity and Access Management (IAM) roles to retrieve temporary security credentials.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1205",
@@ -3102,7 +3310,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Federated users จะต้องผ่านการยืนยันตัวตนกับ Identity Provider ภายนอก (เช่น Google, Facebook) ก่อนเป็นอันดับแรกเพื่อขอใบเบิกทางมายัง AWS</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> With federated users, the first authentication is made against an IdP. With IAM users, the first authentication is made against IAM.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Federated users จะต้องผ่านการยืนยันตัวตนกับ Identity Provider ภายนอก (เช่น Google, Facebook) ก่อนเป็นอันดับแรกเพื่อขอใบเบิกทางมายัง AWS</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> With federated users, the first authentication is made against an IdP. With IAM users, the first authentication is made against IAM.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1206",
@@ -3131,7 +3341,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> CloudTrail คือ 'กล้องวงจรปิด' ของ AWS ที่บันทึกทุกกิจกรรมและคำสั่งที่เกิดขึ้น ช่วยให้เราตรวจสอบได้ว่าใครเป็นคนลบไฟล์และทำผ่านคำสั่งอะไร</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use AWS CloudTrail to search for information about delete object events on the S3 bucket.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> CloudTrail คือ 'กล้องวงจรปิด' ของ AWS ที่บันทึกทุกกิจกรรมและคำสั่งที่เกิดขึ้น ช่วยให้เราตรวจสอบได้ว่าใครเป็นคนลบไฟล์และทำผ่านคำสั่งอะไร</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use AWS CloudTrail to search for information about delete object events on the S3 bucket.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1207",
@@ -3160,7 +3372,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> User Pool เปรียบเสมือนระบบสมาชิก (Directory) ที่รองรับการสมัครสมาชิก ล็อกอิน และการกู้คืนรหัสผ่านของผู้ใช้แอปพลิเคชันโดยตรง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Amazon Cognito user pool.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> User Pool เปรียบเสมือนระบบสมาชิก (Directory) ที่รองรับการสมัครสมาชิก ล็อกอิน และการกู้คืนรหัสผ่านของผู้ใช้แอปพลิเคชันโดยตรง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Amazon Cognito user pool.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1208",
@@ -3189,7 +3403,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ฟีเจอร์นี้จะช่วยตรวจสอบว่ารหัสผ่านที่ผู้ใช้ป้อนมานั้น เคยอยู่ในฐานข้อมูลที่รั่วไหล (Data Breach) จากเว็บอื่นหรือไม่ เพื่อบังคับให้ผู้ใช้เปลี่ยนรหัสผ่านที่ปลอดภัยกว่า</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Compromised credentials check.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ฟีเจอร์นี้จะช่วยตรวจสอบว่ารหัสผ่านที่ผู้ใช้ป้อนมานั้น เคยอยู่ในฐานข้อมูลที่รั่วไหล (Data Breach) จากเว็บอื่นหรือไม่ เพื่อบังคับให้ผู้ใช้เปลี่ยนรหัสผ่านที่ปลอดภัยกว่า</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Compromised credentials check.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1209",
@@ -3218,7 +3434,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Identity Pool (Federated Identities) มีหน้าที่มอบ 'กุญแจ' (AWS Credentials) ชั่วคราวให้กับผู้ที่ล็อกอินผ่านช่องทางต่างๆ เพื่อให้มีสิทธิ์เข้าถึงทรัพยากรบน AWS ได้โดยตรง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> With an identity pool, users can obtain temporary, limited_privilege AWS credentials to access other AWS services.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Identity Pool (Federated Identities) มีหน้าที่มอบ 'กุญแจ' (AWS Credentials) ชั่วคราวให้กับผู้ที่ล็อกอินผ่านช่องทางต่างๆ เพื่อให้มีสิทธิ์เข้าถึงทรัพยากรบน AWS ได้โดยตรง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> With an identity pool, users can obtain temporary, limited_privilege AWS credentials to access other AWS services.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1210",
@@ -3247,7 +3465,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ลำดับคือผู้ใช้ล็อกอินกับ User Pool -> ได้ Token (JWT) กลับมาที่แอป -> จากนั้นแอปจึงนำ Token นี้ไปยื่นให้กับ API Gateway เพื่อขอใช้บริการ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A mobile app user authenticates with a user pool, and the user pool returns JWTs to the app.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ลำดับคือผู้ใช้ล็อกอินกับ User Pool -> ได้ Token (JWT) กลับมาที่แอป -> จากนั้นแอปจึงนำ Token นี้ไปยื่นให้กับ API Gateway เพื่อขอใช้บริการ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A mobile app user authenticates with a user pool, and the user pool returns JWTs to the app.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1301",
@@ -3276,7 +3496,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> DevOps ไม่ได้เป็นแค่เรื่องเครื่องมือ แต่เป็น 'ปรัชญา' ในการสร้างความร่วมมือระหว่างทีมพัฒนา (Dev) และทีมดูแลระบบ (Ops) เพื่อให้ส่งมอบงานได้เร็วและมีคุณภาพมากขึ้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> DevOps is about removing barriers between development and operations functions to optimize productivity and reliability.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> DevOps ไม่ได้เป็นแค่เรื่องเครื่องมือ แต่เป็น 'ปรัชญา' ในการสร้างความร่วมมือระหว่างทีมพัฒนา (Dev) และทีมดูแลระบบ (Ops) เพื่อให้ส่งมอบงานได้เร็วและมีคุณภาพมากขึ้น</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> DevOps is about removing barriers between development and operations functions to optimize productivity and reliability.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1302",
@@ -3305,7 +3527,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ในโลกของคลาวด์ DevOps จะเน้นการลดภาระงานทำมือ (Manual tasks) โดยการทำทุกขั้นตอนตั้งแต่เขียนโค้ดจนถึงติดตั้งใช้งานให้เป็นระบบอัตโนมัติทั้งหมด</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Every phase of the software development lifecycle is automated.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ในโลกของคลาวด์ DevOps จะเน้นการลดภาระงานทำมือ (Manual tasks) โดยการทำทุกขั้นตอนตั้งแต่เขียนโค้ดจนถึงติดตั้งใช้งานให้เป็นระบบอัตโนมัติทั้งหมด</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Every phase of the software development lifecycle is automated.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1303",
@@ -3334,7 +3558,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> CodePipeline ทำหน้าที่เป็น 'ผู้ควบคุมลำดับงาน' (Orchestrator) ที่จะพาโค้ดจากจุดเริ่มต้นผ่านด่านต่างๆ จนถึงมือผู้ใช้ตามขั้นตอนที่เรากำหนดไว้</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Automate the steps that are required to release software based on a release model that the developer defines.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> CodePipeline ทำหน้าที่เป็น 'ผู้ควบคุมลำดับงาน' (Orchestrator) ที่จะพาโค้ดจากจุดเริ่มต้นผ่านด่านต่างๆ จนถึงมือผู้ใช้ตามขั้นตอนที่เรากำหนดไว้</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Automate the steps that are required to release software based on a release model that the developer defines.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1304",
@@ -3363,7 +3589,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> CI ที่ดีต้องมาคู่กับการทดสอบอัตโนมัติ เพื่อให้มั่นใจได้ว่าโค้ดใหม่ที่รวมเข้ามาจะไม่ไปทำให้โค้ดเดิมพัง (Regression) ก่อนที่จะปล่อยออกไป</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Continuous integration requires teams to write automated tests.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> CI ที่ดีต้องมาคู่กับการทดสอบอัตโนมัติ เพื่อให้มั่นใจได้ว่าโค้ดใหม่ที่รวมเข้ามาจะไม่ไปทำให้โค้ดเดิมพัง (Regression) ก่อนที่จะปล่อยออกไป</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Continuous integration requires teams to write automated tests.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1305",
@@ -3392,7 +3620,9 @@
     "answer": "ค",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การทำ IaC (Infrastructure as Code) คือการเขียนไฟล์ต้นแบบ (Template) เพื่อระบุทรัพยากร (Resources) ที่ต้องการใช้ทั้งหมดในรูปแบบไฟล์ข้อความ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Create an AWS CloudFormation template with a Resources section that defines the AWS resources for the application.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> การทำ IaC (Infrastructure as Code) คือการเขียนไฟล์ต้นแบบ (Template) เพื่อระบุทรัพยากร (Resources) ที่ต้องการใช้ทั้งหมดในรูปแบบไฟล์ข้อความ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Create an AWS CloudFormation template with a Resources section that defines the AWS resources for the application.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1306",
@@ -3421,7 +3651,9 @@
     "answer": "ง",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Conditions ช่วยให้เราใส่เงื่อนไขได้ว่าทรัพยากรบางอย่างจะให้สร้างเฉพาะใน Production เท่านั้น หรือเปลี่ยนขนาดเครื่องตามสิ่งแวดล้อมที่กำลังติดตั้ง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use the Conditions section to control whether certain resources are created during stack creation or update.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Conditions ช่วยให้เราใส่เงื่อนไขได้ว่าทรัพยากรบางอย่างจะให้สร้างเฉพาะใน Production เท่านั้น หรือเปลี่ยนขนาดเครื่องตามสิ่งแวดล้อมที่กำลังติดตั้ง</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> Use the Conditions section to control whether certain resources are created during stack creation or update.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1307",
@@ -3450,7 +3682,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Stack คือกลุ่มทรัพยากรที่ถูกมัดรวมกันเป็นหน่วยเดียว เมื่อจะติดตั้ง อัปเดต หรือลบทิ้ง ก็จะกระทำพร้อมกันทั้งกลุ่มอย่างเป็นระบบ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A CloudFormation stack is a unit of deployment.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> Stack คือกลุ่มทรัพยากรที่ถูกมัดรวมกันเป็นหน่วยเดียว เมื่อจะติดตั้ง อัปเดต หรือลบทิ้ง ก็จะกระทำพร้อมกันทั้งกลุ่มอย่างเป็นระบบ</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> A CloudFormation stack is a unit of deployment.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1308",
@@ -3479,7 +3713,9 @@
     "answer": "ก",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> แอปแบบ Serverless พึ่งพาบริการเฉพาะของ AWS สูงมาก การจะจำลองสภาพแวดล้อมทั้งหมดมาไว้ในคอมพิวเตอร์ส่วนตัวให้เหมือน Production 100% จึงทำได้ยากกว่าระบบแบบใช้ Server</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> They can't replicate the production environment locally in the same way that they might with a server-based deployment.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> แอปแบบ Serverless พึ่งพาบริการเฉพาะของ AWS สูงมาก การจะจำลองสภาพแวดล้อมทั้งหมดมาไว้ในคอมพิวเตอร์ส่วนตัวให้เหมือน Production 100% จึงทำได้ยากกว่าระบบแบบใช้ Server</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> They can't replicate the production environment locally in the same way that they might with a server-based deployment.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1309",
@@ -3508,7 +3744,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> SAM เป็นส่วนต่อขยายของ CloudFormation โดยเพิ่มส่วน 'Globals' มาให้เพื่อช่วยลดความซ้ำซ้อนในการตั้งค่าที่เหมือนกันของหลายๆ ทรัพยากร</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> The Globals section is found only in AWS SAM templates.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> SAM เป็นส่วนต่อขยายของ CloudFormation โดยเพิ่มส่วน 'Globals' มาให้เพื่อช่วยลดความซ้ำซ้อนในการตั้งค่าที่เหมือนกันของหลายๆ ทรัพยากร</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> The Globals section is found only in AWS SAM templates.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "kc_1310",
@@ -3537,7 +3775,9 @@
     "answer": "ข",
     "is_multi": false,
     "multi_count": 1,
-    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ประเภท 'SimpleTable' ใน SAM คือทางลัดที่ใช้สร้างตาราง Amazon DynamoDB แบบมาตรฐานได้อย่างรวดเร็วด้วยการเขียนโค้ดเพียงไม่กี่บรรทัด</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> An Amazon DynamoDB table that is called Orders.</li></ul>"
+    "explanation": "<ul><li><strong>เฉลยและบทวิเคราะห์:</strong> ประเภท 'SimpleTable' ใน SAM คือทางลัดที่ใช้สร้างตาราง Amazon DynamoDB แบบมาตรฐานได้อย่างรวดเร็วด้วยการเขียนโค้ดเพียงไม่กี่บรรทัด</li><li><strong>คำตอบที่ถูกต้อง (single):</strong> An Amazon DynamoDB table that is called Orders.</li></ul>",
+    "source_type": "aws_kc",
+    "source_label": "Official AWS Academy Knowledge Check"
   },
   {
     "id": "q_devops_1",
@@ -3566,7 +3806,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก และ ง เป็น Block storage/Ephemeral storage ที่ไม่ตรงตามโจทย์เรื่องความทนทานสูง ส่วนข้อ ค การข้าม Region ช่วยเรื่อง Disaster Recovery แต่ถ้าต้นทางเผลอลบ ปลายทางก็ถูกลบตามได้หากทำ Replication Sync</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> S3 มีความทนทาน 11 9s และการเปิด Versioning ทำให้เมื่อมีคำสั่งลบโดยไม่ตั้งใจ จะสร้างเพียง Delete Marker ผู้ดูแลสามารถกู้คืนไฟล์กลับมาได้เสมอ</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_2",
@@ -3595,7 +3837,9 @@
     "answer": "ค",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อสอบมักลวงด้วยการปรับ Parameter ของคำขอ (เช่น ปรับ Timeout) แต่ข้อจำกัดทางสถาปัตยกรรมของ S3 Single PUT ถูกฮาร์ดลิมิตไว้ที่ 5 GB ไฟล์ 12 GB จึงไม่มีทางส่งผ่านได้</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ค):</strong> ไฟล์ที่เกิน 5 GB ถูกบังคับให้ต้องใช้ Multipart Upload นอกจากนี้การแบ่งชิ้นส่วนยังช่วยให้อัปโหลดแบบคู่ขนาน เร่งสปีด และสามารถกู้คืนเฉพาะพาร์ตที่หลุดได้</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_3",
@@ -3624,7 +3868,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> หลายคนมักสับสนกับ Transfer Acceleration ซึ่งใช้สำหรับเร่งความเร็วการอัปโหลดผ่าน CloudFront Edge ไม่ได้ช่วยกรองข้อมูล และ CloudFront Caching ก็ยังคงแคชไฟล์ 20 GB ทั้งก้อน</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> S3 Select ช่วยให้สามารถใช้คำสั่ง SQL กรองเฉพาะข้อมูลที่ต้องการได้จากฝั่ง S3 Storage โดยตรง ลดปริมาณข้อมูลที่ต้องส่งผ่านเครือข่ายลงได้สูงสุด 80-99% และเพิ่มความเร็วได้สูงสุด 400%</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_4",
@@ -3653,7 +3899,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> การสร้าง IAM User ให้ลูกค้าภายนอกเป็นการสิ้นเปลืองและเสี่ยงต่อความปลอดภัย ส่วนการใส่ IP บน Bucket Policy หรือเปิด ACL เป็นการเปิดช่องโหว่และยุ่งยากในการดูแล</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> Presigned URL สร้างขึ้นมาเพื่อกรณีนี้โดยเฉพาะ อนุญาตให้ไคลเอนต์ภายนอกดาวน์โหลดไฟล์ผ่าน URL ที่มี Security Token ชั่วคราว โดยกำหนดอายุได้สูงสุด 7 วัน</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_5",
@@ -3682,7 +3930,9 @@
     "answer": "ค",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> คนส่วนใหญ่คิดว่าถ้าไม่ระบุ Version ID ระบบจะลบเวอร์ชันล่าสุดทิ้งไป แต่ความเป็นจริงคือระบบจะไม่ลบไฟล์ใดๆ เลย แต่จะสร้าง Delete Marker สวมทับไว้ด้านบน</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ค):</strong> ในถังที่เปิด Versioning การส่งคำสั่ง DELETE ด้วย Key เพียงอย่างเดียวคือการทำ Soft Delete โดยการวาง Delete Marker ทับ หากต้องการลบถาวร ต้องระบุ Version ID ในคำสั่ง DELETE เสมอ</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_6",
@@ -3711,7 +3961,9 @@
     "answer": "ง",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก, ข, และ ค ยังคงเป็นการใช้งาน Long-term Access Key ที่มีความเสี่ยงต่อการรั่วไหล และ User Data (ข้อ ข) สามารถเปิดดูได้ง่ายผ่านคอนโซล EC2</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ง):</strong> การใช้ IAM Role ร่วมกับ EC2 Instance Profile เป็น Best Practice สากล แอปพลิเคชันจะได้รับ Temporary Credentials ที่ระบบหมุนเวียน (Rotate) คีย์ให้อัตโนมัติ ไร้ปัญหาคีย์หลุด</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_7",
@@ -3740,7 +3992,9 @@
     "answer": "ค",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> หลายคนสับสนคิดว่าสิทธิ์ที่กว้างกว่า หรือสิทธิ์จาก Managed Policy ส่วนกลางจะมีน้ำหนักมากกว่า Inline Policy</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ค):</strong> ตาม Decision Tree ของ IAM (หน้า 33) เมื่อพบ Explicit Deny ที่ตรงกับ Action และ Resource คำขอจะถูกตัดสิทธิ์เป็น Deny ทันทีโดยไม่สนว่าจะมี Allow อยู่กี่ข้อความ</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_8",
@@ -3769,7 +4023,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก, ค, และ ง เป็นความรับผิดชอบของลูกค้าในทั้งสองกรณี (ทั้งบน EC2 และ RDS ลูกค้าต้องดูแล Data, App, และ DB User เองเสมอ)</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> RDS เป็น Managed Service ซึ่ง AWS ดูแลตั้งแต่ Hardware, OS, และการแพตช์ Engine ฐานข้อมูลให้ แต่ถ้าลูกค้าติดตั้งบน EC2 ลูกค้าจะต้องรับผิดชอบการดูแล Guest OS และอัปเดตแพตช์ด้วยตัวเอง</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_9",
@@ -3798,7 +4054,9 @@
     "answer": "ค",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก และ ข ใช้ Long-term Credentials ข้ามบัญชีซึ่งผิดมาตรฐานอย่างร้ายแรง ส่วนข้อ ง การเปิด Public Read ทำให้ข้อมูลรั่วไหลสู่สาธารณะ</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ค):</strong> การใช้ IAM Role ข้ามบัญชีผ่าน STS AssumeRole เป็นแนวทางที่ปลอดภัยที่สุด เพราะระบบปลายทางควบคุม Trust Policy ได้เอง และฝั่งต้นทางจะได้รับคีย์ชั่วคราวที่มีอายุจำกัด</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_10",
@@ -3827,7 +4085,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ค ผิดเพราะอีก 3 คนจะได้รับสิทธิ์เกินความจำเป็น ส่วนข้อ ก และ ง เป็นการละเมิดความปลอดภัยขั้นรุนแรง</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> การสร้าง Group ตามหน้าที่การทำงาน (Job Function Groups) และกำหนดสิทธิ์แบบเจาะจง ช่วยให้สามารถเพิ่ม/ลดสิทธิ์ของสมาชิกได้อย่างเป็นระบบ โดยที่สมาชิกสามารถสังกัดได้มากกว่า 1 กลุ่มตามภาระงานจริง</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_11",
@@ -3856,7 +4116,9 @@
     "answer": "ค",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> การใช้ Index (ข้อ ก และ ข) เป็นเพียงการเร่งความเร็วในการอ่านข้อมูล ไม่สามารถส่ง Event อัตโนมัติได้ ส่วนการทำ Cron Scan (ข้อ ง) สิ้นเปลือง RCU และมี Latency สูง</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ค):</strong> DynamoDB Streams ออกแบบมาสำหรับงาน Change Data Capture (CDC) โดยเฉพาะ เมื่อข้อมูลมีการแก้ไข จะสร้าง Record เรียงตามเวลาและสามารถตั้ง Event Source Mapping ให้ทริกเกอร์ AWS Lambda ได้ทันที</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_12",
@@ -3885,7 +4147,9 @@
     "answer": "ค",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> หลายคนนำขนาด 6 KB ไปหาร 4 ได้ 1.5 แล้วลืมปัดเศษ หรือคิดว่า Eventual Consistency เลยนำไปหาร 2 ซ้ำ</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ค):</strong> ขนาด 6 KB ต้องปัดเศษขึ้นเป็นพหุคูณของ 4 KB คือได้ 8 KB (คิดเป็น 2 บล็อก RCU ต่อ Item); เมื่อต้องการอ่าน 80 ครั้งต่อวินาทีแบบ Strongly Consistent จะต้องใช้: `2 * 80 = 160 RCUs`</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_13",
@@ -3914,7 +4178,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก ลวงด้วย LSI แต่ในความเป็นจริง LSI ไม่สามารถสร้างย้อนหลังได้ ส่วนข้อ ง DynamoDB ไม่อนุญาตให้แก้ไข Primary Key ของตารางที่สร้างไปแล้ว</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> Global Secondary Index (GSI) สามารถสร้างเพิ่มเติมบนตารางที่มีข้อมูลอยู่แล้วได้ตลอดเวลา และสามารถกำหนด Partition Key ใหม่ (เช่น `OrderStatus`) ได้อย่างอิสระ</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_14",
@@ -3943,7 +4209,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> สับสนระหว่าง `BatchWriteItem` กับ `TransactWriteItems` (ข้อ ก เป็นพฤติกรรมของ Transaction ไม่ใช่ Batch)</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> `BatchWriteItem` ไม่ใช่ Transaction คำขอแต่ละชิ้นในชุดจะทำงานเป็นอิสระต่อกัน ชิ้นที่ผ่านจะบันทึกทันที ส่วนชิ้นที่ติด Throttled จะถูกตีกลับมาใน `UnprocessedItems` ให้นักพัฒนาเขียนโค้ด Retry เอง</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_15",
@@ -3972,7 +4240,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> การทำ Get แล้วตามด้วย Put (ข้อ ก) ก่อให้เกิดปัญหา Race Condition (สองคนกดสมัครพร้อมกันในเสี้ยววินาที ข้อมูลจะทับกันได้)</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> Condition Expression ทำงานแบบ Atomic ณ ฝั่งเซิร์ฟเวอร์ของ DynamoDB การใส่ `attribute_not_exists(Email)` จะรับประกันว่าถ้ามี Partition Key นี้อยู่แล้ว ระบบจะยกเลิกคำขอทันทีด้วยข้อผิดพลาด `ConditionalCheckFailedException` ป้องกันการเขียนทับได้อย่างสมบูรณ์ 100%</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_16",
@@ -4001,7 +4271,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> การสร้าง 2 API (ข้อ ก) ทำให้เกิดภาระในการอัปเดตสคีมาซ้ำซ้อนสองรอบ ส่วนการใช้ Canary (ข้อ ค) มีไว้สำหรับทยอยอัปเกรดเวอร์ชัน ไม่ใช่การแยกสภาพแวดล้อม</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> Stage Variables ออกแบบมาเพื่อกรณีนี้โดยตรง ช่วยให้ Route เดิมใน API เดียวกันสามารถชี้ไปยัง Lambda Function หรือ Alias ที่ต่างกันได้ตาม Stage ที่ถูกเรียกใช้</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_17",
@@ -4030,7 +4302,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก จะส่งคืนสถานะ `504 Gateway Timeout` ไม่ใช่ 502; ข้อ ค จะส่งคืน `500 Internal Server Error` หรือ `403 Forbidden`</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> Lambda Proxy Integration มีข้อกำหนดตายตัวว่าผลลัพธ์จาก Lambda จะต้องถูกส่งกลับมาเป็น Schema ที่ API Gateway รู้จัก หากโค้ดส่งคืนข้อความลอยๆ API Gateway จะไม่สามารถแปลงผลตอบกลับได้และพ่นข้อผิดพลาด `502 Bad Gateway` ทันที</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_18",
@@ -4059,7 +4333,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> การใช้ Lambda Authorizer (ข้อ ก) ทำงานได้จริง แต่ต้องเสียค่าใช้จ่ายและเกิด Latency จากการรัน Lambda Function เพิ่มอีกตัวในทุกคำขอ ส่วนข้อ ค เป็นข้อห้ามร้ายแรงด้านความปลอดภัย</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> Cognito User Pools Authorizer ทำงานในระดับเนทีฟบน API Gateway โดยระบบจะตรวจสอบความถูกต้องของ JWT Token ให้ทันทีโดยไม่ต้องรันโค้ด Compute เพิ่มเติม จึงประหยัดและรวดเร็วที่สุด</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_19",
@@ -4088,7 +4364,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> การใช้ WAF (ข้อ ค) หรือเขียนเช็กใน Lambda (ข้อ ง) มีค่าใช้จ่ายสูงและซับซ้อน ส่วน Account-level (ข้อ ก) เป็นการจำกัดทราฟฟิกรวมทั้งบัญชี ไม่ใช่รายบุคคล</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> Usage Plan ร่วมกับ API Key ออกแบบมาเพื่อการแบ่ง Tier ลูกค้าโดยเฉพาะ สามารถกำหนดได้ทั้ง Rate (คำขอต่อวินาที) และ Quota (โควตารายวัน/สัปดาห์/เดือน) ที่ระดับเกตเวย์ก่อนถึงระบบหลังบ้าน</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_20",
@@ -4117,7 +4395,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก, ค, และ ง เป็นการละเมิดนโยบายความมั่นคงปลอดภัยโดยการเปิดระบบหลังบ้านออกสู่สาธารณะ</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> Private Integration ผ่าน VPC Link ช่วยให้ API Gateway ที่อยู่บนเน็ตเวิร์กของ AWS สามารถส่งทราฟฟิกเข้าสู่ Private Subnet ภายใน VPC ของลูกค้าได้อย่างปลอดภัยผ่าน NLB/ALB โดยที่ระบบหลังบ้านไม่ต้องเปิด Public IP</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_21",
@@ -4146,7 +4426,9 @@
     "answer": "ง",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก ทำไม่ได้เพราะคอนโซลไม่รองรับการติดตั้งแพ็กเกจ; ข้อ ข ไวยากรณ์ของ Zip ซ้อน Zip ไม่สามารถรันได้; ข้อ ค Environment Variables ใช้เก็บค่าสตริง ไม่สามารถใช้โหลดโมดูลโค้ดไบนารีได้</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ง):</strong> Lambda Layers ออกแบบมาเพื่อการแชร์โค้ด ไลบรารี และ Dependencies ขนาดใหญ่โดยเฉพาะ ช่วยลดขนาดไฟล์โค้ดของฟังก์ชัน และทำให้สามารถนำ Layer ไปใช้ซ้ำกับฟังก์ชันอื่นๆ ได้ทันที</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_22",
@@ -4175,7 +4457,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> การปรับ Timeout (ข้อ ก) ไม่ได้ช่วยเร่งความเร็วในการบูตเครื่อง ส่วนการเปลี่ยนเป็น Async (ข้อ ค) ส่งผลให้ผู้ใช้ไม่ได้รับผลตอบกลับทันที</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> Provisioned Concurrency จะสั่งให้ AWS จัดเตรียมและอุ่นสภาพแวดล้อม (Execution Environments) พร้อมโหลดโค้ดและไลบรารีไว้ล่วงหน้า ทำให้คำขอที่เข้ามาไม่ต้องเสียเวลา Cold Start และตอบสนองได้ในระดับมิลลิวินาทีทันที</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_23",
@@ -4204,7 +4488,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> หลายคนสับสนระหว่าง Metadata และ Annotation โดยคิดว่า Metadata ใช้ค้นหาได้</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> ข้อมูลที่บันทึกเป็น Annotation จะถูก X-Ray ทำ Index อัตโนมัติ ทำให้สามารถนำไปเขียน Filter Expression ใน X-Ray Console (เช่น `annotation.Tier = \"Enterprise\"`) เพื่อจัดกลุ่มและวิเคราะห์กราฟความหน่วงได้</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_24",
@@ -4233,7 +4519,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ในระบบคิวทั่วไป (เช่น SQS) ข้อความที่พังจะถูกส่งกลับคิวและข้อความอื่นยังทำงานได้ แต่สำหรับระบบสตรีม กฎเหล็กคือต้องรักษาลำดับ (In-order processing)</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> ใน Stream-based Invocation (สไลด์หน้า 22) ข้อผิดพลาดใน Shard จะทำการบล็อกการทำงานของ Shard นั้นทั้งหมด (Errors in a shard block further processing) เพื่อป้องกันไม่ให้ข้อมูลในอนาคตถูกนำไปคำนวณก่อนข้อมูลในอดีต</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_25",
@@ -4262,7 +4550,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> การที่บริการภายนอกจะสั่ง Invoke เข้ามาที่ Lambda ต้องใช้ Resource Policy (Inbound Permission) ไม่ใช่ Execution Role (ซึ่งเป็น Outbound Permission ของตัว Lambda เอง)</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> ตามโมเดล Permissions ของ Lambda (สไลด์หน้า 28-29) การอนุญาตให้ Event Source สั่งรันฟังก์ชันได้ จะต้องเพิ่ม Resource-based Policy โดยระบุ Principal เป็น `s3.amazonaws.com` พร้อมเงื่อนไข SourceArn ของ Bucket นั้นๆ</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_26",
@@ -4291,7 +4581,9 @@
     "answer": "ก",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> การใช้ ECS หรือการติดตั้ง Docker บน EC2 เอง (ข้อ ค และ ง) จำเป็นต้องมีความรู้เชิงลึกเรื่องการคอนฟิกเน็ตเวิร์ก VPC, Task Definitions และ Cluster Scaling</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ก):</strong> Elastic Beanstalk ช่วยลดความซับซ้อนทั้งหมด โดยเตรียมระบบ Load Balancer, Auto Scaling, และ Container Runtime ให้พร้อมใช้งาน เพียงแค่ส่งไฟล์โค้ดและ `Dockerrun.aws.json` ขึ้นไป ระบบก็เริ่มทำงานได้ทันที</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_27",
@@ -4320,7 +4612,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> การใช้ EC2 Reserved Instances (ข้อ ก) จะทำให้ต้องจ่ายเงินค่าเครื่องตลอด 24/7 แม้ในวันที่ไม่มีงานประมวลผล</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> ตามเกณฑ์ในสไลด์หน้า 44 AWS Fargate ออกแบบมาเพื่อเวิร์กโหลดที่มีความผันผวนสูง (Wide swings in demand) และงานประมวลผลแบบแบตช์ตามรอบเวลา โดยระบบจะเปิดและคิดเงินตามเวลาที่คอนเทนเนอร์ทำงานจริงเท่านั้น และไม่ต้องเสียเวลาแพตช์ OS</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_28",
@@ -4349,7 +4643,9 @@
     "answer": "ค",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> การเลือก Rolling ธรรมดา (ข้อ ข) จะทำให้เครื่องที่กำลังถูกอัปเดตหยุดทำงาน ทำให้มีเครื่องรับโหลดเหลือเพียง 8 หรือ 9 เครื่อง ซึ่งขัดแย้งกับข้อกำหนด</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ค):</strong> Rolling with additional batch (สไลด์หน้า 57) จะทำการเปิดเครื่องชุดใหม่ขึ้นมาล่วงหน้าก่อน 1 ชุด เพื่อชดเชยเครื่องที่จะถูกดึงออกไปอัปเดต ทำให้ระบบคงขีดความสามารถในการรองรับทราฟฟิกได้เต็ม 100% ตลอดการปล่อยเวอร์ชันใหม่</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_29",
@@ -4378,7 +4674,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก และ ค ทำให้เกิด Downtime และการ Rollback ต้องใช้เวลาดีพลอยใหม่ทั้งหมด ส่วนข้อ ง ไม่เปิดโอกาสให้ QA ทดสอบระบบแยกส่วน</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> Blue/Green Deployment บน Elastic Beanstalk (สไลด์หน้า 61) ช่วยให้สามารถสร้าง Environment ใหม่ (Green) แยกเป็นอิสระเพื่อทดสอบได้เต็มที่ เมื่อพร้อมเปิดตัว เพียงกดปุ่ม Swap Environment URLs ระบบจะสลับ DNS CNAME ทันที และหากพังก็เพียงกด Swap กลับมายัง Blue ได้ในเสี้ยววินาที</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_30",
@@ -4407,7 +4705,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> หลายคนเข้าใจผิดว่ามี IAM ถูกต้องแล้ว Docker CLI จะคุยกับ ECR ได้เองอัตโนมัติ</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> Docker Daemon จำเป็นต้องได้รับ Authorization Token ชั่วคราวจาก ECR ซึ่งมีอายุ 12 ชั่วโมง การดึง Token ผ่าน `aws ecr get-login-password` แล้วส่งต่อให้ `docker login` เป็นขั้นตอนบังคับตามมาตรฐาน (สไลด์หน้า 45)</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_31",
@@ -4436,7 +4736,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก และ ค เป็นคุณสมบัติเฉพาะของ Redis ไม่ใช่ Memcached ส่วนข้อ ง เป็นคุณสมบัติพื้นฐานที่ทั้งสองตัวมีเหมือนกัน</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> ตามตารางเปรียบเทียบในสไลด์หน้า 16 Memcached เหมาะสำหรับกรณีที่ต้องการระบบแคชแบบดั้งเดิมที่เรียบง่าย ไม่มีความซับซ้อนของฟีเจอร์ขั้นสูง และต้องการพลังการประมวลผลแบบ Multithreaded ล้วนๆ</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_32",
@@ -4465,7 +4767,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> Lazy Loading (ข้อ ก และ ง) มีความเสี่ยงที่จะเกิด Stale Data เมื่อข้อมูลมีการเปลี่ยนแปลง ซึ่งไม่เหมาะกับตารางคะแนนแบบเรียลไทม์</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> Write-Through (สไลด์หน้า 46, 49) บังคับให้อัปเดตข้อมูลลงแคชพร้อมกับตอนที่เขียนลงฐานข้อมูลเสมอ ทำให้ข้อมูลในแคชสดใหม่ตลอดเวลา ไม่มีความล่าช้าของข้อมูล และไม่มีปัญหา Cache Miss Penalty</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_33",
@@ -4494,7 +4798,9 @@
     "answer": "ค",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> แม้ Lambda@Edge (ข้อ ข) จะทำได้ แต่มีต้นทุนสูงกว่าและ Latency สูงกว่า CloudFront Functions ซึ่งออกแบบมาเพื่อการจัดการ Header และ URL Redirect โดยเฉพาะ</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ค):</strong> ตามเกณฑ์ในสไลด์หน้า 43 CloudFront Functions ทำงานที่ Edge Location ใกล้ผู้ใช้ที่สุด มีระยะเวลาการรันระดับ Sub-millisecond รันด้วยภาษา JavaScript และคิดค่าบริการถูกกว่า Lambda@Edge อย่างมีนัยสำคัญ</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_34",
@@ -4523,7 +4829,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> หลายคนคิดว่า CloudFront จะแยก URL ตาม Query String ให้เองตามธรรมชาติเหมือนเว็บเซิร์ฟเวอร์ทั่วไป</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> ตามสไลด์หน้า 34 CloudFront ใช้เพียง Domain Name + URL Path เป็น Cache Key โดยละเลย Query Strings ทำให้คำขอที่มี Path เดียวกันได้ไฟล์แคชอันเดิมเสมอ การใส่ Query Strings ลงใน Cache Key จึงเป็นทางแก้ที่ถูกต้อง</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_35",
@@ -4552,7 +4860,9 @@
     "answer": "ค",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> CloudFront Functions (ข้อ ก และ ข) มีลิมิต RAM แค่ 2 MB, รันได้เฉพาะ JS สั้นๆ ไม่มี Network Access และไม่รองรับ Origin Response จึงไม่สามารถโหลดรูปมา Resize ได้</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ค):</strong> งานประมวลผลขนาดใหญ่ที่ต้องแตะต้อง Response Body, ใช้ RAM สูง และเรียกใช้ไลบรารีภายนอก จำเป็นต้องใช้ **Lambda@Edge** โดยผูกไว้ที่จังหวะ **Origin Response** เพื่อดักรูปต้นฉบับจาก S3 มาปรับขนาดก่อนส่งเข้าแคชของ CloudFront</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_36",
@@ -4581,7 +4891,9 @@
     "answer": "ค",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก (Standard Queue) ลำดับอาจคลาดเคลื่อนและมีโอกาสเกิดข้อความซ้ำ ส่วนข้อ ข (Kinesis) แม้จะเรียงลำดับใน Shard ได้ แต่ถูกออกแบบมาเพื่องานสตรีมมิ่งวิเคราะห์ข้อมูลรวม ไม่ใช่งานประมวลผลธุรกรรมเดี่ยวแบบธนาคาร</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ค):</strong> Amazon SQS FIFO Queue ออกแบบมาเพื่อรักษาระเบียบ First-In-First-Out 100% พร้อมฟังก์ชัน Exactly-once Processing จึงเป็นตัวเลือกที่สมบูรณ์แบบที่สุดสำหรับธุรกรรมการเงิน</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_37",
@@ -4610,7 +4922,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> การใช้ SQS เดี่ยว (ข้อ ก) จะทำให้มีเพียงแผนกเดียวที่ได้ข้อความนั้นไป ส่วนข้อ ค เป็นการเชื่อมต่อแบบ Tight Coupling หากระบบใดช้าหน้าเว็บจะค้างตาม</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> นี่คือรูปแบบสถาปัตยกรรม **SNS Fanout to SQS Pattern** (สไลด์หน้า 42) ที่ช่วยคัดลอกข้อความกระจายไปยังคิวของแต่ละแผนกอย่างอิสระ มีบัฟเฟอร์แยกส่วน และทนทานต่อความผิดพลาดสูงสุด</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_38",
@@ -4639,7 +4953,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> การปรับ Visibility Timeout (ข้อ ค) หรือเปลี่ยนชนิดคิว (ข้อ ก) ไม่ได้ช่วยลดความถี่ของคำขอวนลูปตรวจสอบข้อความ</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> การเปิดใช้งาน Long Polling โดยใส่ `WaitTimeSeconds` (1-20 วินาที) จะทำให้ SQS หน่วงเวลารอจนกว่าจะมีข้อความเข้ามาจริงจึงค่อยส่งผลลัพธ์กลับมา ช่วยลดจำนวนคำขอ API ที่ว่างเปล่าลงได้มหาศาล และลดค่าใช้จ่ายได้ทันที</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_39",
@@ -4668,7 +4984,9 @@
     "answer": "ก",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> การสั่ง PurgeQueue (ข้อ ง) หรือลด Retention เหลือ 1 นาที (ข้อ ข) จะทำให้ข้อความดีๆ ของลูกค้ารายอื่นถูกลบทิ้งไปด้วย</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ก):</strong> Dead-Letter Queue (DLQ) ร่วมกับ `maxReceiveCount` (สไลด์หน้า 24 & 35) ออกแบบมาเพื่อแยกข้อความที่ประมวลผลล้มเหลวซ้ำซากออกจากคิวหลักโดยอัตโนมัติ เพื่อให้ระบบสามารถประมวลผลข้อความอื่นต่อไปได้ และเก็บข้อความที่มีปัญหาไว้รอการดีบัก</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_40",
@@ -4697,7 +5015,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก และ ค จำเป็นต้องเขียนโค้ดและบริหารจัดการเครื่องเซิร์ฟเวอร์ ส่วนข้อ ง ไม่ใช่การทำงานแบบสตรีมมิ่งเรียลไทม์</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> Amazon Kinesis Data Firehose (สไลด์หน้า 57) เป็นบริการแบบ Fully Managed ที่สามารถรับข้อมูลจาก Kinesis Data Streams แปลงฟอร์แมตข้อมูลเป็น Parquet/ORC และส่งมอบเข้าสู่ Amazon S3 ได้อัตโนมัติ โดยที่นักพัฒนาไม่ต้องเขียนโค้ดหรือดูแลระบบ Consumer เลยแม้แต่บรรทัดเดียว</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_41",
@@ -4726,7 +5046,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> หลายคนสับสนว่าขั้นตอนส่งให้ผู้จัดการเป็น Task จึงเลือกตอบ Task State แต่โจทย์เน้นถามขั้นตอน \"การเปรียบเทียบเงื่อนไข (Comparing)\" เพื่อเลือกเส้นทาง</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> Choice State (สไลด์หน้า 20, 22) ออกแบบมาสำหรับการสร้าง Branching Logic โดยประเมินค่าตัวแปรใน JSON Input และตัดสินใจว่าจะส่งต่อการทำงานไปยัง State ใดตามเงื่อนไข</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_42",
@@ -4755,7 +5077,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> Standard Workflow รองรับ Invocation Rate สูงสุดเพียง 2,000 ต่อวินาที ซึ่งไม่สามารถรับโหลด 80,000 ต่อวินาทีได้ และหากคิดค่าบริการตาม State Transitions ในทราฟฟิกขนาดนี้ บิลจะสูงมาก</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> ตามตารางเปรียบเทียบในสไลด์หน้า 30 Express Workflows รองรับความเร็วในการเรียกใช้ได้มากกว่า 100,000 ครั้งต่อวินาที มีการเปลี่ยน State เกือบไร้ขีดจำกัด คิดค่าบริการตามระยะเวลาการรันและหน่วยความจำ และเหมาะกับงานสั้นๆ ไม่เกิน 5 นาที</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_43",
@@ -4784,7 +5108,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> Parallel State (ข้อ ก) ทำงานแบบขนานได้จริง แต่จำนวนกิ่ง (Branches) จะต้องถูกเขียนระบุไว้ตายตัวในโค้ด ไม่สามารถเพิ่มหรือลดตามขนาดของอาร์เรย์ที่ส่งเข้ามาแบบ Dynamic ได้</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> Map State (สไลด์หน้า 20, 27) ออกแบบมาเพื่อรับ Array ข้อมูลเข้ามา และทำการรันชุดสเต็ปเดิม (Iterator) ซ้ำกับสมาชิกทุกตัวใน Array แบบ Dynamic พร้อมกำหนดขีดจำกัดความเร็วคู่ขนานได้ผ่าน `MaxConcurrency`</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_44",
@@ -4813,7 +5139,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก ผิดเพราะ Express Workflow รันได้สูงสุดแค่ 5 นาที; ข้อ ค ผิดเพราะ Lambda รันได้นานสุดแค่ 15 นาที และการ sleep ค้างไว้ทำให้เสียค่าใช้จ่ายมหาศาล</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> Standard Workflows รองรับการรอนานสูงสุด 1 ปี โดยใช้ฟีเจอร์ Callback Pattern ผ่าน `taskToken` (สไลด์หน้า 34-35) ระบบจะไม่คิดค่าใช้จ่ายในระหว่างที่หยุดรอ และจะเดินหน้าต่อทันทีเมื่อได้รับสัญญาณ `SendTaskSuccess` พร้อมโทเคนเดิม</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_45",
@@ -4842,7 +5170,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> คนส่วนใหญ่ติดนิสัยใส่ `\"End\": true` ในทุก State ที่เป็นสเต็ปสุดท้าย</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> ตามกฎของ ASL (สไลด์หน้า 23 และ Section 4 Key Takeaways หน้า 28) ทั้ง `Succeed` State และ `Fail` State ถือเป็น Terminal State ในตัวเองอยู่แล้ว **ห้ามใส่ฟิลด์ `\"End\": true` หรือฟิลด์ `\"Next\"` เด็ดขาด** หากใส่ระบบจะแจ้งเตือน JSON Schema Validation Error ทันที</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_46",
@@ -4871,7 +5201,9 @@
     "answer": "ก",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ข ผิดเพราะ IAM ไม่ได้สร้างมาเพื่อรองรับผู้ใช้ทั่วไปของแอปพลิเคชัน; ข้อ ค ผิดเพราะ API Gateway ไม่มีระบบ Event Trigger ฝังในกระบวนการล็อกอินของ Cognito</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ก):</strong> Amazon Cognito User Pools ออกแบบมาสำหรับงาน User Management และ Sign-up/Sign-in โดยเฉพาะ (สไลด์หน้า 28-29) และมีฟีเจอร์ Lambda Triggers ในจังหวะ Post-Authentication ซึ่งสามารถสั่งรันโค้ด Lambda เพื่อส่งต่อข้อมูลไปยังระบบ Analytics ได้ทันที</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_47",
@@ -4900,7 +5232,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ก เป็นช่องโหว่ร้ายแรงที่ทำให้คีย์หลุดได้ง่าย ส่วนข้อ ค ผิดเพราะ DynamoDB SDK ต้องการ AWS SigV4 Credentials ไม่สามารถรับ JWT Token ดิบๆ ได้</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> ตามสถาปัตยกรรมในสไลด์หน้า 35 Cognito Identity Pools ทำหน้าที่เป็นตัวแปลงสภาพ (Credential Broker) เปลี่ยนจาก JWT Token ให้กลายเป็น Temporary IAM Credentials ชั่วคราว ทำให้โมบายแอปสามารถเรียกใช้บริการ AWS ได้อย่างปลอดภัย 100%</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_48",
@@ -4929,7 +5263,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> หลายคนคิดว่าเมื่อสวมบทบาทเป็น Role แล้ว ตัวตนเดิมจะสูญหายไปและตามสืบไม่ได้</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> ตามกระบวนการในสไลด์หน้า 24-25 เมื่อผู้ใช้ระดับองค์กรทำการ Assume Role ผ่าน SAML ตัวตนจริงของผู้ใช้ (Federated Identity) จะถูกส่งเข้ามาและบันทึกไว้ใน Event `AssumeRoleWithSAML` ภายใต้แอตทริบิวต์ `userName` เสมอ</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_49",
@@ -4958,7 +5294,9 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> สับสนระหว่าง ID Token และ Access Token (คนส่วนใหญ่มักส่ง ID Token เพราะมีชื่อและอีเมล)</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> ตามข้อกำหนดในสไลด์หน้า 32 **Access Token** มีหน้าที่โดยตรงในการให้อำนาจเรียกใช้ API ตาม **Custom Scopes** ที่กำหนดไว้ ส่วน ID Token มีไว้เพื่อแสดงข้อมูลอัตลักษณ์ (Identity Claims) ของผู้ใช้เท่านั้น</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   },
   {
     "id": "q_devops_50",
@@ -4987,6 +5325,8 @@
     "answer": "ข",
     "explanation": "<ul>\n<li><strong>จุดหลอกของข้อสอบ:</strong> ข้อ ค ใช้สำหรับ Web Identity สาธารณะ (Google/FB) ไม่ใช่การเชื่อมต่อระหว่างบัญชี AWS ส่วนข้อ ก ใช้สำหรับขอ Session Token ภายในบัญชีเดิมโดยเฉพาะงาน MFA</li>\n<li><strong>ทำไมถึงตอบข้อนี้ (ข):</strong> คำสั่ง `AssumeRole` (สไลด์หน้า 22) ออกแบบมาสำหรับการให้ IAM User หรือ Compute Service ในบัญชีหนึ่ง สวมบทบาท IAM Role ข้ามไปยังอีกบัญชีหนึ่ง (Cross-account access) โดยส่งคืนคีย์ชั่วคราวที่มีอายุเริ่มต้น 1 ชั่วโมง</li>\n</ul>",
     "is_multi": false,
-    "multi_count": 1
+    "multi_count": 1,
+    "source_type": "ada_scenario",
+    "source_label": "โจทย์สถานการณ์ประยุกต์และจุดดักหลอก (เอด้าคิด)"
   }
 ]
